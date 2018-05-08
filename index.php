@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html class="no-js" lang="en">
@@ -6,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<base href="/">
+	<base href="/assets/images/">
 
 	<title>Clarity Movement Co. - Leading the Clean Air Movement</title>
 	<meta name="description" content="Transform your city using hundreds to thousands of IoT devices collecting actionable air quality data to create healthy communities.">
@@ -14,8 +13,8 @@
 	<meta name="twitter:title" content="Clarity Movement Co. - Leading the Clean Air Movement">
 	<meta property="og:description" content="Transform your city using hundreds to thousands of IoT devices collecting actionable air quality data to create healthy communities.">
 	<meta property="og:title" content="Clarity Movement Co. - Leading the Clean Air Movement">
-    <meta property="og:image" content="https://clarity.io/data/wp-content/uploads/2017/11/14174907/share-1.jpg">
-	<meta name="twitter:image" content="https://clarity.io/data/wp-content/uploads/2017/11/14174907/share-1.jpg">
+    <meta property="og:image" content="/assets/images/share-1.jpg">
+	<meta name="twitter:image" content="/assets/images/share-1.jpg">
 
     <meta property="og:site_name" content="Clarity Movement Co.">
     <meta property="og:url" content="https://clarity.io/" >
@@ -31,21 +30,21 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+	<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon-180x180.png" />
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#37a5fb">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+	<link rel="manifest" href="/assets/js/manifest.json">
+	<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#37a5fb">
 	<meta name="theme-color" content="#37a5fb">
 
 	<link rel="manifest" href="manifest.json">
@@ -53,7 +52,7 @@
 	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	
-	<link type="text/css" media="all" href="styles.css?v=5" rel="stylesheet" />
+	<link type="text/css" media="all" href="/assets/css/styles.css?v=5" rel="stylesheet" />
 
 	<script>
 		//remove no-js class to make sure css animations are not bypassed
@@ -64,13 +63,13 @@
 </head>
 <body>
 	
-	<x-application ws-root="//clarity-io.herokuapp.com/api/data/" class="u-block"></x-application>
+	<x-application ws-root="/assets/images//clarity-io.herokuapp.com/api/data/" class="u-block"></x-application>
 	
 	<script>
 			document.querySelector('x-application').innerHTML = '';
 	</script>
 
-	<script src="bundle_s.js"></script>
+	<script src="/assets/js/bundle_s.js"></script>
 
 </body>
 </html>
