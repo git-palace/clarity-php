@@ -1,22 +1,19 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-form-container {
+	min-height: 100vh;
 }
 
 .sidenav {
-	height: 100%;
-	width: 250px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
 	background-color: #111;
-	overflow-x: hidden;
-	padding-top: 20px;
 }
 
 .sidenav a {
-	padding: 6px 8px 6px 16px;
 	text-decoration: none;
 	font-size: 1.35rem;
 	color: #818181;
@@ -28,7 +25,5 @@ body {
 }
 
 .main {
-	margin-left: 160px; /* Same as the width of the sidenav */
-	font-size: 28px; /* Increased text to enable scrolling */
-	padding: 0px 10px;
+	font-size: 1.2rem;
 }

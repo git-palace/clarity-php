@@ -1,4 +1,0 @@
-<?php
-function isLoggedIn() {
-	isConnectedDB();
-}

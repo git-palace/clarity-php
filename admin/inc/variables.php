@@ -16,8 +16,3 @@ $config = array(
 	"about"   => array(),
 	"solution"  => array()
 );
-
-$credentials = array(
-	"username"  => "",
-	"password"  => ""
-);
