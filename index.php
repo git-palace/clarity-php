@@ -13,7 +13,7 @@
 	<meta property="og:title" content="Clarity Movement Co. - Leading the Clean Air Movement">
 	<meta property="og:image" content="/assets/images/share-1.jpg">
 	<meta property="og:site_name" content="Clarity Movement Co.">
-	<meta property="og:url" content="https://clarity.io/" >
+	<meta property="og:url" content="https://<?php echo $_SERVER['SERVER_NAME']; ?>/" >
 	<meta property="og:type" content="website">
 
 	<meta name="twitter:title" content="Clarity Movement Co. - Leading the Clean Air Movement">
