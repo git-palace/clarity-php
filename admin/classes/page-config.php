@@ -58,36 +58,64 @@ class PageConfig {
 
 		return $result;
 	}
+	
+	// get queries from table
+	function getQueriesFromTable( $tablename ) {
+		$result = $this->db->query( "SELECT * FROM `tbl_".$tablename."` ORDER BY `option_id`" )->fetchAll(PDO::FETCH_OBJ);
+		return $result;
+	}
 
 	// get global config
 	function getGlobalConfig() {
-		if ( !$this->db )
-			return array();
-
-		$result = $this->db->query( "SELECT * FROM `tbl_global` ORDER BY `option_id`" )->fetchAll(PDO::FETCH_OBJ);
+		$global = $this->convert( $this->getQueriesFromTable( "global" ) );
 		
-		$result = $this->convert( $result );
+		$global["add_btn_container_class"] = "";
+		$global["add_btn_container_class_xs"] = "";
+		$global["one_more_button_tpl"] = "";
+		$global["one_more_button_xs_tpl"] = "";
 		
-		$result["add_btn_container_class"] = "";
-		$result["add_btn_container_class_xs"] = "";
-		$result["one_more_button_tpl"] = "";
-		$result["one_more_button_xs_tpl"] = "";
-		
-		if ( $result["add_one_more_button"] == "yes" ) {
-			$result["one_more_button_tpl"] = '<a href="'.$result["more_button_link"].'" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-b-xs c-anim--slide-x c-anim--8 | u-marg-b-md@sm ">'.$result["more_button_text"].'</a>';
+		if ( $global["add_one_more_button"] == "yes" ) {
+			$global["one_more_button_tpl"] = '<a href="'.$global["more_button_link"].'" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-b-xs c-anim--slide-x c-anim--8 | u-marg-b-md@sm ">'.$global["more_button_text"].'</a>';
 
-			$result["one_more_button_xs_tpl"] = '<a href="'.$result["more_button_link"].'" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-r-sm">'.$result["more_button_text"].'</a>';
+			$global["one_more_button_xs_tpl"] = '<a href="'.$global["more_button_link"].'" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-r-sm">'.$global["more_button_text"].'</a>';
 
-			$result["add_btn_container_class_xs"] = " px-xs-5 d-xs-flex flex-column text-center ";
+			$global["add_btn_container_class_xs"] = " px-xs-5 d-xs-flex flex-column text-center ";
 		}
 		
-		return $result;
+		return $global;
+	}
+	
+	// get home config
+	function getHomeConfig() {
+		$home = $this->convert( $this->getQueriesFromTable( "home" ) );
+		
+		$home["add_btn_container_class"] = "";
+		$home["add_btn_container_class_xs"] = "";
+		$home["one_more_button_tpl"] = "";
+		$home["one_more_button_xs_tpl"] = "";
+		
+		if( $home["add_one_more_button"] == "yes" ) {
+			$home["one_more_button_tpl"] = '<a href="'.$home["more_button_link"].'" class="u-pointer-auto c-link u-inline-block c-button--expand2 m-sm-t-2 {{currentIndex==3?\'is-active\':\'\'}}"><svg  class="c-button--expand2__left-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__center-block"></span><svg  class="c-button--expand2__right-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__text">'.$home["more_button_text"].'</span></a>';
+			$home["add_btn_container_class"] = " d-flex flex-column ";
+
+			$home["one_more_button_xs_tpl"] = '<a href="'.$home["more_button_link"].'" class="c-link u-inline-block c-button--expand2 m-sm-t-2 {{currentIndex==3?\'is-active\':\'\'}}"><svg  class="c-button--expand2__left-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__center-block"></span><svg  class="c-button--expand2__right-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__text">'.$home["more_button_text"].'</span></a>';
+			$home["add_btn_container_class_xs"] = " px-xs-5 d-xs-flex flex-column text-center ";
+		}
+		
+		return $home;
 	}
 
 	// get all config
 	function getAllConfig() {
+		if ( !$this->db )
+			return array(
+				"global"	=> array(),
+				"home"		=> array()
+			);
+			
 		return array(
-			"global" => $this->getGlobalConfig()
+			"global"	=> $this->getGlobalConfig(),
+			"home"		=> $this->getHomeConfig()
 		);
 	}
 }
