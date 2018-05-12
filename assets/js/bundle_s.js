@@ -1,4 +1,4 @@
-! function(t) {
+! function (t) {
     function e(n) {
         if (i[n]) return i[n].exports;
         var o = i[n] = {
@@ -9,29 +9,29 @@
         return t[n].call(o.exports, o, o.exports, e), o.l = !0, o.exports
     }
     var i = {};
-    e.m = t, e.c = i, e.i = function(t) {
+    e.m = t, e.c = i, e.i = function (t) {
         return t
-    }, e.d = function(t, i, n) {
+    }, e.d = function (t, i, n) {
         e.o(t, i) || Object.defineProperty(t, i, {
             configurable: !1,
             enumerable: !0,
             get: n
         })
-    }, e.n = function(t) {
-        var i = t && t.__esModule ? function() {
+    }, e.n = function (t) {
+        var i = t && t.__esModule ? function () {
             return t.default
-        } : function() {
+        } : function () {
             return t
         };
         return e.d(i, "a", i), i
-    }, e.o = function(t, e) {
+    }, e.o = function (t, e) {
         return Object.prototype.hasOwnProperty.call(t, e)
     }, e.p = "", e(e.s = 85)
-}([function(t, e, i) {
+}([function (t, e, i) {
     "use strict";
-    var n, o, r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+    var n, o, r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
         return typeof t
-    } : function(t) {
+    } : function (t) {
         return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
     };
     /*!
@@ -39,11 +39,11 @@
      * (c) 2016 Nicolas Riciotti
      * Released under the MIT License.
      */
-    ! function(s, a) {
+    ! function (s, a) {
         "object" === r(e) && void 0 !== t ? t.exports = a() : (n = a, void 0 !== (o = "function" == typeof n ? n.call(e, i, e, t) : n) && (t.exports = o))
-    }(0, function() {
+    }(0, function () {
         function t(t) {
-            return t.replace(/-([a-zA-Z0-9])/g, function(t) {
+            return t.replace(/-([a-zA-Z0-9])/g, function (t) {
                 return t[1].toUpperCase()
             })
         }
@@ -84,7 +84,8 @@
             if (n(t)) {
                 e = [];
                 for (var i = 0, o = t.length; i < o; i++) e.push("object" === r(t[i]) && null !== t[i] ? l(t[i]) : t[i])
-            } else {
+            }
+            else {
                 e = {};
                 for (var s in t) e[s] = "object" === r(t[s]) && null !== t[s] ? l(t[s]) : t[s]
             }
@@ -144,14 +145,14 @@
 
         function b(t) {
             switch (t) {
-                case "&":
-                    return "&amp;";
-                case "<":
-                    return "&lt;";
-                case ">":
-                    return "&gt;";
-                case " ":
-                    return "&nbsp;"
+            case "&":
+                return "&amp;";
+            case "<":
+                return "&lt;";
+            case ">":
+                return "&gt;";
+            case " ":
+                return "&nbsp;"
             }
         }
 
@@ -160,7 +161,7 @@
         }
 
         function w() {
-            clearTimeout(xt), H.fire("resize"), xt = setTimeout(function() {
+            clearTimeout(xt), H.fire("resize"), xt = setTimeout(function () {
                 H.fire("resizeend")
             }, 300)
         }
@@ -169,9 +170,9 @@
             requestAnimationFrame(x), H.fire("requestAnimationFrame")
         }
         var P = {};
-        P.classCallCheck = function(t, e) {
+        P.classCallCheck = function (t, e) {
                 if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
-            }, P.inherits = function(t, e) {
+            }, P.inherits = function (t, e) {
                 if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function, not " + (void 0 === e ? "undefined" : r(e)));
                 t.prototype = Object.create(e && e.prototype, {
                     constructor: {
@@ -181,7 +182,7 @@
                         configurable: !0
                     }
                 }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
-            }, P.possibleConstructorReturn = function(t, e) {
+            }, P.possibleConstructorReturn = function (t, e) {
                 if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
                 return !e || "object" !== (void 0 === e ? "undefined" : r(e)) && "function" != typeof e ? t : e
             },
@@ -203,7 +204,7 @@
               OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
               THE SOFTWARE.
               */
-            function(t, e, i, n) {
+            function (t, e, i, n) {
                 function o(t, e) {
                     for (var i = 0, n = t.length; i < n; i++) v(t[i], e)
                 }
@@ -213,7 +214,7 @@
                 }
 
                 function s(t) {
-                    return function(e) {
+                    return function (e) {
                         et(e) && (v(e, t), o(e.querySelectorAll(F), t))
                     }
                 }
@@ -239,7 +240,7 @@
 
                 function c(t) {
                     var e = s(t);
-                    return function(t) {
+                    return function (t) {
                         g.push(e, t.target)
                     }
                 }
@@ -287,7 +288,7 @@
                         N = [],
                         F = "",
                         U = e.documentElement,
-                        H = I.indexOf || function(t) {
+                        H = I.indexOf || function (t) {
                             for (var e = this.length; e-- && this[e] !== t;);
                             return e
                         },
@@ -303,28 +304,28 @@
                         K = i.create || function t(e) {
                             return e ? (t.prototype = e, new t) : this
                         },
-                        Z = Y || (G ? function(t, e) {
+                        Z = Y || (G ? function (t, e) {
                             return t.__proto__ = e, t
-                        } : $ && W ? function() {
+                        } : $ && W ? function () {
                             function t(t, e) {
                                 for (var i, n = $(e), o = 0, r = n.length; o < r; o++) i = n[o], z.call(t, i) || V(t, i, W(e, i))
                             }
-                            return function(e, i) {
+                            return function (e, i) {
                                 do {
                                     t(e, i)
                                 } while ((i = X(i)) && !B.call(i, e));
                                 return e
                             }
-                        }() : function(t, e) {
+                        }() : function (t, e) {
                             for (var i in e) t[i] = e[i];
                             return t
                         }),
                         Q = t.MutationObserver || t.WebKitMutationObserver,
                         J = (t.HTMLElement || t.Element || t.Node).prototype,
                         tt = !B.call(J, U),
-                        et = tt ? function(t) {
+                        et = tt ? function (t) {
                             return 1 === t.nodeType
-                        } : function(t) {
+                        } : function (t) {
                             return B.call(J, t)
                         },
                         it = tt && [],
@@ -338,30 +339,30 @@
                             characterData: !0,
                             attributeOldValue: !0
                         },
-                        ut = Q || function(t) {
+                        ut = Q || function (t) {
                             pt = !1, U.removeEventListener(T, ut)
                         },
-                        ct = t.requestAnimationFrame || t.webkitRequestAnimationFrame || t.mozRequestAnimationFrame || t.msRequestAnimationFrame || function(t) {
+                        ct = t.requestAnimationFrame || t.webkitRequestAnimationFrame || t.mozRequestAnimationFrame || t.msRequestAnimationFrame || function (t) {
                             setTimeout(t, 10)
                         },
                         ht = !1,
                         pt = !0,
                         dt = !0,
                         ft = !0;
-                    Y || G ? (x = function(t, e) {
+                    Y || G ? (x = function (t, e) {
                         B.call(e, t) || d(t, e)
-                    }, P = d) : (x = function(t, e) {
+                    }, P = d) : (x = function (t, e) {
                         t[M] || (t[M] = i(!0), d(t, e))
-                    }, P = x), tt ? (pt = !1, function() {
+                    }, P = x), tt ? (pt = !1, function () {
                         var t = W(J, "addEventListener"),
                             e = t.value,
-                            i = function(t) {
+                            i = function (t) {
                                 var e = new CustomEvent(T, {
                                     bubbles: !0
                                 });
                                 e.attrName = t, e.prevValue = this.getAttribute(t), e.newValue = null, e[S] = e.attrChange = 2, st.call(this, t), this.dispatchEvent(e)
                             },
-                            n = function(t, e) {
+                            n = function (t, e) {
                                 var i = this.hasAttribute(t),
                                     n = i && this.getAttribute(t),
                                     o = new CustomEvent(T, {
@@ -369,7 +370,7 @@
                                     });
                                 rt.call(this, t, e), o.attrName = t, o.prevValue = i ? n : null, o.newValue = e, i ? o.MODIFICATION = o.attrChange = 1 : o[C] = o.attrChange = 0, this.dispatchEvent(o)
                             },
-                            o = function(t) {
+                            o = function (t) {
                                 var e, i = t.currentTarget,
                                     n = i[M],
                                     o = t.propertyName;
@@ -377,7 +378,7 @@
                                     bubbles: !0
                                 }), e.attrName = n.name, e.prevValue = n.value || null, e.newValue = n.value = i[o] || null, null == e.prevValue ? e[C] = e.attrChange = 0 : e.MODIFICATION = e.attrChange = 1, i.dispatchEvent(e))
                             };
-                        t.value = function(t, r, s) {
+                        t.value = function (t, r, s) {
                             t === T && this.attributeChangedCallback && this.setAttribute !== n && (this[M] = {
                                 className: {
                                     name: "class",
@@ -385,7 +386,7 @@
                                 }
                             }, this.setAttribute = n, this.removeAttribute = i, e.call(this, "propertychange", o)), e.call(this, t, r, s)
                         }, V(J, "addEventListener", t)
-                    }()) : Q || (U.addEventListener(T, ut), U.setAttribute(M, 1), U.removeAttribute(M), pt && (b = function(t) {
+                    }()) : Q || (U.addEventListener(T, ut), U.setAttribute(M, 1), U.removeAttribute(M), pt && (b = function (t) {
                         var e, i, n, o = this;
                         if (o === t.target) {
                             e = o[M], o[M] = i = _(o);
@@ -396,7 +397,7 @@
                             for (n in e)
                                 if (!(n in i)) return y(2, o, n, e[n], i[n], S)
                         }
-                    }, y = function(t, e, i, n, o, r) {
+                    }, y = function (t, e, i, n, o, r) {
                         var s = {
                             attrChange: t,
                             currentTarget: e,
@@ -405,15 +406,15 @@
                             newValue: o
                         };
                         s[r] = t, u(s)
-                    }, _ = function(t) {
+                    }, _ = function (t) {
                         for (var e, i, n = {}, o = t.attributes, r = 0, s = o.length; r < s; r++) e = o[r], "setAttribute" !== (i = e.name) && (n[i] = e.value);
                         return n
-                    })), e.registerElement = function(t, i) {
-                        if (n = t.toUpperCase(), ht || (ht = !0, Q ? (w = function(t, e) {
+                    })), e.registerElement = function (t, i) {
+                        if (n = t.toUpperCase(), ht || (ht = !0, Q ? (w = function (t, e) {
                                 function i(t, e) {
                                     for (var i = 0, n = t.length; i < n; e(t[i++]));
                                 }
-                                return new Q(function(n) {
+                                return new Q(function (n) {
                                     for (var o, r, s, a = 0, l = n.length; a < l; a++) o = n[a], "childList" === o.type ? (i(o.addedNodes, t), i(o.removedNodes, e)) : (r = o.target, ft && r.attributeChangedCallback && "style" !== o.attributeName && (s = r.getAttribute(o.attributeName)) !== o.oldValue && r.attributeChangedCallback(o.attributeName, o.oldValue, s))
                                 })
                             }(s(k), s(E)), w.observe(e, {
@@ -422,24 +423,24 @@
                             })) : (g = [], ct(function t() {
                                 for (; g.length;) g.shift().call(null, g.shift());
                                 ct(t)
-                            }), e.addEventListener("DOMNodeInserted", c(k)), e.addEventListener("DOMNodeRemoved", c(E))), e.addEventListener(O, h), e.addEventListener("readystatechange", h), e.importNode = function(t, i) {
+                            }), e.addEventListener("DOMNodeInserted", c(k)), e.addEventListener("DOMNodeRemoved", c(E))), e.addEventListener(O, h), e.addEventListener("readystatechange", h), e.importNode = function (t, i) {
                                 var n = ot.call(e, t, !!i);
                                 if (n.attributes) {
                                     var o = a(n); - 1 < o && P(n, N[o]), i && r(n.querySelectorAll(F))
                                 }
                                 return n
-                            }, e.createElement = function(t, i) {
+                            }, e.createElement = function (t, i) {
                                 var n = at.apply(e, arguments),
                                     o = "" + t,
                                     r = H.call(I, (i ? j : R) + (i || o).toUpperCase()),
                                     s = -1 < r;
                                 return i && (n.setAttribute("is", i = i.toLowerCase()), s && (s = l(o.toUpperCase(), i))), ft = !e.createElement.innerHTMLHelper, s && P(n, N[r]), n
-                            }, J.cloneNode = function(t) {
+                            }, J.cloneNode = function (t) {
                                 var e = nt.call(this, !!t),
                                     i = a(e);
                                 return -1 < i && P(e, N[i]), t && r(e.querySelectorAll(F)), e
                             }), -2 < H.call(I, j + n) + H.call(I, R + n) && m(t), !L.test(n) || -1 < H.call(D, n)) throw new Error("The type " + t + " is invalid");
-                        var n, u, p = function() {
+                        var n, u, p = function () {
                                 return f ? e.createElement(v, n) : e.createElement(v)
                             },
                             d = i || q,
@@ -448,7 +449,7 @@
                         return f && -1 < H.call(I, R + v) && m(v), u = I.push((f ? j : R) + n) - 1, F = F.concat(F.length ? "," : "", f ? v + '[is="' + t.toLowerCase() + '"]' : v), p.prototype = N[u] = z.call(d, "prototype") ? d.prototype : K(J), o(e.querySelectorAll(F), k), p
                     }
                 }
-            }(window, document, Object), Array.prototype.includes || (Array.prototype.includes = function(t) {
+            }(window, document, Object), Array.prototype.includes || (Array.prototype.includes = function (t) {
                 var e = Object(this),
                     i = parseInt(e.length) || 0;
                 if (0 === i) return !1;
@@ -460,19 +461,19 @@
                 }
                 return !1
             }),
-            function() {
+            function () {
                 for (var t = 0, e = 0, i = ["ms", "moz", "webkit", "o"]; e < i.length && !window.requestAnimationFrame; ++e) window.requestAnimationFrame = window[i[e] + "RequestAnimationFrame"], window.cancelAnimationFrame = window[i[e] + "CancelAnimationFrame"] || window[i[e] + "CancelRequestAnimationFrame"];
-                window.msRequestAnimationFrame && (window.requestAnimationFrame = function(t) {
-                    return window.msRequestAnimationFrame(function() {
+                window.msRequestAnimationFrame && (window.requestAnimationFrame = function (t) {
+                    return window.msRequestAnimationFrame(function () {
                         t(+new Date)
                     })
-                }), window.requestAnimationFrame || (window.requestAnimationFrame = function(e, i) {
+                }), window.requestAnimationFrame || (window.requestAnimationFrame = function (e, i) {
                     var n = Date.now(),
-                        o = window.setTimeout(function() {
+                        o = window.setTimeout(function () {
                             e(n + 1e3 / 60)
                         }, 1e3 / 60);
                     return t = n + 1e3 / 60, o
-                }), window.cancelAnimationFrame || (window.cancelAnimationFrame = function(t) {
+                }), window.cancelAnimationFrame || (window.cancelAnimationFrame = function (t) {
                     clearTimeout(t)
                 })
             }();
@@ -485,13 +486,13 @@
             O = " -webkit- -webkit- -moz- -o- -ms-".split(" "),
             A = T.length,
             R = !1,
-            j = function(t, e) {
+            j = function (t, e) {
                 if (R & t in k) return k[t];
                 var i, n = void 0 !== e && e,
                     o = A;
-                for (i = t.replace(/(^[a-z])/g, function(t) {
+                for (i = t.replace(/(^[a-z])/g, function (t) {
                         return t.toUpperCase()
-                    }).replace(/\-([a-z])/g, function(t, e) {
+                    }).replace(/\-([a-z])/g, function (t, e) {
                         return e.toUpperCase()
                     }); o--;) {
                     if (t in S) return t;
@@ -502,139 +503,139 @@
                 return !1
             };
         E = {
-            prefix: function() {
+            prefix: function () {
                 var t = j("transform");
                 return t ? t.replace("Transform", "") : ""
             },
-            cssprefix: function() {
+            cssprefix: function () {
                 var t = j("transform", !0);
                 return t ? t.replace("transform", "") : ""
             },
-            transform: function() {
+            transform: function () {
                 return j("transform")
             },
-            transformCss: function() {
+            transformCss: function () {
                 return j("transform", !0)
             },
-            transform3d: function() {
+            transform3d: function () {
                 return "WebKitCSSMatrix" in window && "m11" in new WebKitCSSMatrix || !!j("perspective")
             },
-            translateZ: function() {
+            translateZ: function () {
                 return this.transform3d() ? "translateZ(0)" : ""
             },
-            transformOrigin: function() {
+            transformOrigin: function () {
                 return j("transformOrigin")
             },
-            backfaceVisibility: function() {
+            backfaceVisibility: function () {
                 return j("backfaceVisibility")
             },
-            perspective: function() {
+            perspective: function () {
                 return j("perspective")
             },
-            perspectiveOrigin: function() {
+            perspectiveOrigin: function () {
                 return j("perspectiveOrigin")
             },
-            transition: function() {
+            transition: function () {
                 return j("transition")
             },
-            transitionProperty: function() {
+            transitionProperty: function () {
                 return j("transitionProperty")
             },
-            transitionDuration: function() {
+            transitionDuration: function () {
                 return j("transitionDuration")
             },
-            transitionTimingFunction: function() {
+            transitionTimingFunction: function () {
                 return j("transitionTimingFunction")
             },
-            transitionDelay: function() {
+            transitionDelay: function () {
                 return j("transitionDelay")
             },
-            transitionEvent: function() {
+            transitionEvent: function () {
                 return j("transitionEvent")
             },
-            transitionEventPrefix: function() {
+            transitionEventPrefix: function () {
                 return j("transitionEvent") ? j("transitionEvent").replace("TransitionEvent", "").toLowerCase() : ""
             },
-            transitionEnd: function() {
+            transitionEnd: function () {
                 return "" !== this.transitionEventPrefix() ? this.transitionEventPrefix() + "TransitionEnd" : "transitionend"
             },
-            touch: function() {
+            touch: function () {
                 return "ontouchstart" in window || navigator.msMaxTouchPoints > 0
             },
-            msPointer: function() {
+            msPointer: function () {
                 return !!window.navigator.msPointerEnabled
             },
-            pointer: function() {
+            pointer: function () {
                 return !!window.navigator.pointerEnabled
             },
-            ipad: function() {
+            ipad: function () {
                 return !!navigator.userAgent.match(/.*(iPad).*/)
             },
-            iphone: function() {
+            iphone: function () {
                 return !!navigator.userAgent.match(/.*(iPhone).*/)
             },
-            android: function() {
+            android: function () {
                 return !!navigator.userAgent.match(/.*(Android).*/)
             },
-            firefox: function() {
+            firefox: function () {
                 return !!navigator.userAgent.match(/.*((f|F)irefox).*/)
             },
-            ltIE9: function() {
+            ltIE9: function () {
                 return window.attachEvent && !window.addEventListener
             },
-            pointerdown: function() {
+            pointerdown: function () {
                 return this.touch() ? "touchstart" : this.pointer() ? "pointerdown" : this.msPointer() ? "MSPointerDown" : "mousedown"
             },
-            pointerup: function() {
+            pointerup: function () {
                 return this.touch() ? "touchend" : this.pointer() ? "pointerup" : this.msPointer() ? "MSPointerUp" : "mouseup"
             },
-            pointermove: function() {
+            pointermove: function () {
                 return this.touch() ? "touchmove" : this.pointer() ? "pointermove" : this.msPointer() ? "MSPointerMove" : "mousemove"
             },
-            pointerenter: function() {
+            pointerenter: function () {
                 return this.touch() ? "touchstart" : this.pointer() ? "pointerenter" : this.msPointer() ? "MSPointerEnter" : "mouseenter"
             },
-            pointerleave: function() {
+            pointerleave: function () {
                 return this.touch() ? "touchend" : this.pointer() ? "pointerleave" : this.msPointer() ? "MSPointerLeave" : "mouseleave"
             },
-            pointerover: function() {
+            pointerover: function () {
                 return this.touch() ? "touchstart" : this.pointer() ? "pointerover" : this.msPointer() ? "MSPointerOver" : "mouseover"
             },
-            pointerout: function() {
+            pointerout: function () {
                 return this.touch() ? "touchend" : this.pointer() ? "pointerout" : this.msPointer() ? "MSPointerOut" : "mouseout"
             },
-            multipointerdown: function() {
+            multipointerdown: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mousedown", "touchstart"] : ["touchstart"] : this.pointer() ? ["pointerdown"] : this.msPointer() ? ["MSPointerDown"] : ["mousedown"]
             },
-            multipointerup: function() {
+            multipointerup: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mouseup", "touchend"] : ["touchend"] : this.pointer() ? ["pointerup"] : this.msPointer() ? ["MSPointerUp"] : ["mouseup"]
             },
-            multipointermove: function() {
+            multipointermove: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mousemove", "touchmove"] : ["touchmove"] : this.pointer() ? ["pointermove"] : this.msPointer() ? ["MSPointerMove"] : ["mousemove"]
             },
-            multipointerenter: function() {
+            multipointerenter: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mouseenter", "touchstart"] : ["touchstart"] : this.pointer() ? ["pointerenter"] : this.msPointer() ? ["MSPointerEnter"] : ["mouseenter"]
             },
-            multipointerleave: function() {
+            multipointerleave: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mouseleave", "touchend"] : ["touchend"] : this.pointer() ? ["pointerleave"] : this.msPointer() ? ["MSPointerLeave"] : ["mouseleave"]
             },
-            multipointerover: function() {
+            multipointerover: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mouseover", "touchstart"] : ["touchstart"] : this.pointer() ? ["pointerover"] : this.msPointer() ? ["MSPointerOver"] : ["mouseover"]
             },
-            multipointerout: function() {
+            multipointerout: function () {
                 return this.touch() ? "onmousedown" in window && !this.ipad() && !this.iphone() ? ["mouseout", "touchend"] : ["touchend"] : this.pointer() ? ["pointerout"] : this.msPointer() ? ["MSPointerOut"] : ["mouseout"]
             },
-            smallscreen: function() {
+            smallscreen: function () {
                 return window.innerWidth < 700
             }
         };
         var L;
         for (var D in E) E.hasOwnProperty(D) && (L = D, k[L] = E[D]());
-        k.test = function(t) {
+        k.test = function (t) {
             return !!j(t)
-        }, k.getPrefixed = function(t) {
+        }, k.getPrefixed = function (t) {
             return j(t)
-        }, k.getCssPrefixed = function(t) {
+        }, k.getCssPrefixed = function (t) {
             return j(t, !0)
         };
         var I = ["moz", "webkit", "", "ms", "o"],
@@ -661,11 +662,11 @@
             },
             U = n,
             H = {
-                normalize: function(t) {
+                normalize: function (t) {
                     return t.replace(":", "")
                 },
                 listeners: [],
-                on: function(t, e, i) {
+                on: function (t, e, i) {
                     if (void 0 === e) F.warn("cannot find callback for " + t + " in context:" + i);
                     else {
                         var t = this.normalize(t);
@@ -676,40 +677,40 @@
                         })
                     }
                 },
-                off: function(t, e, i) {
+                off: function (t, e, i) {
                     for (var n, o = 0, r = this.listeners.length, t = this.normalize(t); o < r; o++) n = this.listeners[o], n.name !== t || n.closure !== e || i && n.target !== i || (this.listeners.splice(o, 1), o--, r--)
                 },
-                fire: function(t, e) {
+                fire: function (t, e) {
                     for (var i, n = 0, o = this.listeners.length, t = this.normalize(t); n < o; n++)(i = this.listeners[n]) && i.name === t && (void 0 !== e ? i.closure.apply(i.target, e) : i.closure.call(i.target))
                 },
                 handlers: {},
                 handlersQueue: {},
-                setHandler: function(t, e) {
+                setHandler: function (t, e) {
                     if (t = this.normalize(t), this.handlers[t] = e, void 0 !== this.handlersQueue[t]) {
                         for (var i = 0; i < this.handlersQueue[t].length; i++) this.request(t, this.handlersQueue[t][i]);
                         delete this.handlersQueue[t]
                     }
                 },
-                request: function(t, e) {
+                request: function (t, e) {
                     if (t = this.normalize(t), void 0 !== this.handlers[t]) return void 0 !== e ? this.handlers[t].apply(this, e) : this.handlers[t]();
                     this.handlersQueue[t] = this.handlersQueue[t] || [], this.handlersQueue[t].push(e)
                 },
-                subscribe: function(t, e, i) {
+                subscribe: function (t, e, i) {
                     _.warn("EventDispatcher.on is depreciated and will be removed. Please use EventDispatcher.on instead"), this.subscribe(t, e, i)
                 },
-                unsubscribe: function(t, e) {
+                unsubscribe: function (t, e) {
                     _.warn("EventDispatcher.off is depreciated and will be removed. Please use EventDispatcher.off instead"), this.off(t, e, target)
                 },
-                publish: function(t, e) {
+                publish: function (t, e) {
                     _.warn("EventDispatcher.trigger is depreciated and will be removed. Please use EventDispatcher.trigger) instead"), this.fire(t, e)
                 },
-                trigger: function(t, e) {
+                trigger: function (t, e) {
                     _.warn("'EventDispatcher.trigger' is depreciated and will be removed. Please use 'EventDispatcher.fire' instead"), this.fire(t, e)
                 }
             },
             q = {},
             z = {
-                on: function(t, e, i) {
+                on: function (t, e, i) {
                     this.callbackStack = this.callbackStack || {}, this.callbackStack[t] = this.callbackStack[t] || {
                         evtName: t,
                         evtCbArr: []
@@ -718,14 +719,14 @@
                         ctx: void 0 !== i ? i : this
                     })
                 },
-                off: function(t, e) {
+                off: function (t, e) {
                     if (void 0 !== this.callbackStack && void 0 !== this.callbackStack[t])
                         for (var i = 0, n = this.callbackStack[t].evtCbArr.length; i < n; i++) this.callbackStack[t].evtCbArr[i].fn == e && (this.callbackStack[t].evtCbArr.splice(i, 1), i--, n--)
                 },
-                trigger: function(t) {
+                trigger: function (t) {
                     F.warn("event.trigger is deprecated, please use .fire() from now"), this.fire(t)
                 },
-                fire: function(t) {
+                fire: function (t) {
                     if (this.callbackStack && void 0 !== this.callbackStack[t]) {
                         for (var e = arguments.length, i = Array(e > 1 ? e - 1 : 0), n = 1; n < e; n++) i[n - 1] = arguments[n];
                         for (var o = 0, r = this.callbackStack[t].evtCbArr.length; o < r; o++) void 0 !== this.callbackStack[t].evtCbArr[o] && this.callbackStack[t].evtCbArr[o].fn.apply(this.callbackStack[t].evtCbArr[o].ctx, i)
@@ -735,13 +736,13 @@
             B = Array.prototype,
             V = Object.create(B),
             W = (Object.getOwnPropertyNames(V), []);
-        requestAnimationFrame(g), H.on("force-resolve-binding", g), ["push", "pop", "shift", "unshift", "splice", "sort", "reverse"].forEach(function(t) {
+        requestAnimationFrame(g), H.on("force-resolve-binding", g), ["push", "pop", "shift", "unshift", "splice", "sort", "reverse"].forEach(function (t) {
             var e = B[t];
             Object.defineProperty(B, t, {
                 enumerable: !0,
                 writable: !0,
                 configurable: !0,
-                value: function() {
+                value: function () {
                     for (var i = arguments.length, n = new Array(i); i--;) n[i] = arguments[i];
                     this.__ob__ && this.__ob__.disable();
                     var o = e.apply(this, n);
@@ -749,36 +750,36 @@
                         this.__ob__.enable();
                         var r = void 0;
                         switch (t) {
-                            case "push":
-                                if (n) {
-                                    for (var s = this.length - n.length, a = 0; a < n.length; a++) this.__ob__.observe(this, s + a, n[a]), this.__ob__.defineReactive(this, s + a, n[a]);
-                                    r = {
-                                        index: s,
-                                        numAdded: n.length,
-                                        numRemoved: 0
-                                    }
-                                }
-                                break;
-                            case "unshift":
-                                n && (this.__ob__.observeArrayItems(n), r = {
-                                    index: 0,
+                        case "push":
+                            if (n) {
+                                for (var s = this.length - n.length, a = 0; a < n.length; a++) this.__ob__.observe(this, s + a, n[a]), this.__ob__.defineReactive(this, s + a, n[a]);
+                                r = {
+                                    index: s,
                                     numAdded: n.length,
                                     numRemoved: 0
-                                });
-                                break;
-                            case "splice":
-                                this.__ob__.observeArrayItems(n.slice(2)), r = {
-                                    index: Number(n[0]),
-                                    numAdded: n.slice(2).length,
-                                    numRemoved: Number(n[1])
-                                };
-                                break;
-                            case "pop":
-                                this.length > 0 && (r = {
-                                    index: this.length + n.length,
-                                    numAdded: 0,
-                                    numRemoved: 1
-                                })
+                                }
+                            }
+                            break;
+                        case "unshift":
+                            n && (this.__ob__.observeArrayItems(n), r = {
+                                index: 0,
+                                numAdded: n.length,
+                                numRemoved: 0
+                            });
+                            break;
+                        case "splice":
+                            this.__ob__.observeArrayItems(n.slice(2)), r = {
+                                index: Number(n[0]),
+                                numAdded: n.slice(2).length,
+                                numRemoved: Number(n[1])
+                            };
+                            break;
+                        case "pop":
+                            this.length > 0 && (r = {
+                                index: this.length + n.length,
+                                numAdded: 0,
+                                numRemoved: 1
+                            })
                         }
                         this.__ob__.notify("change:arrayMethod", r, !0)
                     }
@@ -786,7 +787,7 @@
                 }
             })
         });
-        var $ = function() {
+        var $ = function () {
             function t(e, i, n) {
                 P.classCallCheck(this, t), W.push(this), this.obj = n, this.enabled = !0, Object.defineProperty(this.obj, "__ob__", {
                     value: this,
@@ -795,15 +796,15 @@
                     configurable: !0
                 }), this.parents = [], this.keysOnParent = [], void 0 !== e && this.parents.push(e), void 0 !== i && this.keysOnParent.push(i), U(this.obj) ? this.observeArrayItems(this.obj) : this.observeObjectKeys(this.obj)
             }
-            return t.prototype.disable = function() {
+            return t.prototype.disable = function () {
                 this.enabled = !1
-            }, t.prototype.enable = function() {
+            }, t.prototype.enable = function () {
                 this.enabled = !0
-            }, t.prototype.observeArrayItems = function(t) {
+            }, t.prototype.observeArrayItems = function (t) {
                 for (var e = t.length; e--;) this.observe(this.obj, e, t[e]), this.defineReactive(this.obj, e, t[e])
-            }, t.prototype.observeObjectKeys = function(t) {
+            }, t.prototype.observeObjectKeys = function (t) {
                 for (var e = Object.keys(t), i = e.length; i--;) this.defineReactive(this.obj, e[i], t[e[i]])
-            }, t.prototype.defineReactive = function(t, e, i) {
+            }, t.prototype.defineReactive = function (t, e, i) {
                 var n = this,
                     o = Object.getOwnPropertyDescriptor(t, e);
                 if (!o || !1 !== o.configurable) {
@@ -812,15 +813,15 @@
                     Object.defineProperty(t, e, {
                         enumerable: !0,
                         configurable: !0,
-                        get: function() {
+                        get: function () {
                             return i
                         },
-                        set: function(o) {
+                        set: function (o) {
                             o !== i && (void 0 === o || null === o || "object" !== (void 0 === o ? "undefined" : r(o)) || void 0 === o.__ob__ || o.__ob__.parents.includes(t) || (o.__ob__.parents.push(t), o.__ob__.keysOnParent.push(e)), i = o, n.observe(t, e, o), n.enabled && n.notify(s, null, !0))
                         }
                     })
                 }
-            }, t.prototype.notify = function(t, e, i) {
+            }, t.prototype.notify = function (t, e, i) {
                 if (this._notifyBatchList = this._notifyBatchList || {}, void 0 !== this.callbackStack && void 0 !== this.callbackStack[t])
                     if (void 0 === e || "object" === (void 0 === e ? "undefined" : r(e)) && null !== e && (0 !== e.numAdded || 0 !== e.numRemoved)) this.fire(t, e);
                     else {
@@ -831,7 +832,7 @@
                     this._dirty = !0;
                     for (var n = 0, o = this.parents.length; n < o; n++) void 0 !== this.parents[n].__ob__ && "props" !== this.keysOnParent[n] && this.parents[n].__ob__.notify((i ? "change:" : "subChange:") + this.keysOnParent[n], e)
                 }
-            }, t.prototype._resolveParentBatch = function() {
+            }, t.prototype._resolveParentBatch = function () {
                 if (void 0 !== this._notifyBatchList) {
                     for (var t = Object.keys(this._notifyBatchList), e = t.length; e--;) {
                         if (0 !== this._notifyBatchList[t[e]] && void 0 !== this.callbackStack && void 0 !== this.callbackStack[t[e]])
@@ -840,14 +841,14 @@
                     }
                     this._dirty = !1
                 }
-            }, t.prototype.observe = function(e, i, n) {
+            }, t.prototype.observe = function (e, i, n) {
                 if (void 0 !== n && null !== n && "object" === (void 0 === n ? "undefined" : r(n)) && void 0 === n.__ob__) return "object" !== (void 0 === n ? "undefined" : r(n)) || Object.isFrozen(n) ? void 0 : new t(e, i, n)
             }, t
         }();
         for (var X in z) $.prototype[X] = z[X];
         var Y, G = 0,
             K = {
-                _isInTemplate: function() {
+                _isInTemplate: function () {
                     for (var t = !1, e = this; e.parentNode && e.parentNode !== document.body;) {
                         if ("TEMPLATE" === e.parentNode.tagName || e.parentNode._isLightDom) {
                             t = !0;
@@ -857,32 +858,33 @@
                     }
                     return t
                 },
-                createdCallback: function() {
+                createdCallback: function () {
                     this._isInTemplate() || (this._isCreated = !0, this._id = 0, this.visible = !0, this.context = {}, this.props = {}, this._savePropChange = {}, this._delegateEvents = {}, void 0 === this._defaultProps && (this._defaultProps = this.defaultProps), this._getPropsFromDefaultProps(), this._events = this.events, this._template = this.template, this._styles = void 0 !== this.styles ? this.styles.replace(/\:host/g, this.tagName.toLowerCase()) : null, this._observer = new $(this, "props", this.props), this._defaultPropsChangeCallbacks = {}, this.bindMethods(["_onDelegateEvent", "_resize", "_resizeEnd"]), void 0 !== this.update && (this._update = this._update.bind(this)), this.created && this.created())
                 },
-                attachedCallback: function() {
+                attachedCallback: function () {
                     var t = this;
                     if (!this._isInTemplate() && this._isCreated) {
                         this._deserializeAttributes(), this._retrieveLightDOM(), this._retrieveTemplate(), this._generateCompositedDOM();
-                        for (var e in this._defaultProps) ! function(e) {
-                            t._defaultProps[e] && t._defaultProps[e].change && (void 0 === t[t._defaultProps[e].change] ? F.warn("Cannot bind change on undefined method:" + t._defaultProps[e].change) : (t._defaultPropsChangeCallbacks[e] = function(i) {
+                        for (var e in this._defaultProps) ! function (e) {
+                            t._defaultProps[e] && t._defaultProps[e].change && (void 0 === t[t._defaultProps[e].change] ? F.warn("Cannot bind change on undefined method:" + t._defaultProps[e].change) : (t._defaultPropsChangeCallbacks[e] = function (i) {
                                 if (t._isAttached) return !1 === t.visible ? void(t._savePropChange[e] = i ? "object" == r(t._savePropChange[e]) ? t._savePropChange[e].push(i) : [i] : 1) : void t[t._defaultProps[e].change](i)
                             }, t.props.__ob__.on("change:" + e, t._defaultPropsChangeCallbacks[e])))
                         }(e);
                         this.attached && this.attached(), this.fire("attached", this.index), this._isAttached = !0, (this._template && this._shadowDOM && this._isShadowDOMReady || !this._template) && "TEMPLATE" !== this.tagName && this._ready()
                     }
                 },
-                _getPropsFromDefaultProps: function() {
+                _getPropsFromDefaultProps: function () {
                     for (var t in this._defaultProps) F.isObject(this._defaultProps[t]) && void 0 !== this._defaultProps[t].value ? this.props[t] = this._defaultProps[t].value : this.props[t] = this._defaultProps[t]
                 },
-                _safeParseJSON: function(t, e) {
+                _safeParseJSON: function (t, e) {
                     try {
                         return JSON.parse(t)
-                    } catch (i) {
+                    }
+                    catch (i) {
                         return void F.warn("invalid value '" + t + "' for the '" + e + "' property; it must be Object type")
                     }
                 },
-                setProp: function(t, e) {
+                setProp: function (t, e) {
                     if (void 0 !== this._defaultProps && void 0 !== this._defaultProps[t] && void 0 !== this.props && this.props[t] !== e && ("string" != typeof e || !/\{\{[^{}]*\}\}/g.test(e))) {
                         if ("object" !== r(this._defaultProps[t]) || null === this._defaultProps[t] || "object" === r(this._defaultProps[t]) && void 0 === this._defaultProps[t].type) return void(this.props[t] = e);
                         if (this._defaultProps[t] && this._defaultProps[t].type) {
@@ -892,50 +894,51 @@
                                 if (this.props[t] !== e && e.length && this.props[t].length === e.length && !e.__ob__)
                                     for (var i = 0; i < e.length; i++) this.props[t][i] = e[i];
                                 else this.props[t] = e;
-                                "string" !== this._defaultProps[t].type && "str" !== this._defaultProps[t].type || (this.props[t] = "string" == typeof e ? e : JSON.stringify(e)), "bool" !== this._defaultProps[t].type && "boolean" !== this._defaultProps[t].type || (this.props[t] = !("false" === e || "" === e || !e)), "float" !== this._defaultProps[t].type && "f" !== this._defaultProps[t].type || (this.props[t] = "number" != typeof e ? parseFloat(e, 10) : e), "int" !== this._defaultProps[t].type && "i" !== this._defaultProps[t].type || (this.props[t] = "number" != typeof e ? parseInt(e, 10) : e >> 0), "func" !== this._defaultProps[t].type && "fn" !== this._defaultProps[t].type && "function" !== this._defaultProps[t].type || "function" == typeof e && (!0, this.props[t] = e)
+                            "string" !== this._defaultProps[t].type && "str" !== this._defaultProps[t].type || (this.props[t] = "string" == typeof e ? e : JSON.stringify(e)), "bool" !== this._defaultProps[t].type && "boolean" !== this._defaultProps[t].type || (this.props[t] = !("false" === e || "" === e || !e)), "float" !== this._defaultProps[t].type && "f" !== this._defaultProps[t].type || (this.props[t] = "number" != typeof e ? parseFloat(e, 10) : e), "int" !== this._defaultProps[t].type && "i" !== this._defaultProps[t].type || (this.props[t] = "number" != typeof e ? parseInt(e, 10) : e >> 0), "func" !== this._defaultProps[t].type && "fn" !== this._defaultProps[t].type && "function" !== this._defaultProps[t].type || "function" == typeof e && (!0, this.props[t] = e)
                         }!0 === this._defaultProps[t].reflect && this.setAttribute(F.hyphenise(t), e)
                     }
                 },
-                _deserializeAttributes: function() {
+                _deserializeAttributes: function () {
                     for (var t = 0, e = this.attributes.length; t < e; t++) {
                         var i = F.camelCalise(this.attributes[t].nodeName.replace(/^data\-/, ""));
                         "" !== this.attributes[t].nodeValue && this.setProp(i, this.attributes[t].nodeValue)
                     }
                 },
-                _retrieveLightDOM: function() {
+                _retrieveLightDOM: function () {
                     var t = this;
                     if (this._template && "TEMPLATE" !== this.tagName) {
                         for (this._lightDOMUUID = G, this._lightDOM = document.createDocumentFragment(), this._lightDOM._isLightDom = !0; this.hasChildNodes();) this._lightDOM.appendChild(this.childNodes[0]);
-                        for (var e = 0, i = this._lightDOM.childNodes.length; e < i; e++) this._eachNodes(this._lightDOM.childNodes[e], function(e) {
+                        for (var e = 0, i = this._lightDOM.childNodes.length; e < i; e++) this._eachNodes(this._lightDOM.childNodes[e], function (e) {
                             e.attributes && e.setAttribute("light-dom-id", t._lightDOMUUID)
                         });
                         G++
                     }
                 },
-                _retrieveTemplate: function() {
+                _retrieveTemplate: function () {
                     if ("TEMPLATE" !== this.tagName && this._template) {
                         if (this._styles && (this._stylesTag = document.createElement("style"), this._stylesTag.innerHTML = this._styles, this.appendChild(this._stylesTag)), this._shadowDOM = document.createElement("template", "light-core-template"), this._shadowDOM.setAttribute("shadow-dom", ""), this._shadowDOM.setAttribute("parent-tag", this.tagName.toLowerCase()), this._shadowDOM._scope = this.props, this._shadowDOM._componentContext = this, this._shadowDOM.context = this.context, this._shadowDOM._$slot = this._lightDOM, this._shadowDOM._slotuuid = this._lightDOMUUID, "string" == typeof this._template) {
                             var t = document.createElement("div");
                             for (this._shadowDOM.content.appendChild(t), t.innerHTML = this._template; t.hasChildNodes();) this._shadowDOM.content.appendChild(t.childNodes[0]);
                             this._shadowDOM.content.removeChild(t)
-                        } else this._shadowDOM.content.appendChild(this._template);
+                        }
+                        else this._shadowDOM.content.appendChild(this._template);
                         this.bindMethods(["_onShadowDOMReady"]), this._shadowDOM.on("ready", this._onShadowDOMReady, this)
                     }
                 },
-                _eachNodes: function(t, e) {
+                _eachNodes: function (t, e) {
                     if (t && (void 0 === t._$parentUUID || void 0 === this._uuid || t._$parentUUID == this._uuid) && (e(t), t && "TEMPLATE" !== t.tagName))
                         for (var i = 0, n = t.childNodes.length; i < n; i++) t.childNodes[i] && 8 != t.childNodes[i].nodeType && this._eachNodes(t.childNodes[i], e)
                 },
-                _generateCompositedDOM: function() {
+                _generateCompositedDOM: function () {
                     "TEMPLATE" !== this.tagName && this._template && this._shadowDOM && this.appendChild(this._shadowDOM)
                 },
-                _ready: function() {
+                _ready: function () {
                     this._isReady = !0, this.fire("ready", this.index), this.ready && this.ready(), this.setAttribute("ready", ""), this._initEvents(), H.on("resize", this._resize, this), H.on("resizeend", this._resizeEnd, this), this._resize()
                 },
-                _onShadowDOMReady: function() {
+                _onShadowDOMReady: function () {
                     this._shadowDOM.off("ready", this._onShadowDOMReady, this), this._isShadowDOMReady = !0, this._isAttached && !this._isReady && this._ready()
                 },
-                _initEvents: function() {
+                _initEvents: function () {
                     for (var t in this._events)
                         if (this._events.hasOwnProperty(t)) {
                             var e = this._events[t],
@@ -943,7 +946,7 @@
                             this._registerEvent(i[0], i[1], e)
                         }
                 },
-                _registerEvent: function(t, e, i) {
+                _registerEvent: function (t, e, i) {
                     if ("pointerenter" === t ? t = "pointerover" : "pointerleave" === t && (t = "pointerout"), t = /pointer/.test(t) ? k["multi" + t] : [t], void 0 === this[i]) throw new Error("oups, there isnt any " + i + " method defined for this view");
                     this.bindMethods(i);
                     for (var n = 0; n < t.length; n++) void 0 === this._delegateEvents[t[n]] && (this._delegateEvents[t[n]] = [], this.addEventListener(t[n], this._onDelegateEvent)), this._delegateEvents[t[n]].push({
@@ -951,7 +954,7 @@
                         callback: this[i]
                     })
                 },
-                _onDelegateEvent: function(t) {
+                _onDelegateEvent: function (t) {
                     if (!(this._eventNeedsCheck && (/touch/.test(t.type) && /mouse/.test(this._eventNeedsCheckType) || /mouse/.test(t.type) && /touch/.test(this._eventNeedsCheckType)) && Date.now() - this._eventNeedsCheckTime < 300)) {
                         "touchstart" === t.type || "touchend" === t.type || "mousedown" === t.type || "mouseup" === t.type ? (this._eventNeedsCheckType = t.type, this._eventNeedsCheck = !0, this._eventNeedsCheckTime = Date.now()) : this._eventNeedsCheck = !1;
                         for (var e = this._delegateEvents[t.type], i = !1, n = 0; n < e.length; n++) {
@@ -963,40 +966,41 @@
                                 for (var o = t.relatedTarget, r = t.target; r && r !== this;) {
                                     if (("string" == typeof e[n].selector && r.classList && r.classList.contains(e[n].selector.replace(".", "")) || e[n].selector === r) && ("mouseover" !== t.type && "mouseout" !== t.type || !r.contains(o))) {
                                         var s = F.clone(t);
-                                        s.currentTarget = r, s.stopPropagation = function() {
+                                        s.currentTarget = r, s.stopPropagation = function () {
                                             i = !0
                                         }, e[n].callback(s)
                                     }
                                     r = r.parentNode
-                                } else e[n].callback(t)
+                                }
+                            else e[n].callback(t)
                         }
                     }
                 },
-                _removeEvents: function() {
+                _removeEvents: function () {
                     for (var t in this._delegateEvents) this.removeEventListener(t, this._onDelegateEvent);
                     void 0 !== this.update && H.off("requestAnimationFrame", this._update, this), H.off("resize", this._resize, this), H.off("resizeend", this._resizeEnd, this)
                 },
-                detachedCallback: function() {
+                detachedCallback: function () {
                     this._isReady = !1, this._isAttached = !1, this._shadowDOM && (this._isShadowDOMReady = !1, this._shadowDOM.off("ready", this._onShadowDOMReady, this)), clearTimeout(this._afterResizeTimer), this._observer = null, this._removeEvents();
                     for (var t in this._defaultPropsChangeCallbacks) this.props.__ob__.off("change:" + t, this._defaultPropsChangeCallbacks[t]);
                     void 0 !== this.detached && this.detached()
                 },
-                _resize: function() {
+                _resize: function () {
                     var t = this;
-                    this._isReady && (this.resize && this.resize(), this._afterResizeTimer = setTimeout(function() {
+                    this._isReady && (this.resize && this.resize(), this._afterResizeTimer = setTimeout(function () {
                         t._resized()
                     }, 0))
                 },
-                _resized: function() {
+                _resized: function () {
                     this._isReady && ("function" == typeof this.resized && this.resized(), this.fire("resized"), void 0 !== this.update && (H.off("requestAnimationFrame", this._update, this), H.on("requestAnimationFrame", this._update, this)))
                 },
-                _resizeEnd: function() {
+                _resizeEnd: function () {
                     "function" == typeof this.resizeEnd && this.resizeEnd()
                 },
-                _update: function() {
+                _update: function () {
                     this.visible && this.update()
                 },
-                _enable: function() {
+                _enable: function () {
                     if (this.visible = !0, this.classList) this.classList.remove("is-disabled");
                     else {
                         for (var t = " " + (this.getAttribute("class") || "") + " ", e = " is-disabled "; t.indexOf(e) >= 0;) t = t.replace(e, " ");
@@ -1009,7 +1013,7 @@
                         else this.props.__ob__.fire("change:" + i);
                     this.enable && this.enable()
                 },
-                _disable: function() {
+                _disable: function () {
                     if (this.visible = !1, this.classList) this.classList.add("is-disabled");
                     else {
                         var t = " " + (this.getAttribute("class") || "") + " ";
@@ -1017,15 +1021,15 @@
                     }
                     this.setAttribute("is-disabled", ""), this._shadowDOM && this._shadowDOM.disable(), this.disable && this.disable()
                 },
-                bindMethods: function(t) {
+                bindMethods: function (t) {
                     for (var t = "object" === (void 0 === t ? "undefined" : r(t)) && null !== t && t.length ? t : [t], e = 0, i = t.length; e < i; e++) {
                         var n = this[t[e]];
                         this[t[e]] = n.bind(this)
                     }
                 }
             };
-        "function" != typeof HTMLElement ? (Y = function() {}, Y.prototype = document.createElement("div")) : Y = HTMLElement;
-        var Z = function(t) {
+        "function" != typeof HTMLElement ? (Y = function () {}, Y.prototype = document.createElement("div")) : Y = HTMLElement;
+        var Z = function (t) {
             function e() {
                 return P.classCallCheck(this, e), P.possibleConstructorReturn(this, t.apply(this, arguments))
             }
@@ -1039,12 +1043,12 @@
             nt = /[\-{}\[\]+?.,\\\^$|#\s]/g,
             ot = {
                 states: {},
-                _routeToRegExp: function(t) {
-                    return t = t.replace(nt, "\\$&").replace(tt, "(?:$1)?").replace(et, function(t, e) {
+                _routeToRegExp: function (t) {
+                    return t = t.replace(nt, "\\$&").replace(tt, "(?:$1)?").replace(et, function (t, e) {
                         return e ? t : "([^/?]+)"
                     }).replace(it, "([^?]*?)"), new RegExp("^" + t + "(?:\\?([\\s\\S]*))?$")
                 },
-                add: function(t, e) {
+                add: function (t, e) {
                     var e = F.extend({
                         controller: null,
                         route: null
@@ -1056,20 +1060,20 @@
                     }
                     return e.route && (e.regExp = this._routeToRegExp(e.route), e.paramList = this._extractParamsFromRoute(e.route)), this.states[t] = e, this
                 },
-                initialize: function(t) {
+                initialize: function (t) {
                     this.lastState = null, this.base = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search, H.on("statechange", this.onStateChange, this), window.addEventListener("hashchange", this._onHashChange.bind(this))
                 },
-                onStateChange: function(t, e) {
+                onStateChange: function (t, e) {
                     var i = this;
-                    t in this.states && (this.states[t].route && (clearTimeout(this.bypassTimer), this.bypass = !0, window.location.hash = "#" + this.hrefFromParams(t, e), this.bypassTimer = setTimeout(function() {
+                    t in this.states && (this.states[t].route && (clearTimeout(this.bypassTimer), this.bypass = !0, window.location.hash = "#" + this.hrefFromParams(t, e), this.bypassTimer = setTimeout(function () {
                         i.bypass = !1
                     }, 50, this)), this.states[t].controller && this.states[t].controller(e))
                 },
-                _extractParamsFromRoute: function(t) {
+                _extractParamsFromRoute: function (t) {
                     for (var e = t.match(et), i = 0; i < e.length; i++) e[i] = e[i].replace(":", "");
                     return e
                 },
-                hrefFromParams: function(t, e) {
+                hrefFromParams: function (t, e) {
                     if (!t in this.states) return "no state found :: " + t;
                     if (!this.states[t].route) return "no route found";
                     var i = this.states[t].route,
@@ -1081,17 +1085,17 @@
                     }
                     return i
                 },
-                getHashState: function() {
+                getHashState: function () {
                     this._onHashChange()
                 },
-                _onHashChange: function() {
+                _onHashChange: function () {
                     if (!this.bypass) {
                         var t = this,
                             e = this.getState(),
                             i = [];
                         for (var n in this.states)
                             if (this.states[n].regExp && this.states[n].regExp.test(e)) {
-                                e.replace(this.states[n].regExp, function() {
+                                e.replace(this.states[n].regExp, function () {
                                     for (var t = 1; t < arguments.length - 3; t++) void 0 === arguments[t] ? i.push("") : i.push(arguments[t])
                                 });
                                 for (var o = {}, r = 0; r < i.length; r++) o[t.states[n].paramList[r]] = i[r];
@@ -1100,26 +1104,27 @@
                             }
                     }
                 },
-                getState: function() {
+                getState: function () {
                     return document.location.hash.replace(/^#\!?\/?/, "")
                 }
             },
             rt = ["drag", "dragend", "pointerenter", "pointerleave", "pointerdown", "pointerup", "pointermove", "click", "keyup", "keydown", "keypress", "blur", "change", "focus", "submit", "resize", "scroll"],
             st = "window,Math,Date,this,true,false,null,undefined,Infinity,NaN,isNaN,isFinite,decodeURI,decodeURIComponent,encodeURI,encodeURIComponent,parseInt,parseFloat,typeof,void",
             at = new RegExp("^(" + st.replace(/,/g, "\\b|") + "\\b)"),
-            lt = function() {
+            lt = function () {
                 function t(e, i, n, o) {
                     if (P.classCallCheck(this, t), this.enabled = !0, this.node = e, this.attrName = i, this.content = n, this.template = o, this.stringParts = [], this.numStringParts = 0, this.lightDom = [], this.isTextNode = !e.attributes, this.removableAttr = !1, this.onPathChange = this.onPathChange.bind(this), this.isTextNode) {
                         if (/\{\{\s*\@/.test(this.content)) {
                             var r = document.createElement("span");
                             this.content = this.content.replace(/\{\{\s*\@/, "{{"), this.node.parentNode ? (this.node.parentNode.replaceChild(r, this.node), this.node = r) : (this.oldNode = this.node, this._onDOMNodeInserted = this._onDOMNodeInserted.bind(this), this.oldNode.addEventListener("DOMNodeInserted", this._onDOMNodeInserted, !1)), this.node = r
                         }
-                    } else this.node.setAttribute("has-binding", ""), /^\:/.test(this.attrName) && (this.removableAttr = !0, this.attrName = this.attrName.replace(/^\:/, ""), this.node.removeAttribute(":" + this.attrName)), this.formatedPropName = F.camelCalise(this.attrName.replace("data-", ""));
+                    }
+                    else this.node.setAttribute("has-binding", ""), /^\:/.test(this.attrName) && (this.removableAttr = !0, this.attrName = this.attrName.replace(/^\:/, ""), this.node.removeAttribute(":" + this.attrName)), this.formatedPropName = F.camelCalise(this.attrName.replace("data-", ""));
                     this.parseExpression(), this.attachListeners(), this.onPathChange()
                 }
-                return t.prototype._onDOMNodeInserted = function() {
+                return t.prototype._onDOMNodeInserted = function () {
                     this.oldNode.removeEventListener("DOMNodeInserted", this._onDOMNodeInserted, !1), this.oldNode.parentNode && this.oldNode.parentNode.replaceChild(this.node, this.oldNode)
-                }, t.prototype.attachListeners = function() {
+                }, t.prototype.attachListeners = function () {
                     for (var t = 0, e = this.numStringParts; t < e; t++)
                         if ("expression" === this.stringParts[t].type)
                             for (var i = 0, n = this.stringParts[t].value.pathRoots.length; i < n; i++) {
@@ -1130,16 +1135,16 @@
                                     for (var s in this.template.props.repeaterIndex) this.stringParts[t].value.pathRoots[i] === s && null !== this.template.props.repeaterIndex[s].repeaterParentProps.repeat && (o = !0, this.template.props.__ob__.on("subChange:itemIndex", this.onPathChange), this.template.props.__ob__.on("change:itemIndex", this.onPathChange));
                                 o || (this.template._scope.__ob__.on("subChange:" + this.stringParts[t].value.pathRoots[i], this.onPathChange), this.template._scope.__ob__.on("change:" + this.stringParts[t].value.pathRoots[i], this.onPathChange))
                             }
-                }, t.prototype.parseExpression = function() {
+                }, t.prototype.parseExpression = function () {
                     var t = this,
                         e = 0;
-                    this.content.replace(/\{\{[^{}]*\}\}/g, function(i, n, o) {
+                    this.content.replace(/\{\{[^{}]*\}\}/g, function (i, n, o) {
                         "" != t.content.slice(e, n) && t.stringParts.push({
                             type: "string",
                             value: t.content.slice(e, n)
                         }), e = n + i.length;
                         var r = i.replace(/(\{\{|\}\})/g, "");
-                        /\sin\s/g.test(r) && (r = r.replace(/(?:(\S+)\s?\,)?\s?(\S*)\s+in\s+/g, function(e, i, n) {
+                        /\sin\s/g.test(r) && (r = r.replace(/(?:(\S+)\s?\,)?\s?(\S*)\s+in\s+/g, function (e, i, n) {
                             return t.node._repeaterKey = n, void 0 !== i && (t.node._repeaterIndex = i), ""
                         })), t.stringParts.push({
                             type: "expression",
@@ -1150,10 +1155,10 @@
                         type: "string",
                         value: this.content.slice(e)
                     }), this.numStringParts = this.stringParts.length
-                }, t.prototype._makeGetterFn = function(t) {
+                }, t.prototype._makeGetterFn = function (t) {
                     var e = this,
                         i = [],
-                        n = t.replace(/((?:\.[A-Za-z_$][a-zA-Z0-9\_\$]*)|(?:['][^']*[']|["][^"]*["]))|([A-Za-z_$][a-zA-Z0-9\_\$]*)/g, function(t, n, o, r) {
+                        n = t.replace(/((?:\.[A-Za-z_$][a-zA-Z0-9\_\$]*)|(?:['][^']*[']|["][^"]*["]))|([A-Za-z_$][a-zA-Z0-9\_\$]*)/g, function (t, n, o, r) {
                             return at.test(o) ? t : (i.push(o), "$index" === o ? "this.props.itemIndex" : "$value" === o ? "(this._item && this._item[this.props.itemIndex] ? this._item[this.props.itemIndex] : {})" : "$length" === o ? "this.props.itemLength" : null !== e.template.props.repeaterKey && o in e.template.props.repeaterKey ? '(this.props.repeaterKey["' + o + '"].repeaterParentProps.repeat[this.props.repeaterKey["' + o + '"].repeaterProps.itemIndex] !== void 0 ? this.props.repeaterKey["' + o + '"].repeaterParentProps.repeat[this.props.repeaterKey["' + o + '"].repeaterProps.itemIndex] : {})' : null !== e.template.props.repeaterIndex && o in e.template.props.repeaterIndex ? '(this.props.repeaterIndex["' + o + '"].repeaterProps.itemIndex !== void 0 ? this.props.repeaterIndex["' + o + '"].repeaterProps.itemIndex : 0)' : void 0 !== o ? "this._scope." + o : t)
                         });
                     try {
@@ -1161,17 +1166,18 @@
                             fn: new Function([], "return " + n + ";"),
                             pathRoots: i
                         }
-                    } catch (t) {
-                        return F.warn("Invalid expression. Generated function body: " + repeaterKey + "\n" + n), {
-                            fn: function() {},
+                    }
+                    catch (t) {
+                        return F.warn("Invalid expression. Generated function body: " + repeaterKey + "" + n), {
+                            fn: function () {},
                             pathRoots: i
                         }
                     }
-                }, t.prototype.disable = function() {
+                }, t.prototype.disable = function () {
                     this.enabled = !1
-                }, t.prototype.enable = function() {
+                }, t.prototype.enable = function () {
                     this.enabled = !0, this._needsUpdate && (this._needsUpdate = !1, this.onPathChange())
-                }, t.prototype.destroy = function() {
+                }, t.prototype.destroy = function () {
                     this.oldNode && this.oldNode.removeEventListener("DOMNodeInserted", this._onDOMNodeInserted);
                     for (var t = 0, e = this.numStringParts; t < e; t++)
                         if ("expression" === this.stringParts[t].type)
@@ -1183,13 +1189,14 @@
                                     for (var s in this.template.props.repeaterIndex) this.stringParts[t].value.pathRoots[i] === s && null !== this.template.props.repeaterIndex[s].repeaterParentProps.repeat && (o = !0, this.template.props.__ob__.off("subChange:itemIndex", this.onPathChange), this.template.props.__ob__.off("change:itemIndex", this.onPathChange));
                                 o || (this.template._scope.__ob__.off("subChange:" + this.stringParts[t].value.pathRoots[i], this.onPathChange), this.template._scope.__ob__.off("change:" + this.stringParts[t].value.pathRoots[i], this.onPathChange))
                             }
-                }, t.prototype.safeExecuteGetterFn = function(t, e, i, n, o) {
+                }, t.prototype.safeExecuteGetterFn = function (t, e, i, n, o) {
                     try {
                         return this.stringParts[t].value.fn.call(this.template)
-                    } catch (t) {
+                    }
+                    catch (t) {
                         return
                     }
-                }, t.prototype.onPathChange = function() {
+                }, t.prototype.onPathChange = function () {
                     if (!1 === this.enabled || void 0 !== this.node.visible && !1 === this.node.visible) return void(this._needsUpdate = !0);
                     if ("is" === this.attrName) {
                         var t = !1;
@@ -1204,7 +1211,8 @@
                             for (var a = 0; a < this.lightDom.length; a++) e.appendChild(this.lightDom[a]);
                             this.node.parentNode && this.node.parentNode.removeChild(this.node), this.node = e
                         }
-                    } else if (this.isTextNode || void 0 === this.node._defaultProps || void 0 === this.node._defaultProps[this.formatedPropName]) {
+                    }
+                    else if (this.isTextNode || void 0 === this.node._defaultProps || void 0 === this.node._defaultProps[this.formatedPropName]) {
                         if (this.oldValue = this.newValue, 1 === this.numStringParts && "expression" === this.stringParts[0].type) this.newValue = this.safeExecuteGetterFn(0), null !== this.newValue && "object" === r(this.newValue) && (this.newValue = JSON.stringify(this.newValue));
                         else {
                             this.newValue = "";
@@ -1216,9 +1224,11 @@
                                 if (void 0 !== this.oldValue)
                                     for (var u = this.oldValue.split(" "), c = 0, h = u.length; c < h; c++) u[c].length && this.node.classList.remove(u[c]);
                                 for (var p = this.newValue.split(" "), d = 0, f = p.length; d < f; d++) p[d].length && this.node.classList.add(p[d])
-                            } else this.oldValue !== this.newValue && this.node.setAttribute(this.attrName, this.newValue);
+                            }
+                        else this.oldValue !== this.newValue && this.node.setAttribute(this.attrName, this.newValue);
                         else this.node.removeAttribute(this.attrName), this.node.removeAttribute(":" + this.attrName)
-                    } else {
+                    }
+                    else {
                         if (1 === this.numStringParts && "expression" === this.stringParts[0].type) this.newValue = this.safeExecuteGetterFn(0);
                         else {
                             this.newValue = "";
@@ -1226,7 +1236,8 @@
                                 if ("expression" === this.stringParts[l].type) {
                                     var m = this.safeExecuteGetterFn(l);
                                     this.newValue += "object" === (void 0 === m ? "undefined" : r(m)) ? JSON.stringify(m) : m
-                                } else this.newValue += this.stringParts[l].value
+                                }
+                            else this.newValue += this.stringParts[l].value
                         }
                         void 0 !== this.newValue && this.node.setProp(this.formatedPropName, this.newValue)
                     }
@@ -1235,24 +1246,24 @@
             ut = 0;
         if (void 0 === window.HTMLTemplateElement) {
             document.implementation.createHTMLDocument("template");
-            window.HTMLTemplateElement = function() {}, window.HTMLTemplateElement.prototype = Object.create(HTMLElement.prototype)
+            window.HTMLTemplateElement = function () {}, window.HTMLTemplateElement.prototype = Object.create(HTMLElement.prototype)
         }
         var ct, ht = /[&\u00A0<>]/g,
             pt = {
-                onItemIndexChange: function() {
+                onItemIndexChange: function () {
                     this._scope.__ob__.fire("change:$index")
                 },
-                onItemLengthChange: function() {
+                onItemLengthChange: function () {
                     this._scope.__ob__.fire("change:$length")
                 },
-                onRepeaterKeyChange: function() {
+                onRepeaterKeyChange: function () {
                     this._scope.__ob__.fire("change:$value");
                     for (var t in this.props.repeaterKey) this.props.repeaterKey[t].repeaterParentProps.repeat.__ob__.fire("subChange:" + this.props.repeaterKey[t].repeaterProps.itemIndex), this.props.repeaterKey[t].repeaterParentProps.repeat.__ob__.fire("change:" + this.props.repeaterKey[t].repeaterProps.itemIndex)
                 },
-                onRepeaterIndexChange: function() {
+                onRepeaterIndexChange: function () {
                     this._scope.__ob__.fire("change:$index")
                 },
-                detached: function() {
+                detached: function () {
                     if (this._nodes && this._nodes.length > 0)
                         for (; this._nodes[0];) null != this._nodes[0].parentNode && this._nodes[0].parentNode.removeChild(this._nodes[0]), this._nodes.splice(0, 1);
                     if (this._templateNodes && this._templateNodes.length > 0)
@@ -1261,15 +1272,15 @@
                         for (var t = 0; t < this._watchers.length; t++) this._watchers[t].destroy();
                     this._watchers = []
                 },
-                _retrieveLightDom: function() {},
-                _retrieveTemplate: function() {},
-                created: function() {
+                _retrieveLightDom: function () {},
+                _retrieveTemplate: function () {},
+                created: function () {
                     this._uuid = ut++, void 0 === this.content && (this.content = document.createDocumentFragment(), this.isPolyfilled = !0), this._rootNode = this, this._isCreated = !0, this._nodes = [], this._originPreviousSibling = null, this._originNextSibling = null, this._item = null, this._repeaterKey = null, this._repeaterIndex = null, this._scope = null, this._watchers = [], this._templateNodes = [], this._templateNodeReady = 0, Object.defineProperty(this, "innerHTML", {
-                        get: function() {
+                        get: function () {
                             for (var t = "", e = this.content.firstChild; e; e = e.nextSibling) t += e.outerHTML || y(e.data);
                             return t
                         },
-                        set: function(t) {
+                        set: function (t) {
                             for (; this.content.firstChild;) this.content.removeChild(this.content.firstChild);
                             var e = document.createElement("div");
                             for (this.content.appendChild(e), e.innerHTML = t; e.hasChildNodes();) this.content.appendChild(e.childNodes[0]);
@@ -1278,25 +1289,25 @@
                         configurable: !0
                     })
                 },
-                appendChild: function(t) {
+                appendChild: function (t) {
                     this.content.appendChild(t)
                 },
-                insertBefore: function(t, e) {
+                insertBefore: function (t, e) {
                     this.content.appendChild(t, e)
                 },
-                removeChild: function(t) {
+                removeChild: function (t) {
                     this.content.removeChild(t)
                 },
-                ready: function() {},
-                attached: function() {
+                ready: function () {},
+                attached: function () {
                     if (this._originNextSibling || (this._originNextSibling = this.nextSibling), this._originPreviousSibling || (this._originPreviousSibling = this.previousSibling), this._isAttached = !0, this.isPolyfilled)
                         for (; this.hasChildNodes();) this.content.appendChild(this.childNodes[0]);
                     this.hasRepeatAttr = this.hasAttribute("repeat") || this.hasAttribute("data-repeat"), null !== this.props.if && (this.hasRepeatAttr ? this.onRepeatChange() : this.onIfChange())
                 },
-                _passContext: function(t) {
+                _passContext: function (t) {
                     t.tagName && void 0 !== t.context && (t.context = this.context)
                 },
-                _scopeNode: function(t) {
+                _scopeNode: function (t) {
                     if (t.tagName && "TEMPLATE" === t.tagName && null === t.getAttribute("shadow-dom") && (t._scope = this._scope, t._componentContext = this._componentContext, t._$slot = this._$slot, t._slotuuid = this._slotuuid, null !== this._item && t.props)) {
                         t._item = this._item, t.props.itemIndex = this.props.itemIndex, t.props.itemLength = this.props.itemLength, t.props.repeaterKey = {}, t.props.repeaterIndex = {};
                         for (var e in this.props.repeaterKey) t.props.repeaterKey[e] = this.props.repeaterKey[e];
@@ -1304,7 +1315,7 @@
                     }
                     t._$parentUUID = this._uuid
                 },
-                _addNodesToDom: function() {
+                _addNodesToDom: function () {
                     this._isAddingNodes = !0;
                     for (var t = this._rootNode.nextSibling, e = 0; e < this.content.childNodes.length; e++)
                         if (8 != this.content.childNodes[e].nodeType) {
@@ -1313,20 +1324,20 @@
                         }
                     this._ready(), this._isTemplateReady = !0
                 },
-                _preCheckNode: function(t, e, i) {
+                _preCheckNode: function (t, e, i) {
                     var n = this;
-                    this._eachNodes(t, function(t) {
+                    this._eachNodes(t, function (t) {
                         8 != t.nodeType && (n._scopeNode(t), n._passContext(t), n._checkBindingOnNode(t))
                     })
                 },
-                _postCheckNode: function(t, e, i) {},
-                _checkContent: function(t) {
+                _postCheckNode: function (t, e, i) {},
+                _checkContent: function (t) {
                     var e = this;
-                    this._eachNodes(t, function(t) {
+                    this._eachNodes(t, function (t) {
                         8 != t.nodeType && (!t.tagName || "content" !== t.tagName.toLowerCase() && "slot" !== t.tagName.toLowerCase() || t.parentNode.replaceChild(e._$slot, t))
                     })
                 },
-                onRepeatChange: function(t) {
+                onRepeatChange: function (t) {
                     if (this.props.if && null !== this.props.repeat) {
                         if (void 0 !== t && null !== t || (t = {}, t.index = 0, t.numRemoved = this._templateNodes.length, t.numAdded = this.props.repeat.length), t.numRemoved > 0) {
                             for (var e = t.index; e < t.index + t.numRemoved; e++) this._templateNodes[e] && (this._templateNodes[e].setAttribute("is-dead-node", ""), void 0 !== this._templateNodes[e].parentNode && null !== this._templateNodes[e].parentNode && this._templateNodes[e].parentNode.removeChild(this._templateNodes[e]), this._templateNodes[e] = null);
@@ -1353,7 +1364,8 @@
                             if (this._templateNodes.length > 0) {
                                 var a = this._templateNodes[this._templateNodes.length - 1];
                                 s = a._nodes.length > 0 ? a._nodes[a._nodes.length - 1].nextSibling : a.nextSibling
-                            } else s = this.nextSibling;
+                            }
+                            else s = this.nextSibling;
                             for (var l = t.index; l < t.index + t.numAdded; l++) {
                                 var u = document.createElement("template", "light-core-template");
                                 u.setAttribute("_repeater-index", l);
@@ -1375,13 +1387,14 @@
                                 this._templateNodes.push(u), void 0 !== this.parentNode && null !== this.parentNode && (s ? s.parentNode.insertBefore(u, s) : this.parentNode.appendChild(u))
                             }
                         }
-                    } else this.onIfChange()
+                    }
+                    else this.onIfChange()
                 },
-                enable: function() {
+                enable: function () {
                     if (this.props.repeat)
                         for (var t = this._templateNodes.length; t--;) this._templateNodes[t]._enable();
                     else {
-                        for (var e = this._nodes.length; e--;) this._eachNodes(this._nodes[e], function(t) {
+                        for (var e = this._nodes.length; e--;) this._eachNodes(this._nodes[e], function (t) {
                             if (t._enable ? t._enable() : t.visible = !0, 1 == t.nodeType) {
                                 if (t.classList) t.classList.remove("is-disabled");
                                 else {
@@ -1394,13 +1407,13 @@
                         for (var i = 0; i < this._watchers.length; i++) this._watchers[i].enable()
                     }
                 },
-                disable: function() {
+                disable: function () {
                     for (var t = 0; t < this._watchers.length; t++) this._watchers[t].disable();
                     if (this.props)
                         if (this.props.repeat)
                             for (var e = this._templateNodes.length; e--;) this._templateNodes[e]._disable();
                         else
-                            for (var i = this._nodes.length; i--;) this._eachNodes(this._nodes[i], function(t) {
+                            for (var i = this._nodes.length; i--;) this._eachNodes(this._nodes[i], function (t) {
                                 if (t._disable ? t._disable() : t.visible = !1, 1 == t.nodeType) {
                                     if (t.classList) t.classList.add("is-disabled");
                                     else {
@@ -1411,17 +1424,18 @@
                                 }
                             })
                 },
-                onIfChange: function() {
+                onIfChange: function () {
                     if (this.props.if) this.hasRepeatAttr ? this.props.repeat && this.onRepeatChange() : 0 === this._nodes.length ? this._addNodesToDom() : this.enable();
                     else if (!0 === this.props.removeNodes) {
                         for (var t = 0; t < this._watchers.length; t++) this._watchers[t].destroy();
                         this._watchers = [];
                         for (var e = 0; e < this._nodes.length; e++) void 0 !== this._nodes[e] && this._nodes[e].parentNode && this._nodes[e].parentNode.removeChild(this._nodes[e]);
                         this._nodes = []
-                    } else this.disable()
+                    }
+                    else this.disable()
                 },
-                onBindChange: function() {},
-                _checkBindingOnNode: function(t) {
+                onBindChange: function () {},
+                _checkBindingOnNode: function (t) {
                     if (t.attributes) {
                         var e = [];
                         if (void 0 !== t.getAttribute("is") && /\{\{[^{}]*\}\}/g.test(t.getAttribute("is"))) e.push({
@@ -1439,15 +1453,17 @@
                                 l = F.camelCalise(s.replace("data-", ""));
                             if (/^on/.test(l)) {
                                 var u = l.replace("on", "").toLowerCase(); - 1 !== rt.indexOf(u) ? this._componentContext && void 0 !== this._componentContext[a] && this._componentContext._registerEvent(u, t, a) : this._checkCallbackOnAttribute(t, s, a)
-                            } else this._addBinding(t, s, a)
+                            }
+                            else this._addBinding(t, s, a)
                         }
-                    } else void 0 !== t.parentNode && t.textContent && this._addBinding(t)
+                    }
+                    else void 0 !== t.parentNode && t.textContent && this._addBinding(t)
                 },
-                _checkCallbackOnAttribute: function(t, e, i) {
+                _checkCallbackOnAttribute: function (t, e, i) {
                     var n = F.camelCalise(e.replace("data-", "")).replace(/\s/g, "");
                     this._componentContext && void 0 !== this._componentContext[i] && t.props && void 0 !== t.props[n] && (t.props[n] = this._componentContext[i].bind(this._componentContext))
                 },
-                _addBinding: function(t, e, i) {
+                _addBinding: function (t, e, i) {
                     var n = t.attributes ? i : void 0 !== t.parentNode ? t.textContent : "";
                     /\{\{[^{}]*\}\}/g.test(n) && this._watchers.push(new lt(t, e, n, this))
                 },
@@ -1493,8 +1509,8 @@
                     }
                 }
             };
-        "function" != typeof HTMLElement ? (ct = function() {}, ct.prototype = document.createElement("template")) : ct = HTMLTemplateElement;
-        var dt = function(t) {
+        "function" != typeof HTMLElement ? (ct = function () {}, ct.prototype = document.createElement("template")) : ct = HTMLTemplateElement;
+        var dt = function (t) {
             function e() {
                 return P.classCallCheck(this, e), P.possibleConstructorReturn(this, t.apply(this, arguments))
             }
@@ -1505,8 +1521,8 @@
         for (var vt in z) dt.prototype[vt] = z[vt];
         v("light-core-template", dt, "template");
         var gt;
-        "function" != typeof HTMLElement ? (gt = function() {}, gt.prototype = document.createElement("div")) : gt = HTMLTemplateElement;
-        var bt = function(t) {
+        "function" != typeof HTMLElement ? (gt = function () {}, gt.prototype = document.createElement("div")) : gt = HTMLTemplateElement;
+        var bt = function (t) {
             function e() {
                 return P.classCallCheck(this, e), P.possibleConstructorReturn(this, t.apply(this, arguments))
             }
@@ -1530,7 +1546,7 @@
         };
         return window.addEventListener("resize", w, !1), w(), requestAnimationFrame(x), window.console[void 0 === window.console.debug ? "log" : "debug"]("Light.js v107"), Pt
     })
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -1552,147 +1568,147 @@
     var r = i(20);
     Object.defineProperty(e, "ArrayBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(r).default
         }
     });
     var s = i(3);
     Object.defineProperty(e, "GeometryBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(s).default
         }
     });
     var a = i(24);
     Object.defineProperty(e, "Program", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(a).default
         }
     });
     var l = i(9);
     Object.defineProperty(e, "Material", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(l).default
         }
     });
     var u = i(12);
     Object.defineProperty(e, "Texture", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(u).default
         }
     });
     var c = i(67);
     Object.defineProperty(e, "CubeTexture", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(c).default
         }
     });
     var h = i(8);
     Object.defineProperty(e, "Container", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(h).default
         }
     });
     var p = i(10);
     Object.defineProperty(e, "Mesh", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(p).default
         }
     });
     var d = i(71);
     Object.defineProperty(e, "Renderer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(d).default
         }
     });
     var f = i(66);
     Object.defineProperty(e, "Camera", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(f).default
         }
     });
     var m = i(11);
     Object.defineProperty(e, "Object3d", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(m).default
         }
     });
     var v = i(21);
     Object.defineProperty(e, "FrameBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(v).default
         }
     });
     var g = i(74);
     Object.defineProperty(e, "Sprite", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(g).default
         }
     });
     var b = i(70);
     Object.defineProperty(e, "ParticleSystem", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(b).default
         }
     });
     var y = i(69);
     Object.defineProperty(e, "Light", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(y).default
         }
     });
     var _ = i(68);
     Object.defineProperty(e, "DepthTexture", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(_).default
         }
     });
     var w = i(72);
     Object.defineProperty(e, "Scene", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(w).default
         }
     });
     var x = i(75);
     Object.defineProperty(e, "TriangleGeometryBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(x).default
         }
     });
     var P = i(23);
     Object.defineProperty(e, "PlaneGeometryBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(P).default
         }
     });
     var M = i(65);
     Object.defineProperty(e, "BoxGeometryBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(M).default
         }
     });
     var k = i(73);
     Object.defineProperty(e, "SphereGeometryBuffer", {
         enumerable: !0,
-        get: function() {
+        get: function () {
             return o(k).default
         }
     });
@@ -1713,7 +1729,7 @@
         H = i(25),
         q = n(H);
     e.mat2 = C, e.mat2d = T, e.mat3 = A, e.mat4 = j, e.quat = D, e.vec2 = N, e.vec3 = U, e.vec4 = q
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -1733,7 +1749,7 @@
     var s = e.EPSILON = 1e-6,
         a = e.ARRAY_TYPE = "undefined" != typeof Float32Array ? Float32Array : Array,
         l = (e.RANDOM = Math.random, Math.PI / 180)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -1742,36 +1758,36 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var o = function() {
+    var o = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         r = i(20),
-        s = function(t) {
+        s = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(r),
-        a = function() {
+        a = function () {
             function t(e, i) {
                 n(this, t), e && (this.gl = e, this.attributes = {}, this.length = i || 0, this.vertices = [], this.addAttribute("position", new Float32Array(this.vertices), 3))
             }
             return o(t, [{
                 key: "addAttribute",
-                value: function(t, e, i, n) {
+                value: function (t, e, i, n) {
                     this.attributes[t] = new s.default(this.gl, e, i, "index" === t, n)
                 }
             }]), t
         }();
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -2011,45 +2027,45 @@
         value: !0
     }), e.forEach = e.sqrLen = e.len = e.sqrDist = e.dist = e.div = e.mul = e.sub = void 0, e.create = n, e.clone = o, e.length = r, e.fromValues = s, e.copy = a, e.set = l, e.add = u, e.subtract = c, e.multiply = h, e.divide = p, e.ceil = d, e.floor = f, e.min = m, e.max = v, e.round = g, e.scale = b, e.scaleAndAdd = y, e.distance = _, e.squaredDistance = w, e.squaredLength = x, e.negate = P, e.inverse = M, e.normalize = k, e.dot = E, e.cross = C, e.lerp = S, e.hermite = T, e.bezier = O, e.random = A, e.transformMat4 = R, e.transformMat3 = j, e.transformQuat = L, e.rotateX = D, e.rotateY = I, e.rotateZ = N, e.angle = F, e.str = U, e.exactEquals = H, e.equals = q;
     var z = i(2),
-        B = function(t) {
+        B = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
                 for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e.default = t, e
         }(z);
-    e.sub = c, e.mul = h, e.div = p, e.dist = _, e.sqrDist = w, e.len = r, e.sqrLen = x, e.forEach = function() {
+    e.sub = c, e.mul = h, e.div = p, e.dist = _, e.sqrDist = w, e.len = r, e.sqrLen = x, e.forEach = function () {
         var t = n();
-        return function(e, i, n, o, r, s) {
+        return function (e, i, n, o, r, s) {
             var a = void 0,
                 l = void 0;
             for (i || (i = 3), n || (n = 0), l = o ? Math.min(o * i + n, e.length) : e.length, a = n; a < l; a += i) t[0] = e[a], t[1] = e[a + 1], t[2] = e[a + 2], r(t, t, s), e[a] = t[0], e[a + 1] = t[1], e[a + 2] = t[2];
             return e
         }
     }()
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
-    t.exports = function() {
-        var t = function(t) {
+    t.exports = function () {
+        var t = function (t) {
                 return 1 / (200 * t)
             },
-            e = function(e, i, n, o) {
+            e = function (e, i, n, o) {
                 var r = 3 * e,
                     s = 3 * (n - e) - r,
                     a = 1 - r - s,
                     l = 3 * i,
                     u = 3 * (o - i) - l,
                     c = 1 - l - u,
-                    h = function(t) {
+                    h = function (t) {
                         return ((a * t + s) * t + r) * t
                     },
-                    p = function(t) {
+                    p = function (t) {
                         return ((c * t + u) * t + l) * t
                     },
-                    d = function(t) {
+                    d = function (t) {
                         return (3 * a * t + 2 * s) * t + r
                     },
-                    f = function(t, e) {
+                    f = function (t, e) {
                         var i, n, o, r, s, a;
                         for (o = t, a = 0; a < 8; a++) {
                             if (r = h(o) - t, Math.abs(r) < e) return o;
@@ -2064,18 +2080,18 @@
                         }
                         return o
                     },
-                    m = function(t, e) {
+                    m = function (t, e) {
                         return p(f(t, e))
                     };
-                return function(e, i) {
+                return function (e, i) {
                     return m(e, t(+i || 400))
                 }
             };
-        return function(t, i, n, o, r, s) {
+        return function (t, i, n, o, r, s) {
             return e(t, i, n, o)(r, s)
         }
     }()
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -2089,10 +2105,10 @@
         value: !0
     }), e.default = n;
     var o = i(87);
-    ! function(t) {
+    ! function (t) {
         t && t.__esModule
     }(o)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -2131,7 +2147,8 @@
                 s = e[7],
                 a = e[11];
             t[1] = e[4], t[2] = e[8], t[3] = e[12], t[4] = i, t[6] = e[9], t[7] = e[13], t[8] = n, t[9] = r, t[11] = e[14], t[12] = o, t[13] = s, t[14] = a
-        } else t[0] = e[0], t[1] = e[4], t[2] = e[8], t[3] = e[12], t[4] = e[1], t[5] = e[5], t[6] = e[9], t[7] = e[13], t[8] = e[2], t[9] = e[6], t[10] = e[10], t[11] = e[14], t[12] = e[3], t[13] = e[7], t[14] = e[11], t[15] = e[15];
+        }
+        else t[0] = e[0], t[1] = e[4], t[2] = e[8], t[3] = e[12], t[4] = e[1], t[5] = e[5], t[6] = e[9], t[7] = e[13], t[8] = e[2], t[9] = e[6], t[10] = e[10], t[11] = e[14], t[12] = e[3], t[13] = e[7], t[14] = e[11], t[15] = e[15];
         return t
     }
 
@@ -2619,7 +2636,7 @@
         value: !0
     }), e.sub = e.mul = void 0, e.create = n, e.clone = o, e.copy = r, e.fromValues = s, e.set = a, e.identity = l, e.transpose = u, e.invert = c, e.adjoint = h, e.determinant = p, e.multiply = d, e.translate = f, e.scale = m, e.rotate = v, e.rotateX = g, e.rotateY = b, e.rotateZ = y, e.fromTranslation = _, e.fromScaling = w, e.fromRotation = x, e.fromXRotation = P, e.fromYRotation = M, e.fromZRotation = k, e.fromRotationTranslation = E, e.getTranslation = C, e.getScaling = S, e.getRotation = T, e.fromRotationTranslationScale = O, e.fromRotationTranslationScaleOrigin = A, e.fromQuat = R, e.frustum = j, e.perspective = L, e.perspectiveFromFieldOfView = D, e.ortho = I, e.lookAt = N, e.targetTo = F, e.str = U, e.frob = H, e.add = q, e.subtract = z, e.multiplyScalar = B, e.multiplyScalarAndAdd = V, e.exactEquals = W, e.equals = $;
     var X = i(2),
-        Y = function(t) {
+        Y = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
@@ -2627,7 +2644,7 @@
             return e.default = t, e
         }(X);
     e.mul = d, e.sub = z
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -2653,14 +2670,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -2676,12 +2693,12 @@
             if (void 0 !== s) return s.call(n)
         },
         l = i(11),
-        u = function(t) {
+        u = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(l),
-        c = function(t) {
+        c = function (t) {
             function e() {
                 n(this, e);
                 var t = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this));
@@ -2689,13 +2706,13 @@
             }
             return r(e, t), s(e, [{
                 key: "add",
-                value: function(t) {
+                value: function (t) {
                     for (var e = 0, i = this.children.length; e < i && this.children[e] != t; e++);
                     this.children.push(t), t.parent = this
                 }
             }, {
                 key: "remove",
-                value: function(t) {
+                value: function (t) {
                     for (var e = 0, i = this.children.length; e < i; e++)
                         if (this.children[e] == t) {
                             t.parent = null, this.children.splice(e, 1);
@@ -2704,20 +2721,20 @@
                 }
             }, {
                 key: "destroy",
-                value: function() {
+                value: function () {
                     for (var t = 0, e = this.children.length; t < e; t++) this.children[t].destroy();
                     null !== this.parent && this.parent.removeChild(this)
                 }
             }, {
                 key: "render",
-                value: function(t, i) {
+                value: function (t, i) {
                     a(e.prototype.__proto__ || Object.getPrototypeOf(e.prototype), "render", this).call(this);
                     for (var n = 0, o = this.children.length; n < o; n++) this.children[n].visible && this.children[n].render(t, i)
                 }
             }]), e
         }(u.default);
     e.default = c
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -2755,7 +2772,7 @@
         c = n(u),
         h = i(125),
         p = n(h),
-        d = function(t) {
+        d = function (t) {
             function e(t, i) {
                 o(this, e), i = Object.assign({}, {
                     vertexShader: c.default,
@@ -2769,7 +2786,7 @@
                 }, i.defines);
                 var n = r(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, i));
                 return t ? (Object.defineProperty(n, "map", {
-                    set: function(t) {
+                    set: function (t) {
                         t ? (n.defines.USE_MAP = !0, n.compile(), n.uniforms.map && (n.uniforms.map.value = t)) : (n.defines.USE_MAP = !1, n.compile())
                     }
                 }), n.map = i.map, n) : r(n)
@@ -2777,7 +2794,7 @@
             return s(e, t), e
         }(l.default);
     e.default = d
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -2803,14 +2820,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -2826,20 +2843,20 @@
             if (void 0 !== s) return s.call(n)
         },
         l = i(8),
-        u = function(t) {
+        u = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(l),
         c = i(7),
-        h = function(t) {
+        h = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
                 for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e.default = t, e
         }(c),
-        p = function(t) {
+        p = function (t) {
             function e() {
                 n(this, e);
                 var t = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this));
@@ -2847,7 +2864,7 @@
             }
             return r(e, t), s(e, [{
                 key: "render",
-                value: function(t) {
+                value: function (t) {
                     var i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                     a(e.prototype.__proto__ || Object.getPrototypeOf(e.prototype), "render", this).call(this, t, i);
                     var n = i.overrideMaterial || this.material;
@@ -2862,7 +2879,7 @@
             }]), e
         }(u.default);
     e.default = p
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -2879,14 +2896,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var r = function() {
+    var r = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -2898,29 +2915,29 @@
         h = n(c),
         p = i(4),
         d = n(p),
-        f = function() {
+        f = function () {
             function t() {
                 o(this, t), this.position = d.create(), this.rotation = d.create(), this.scale = d.create(), this.lookAt = null, this.lastPosition = d.create(), this.lastRotation = d.create(), this.lastScale = d.create(), this.lastLookAt = d.create(), d.set(this.scale, 1, 1, 1), this.up = d.create(), d.set(this.up, 0, 1, 0), this.matrix = a.create(), this.worldMatrix = a.create(), this.quaternion = null, this._quaternion = h.create(), this.inverseWorldMatrix = a.create(), this._invLookatMat4 = a.create(), this._m3Rotation = u.create(), this._rotationMat4 = a.create(), this._lookAtMat4 = a.create(), this._lastUpdate = Date.now()
             }
             return r(t, [{
                 key: "render",
-                value: function() {
+                value: function () {
                     this.position[0] !== this.lastPosition[0] || this.position[1] !== this.lastPosition[1] || this.position[2] !== this.lastPosition[2] ? (this.lastPosition[0] = this.position[0], this.lastPosition[1] = this.position[1], this.lastPosition[2] = this.position[2]) : this.rotation[0] !== this.lastRotation[0] || this.rotation[1] !== this.lastRotation[1] || this.rotation[2] !== this.lastRotation[2] ? (this.lastScale[0] = this.rotation[0], this.lastScale[1] = this.rotation[1], this.lastScale[2] = this.rotation[2]) : this.scale[0] !== this.lastScale[0] || this.scale[1] !== this.lastScale[1] || this.scale[2] !== this.lastScale[2] ? (this.lastScale[0] = this.scale[0], this.lastScale[1] = this.scale[1], this.lastScale[2] = this.scale[2]) : null === this.lookAt || this.lookAt[0] === this.lastLookAt[0] && this.lookAt[1] === this.lastLookAt[1] && this.lookAt[2] === this.lastLookAt[2] || (this.lastLookAt[0] = this.lookAt[0], this.lastLookAt[1] = this.lookAt[1], this.lastLookAt[2] = this.lookAt[2]), this.updateMatrix(), this.updateWorldMatrix()
                 }
             }, {
                 key: "updateMatrix",
-                value: function() {
+                value: function () {
                     a.identity(this.matrix), a.identity(this._invLookatMat4), u.identity(this._m3Rotation), a.identity(this._rotationMat4), a.identity(this._lookAtMat4), this.quaternion ? a.fromRotationTranslation(this.matrix, this.quaternion, this.position) : (a.translate(this.matrix, this.matrix, this.position), a.rotateX(this._rotationMat4, this._rotationMat4, this.rotation[0]), a.rotateY(this._rotationMat4, this._rotationMat4, this.rotation[1]), a.rotateZ(this._rotationMat4, this._rotationMat4, this.rotation[2])), null !== this.lookAt ? (a.lookAt(this.matrix, this.position, this.lookAt, this.up), a.invert(this.matrix, this.matrix), a.scale(this.matrix, this.matrix, this.scale)) : (a.scale(this.matrix, this.matrix, this.scale), a.multiply(this.matrix, this.matrix, this._rotationMat4))
                 }
             }, {
                 key: "updateWorldMatrix",
-                value: function() {
+                value: function () {
                     this.parent ? a.multiply(this.worldMatrix, this.matrix, this.parent.worldMatrix) : this.worldMatrix = this.matrix, a.invert(this.inverseWorldMatrix, this.worldMatrix)
                 }
             }]), t
         }();
     e.default = f
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -2935,14 +2952,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var r = function() {
+    var r = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -2953,7 +2970,7 @@
         c = i(16),
         h = n(c),
         p = {},
-        d = function() {
+        d = function () {
             function t(e, i) {
                 var n = this;
                 if (o(this, t), e) {
@@ -2977,18 +2994,18 @@
                     if (!r && this.type == e.FLOAT) throw "trying to create a FrameBuffer of with gl.FLOAT type but theres no floating point texture support";
                     if (!s && this.type == e.HALF_FLOAT) throw "trying to create a texture of with gl.HALF_FLOAT type but theres no half floating point texture support";
                     this._texture = this.gl.createTexture(), e.bindTexture(e.TEXTURE_2D, this._texture), e.texImage2D(e.TEXTURE_2D, 0, this.options.format, this.width, this.height, 0, this.options.format, this.options.type, new Uint8Array([0, 0, 0, 255])), Object.defineProperty(this, "wrapS", {
-                        set: function(t) {
+                        set: function (t) {
                             n.gl.texParameteri(n.gl.TEXTURE_2D, n.gl.TEXTURE_WRAP_S, t)
                         }
                     }), Object.defineProperty(this, "wrapT", {
-                        set: function(t) {
+                        set: function (t) {
                             n.gl.texParameteri(n.gl.TEXTURE_2D, n.gl.TEXTURE_WRAP_T, t)
                         }
                     }), this.wrapS = this.options.wrapS, this.wrapT = this.options.wrapT, this.setFilter(this.options.linear, this.options.mipmap, this.options.mipmapLinear), e.bindTexture(e.TEXTURE_2D, null), Object.defineProperty(this, "anisotropy", {
-                        set: function(t) {
+                        set: function (t) {
                             n._anisotropy = t, n.updateAnisotropyFilter()
                         },
-                        get: function() {
+                        get: function () {
                             return n._anisotropy
                         }
                     })
@@ -2996,7 +3013,7 @@
             }
             return r(t, [{
                 key: "updateAnisotropyFilter",
-                value: function() {
+                value: function () {
                     var t = this.gl;
                     if (t) {
                         var e = t.getExtension("EXT_texture_filter_anisotropic") || t.getExtension("MOZ_EXT_texture_filter_anisotropic") || t.getExtension("WEBKIT_EXT_texture_filter_anisotropic");
@@ -3009,7 +3026,7 @@
                 }
             }, {
                 key: "bindImage",
-                value: function(t) {
+                value: function (t) {
                     if (this.gl) {
                         this.width = t.width, this.height = t.height;
                         var e = (0, h.default)(t.width) && (0, h.default)(t.height);
@@ -3018,17 +3035,17 @@
                 }
             }, {
                 key: "bind",
-                value: function(t) {
+                value: function (t) {
                     this.gl && (void 0 !== t && this.gl.activeTexture(this.gl.TEXTURE0 + (0 | t)), this.gl.bindTexture(this.gl.TEXTURE_2D, this._texture))
                 }
             }, {
                 key: "delete",
-                value: function() {
+                value: function () {
                     this.gl.deleteTexture(this._texture), this._texture = null, this.gl = null
                 }
             }, {
                 key: "setFilter",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     if (this.gl) {
                         var n = this.gl,
                             o = (0, u.default)(!!t, !!e, !!i);
@@ -3037,21 +3054,21 @@
                 }
             }]), t
         }();
-    d.fromUrl = function(t, e, i) {
+    d.fromUrl = function (t, e, i) {
         var n = new d(t, i);
         if (void 0 !== p[e]) return void this.fromImage(t, p[e]);
         var o = new Image;
-        return o.onload = function() {
+        return o.onload = function () {
             o.onload = null, o.onerror = null, p[e] = o, n.bindImage(o)
-        }, o.onerror = function() {
+        }, o.onerror = function () {
             o.onload = null, o.onerror = null, console.warn("Invalid url provided to Texture.fromUrl() : " + e)
         }, o.src = e, n
-    }, d.fromImage = function(t, e, i) {
-        if (!e.width || !e.height) return void console.warn("Cannot create texture with provided image\n Please make sure the image is loaded before calling Texture.fromImage() or use Texture.fromUrl()", e);
+    }, d.fromImage = function (t, e, i) {
+        if (!e.width || !e.height) return void console.warn("Cannot create texture with provided image Please make sure the image is loaded before calling Texture.fromImage() or use Texture.fromUrl()", e);
         var n = new d(t, i);
         return n.bindImage(e), n
     }, e.default = d
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -3091,7 +3108,8 @@
                 n = e[2],
                 o = e[5];
             t[1] = e[3], t[2] = e[6], t[3] = i, t[5] = e[7], t[6] = n, t[7] = o
-        } else t[0] = e[0], t[1] = e[3], t[2] = e[6], t[3] = e[1], t[4] = e[4], t[5] = e[7], t[6] = e[2], t[7] = e[5], t[8] = e[8];
+        }
+        else t[0] = e[0], t[1] = e[3], t[2] = e[6], t[3] = e[1], t[4] = e[4], t[5] = e[7], t[6] = e[2], t[7] = e[5], t[8] = e[8];
         return t
     }
 
@@ -3324,7 +3342,7 @@
         value: !0
     }), e.sub = e.mul = void 0, e.create = n, e.fromMat4 = o, e.clone = r, e.copy = s, e.fromValues = a, e.set = l, e.identity = u, e.transpose = c, e.invert = h, e.adjoint = p, e.determinant = d, e.multiply = f, e.translate = m, e.rotate = v, e.scale = g, e.fromTranslation = b, e.fromRotation = y, e.fromScaling = _, e.fromMat2d = w, e.fromQuat = x, e.normalFromMat4 = P, e.projection = M, e.str = k, e.frob = E, e.add = C, e.subtract = S, e.multiplyScalar = T, e.multiplyScalarAndAdd = O, e.exactEquals = A, e.equals = R;
     var j = i(2),
-        L = function(t) {
+        L = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
@@ -3332,7 +3350,7 @@
             return e.default = t, e
         }(j);
     e.mul = f, e.sub = S
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -3490,27 +3508,27 @@
         C = (e.clone = E.clone, e.fromValues = E.fromValues, e.copy = E.copy, e.set = E.set, e.add = E.add, e.mul = l, e.scale = E.scale, e.dot = E.dot, e.lerp = E.lerp, e.length = E.length),
         S = (e.len = C, e.squaredLength = E.squaredLength),
         T = (e.sqrLen = S, e.normalize = E.normalize);
-    e.exactEquals = E.exactEquals, e.equals = E.equals, e.rotationTo = function() {
+    e.exactEquals = E.exactEquals, e.equals = E.equals, e.rotationTo = function () {
         var t = M.create(),
             e = M.fromValues(1, 0, 0),
             i = M.fromValues(0, 1, 0);
-        return function(n, o, r) {
+        return function (n, o, r) {
             var a = M.dot(o, r);
             return a < -.999999 ? (M.cross(t, e, o), M.len(t) < 1e-6 && M.cross(t, i, o), M.normalize(t, t), s(n, t, Math.PI), n) : a > .999999 ? (n[0] = 0, n[1] = 0, n[2] = 0, n[3] = 1, n) : (M.cross(t, o, r), n[0] = t[0], n[1] = t[1], n[2] = t[2], n[3] = 1 + a, T(n, n))
         }
-    }(), e.sqlerp = function() {
+    }(), e.sqlerp = function () {
         var t = o(),
             e = o();
-        return function(i, n, o, r, s, a) {
+        return function (i, n, o, r, s, a) {
             return d(t, n, s, a), d(e, o, r, a), d(i, t, e, 2 * a * (1 - a)), i
         }
-    }(), e.setAxes = function() {
+    }(), e.setAxes = function () {
         var t = x.create();
-        return function(e, i, n, o) {
+        return function (e, i, n, o) {
             return t[0] = n[0], t[3] = n[1], t[6] = n[2], t[1] = o[0], t[4] = o[1], t[7] = o[2], t[2] = -i[0], t[5] = -i[1], t[8] = -i[2], T(e, v(e, t))
         }
     }()
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e, i) {
@@ -3519,7 +3537,7 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     }), e.default = n
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -3528,7 +3546,7 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     }), e.default = n
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -3541,11 +3559,11 @@
     var o, r = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split(""),
         s = new Array(36),
         a = 0
-}, function(t, e) {
-    t.exports = "precision highp float;\n\n// uniform sampler2D tMask;\nvarying vec2 vUv;\n\n// uniform vec2 resolution;\n// uniform sampler2D tDepth;\n// uniform int pass;\n\nvarying float vRatio;\n\nuniform float alpha;\nuniform float uProgress;\nuniform vec3 color;\n\nuniform int useDash;\n\nuniform int uDirection;\n\n\nvoid main() {\n\n    vec4 outColor;\n\n    outColor.rgb = color;\n\n    if (uDirection == 0) {\n        if ( vRatio < (uProgress) ) {\n            outColor.a = 1.0;\n        }\n        else {\n            if (useDash == 1) {\n                float dasharray = cos( vRatio * 1500. ) - 0.6;\n                outColor.a = dasharray < 0.0 ? 0.0 : 0.75;\n            }\n            else {\n                outColor.a = 0.;\n            }\n        }\n    }\n    else {\n        if ( vRatio > (1.0 - uProgress) ) {\n            outColor.a = 1.0;\n        }\n        else {\n            if (useDash == 1) {\n                float dasharray = cos( vRatio * 1500. ) - 0.6;\n                outColor.a = dasharray < 0.0 ? 0.0 : 0.75;\n            }\n            else {\n                outColor.a = 0.;\n            }\n        }\n    }\n    \n    outColor.a *= alpha;\n    \n    gl_FragColor = outColor;\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\nattribute float ratio;\nattribute vec3 direction;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vViewPosition; \n\n\nvarying float vRatio;\n\nuniform vec3 scale;\nuniform float lineWidth;\n\nvoid main(void) {\n\n\tvec3 worldPos = position;\n\n\tvec3 _s = scale;\n\n\tworldPos += (direction * lineWidth) / scale;\n\tvRatio = ratio;\n\tvUv       = uv;\n\n\tvec4 mvPosition = uMVMatrix * vec4( worldPos, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(worldPos, 1.0);\n}\n"
-}, function(t, e, i) {
+}, function (t, e) {
+    t.exports = "precision highp float;// uniform sampler2D tMask;varying vec2 vUv;// uniform vec2 resolution;// uniform sampler2D tDepth;// uniform int pass;varying float vRatio;uniform float alpha;uniform float uProgress;uniform vec3 color;uniform int useDash;uniform int uDirection;void main() {    vec4 outColor;    outColor.rgb = color;    if (uDirection == 0) {        if ( vRatio < (uProgress) ) {            outColor.a = 1.0;        }        else {            if (useDash == 1) {                float dasharray = cos( vRatio * 1500. ) - 0.6;                outColor.a = dasharray < 0.0 ? 0.0 : 0.75;            }            else {                outColor.a = 0.;            }        }    }    else {        if ( vRatio > (1.0 - uProgress) ) {            outColor.a = 1.0;        }        else {            if (useDash == 1) {                float dasharray = cos( vRatio * 1500. ) - 0.6;                outColor.a = dasharray < 0.0 ? 0.0 : 0.75;            }            else {                outColor.a = 0.;            }        }    }        outColor.a *= alpha;        gl_FragColor = outColor;}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;attribute float ratio;attribute vec3 direction;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vViewPosition; varying float vRatio;uniform vec3 scale;uniform float lineWidth;void main(void) {vec3 worldPos = position;vec3 _s = scale;worldPos += (direction * lineWidth) / scale;vRatio = ratio;vUv       = uv;vec4 mvPosition = uMVMatrix * vec4( worldPos, 1.0 ); vViewPosition = mvPosition.xyz;    gl_Position = uPMatrix * uMVMatrix * vec4(worldPos, 1.0);}"
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -3554,35 +3572,35 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var o = function() {
+    var o = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
-        r = function() {
+        r = function () {
             function t(e, i, o, r, s) {
                 n(this, t), this.name = s, this.gl = e, this._buffer = this.gl.createBuffer(), this.type = this.gl.FLOAT, this._target = this.gl[r ? "ELEMENT_ARRAY_BUFFER" : "ARRAY_BUFFER"], this.update(i, o)
             }
             return o(t, [{
                 key: "update",
-                value: function(t, e) {
+                value: function (t, e) {
                     this.data = t, this.size = e, this.length = this.data.length, this.gl.bindBuffer(this._target, this._buffer), this.gl.bufferData(this._target, this.data, this.gl.STATIC_DRAW)
                 }
             }, {
                 key: "bind",
-                value: function() {
+                value: function () {
                     this.gl.bindBuffer(this._target, this._buffer)
                 }
             }]), t
         }();
     e.default = r
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -3597,14 +3615,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var r = function() {
+    var r = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -3612,7 +3630,7 @@
         a = n(s),
         l = i(16),
         u = n(l),
-        c = function() {
+        c = function () {
             function t(e, i) {
                 var n = this;
                 if (o(this, t), this.options = Object.assign({}, {
@@ -3637,74 +3655,74 @@
                     this.type = s.HALF_FLOAT_OES
                 }
                 this._colorTexture = this.gl.createTexture(), this.gl.bindTexture(this.gl.TEXTURE_2D, this._colorTexture), this.gl.texImage2D(this.gl.TEXTURE_2D, 0, this.format, this.width, this.height, 0, this.format, this.type, null), Object.defineProperty(this, "wrapS", {
-                    set: function(t) {
+                    set: function (t) {
                         n.gl.bindTexture(n.gl.TEXTURE_2D, n._colorTexture), n.gl.texParameteri(n.gl.TEXTURE_2D, n.gl.TEXTURE_WRAP_S, t)
                     }
                 }), Object.defineProperty(this, "wrapT", {
-                    set: function(t) {
+                    set: function (t) {
                         n.gl.bindTexture(n.gl.TEXTURE_2D, n._colorTexture), n.gl.texParameteri(n.gl.TEXTURE_2D, n.gl.TEXTURE_WRAP_T, t)
                     }
                 }), this.wrapS = this.options.wrapS, this.wrapT = this.options.wrapT, (0, u.default)(this.width) && (0, u.default)(this.height) || (this.wrapS = e.CLAMP_TO_EDGE, this.wrapT = e.CLAMP_TO_EDGE, this.mipmap = !1, this.mipmapLinear = !1), this.setFilter(this.linear, this.mipmap, this.mipmapLinear), this.options.depthTexture || (this.renderbuffer = this.gl.createRenderbuffer(), this.gl.bindRenderbuffer(this.gl.RENDERBUFFER, this.renderbuffer), this.gl.renderbufferStorage(this.gl.RENDERBUFFER, this.gl.DEPTH_COMPONENT16, this.width, this.height)), this.fbo = this.gl.createFramebuffer(), this.gl.bindFramebuffer(this.gl.FRAMEBUFFER, this.fbo), this.gl.framebufferTexture2D(this.gl.FRAMEBUFFER, this.gl.COLOR_ATTACHMENT0, this.gl.TEXTURE_2D, this._colorTexture, 0), this.options.depthTexture ? this.gl.framebufferTexture2D(this.gl.FRAMEBUFFER, this.gl.DEPTH_ATTACHMENT, this.gl.TEXTURE_2D, this.options.depthTexture._texture, 0) : this.gl.framebufferRenderbuffer(this.gl.FRAMEBUFFER, this.gl.DEPTH_ATTACHMENT, this.gl.RENDERBUFFER, this.renderbuffer), this.unbind()
             }
             return r(t, [{
                 key: "setFilter",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     var n = this.gl,
                         o = (0, a.default)(!!t, !!e, !!i);
                     n.bindTexture(n.TEXTURE_2D, this._colorTexture), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_MAG_FILTER, (0, a.default)(!!t, !1, !1)), n.texParameteri(n.TEXTURE_2D, n.TEXTURE_MIN_FILTER, o)
                 }
             }, {
                 key: "resize",
-                value: function(t, e) {
+                value: function (t, e) {
                     this.width === t && this.height === e || (this.width = 0 | t, this.height = 0 | e), (0, u.default)(this.width) && (0, u.default)(this.height) || (this.wrapS = this.gl.CLAMP_TO_EDGE, this.wrapT = this.gl.CLAMP_TO_EDGE, this.mipmap = !1, this.mipmapLinear = !1, this.setFilter(this.linear, this.mipmap, this.mipmapLinear)), this.gl.bindTexture(this.gl.TEXTURE_2D, this._colorTexture), this.gl.texImage2D(this.gl.TEXTURE_2D, 0, this.format, this.width, this.height, 0, this.format, this.type, null), this.options.depthTexture && this.depthTexture.resize(this.width, this.height), this.gl.bindFramebuffer(this.gl.FRAMEBUFFER, this.fbo), this.gl.framebufferTexture2D(this.gl.FRAMEBUFFER, this.gl.COLOR_ATTACHMENT0, this.gl.TEXTURE_2D, this._colorTexture, 0), this.options.depthTexture ? this.gl.framebufferTexture2D(this.gl.FRAMEBUFFER, this.gl.DEPTH_ATTACHMENT, this.gl.TEXTURE_2D, this.options.depthTexture._texture, 0) : (this.gl.bindRenderbuffer(this.gl.RENDERBUFFER, this.renderbuffer), this.gl.renderbufferStorage(this.gl.RENDERBUFFER, this.gl.DEPTH_COMPONENT16, this.width, this.height), this.gl.framebufferRenderbuffer(this.gl.FRAMEBUFFER, this.gl.DEPTH_ATTACHMENT, this.gl.RENDERBUFFER, this.renderbuffer)), this.unbind()
                 }
             }, {
                 key: "bindFrame",
-                value: function() {
+                value: function () {
                     this.gl.viewport(0, 0, this.width, this.height), this.gl.bindFramebuffer(this.gl.FRAMEBUFFER, this.fbo), this.options.depthTexture || this.gl.bindRenderbuffer(this.gl.RENDERBUFFER, this.renderbuffer), this.clear()
                 }
             }, {
                 key: "bind",
-                value: function(t) {
+                value: function (t) {
                     void 0 !== t && this.gl.activeTexture(this.gl.TEXTURE0 + (0 | t)), this.gl.bindTexture(this.gl.TEXTURE_2D, this._colorTexture)
                 }
             }, {
                 key: "unbind",
-                value: function() {
+                value: function () {
                     this.gl.bindTexture(this.gl.TEXTURE_2D, null), this.gl.bindFramebuffer(this.gl.FRAMEBUFFER, null), this.options.depthTexture || this.gl.bindRenderbuffer(this.gl.RENDERBUFFER, null)
                 }
             }, {
                 key: "clear",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     var n = 0;
                     (void 0 === t || t) && (n |= this.gl.COLOR_BUFFER_BIT), (void 0 === e || e) && (n |= this.gl.DEPTH_BUFFER_BIT), (void 0 === i || i) && (n |= this.gl.STENCIL_BUFFER_BIT), this.gl.clear(n)
                 }
             }, {
                 key: "dispose",
-                value: function() {
+                value: function () {
                     this.gl.deleteFramebuffer(this.fbo), this.fbo = null, this.gl = null
                 }
             }]), t
         }();
     e.default = c
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {
         value: !0
     }), e.default = {
         cache: {},
-        loadImage: function(t, e) {
+        loadImage: function (t, e) {
             var i = this;
             if (void 0 !== this.cache[t]) return void e(this.cache[t]);
             var n = new Image;
-            n.onload = function() {
+            n.onload = function () {
                 n.onload = null, n.onerror = null, i.cache[t] = n, e(n)
-            }, n.onerror = function() {
+            }, n.onerror = function () {
                 n.onload = null, n.onerror = null, console.warn("Cannot load image :" + t)
             }, n.src = t
         }
     }
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -3730,24 +3748,24 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(3),
-        l = function(t) {
+        l = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(a),
-        u = function(t) {
+        u = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 4));
@@ -3760,12 +3778,12 @@
             }
             return r(e, t), s(e, [{
                 key: "update",
-                value: function() {
+                value: function () {
                     this._build(), this.attributes.index.update(new Uint16Array(this.indices), 1), this.attributes.position.update(new Float32Array(this.vertices), 3), this.attributes.normal.update(new Float32Array(this.normals), 3), this.attributes.uv.update(new Float32Array(this.uvs), 2), this.attributes.color.update(new Float32Array(this.colors), 3)
                 }
             }, {
                 key: "_build",
-                value: function() {
+                value: function () {
                     this.indices = [], this.vertices = [], this.normals = [], this.uvs = [], this.colors = [];
                     var t, e, i = .5 * this.width,
                         n = .5 * this.height,
@@ -3795,7 +3813,7 @@
             }]), e
         }(l.default);
     e.default = u
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -3809,24 +3827,24 @@
     }
 
     function r(t) {
-        for (var e = t.split("\n"), i = 0; i < e.length; i++) e[i] = i + 1 + ": " + e[i];
-        return e.join("\n")
+        for (var e = t.split(""), i = 0; i < e.length; i++) e[i] = i + 1 + ": " + e[i];
+        return e.join("")
     }
 
     function s(t, e, i) {
-        return t.shaderSource(e, i), t.compileShader(e), !!t.getShaderParameter(e, t.COMPILE_STATUS) || (console.error("Shader cannot compile: \n" + t.getShaderInfoLog(e) || ""), console.warn(r(i)), !1)
+        return t.shaderSource(e, i), t.compileShader(e), !!t.getShaderParameter(e, t.COMPILE_STATUS) || (console.error("Shader cannot compile: " + t.getShaderInfoLog(e) || ""), console.warn(r(i)), !1)
     }
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -3840,7 +3858,7 @@
         m = n(f),
         v = null,
         g = null,
-        b = function() {
+        b = function () {
             function t(e) {
                 var i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 o(this, t), this._uuid = (0, m.default)(), e && (i = Object.assign({}, {
@@ -3854,18 +3872,18 @@
             }
             return a(t, [{
                 key: "compile",
-                value: function() {
+                value: function () {
                     if (this.gl && !this.isCompiling) {
                         this.isCompiling = !0;
                         var t = "";
-                        for (var e in this.defines) this.defines[e] && (t += "#define " + e + " " + this.defines[e] + "\n");
+                        for (var e in this.defines) this.defines[e] && (t += "#define " + e + " " + this.defines[e] + "");
                         if (!s(this.gl, this.vertexShader, t + this._vertexShaderSource) || !s(this.gl, this.fragmentShader, t + this._fragmentShaderSource)) return console.warn("compile error"), !1;
-                        this.gl.linkProgram(this._program), this.gl.getProgramParameter(this._program, this.gl.LINK_STATUS) || (console.error("Cannot link program: \n" + this.gl.getProgramInfoLog(this._program) || ""), console.warn("VERTEX_SHADER:\n" + r(this._vertexShaderSource) + "\n\nFRAGMENT_SHADER:\n" + r(this._fragmentShaderSource))), this.gl.useProgram(this._program), this._retrieveUniformsFromShader(), this.isCompiling = !1
+                        this.gl.linkProgram(this._program), this.gl.getProgramParameter(this._program, this.gl.LINK_STATUS) || (console.error("Cannot link program: " + this.gl.getProgramInfoLog(this._program) || ""), console.warn("VERTEX_SHADER:" + r(this._vertexShaderSource) + "FRAGMENT_SHADER:" + r(this._fragmentShaderSource))), this.gl.useProgram(this._program), this._retrieveUniformsFromShader(), this.isCompiling = !1
                     }
                 }
             }, {
                 key: "_retrieveUniformsFromShader",
-                value: function() {
+                value: function () {
                     this._savedUniforms = {};
                     for (var t in this.uniforms) this._savedUniforms[t] = {
                         value: this.uniforms[t].value
@@ -3883,7 +3901,8 @@
                                 value: null,
                                 size: n.size
                             }, 35678 === n.type && (this.uniforms[o].unit = this._textureUnit, this._textureUnit++))
-                        } else this.gl.getError()
+                        }
+                        else this.gl.getError()
                     }
                     for (var s in this._savedUniforms) void 0 !== this.uniforms[s] && void 0 !== this._savedUniforms[s].value && null !== this._savedUniforms[s].value && (this.uniforms[s].value = this._savedUniforms[s].value);
                     for (var a in this._userDefinedUniforms) void 0 !== this.uniforms[a] && void 0 !== this._userDefinedUniforms[a] && null !== this._userDefinedUniforms[a] && (this.uniforms[a].value = this._userDefinedUniforms[a]);
@@ -3897,37 +3916,37 @@
                 }
             }, {
                 key: "dispose",
-                value: function() {}
+                value: function () {}
             }, {
                 key: "use",
-                value: function() {
+                value: function () {
                     this.gl && this.gl.useProgram(this._program)
                 }
             }, {
                 key: "attribPointer",
-                value: function(t, e) {
+                value: function (t, e) {
                     if (this.gl)
                         for (var i in this.attributes) void 0 !== t[i] && (t[i].bind(), this.gl.vertexAttribPointer(this.attributes[i].location, t[i].size, t[i].type, !1, 0, 0), this.gl.enableVertexAttribArray(this.attributes[i].location))
                 }
             }, {
                 key: "draw",
-                value: function(t) {
+                value: function (t) {
                     if (this.gl) {
                         this.gl.useProgram(this._program), t !== g && (this.attribPointer(t.attributes, t), g = t), this.depthTest !== v && (this.gl[this.depthTest ? "enable" : "disable"](this.gl.DEPTH_TEST), v = this.depthTest), this.blend ? (this.depthTest && this.gl.depthFunc(this.gl.LESS), this.gl.enable(this.gl.BLEND), this.gl.blendEquation(this.blendEquation), this.gl.blendFuncSeparate(this.blendSrcRGB, this.blendDstRGB, this.blendSrcAlpha, this.blendDstAlpha)) : (this.gl.disable(this.gl.BLEND), this.depthTest && this.gl.depthFunc(this.gl.LESS));
                         for (var e = Object.keys(this.uniforms), i = 0, n = e.length; i < n; i++) {
                             var o = e[i];
                             switch (this.uniforms[o].type) {
-                                case this.gl.FLOAT_MAT2:
-                                case this.gl.FLOAT_MAT3:
-                                case this.gl.FLOAT_MAT4:
-                                    null !== this.uniforms[o].value && void 0 !== this.uniforms[o].value && this.gl["uniform" + u.default[this.uniforms[o].type] + "v"](this.uniforms[o].location, !1, this.uniforms[o].value);
-                                    break;
-                                default:
-                                    if (35678 === this.uniforms[o].type) this.uniforms[o].value && (this.uniforms[o].value.bind(this.uniforms[o].unit), this.gl["uniform" + u.default[this.uniforms[o].type]](this.uniforms[o].location, this.uniforms[o].unit));
-                                    else {
-                                        var r = u.default[this.uniforms[e[i]].type];
-                                        this.uniforms[o].isArray && (r += "v"), null !== this.uniforms[o].value && ("2f" == r ? this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value[0], this.uniforms[o].value[1]) : "3f" == r ? this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value[0], this.uniforms[o].value[1], this.uniforms[o].value[2]) : "4f" == r ? this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value[0], this.uniforms[o].value[1], this.uniforms[o].value[2], this.uniforms[o].value[3]) : this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value))
-                                    }
+                            case this.gl.FLOAT_MAT2:
+                            case this.gl.FLOAT_MAT3:
+                            case this.gl.FLOAT_MAT4:
+                                null !== this.uniforms[o].value && void 0 !== this.uniforms[o].value && this.gl["uniform" + u.default[this.uniforms[o].type] + "v"](this.uniforms[o].location, !1, this.uniforms[o].value);
+                                break;
+                            default:
+                                if (35678 === this.uniforms[o].type) this.uniforms[o].value && (this.uniforms[o].value.bind(this.uniforms[o].unit), this.gl["uniform" + u.default[this.uniforms[o].type]](this.uniforms[o].location, this.uniforms[o].unit));
+                                else {
+                                    var r = u.default[this.uniforms[e[i]].type];
+                                    this.uniforms[o].isArray && (r += "v"), null !== this.uniforms[o].value && ("2f" == r ? this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value[0], this.uniforms[o].value[1]) : "3f" == r ? this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value[0], this.uniforms[o].value[1], this.uniforms[o].value[2]) : "4f" == r ? this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value[0], this.uniforms[o].value[1], this.uniforms[o].value[2], this.uniforms[o].value[3]) : this.gl["uniform" + r](this.uniforms[o].location, this.uniforms[o].value))
+                                }
                             }
                         }
                         this.type !== this.gl.POINTS && t.attributes.index ? (t.attributes.index.bind(), this.gl.drawElements(this.wireframe ? this.gl.LINE_STRIP : this.type, t.attributes.index.length, this.gl.UNSIGNED_SHORT, 0)) : this.gl.drawArrays(this.wireframe ? this.gl.LINE_STRIP : this.type, 0, t.length)
@@ -3936,7 +3955,7 @@
             }]), t
         }();
     e.default = b
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -4117,25 +4136,25 @@
         value: !0
     }), e.forEach = e.sqrLen = e.len = e.sqrDist = e.dist = e.div = e.mul = e.sub = void 0, e.create = n, e.clone = o, e.fromValues = r, e.copy = s, e.set = a, e.add = l, e.subtract = u, e.multiply = c, e.divide = h, e.ceil = p, e.floor = d, e.min = f, e.max = m, e.round = v, e.scale = g, e.scaleAndAdd = b, e.distance = y, e.squaredDistance = _, e.length = w, e.squaredLength = x, e.negate = P, e.inverse = M, e.normalize = k, e.dot = E, e.lerp = C, e.random = S, e.transformMat4 = T, e.transformQuat = O, e.str = A, e.exactEquals = R, e.equals = j;
     var L = i(2),
-        D = function(t) {
+        D = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
                 for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e.default = t, e
         }(L);
-    e.sub = u, e.mul = c, e.div = h, e.dist = y, e.sqrDist = _, e.len = w, e.sqrLen = x, e.forEach = function() {
+    e.sub = u, e.mul = c, e.div = h, e.dist = y, e.sqrDist = _, e.len = w, e.sqrLen = x, e.forEach = function () {
         var t = n();
-        return function(e, i, n, o, r, s) {
+        return function (e, i, n, o, r, s) {
             var a = void 0,
                 l = void 0;
             for (i || (i = 4), n || (n = 0), l = o ? Math.min(o * i + n, e.length) : e.length, a = n; a < l; a += i) t[0] = e[a], t[1] = e[a + 1], t[2] = e[a + 2], t[3] = e[a + 3], r(t, t, s), e[a] = t[0], e[a + 1] = t[1], e[a + 2] = t[2], e[a + 3] = t[3];
             return e
         }
     }()
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
-    (function(e) {
+    (function (e) {
         function n(t, e) {
             if ("function" == typeof t) return n("*", t);
             if ("function" == typeof e)
@@ -4199,37 +4218,37 @@
             g = !0,
             b = "",
             y = !1;
-        n.callbacks = [], n.exits = [], n.current = "", n.len = 0, n.base = function(t) {
+        n.callbacks = [], n.exits = [], n.current = "", n.len = 0, n.base = function (t) {
             if (0 === arguments.length) return b;
             b = t
-        }, n.start = function(t) {
+        }, n.start = function (t) {
             if (t = t || {}, !p && (p = !0, !1 === t.dispatch && (v = !1), !1 === t.decodeURLComponents && (g = !1), !1 !== t.popstate && window.addEventListener("popstate", _, !1), !1 !== t.click && document.addEventListener(f, l, !1), !0 === t.hashbang && (y = !0), v)) {
                 var e = y && ~m.hash.indexOf("#!") ? m.hash.substr(2) + m.search : m.pathname + m.search + m.hash;
                 n.replace(e, null, !0, v)
             }
-        }, n.stop = function() {
+        }, n.stop = function () {
             p && (n.current = "", n.len = 0, p = !1, document.removeEventListener(f, l, !1), window.removeEventListener("popstate", _, !1))
-        }, n.show = function(t, e, i, o) {
+        }, n.show = function (t, e, i, o) {
             var r = new s(t, e);
             return n.current = r.path, !1 !== i && n.dispatch(r), !1 !== r.handled && !1 !== o && r.pushState(), r
-        }, n.back = function(t, e) {
-            n.len > 0 ? (history.back(), n.len--) : t ? setTimeout(function() {
+        }, n.back = function (t, e) {
+            n.len > 0 ? (history.back(), n.len--) : t ? setTimeout(function () {
                 n.show(t, e)
-            }) : setTimeout(function() {
+            }) : setTimeout(function () {
                 n.show(b, e)
             })
-        }, n.redirect = function(t, e) {
-            "string" == typeof t && "string" == typeof e && n(t, function(t) {
-                setTimeout(function() {
+        }, n.redirect = function (t, e) {
+            "string" == typeof t && "string" == typeof e && n(t, function (t) {
+                setTimeout(function () {
                     n.replace(e)
                 }, 0)
-            }), "string" == typeof t && void 0 === e && setTimeout(function() {
+            }), "string" == typeof t && void 0 === e && setTimeout(function () {
                 n.replace(t)
             }, 0)
-        }, n.replace = function(t, e, i, o) {
+        }, n.replace = function (t, e, i, o) {
             var r = new s(t, e);
             return n.current = r.path, r.init = i, r.save(), !1 !== o && n.dispatch(r), r
-        }, n.dispatch = function(t) {
+        }, n.dispatch = function (t) {
             function e() {
                 var t = n.exits[a++];
                 if (!t) return i();
@@ -4244,20 +4263,20 @@
                 s = 0,
                 a = 0;
             d = t, r ? e() : i()
-        }, n.exit = function(t, e) {
+        }, n.exit = function (t, e) {
             if ("function" == typeof t) return n.exit("*", t);
             for (var i = new a(t), o = 1; o < arguments.length; ++o) n.exits.push(i.middleware(arguments[o]))
-        }, n.Context = s, s.prototype.pushState = function() {
+        }, n.Context = s, s.prototype.pushState = function () {
             n.len++, history.pushState(this.state, this.title, y && "/" !== this.path ? "#!" + this.path : this.canonicalPath)
-        }, s.prototype.save = function() {
+        }, s.prototype.save = function () {
             history.replaceState(this.state, this.title, y && "/" !== this.path ? "#!" + this.path : this.canonicalPath)
-        }, n.Route = a, a.prototype.middleware = function(t) {
+        }, n.Route = a, a.prototype.middleware = function (t) {
             var e = this;
-            return function(i, n) {
+            return function (i, n) {
                 if (e.match(i.path, i.params)) return t(i, n);
                 n()
             }
-        }, a.prototype.match = function(t, e) {
+        }, a.prototype.match = function (t, e) {
             var i = this.keys,
                 n = t.indexOf("?"),
                 o = ~n ? t.slice(0, n) : t,
@@ -4270,24 +4289,25 @@
             }
             return !0
         };
-        var _ = function() {
+        var _ = function () {
             var t = !1;
-            if ("undefined" != typeof window) return "complete" === document.readyState ? t = !0 : window.addEventListener("load", function() {
-                    setTimeout(function() {
+            if ("undefined" != typeof window) return "complete" === document.readyState ? t = !0 : window.addEventListener("load", function () {
+                    setTimeout(function () {
                         t = !0
                     }, 0)
                 }),
-                function(e) {
+                function (e) {
                     if (t)
                         if (e.state) {
                             var i = e.state.path;
                             n.replace(i, e.state)
-                        } else n.show(m.pathname + m.hash, void 0, void 0, !1)
+                        }
+                    else n.show(m.pathname + m.hash, void 0, void 0, !1)
                 }
         }();
         n.sameOrigin = c
     }).call(e, i(96))
-}, function(t, e, i) {
+}, function (t, e, i) {
     function n(t, e) {
         for (var i = 0; i < t.length; i++) {
             var n = t[i],
@@ -4296,7 +4316,8 @@
                 o.refs++;
                 for (var r = 0; r < o.parts.length; r++) o.parts[r](n.parts[r]);
                 for (; r < n.parts.length; r++) o.parts.push(c(n.parts[r], e))
-            } else {
+            }
+            else {
                 for (var s = [], r = 0; r < n.parts.length; r++) s.push(c(n.parts[r], e));
                 f[n.id] = {
                     id: n.id,
@@ -4356,7 +4377,7 @@
     }
 
     function u(t, e) {
-        Object.keys(e).forEach(function(i) {
+        Object.keys(e).forEach(function (i) {
             t.setAttribute(i, e[i])
         })
     }
@@ -4364,23 +4385,25 @@
     function c(t, e) {
         var i, n, o, r;
         if (e.transform && t.css) {
-            if (!(r = e.transform(t.css))) return function() {};
+            if (!(r = e.transform(t.css))) return function () {};
             t.css = r
         }
         if (e.singleton) {
             var u = b++;
             i = g || (g = a(e)), n = h.bind(null, i, u, !1), o = h.bind(null, i, u, !0)
-        } else t.sourceMap && "function" == typeof URL && "function" == typeof URL.createObjectURL && "function" == typeof URL.revokeObjectURL && "function" == typeof Blob && "function" == typeof btoa ? (i = l(e), n = d.bind(null, i, e), o = function() {
+        }
+        else t.sourceMap && "function" == typeof URL && "function" == typeof URL.createObjectURL && "function" == typeof URL.revokeObjectURL && "function" == typeof Blob && "function" == typeof btoa ? (i = l(e), n = d.bind(null, i, e), o = function () {
             s(i), i.href && URL.revokeObjectURL(i.href)
-        }) : (i = a(e), n = p.bind(null, i), o = function() {
+        }) : (i = a(e), n = p.bind(null, i), o = function () {
             s(i)
         });
         return n(t),
-            function(e) {
+            function (e) {
                 if (e) {
                     if (e.css === t.css && e.media === t.media && e.sourceMap === t.sourceMap) return;
                     n(t = e)
-                } else o()
+                }
+                else o()
             }
     }
 
@@ -4408,7 +4431,7 @@
         var n = i.css,
             o = i.sourceMap,
             r = void 0 === e.convertToAbsoluteUrls && o;
-        (e.convertToAbsoluteUrls || r) && (n = _(n)), o && (n += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(o)))) + " */");
+        (e.convertToAbsoluteUrls || r) && (n = _(n)), o && (n += "/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(o)))) + " */");
         var s = new Blob([n], {
                 type: "text/css"
             }),
@@ -4416,32 +4439,32 @@
         t.href = URL.createObjectURL(s), a && URL.revokeObjectURL(a)
     }
     var f = {},
-        m = function(t) {
+        m = function (t) {
             var e;
-            return function() {
+            return function () {
                 return void 0 === e && (e = t.apply(this, arguments)), e
             }
-        }(function() {
+        }(function () {
             return window && document && document.all && !window.atob
         }),
-        v = function(t) {
+        v = function (t) {
             var e = {};
-            return function(i) {
+            return function (i) {
                 return void 0 === e[i] && (e[i] = t.call(this, i)), e[i]
             }
-        }(function(t) {
+        }(function (t) {
             return document.querySelector(t)
         }),
         g = null,
         b = 0,
         y = [],
         _ = i(120);
-    t.exports = function(t, e) {
+    t.exports = function (t, e) {
         if ("undefined" != typeof DEBUG && DEBUG && "object" != typeof document) throw new Error("The style-loader cannot be used in a non-browser environment");
         e = e || {}, e.attrs = "object" == typeof e.attrs ? e.attrs : {}, e.singleton || (e.singleton = m()), e.insertInto || (e.insertInto = "head"), e.insertAt || (e.insertAt = "bottom");
         var i = o(t, e);
         return n(i, e),
-            function(t) {
+            function (t) {
                 for (var r = [], s = 0; s < i.length; s++) {
                     var a = i[s],
                         l = f[a.id];
@@ -4459,28 +4482,28 @@
                 }
             }
     };
-    var w = function() {
+    var w = function () {
         var t = [];
-        return function(e, i) {
-            return t[e] = i, t.filter(Boolean).join("\n")
+        return function (e, i) {
+            return t[e] = i, t.filter(Boolean).join("")
         }
     }()
-}, function(t, e) {
+}, function (t, e) {
     function i(t) {
         return null != t && "object" == typeof t
     }
     t.exports = i
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\n\nvoid main(void) {\n\tvUv = uv;\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nvarying vec2 vUv;\nuniform vec2 resolution;\nuniform float uMaskRadius;\nuniform vec2 uMaskCenter;\n\nuniform vec3 color;\n\nuniform int uInvertMask;\nuniform int useMask;\nuniform float alpha;\n\nvoid main() {\n\t\n    float _maskRadius = uMaskRadius;\n\n    if (useMask == 1) {\n\t    if ( uInvertMask == 1) {\n\t    \tif ( length( gl_FragCoord.xy - (resolution*uMaskCenter) ) < uMaskRadius  ) {\n\t\t        discard;\n\t\t    }\n\t    }\n\t    else {\n\t\t    if ( length( gl_FragCoord.xy - (resolution*uMaskCenter) ) > uMaskRadius  ) {\n\t\t        discard;\n\t\t    }\n\t    }\n    }\n\n    gl_FragColor = vec4( color, alpha);\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\nuniform mat4 uMMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\nvoid main(void) {\n\n\tvUv       = uv;\n\tvNormal   = normalize( (uMMatrix * vec4(normal, 0.0)).rgb );\n\tvPosition = (uMMatrix * vec4(position, 1.0)).rgb;\n\n\tvec4 mvPosition = uMVMatrix * vec4( position, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nvarying vec2 vUv;\nuniform vec3 color;\nuniform float alpha;\n\nvoid main() {\n    gl_FragColor = vec4( color, alpha);\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\n\nuniform float uPointSize;\n\nvoid main(void) {\n\n\tvUv       = uv;\n\n\tvec4 mvPosition = uMVMatrix * vec4( position, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n \t\t\n    gl_PointSize = uPointSize;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e, i) {
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;void main(void) {vUv = uv;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;varying vec2 vUv;uniform vec2 resolution;uniform float uMaskRadius;uniform vec2 uMaskCenter;uniform vec3 color;uniform int uInvertMask;uniform int useMask;uniform float alpha;void main() {    float _maskRadius = uMaskRadius;    if (useMask == 1) {    if ( uInvertMask == 1) {    if ( length( gl_FragCoord.xy - (resolution*uMaskCenter) ) < uMaskRadius  ) {        discard;    }    }    else {    if ( length( gl_FragCoord.xy - (resolution*uMaskCenter) ) > uMaskRadius  ) {        discard;    }    }    }    gl_FragColor = vec4( color, alpha);}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;uniform mat4 uMMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; void main(void) {vUv       = uv;vNormal   = normalize( (uMMatrix * vec4(normal, 0.0)).rgb );vPosition = (uMMatrix * vec4(position, 1.0)).rgb;vec4 mvPosition = uMVMatrix * vec4( position, 1.0 ); vViewPosition = mvPosition.xyz;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;varying vec2 vUv;uniform vec3 color;uniform float alpha;void main() {    gl_FragColor = vec4( color, alpha);}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; uniform float uPointSize;void main(void) {vUv       = uv;vec4 mvPosition = uMVMatrix * vec4( position, 1.0 ); vViewPosition = mvPosition.xyz;     gl_PointSize = uPointSize;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -4503,40 +4526,40 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     this.$btn = this.querySelector(".js-expand__btn"), this.$content = this.querySelector(".js-expand__content"), this.$content.style.overflow = "hidden", this.$content.style[a.support.transition] = "height 0.6s ease-out"
                 }
             }, {
                 key: "_onExpandDown",
-                value: function() {
+                value: function () {
                     this.props.isActive = !this.props.isActive, this.$content.style.height = this.props.isActive ? this._contentHeight + "px" : "0px"
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.$content.style.height = "auto", this._contentHeight = this.$content.clientHeight, this.$content.style.height = "0px"
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         isActive: {
                             type: "bool",
@@ -4546,20 +4569,20 @@
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {
                         "click .js-expand__btn": "_onExpandDown"
                     }
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(98)
                 }
             }]), e
         }(a.Component);
     (0, a.register)("app-accordion", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -4582,36 +4605,36 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {}
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(99)
                 }
             }]), e
         }(a.Component);
     (0, a.register)("app-footer", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -4640,14 +4663,14 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -4752,31 +4775,31 @@
             }), k.add(j), j.visible = !1
         }
     }
-    var L = function(t) {
+    var L = function (t) {
         function e() {
             return o(this, e), r(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
         }
         return s(e, t), a(e, [{
             key: "_onLinkEnter",
-            value: function(t) {
+            value: function (t) {
                 this.props.mode = t.currentTarget.getAttribute("data-mode")
             }
         }, {
             key: "_onLinkLeave",
-            value: function(t) {}
+            value: function (t) {}
         }, {
             key: "created",
-            value: function() {
+            value: function () {
                 this.time = 0, this.progress = 1, this._minCircleRadius = 0, this._circleCornerPosition = [0, 0], this._circleCenterPosition = [0, 0], this._deltaX = 0, this._deltaY = 0, this._globalRotation = 0, this._autoRotation = 0
             }
         }, {
             key: "ready",
-            value: function() {
+            value: function () {
                 this.$scene = this.querySelector(".js-scene"), this.$scene.appendChild(M.canvas)
             }
         }, {
             key: "resize",
-            value: function() {
+            value: function () {
                 if (M.gl) {
                     this._winHeight = window.innerHeight, this._winWidth = window.innerWidth;
                     var t = Math.sqrt(this._winWidth * this._winWidth + this._winHeight * this._winHeight) / 2;
@@ -4785,12 +4808,12 @@
             }
         }, {
             key: "_onModeChange",
-            value: function() {
+            value: function () {
                 this._globalRotation -= Math.PI / 2
             }
         }, {
             key: "update",
-            value: function() {
+            value: function () {
                 if (M.gl && this._playMask && (this.props.isActive || 1 != this.progress) && (this._autoRotation -= .005, !(this._playMask && (this.progress += .02, this.progress > 1 && (this.progress = 1, !this.props.isActive))))) {
                     M.clearColor(0, 0, 0, 0), M.clear(), M.render(k, E), this._circleCornerPosition[0] = this.props.menuPosition[0] - this._winWidth / 2, this._circleCornerPosition[1] = this._winHeight - this.props.menuPosition[1] - this._winHeight / 2;
                     var t = (0, P.default)(.85, .02, .225, .925, this.progress, 1),
@@ -4799,7 +4822,8 @@
                     if (i[0] = this._circleCornerPosition[0] + (0 - this._circleCornerPosition[0]) * t, i[1] = this._circleCornerPosition[1] + (0 - this._circleCornerPosition[1]) * t, i[1] += Math.sin(Math.PI * t) * (.5 * this._winHeight) * -1, C.material.uniforms.uInvertMask.value = !this.props.isActive, C.material.uniforms.uMaskRadius.value = e, C.material.uniforms.resolution.value = [window.innerWidth, window.innerHeight], C.material.uniforms.uMaskCenter.value = [(i[0] + .5 * window.innerWidth) / window.innerWidth, (i[1] + .5 * window.innerHeight) / window.innerHeight], this._isMobile) {
                         S.visible = !1, T.visible = !1;
                         for (var n = 0; n < O.length; n++) O[n].mesh.visible = !1
-                    } else {
+                    }
+                    else {
                         S.visible = !0, T.visible = !0, S.rotation[2] += .02 * (this._globalRotation + this._autoRotation - S.rotation[2]), T.rotation[2] += .02 * (this._globalRotation + this._autoRotation - T.rotation[2]);
                         for (var o = 0; o < O.length; o++) O[o].mesh.visible = !0, "solution" == this.props.mode ? (this._currLineCircle1Radius += .0075 * (.8 * this._lineCircle1Radius - this._currLineCircle1Radius), this._currLineCircle2Radius += .015 * (.6 * this._lineCircle2Radius - this._currLineCircle2Radius), this._currLineCircle3Radius += .01 * (.8 * this._lineCircle2Radius - this._currLineCircle3Radius), O[o].mesh.position[0] = Math.cos(O[o].angle + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[1] = Math.sin(O[o].angle + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[2] = 0, O[o].mesh.scale[0] = O[o].mesh.scale[1] = 0 == o ? O[o].mesh.scale[2] = .1 * (0 - O[o].mesh.scale[2]) : O[o].mesh.scale[2] += .1 * (1 - O[o].mesh.scale[2]), S.material.uniforms.uProgress.value += .01 * (1 - S.material.uniforms.uProgress.value), T.material.uniforms.uProgress.value += .01 * (0 - T.material.uniforms.uProgress.value), S.material.uniforms.uDirection.value = 1, T.material.uniforms.uDirection.value = 0, S.scale[0] = this._currLineCircle1Radius, S.scale[1] = S.scale[0], S.material.uniforms.scale.value = S.scale, T.scale[0] = this._currLineCircle2Radius, T.scale[1] = T.scale[0], T.material.uniforms.scale.value = T.scale) : "about" == this.props.mode ? (this._currLineCircle1Radius += .01 * (this._lineCircle1Radius - this._currLineCircle1Radius), this._currLineCircle2Radius += .01 * (.5 * this._lineCircle2Radius - this._currLineCircle2Radius), this._currLineCircle3Radius += .01 * (.5 * this._lineCircle2Radius - this._currLineCircle3Radius), 0 == o ? (O[o].mesh.position[0] = 0, O[o].mesh.position[1] = 0, O[o].mesh.position[2] = 0) : (O[o].mesh.position[0] = Math.cos(2 * Math.PI / 6 * o + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[1] = Math.sin(2 * Math.PI / 6 * o + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[2] = 0), O[o].mesh.scale[0] = O[o].mesh.scale[1] = O[o].mesh.scale[2] += .1 * (1 - O[o].mesh.scale[2]), S.material.uniforms.uProgress.value += .01 * (1 - S.material.uniforms.uProgress.value), T.material.uniforms.uProgress.value += .01 * (0 - T.material.uniforms.uProgress.value), S.material.uniforms.uDirection.value = 1, T.material.uniforms.uDirection.value = 0, S.scale[0] = this._currLineCircle1Radius, S.scale[1] = S.scale[0], S.material.uniforms.scale.value = S.scale, T.scale[0] = this._currLineCircle2Radius, T.scale[1] = T.scale[0], T.material.uniforms.scale.value = T.scale) : "home" == this.props.mode ? (this._currLineCircle1Radius += .01 * (this._lineCircle1Radius - this._currLineCircle1Radius), this._currLineCircle2Radius += .01 * (.7 * this._lineCircle2Radius - this._currLineCircle2Radius), this._currLineCircle3Radius += .01 * (.7 * this._lineCircle2Radius - this._currLineCircle3Radius), 0 == o ? (O[o].mesh.position[0] = Math.cos(O[o].angle + S.rotation[2]) * this._currLineCircle1Radius, O[o].mesh.position[1] = Math.sin(O[o].angle + S.rotation[2]) * this._currLineCircle1Radius, O[o].mesh.position[2] = 2, O[o].mesh.scale[0] = O[o].mesh.scale[1] = O[o].mesh.scale[2] += .1 * (1 - O[o].mesh.scale[2])) : (O[o].mesh.position[0] = Math.cos(O[o].angle + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[1] = Math.sin(O[o].angle + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[2] = 2, O[o].mesh.scale[0] = O[o].mesh.scale[1] = O[o].mesh.scale[2] += .1 * ((1 == o ? 1 : 0) - O[o].mesh.scale[2])), S.material.uniforms.uProgress.value += .01 * (1 - S.material.uniforms.uProgress.value), T.material.uniforms.uProgress.value += .01 * (1 - T.material.uniforms.uProgress.value), S.material.uniforms.uDirection.value = 1, T.material.uniforms.uDirection.value = 1, S.scale[0] = this._currLineCircle1Radius, S.scale[1] = S.scale[0], S.material.uniforms.scale.value = S.scale, T.scale[0] = this._currLineCircle2Radius, T.scale[1] = T.scale[0], T.material.uniforms.scale.value = T.scale) : (this._currLineCircle1Radius += .01 * (.7 * this._lineCircle1Radius - this._currLineCircle1Radius), this._currLineCircle2Radius += .01 * (.5 * this._lineCircle2Radius - this._currLineCircle2Radius), this._currLineCircle3Radius += .01 * (.5 * this._lineCircle2Radius - this._currLineCircle3Radius), O[o].mesh.position[0] = Math.cos(O[o].angle + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[1] = Math.sin(O[o].angle + S.rotation[2]) * this._currLineCircle3Radius, O[o].mesh.position[2] = 2, O[o].mesh.scale[0] = O[o].mesh.scale[1] = O[o].mesh.scale[2] += .1 * (0 - O[o].mesh.scale[2]), S.material.uniforms.uProgress.value += .01 * (0 - S.material.uniforms.uProgress.value), T.material.uniforms.uProgress.value += .01 * (0 - T.material.uniforms.uProgress.value), S.material.uniforms.uDirection.value = 0, T.material.uniforms.uDirection.value = 0, S.scale[0] = this._currLineCircle1Radius, S.scale[1] = S.scale[0], S.material.uniforms.scale.value = S.scale, T.scale[0] = this._currLineCircle2Radius, T.scale[1] = T.scale[0], T.material.uniforms.scale.value = T.scale)
                     }
@@ -4807,18 +4831,18 @@
             }
         }, {
             key: "_onActiveChange",
-            value: function() {
+            value: function () {
                 var t = this;
-                this.progress = 0, this._playMask = !0, this._globalRotation -= Math.PI / 2, this.props.isActive ? setTimeout(function() {
+                this.progress = 0, this._playMask = !0, this._globalRotation -= Math.PI / 2, this.props.isActive ? setTimeout(function () {
                     t.props.mode = t.props.defaultMode
                 }, 500) : this.props.mode = "default"
             }
         }, {
             key: "detached",
-            value: function() {}
+            value: function () {}
         }, {
             key: "events",
-            get: function() {
+            get: function () {
                 return {
                     "pointerenter .js-menu-link": "_onLinkEnter",
                     "pointerleave .js-menu-link": "_onLinkLeave"
@@ -4826,12 +4850,12 @@
             }
         }, {
             key: "template",
-            get: function() {
+            get: function () {
                 return i(100)
             }
         }, {
             key: "defaultProps",
-            get: function() {
+            get: function () {
                 return {
                     menuPosition: {
                         type: "arr",
@@ -4854,7 +4878,7 @@
         }]), e
     }(l.Component);
     (0, l.register)("app-menu", L)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -4877,69 +4901,73 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
         l = i(6),
-        u = (function(t) {
+        u = (function (t) {
             t && t.__esModule
-        }(l), function(t) {
+        }(l), function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._lastWinWidth = 0, this._winWidth = window.innerWidth
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
                     this._lines = [], this._words = [], this.$placeholder = this.querySelector(".js-placeholder"), this.originalContent = this.querySelector(".js-content").innerText.replace("-", "&#8209;"), this._words = [];
-                    for (var e = this.originalContent.replace(/(\n|\r)/g, " ").replace(/\s+/g, " ").split(" "), i = 0; i < e.length; i++) {
+                    for (var e = this.originalContent.replace(/(|\r)/g, " ").replace(/\s+/g, " ").split(" "), i = 0; i < e.length; i++) {
                         var n = document.createElement("span");
                         if (/\*/g.test(e[i])) {
                             var o = document.createElement("span");
                             o.innerHTML = e[i].replace(/\*/g, ""), o.classList.add("u-underline"), n.appendChild(o)
-                        } else if ("br" === e[i]) {
+                        }
+                        else if ("br" === e[i]) {
                             var r = document.createElement("br");
                             n.appendChild(r)
-                        } else n.innerHTML = e[i];
+                        }
+                        else n.innerHTML = e[i];
                         if (this._words.push(n), i < e.length - 1) {
                             var s = document.createElement("span");
                             s.innerHTML = " ", this._words.push(s)
                         }
                     }
-                    setTimeout(function() {
+                    setTimeout(function () {
                         t.resize(!0)
                     }, 2e3)
                 }
             }, {
                 key: "resize",
-                value: function(t) {
+                value: function (t) {
                     this._winWidth = window.innerWidth, this._isMobile = this._winWidth < 700;
                     var e = [];
                     if (t || this._isMobile && this._winWidth !== this._lastWinWidth || !this._isMobile) {
                         this._lastWinWidth = this._winWidth, this._words = [];
-                        for (var i = this.originalContent.replace(/(\n|\r)/g, " ").replace(/\s+/g, " ").split(" "), n = 0; n < i.length; n++) {
+                        for (var i = this.originalContent.replace(/(|\r)/g, " ").replace(/\s+/g, " ").split(" "), n = 0; n < i.length; n++) {
                             var o = document.createElement("span");
                             if (/\*/g.test(i[n])) {
                                 var r = document.createElement("span");
                                 r.innerHTML = i[n].replace(/\*/g, ""), r.classList.add("u-underline"), o.appendChild(r)
-                            } else if ("br" === i[n]) {
+                            }
+                            else if ("br" === i[n]) {
                                 var s = document.createElement("br");
                                 o.appendChild(s)
-                            } else o.innerHTML = i[n];
+                            }
+                            else o.innerHTML = i[n];
                             if (this._words.push(o), n < i.length - 1) {
                                 var a = document.createElement("span");
                                 a.innerHTML = " ", this._words.push(a)
@@ -4957,7 +4985,7 @@
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         delay: {
                             type: "f",
@@ -4991,13 +5019,13 @@
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(101)
                 }
             }]), e
         }(a.Component));
     (0, a.register)("app-multiline", u)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5020,25 +5048,25 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     for (this.$parent = this.parentNode; this.$parent;) {
                         if ("APP-SLIDESHOW" == this.$parent.tagName) {
                             this.$parent.addItem(this, this.props.index);
@@ -5050,17 +5078,17 @@
                 }
             }, {
                 key: "detached",
-                value: function() {
+                value: function () {
                     this.$parent && this.$parent.removeItem(this, this.props.index)
                 }
             }, {
                 key: "_focusSlide",
-                value: function() {
+                value: function () {
                     this.props.index > this.props.currentIndex ? (this.classList.add("is-next"), this.classList.remove("is-prev"), this.classList.remove("is-active")) : this.props.index < this.props.currentIndex ? (this.classList.add("is-prev"), this.classList.remove("is-next"), this.classList.remove("is-active")) : (this.classList.add("is-active"), this.classList.remove("is-prev"), this.classList.remove("is-next"))
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         index: {
                             type: "int",
@@ -5076,7 +5104,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("app-slide", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5099,57 +5127,57 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "_next",
-                value: function() {
+                value: function () {
                     ++this.props.currentIndex > this.props.items.length - 1 && (this.props.currentIndex = this.props.items.length - 1)
                 }
             }, {
                 key: "_prev",
-                value: function() {
+                value: function () {
                     --this.props.currentIndex < 0 && (this.props.currentIndex = 0)
                 }
             }, {
                 key: "_onCurrentIndexChange",
-                value: function() {
+                value: function () {
                     if (this.props.items)
                         for (var t = 0, e = this.props.items.length; t < e; t++) this.props.items[t].props.currentIndex = this.props.currentIndex
                 }
             }, {
                 key: "addItem",
-                value: function(t, e) {
+                value: function (t, e) {
                     t.props.currentIndex = this.props.currentIndex, e ? this.props.items[e] = t : (t.props.index = this.props.items.length, this.props.items.push(t))
                 }
             }, {
                 key: "removeItem",
-                value: function(t, e) {
+                value: function (t, e) {
                     this.props.items.splice(e, 1);
                     for (var i = 0, n = this.props.items.length; i < n; i++) this.props.items[i].props.index = i
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(102)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         autoplay: {
                             type: "bool",
@@ -5177,7 +5205,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("app-slideshow", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5200,69 +5228,70 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._vect = [0, 0], this._vectLength = 0, this._pointerX = 0, this._pointerY = 0, this._x = 0, this._y = 0, this._progress = 0, this._offset = [0, 0], this.bindMethods(["_onPointerMove"])
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     this._radiusSqrtSmall = this.props.radius * this.props.radius, this._radiusSqrtLarge = 4 * this._radiusSqrtSmall, this._radiusSqrt = this._radiusSqrtSmall, this.$triggerParallax = this.querySelectorAll(".js-trigger-parallax"), this.triggerParallaxRatio = [];
                     for (var t = 0; t < this.$triggerParallax.length; t++) this.triggerParallaxRatio[t] = Number(this.$triggerParallax[t].getAttribute("ratio"))
                 }
             }, {
                 key: "detached",
-                value: function() {
+                value: function () {
                     document.removeEventListener(a.support.pointermove, this._onPointerMove, !1)
                 }
             }, {
                 key: "attached",
-                value: function() {
+                value: function () {
                     a.support.touch || document.addEventListener(a.support.pointermove, this._onPointerMove, !1)
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     var t = this.getBoundingClientRect();
                     this._offset[0] = t.left, this._offset[1] = t.top
                 }
             }, {
                 key: "_onPointerMove",
-                value: function(t) {
+                value: function (t) {
                     this._touchEvent = a.support.touch ? t.touches[0] || t.changedTouches[0] : t, this._pointerX = this._touchEvent.pageX, this._pointerY = this._touchEvent.pageY, this._pointerY -= window.pageYOffset || document.documentElement.scrollTop
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     if (this.props.active) {
                         if (this._vect[0] = this._offset[0] - this._pointerX, this._vect[1] = this._offset[1] - this._pointerY, this._vectLength = this._vect[0] * this._vect[0] + this._vect[1] * this._vect[1], this._vectLength < this._radiusSqrt && !a.support.touch) {
                             this._isActive = !0, this.classList.add("is-focused"), this._radiusSqrt = this._radiusSqrtLarge, this._x += .25 * (this._pointerX - this._x - this._offset[0] + this.props.marginLeft), this._y += .25 * (this._pointerY - this._y - this._offset[1] + this.props.marginTop), this._progress += .3 * (1 - this._progress);
                             this._vectLength, this._radiusSqrt
-                        } else this._x += .2 * (0 - this._x), this._y += .2 * (0 - this._y), this._progress += .3 * (0 - this._progress), this._isActive && (this._isActive = !1, a.EventDispatcher.fire("cursor:unfocus"), this.classList.remove("is-focused"), this._radiusSqrt = this._radiusSqrtSmall);
+                        }
+                        else this._x += .2 * (0 - this._x), this._y += .2 * (0 - this._y), this._progress += .3 * (0 - this._progress), this._isActive && (this._isActive = !1, a.EventDispatcher.fire("cursor:unfocus"), this.classList.remove("is-focused"), this._radiusSqrt = this._radiusSqrtSmall);
                         this._x = Math.round(1e3 * this._x) / 1e3, this._y = Math.round(1e3 * this._y) / 1e3;
                         for (var t = 0; t < this.$triggerParallax.length; t++) this.$triggerParallax[t].style[a.support.transform] = "translate(" + this._x * this.triggerParallaxRatio[t] + "px, " + this._y * this.triggerParallaxRatio[t] + "px)" + a.support.translateZ
                     }
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         marginLeft: {
                             type: "float",
@@ -5286,7 +5315,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("app-trigger", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5309,37 +5338,37 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     this.$wordsWrapper = this.querySelector(".js-words-wrapper"), this.$originContent = this.querySelector(".js-word-content"), this.words = this.$originContent.innerHTML.trim().split(/\s+/);
                     for (var t = 0; t < this.words.length; t++) this.words[t] += "&nbsp;";
                     Array.prototype.push.apply(this.props.words, this.words)
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(103)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         delayIn: {
                             type: "f",
@@ -5363,7 +5392,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("app-words", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5386,67 +5415,67 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
         l = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-        u = function(t) {
+        u = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     this.lastValue = "", this.bindMethods(["_onInputFocus", "_onInputBlur", "onInputReset", "onInputChange"]), this.$input = this.querySelector(".js-input"), this.$input.addEventListener("focus", this._onInputFocus, !1), this.$input.addEventListener("reset", this.onInputReset, !1), this.$input.addEventListener("blur", this._onInputBlur, !1), this.$input.addEventListener("change", this.onInputChange, !1), this.onInputChange()
                 }
             }, {
                 key: "detached",
-                value: function() {
+                value: function () {
                     this.$input && (this.$input.removeEventListener("focus", this._onInputFocus), this.$input.removeEventListener("reset", this.onInputReset), this.$input.removeEventListener("blur", this._onInputBlur), this.$input.removeEventListener("change", this.onInputChange, !1))
                 }
             }, {
                 key: "_onInputFocus",
-                value: function() {}
+                value: function () {}
             }, {
                 key: "_onInputBlur",
-                value: function(t) {
+                value: function (t) {
                     this.$input.classList.remove("is-focused"), this.props.hasFocusedOnce = !0, this.props.isRequired && "" === this.$input.value ? this.props.isValid = !1 : "email" != this.props.type || l.test(this.$input.value) ? this.props.isValid = !0 : this.props.isValid = !1, this.props.isValid && this.$input.classList.remove("is-error")
                 }
             }, {
                 key: "onInputReset",
-                value: function() {
+                value: function () {
                     this.props.isValid = !1, this.props.hasFocusedOnce = !1
                 }
             }, {
                 key: "_clear",
-                value: function() {
+                value: function () {
                     this.$input.value = this.props.value, this.$input.setAttribute("value", this.props.value), this.onInputChange(), this._onInputBlur()
                 }
             }, {
                 key: "onInputChange",
-                value: function(t) {
+                value: function (t) {
                     var e = this;
-                    this.props.onInputChange(this.$input.value), setTimeout(function() {
+                    this.props.onInputChange(this.$input.value), setTimeout(function () {
                         "" === e.$input.value ? e.classList.remove("is-filled") : e.classList.add("is-filled")
                     }, 0)
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(104)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         value: "",
                         name: "",
@@ -5467,14 +5496,14 @@
                         },
                         onInputChange: {
                             type: "function",
-                            value: function() {}
+                            value: function () {}
                         },
                         maxDate: ""
                     }
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {
                         "focus .js-input": "_onInputFocus",
                         "paste .js-input": "onInputChange",
@@ -5485,7 +5514,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("core-input-text", u)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5508,35 +5537,35 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(t) {
+    var s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (t) {
             return typeof t
-        } : function(t) {
+        } : function (t) {
             return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
         },
-        a = function() {
+        a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         l = i(0),
-        u = function(t) {
+        u = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), a(e, [{
                 key: "_onForceSubmitChange",
-                value: function() {
+                value: function () {
                     this.props.forceSubmit && this.onSubmit()
                 }
             }, {
                 key: "checkFields",
-                value: function() {
+                value: function () {
                     this.$requiredField = this.querySelectorAll(".js-required"), this.$emailFields = this.querySelectorAll(".js-email"), this.$regFields = this.querySelectorAll("[data-regex]");
                     for (var t = this.props.onCustomCheck(), e = 0, i = this.$requiredField.length; e < i; e++)
                         if ("radio" === this.$requiredField[e].type) {
@@ -5546,19 +5575,20 @@
                                     break
                                 }
                             n ? (this.$requiredField[e].classList.remove("is-error"), this.$requiredField[e].classList.add("is-success")) : (t = !1, this.$requiredField[e].classList.add("is-error"), this.$requiredField[e].classList.remove("is-success"))
-                        } else !this.$requiredField[e].value && "checkbox" !== this.$requiredField[e].type || "" == this.$requiredField[e].value && "checkbox" !== this.$requiredField[e].type || "checkbox" == this.$requiredField[e].type && !this.$requiredField[e].checked ? "file" == this.$requiredField[e].type && this.$requiredField[e].getAttribute("value") && "" !== this.$requiredField[e].getAttribute("value") ? (this.$requiredField[e].classList.remove("is-error"), this.$requiredField[e].classList.add("is-success")) : (t = !1, this.$requiredField[e].classList.add("is-error"), this.$requiredField[e].classList.remove("is-success")) : (this.$requiredField[e].classList.remove("is-error"), this.$requiredField[e].classList.add("is-success"));
+                        }
+                    else !this.$requiredField[e].value && "checkbox" !== this.$requiredField[e].type || "" == this.$requiredField[e].value && "checkbox" !== this.$requiredField[e].type || "checkbox" == this.$requiredField[e].type && !this.$requiredField[e].checked ? "file" == this.$requiredField[e].type && this.$requiredField[e].getAttribute("value") && "" !== this.$requiredField[e].getAttribute("value") ? (this.$requiredField[e].classList.remove("is-error"), this.$requiredField[e].classList.add("is-success")) : (t = !1, this.$requiredField[e].classList.add("is-error"), this.$requiredField[e].classList.remove("is-success")) : (this.$requiredField[e].classList.remove("is-error"), this.$requiredField[e].classList.add("is-success"));
                     for (var s = 0, a = this.$emailFields.length; s < a; s++) this.$emailFields[s].value && "" != this.$emailFields[s].value && /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.$emailFields[s].value) ? (this.$emailFields[s].classList.remove("is-error"), this.$emailFields[s].classList.add("is-success")) : (t = !1, this.$emailFields[s].classList.add("is-error"), this.$emailFields[s].classList.remove("is-success"));
                     for (var l = 0, u = this.$regFields.length; l < u; l++) new RegExp(this.$regFields[l].getAttribute("data-regex"), "ig").test(this.$regFields[l].value) ? (this.$regFields[l].classList.remove("is-error"), this.$regFields[l].classList.add("is-success")) : (t = !1, this.$regFields[l].classList.add("is-error"), this.$regFields[l].classList.remove("is-success"));
                     return t
                 }
             }, {
                 key: "onSubmit",
-                value: function(t) {
+                value: function (t) {
                     t && t.preventDefault(), this.checkFields() && (this.props.formData = this.serialize(this.querySelector(".js-form")))
                 }
             }, {
                 key: "serialize",
-                value: function(t) {
+                value: function (t) {
                     var e = void 0,
                         i = {};
                     if ("object" == (void 0 === t ? "undefined" : s(t)) && "FORM" == t.nodeName)
@@ -5574,7 +5604,7 @@
                 }
             }, {
                 key: "onAjaxSuccess",
-                value: function(t) {
+                value: function (t) {
                     if (t && "object" !== (void 0 === t ? "undefined" : s(t)) && (t = JSON.parse(t)), this.props.onSuccess(t), this.props.reset) {
                         var e = this.querySelector(".js-form");
                         e.reset();
@@ -5582,14 +5612,16 @@
                             if (document.createEventObject) {
                                 var o = document.createEventObject();
                                 e.elements[n].fireEvent("onchange", o)
-                            } else {
+                            }
+                            else {
                                 var o = document.createEvent("HTMLEvents");
                                 o.initEvent("change", !0, !0), e.elements[n].dispatchEvent(o)
                             }
                             if (document.createEventObject) {
                                 var o = document.createEventObject();
                                 e.elements[n].fireEvent("onreset", o)
-                            } else {
+                            }
+                            else {
                                 var o = document.createEvent("HTMLEvents");
                                 o.initEvent("reset", !0, !0), e.elements[n].dispatchEvent(o)
                             }
@@ -5598,32 +5630,32 @@
                 }
             }, {
                 key: "onAjaxError",
-                value: function(t) {
+                value: function (t) {
                     this.props.onError(t)
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(105)
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {
                         submit: "onSubmit"
                     }
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         onSuccess: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         onError: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         action: window.location.href,
                         method: "post",
@@ -5638,7 +5670,7 @@
                         },
                         onCustomCheck: {
                             type: "fn",
-                            value: function() {
+                            value: function () {
                                 return !0
                             }
                         },
@@ -5660,7 +5692,7 @@
             }]), e
         }(l.Component);
     (0, l.register)("core-ajax-form", u)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5683,51 +5715,51 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
         l = i(121),
-        u = function(t) {
+        u = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(l),
-        c = function(t) {
+        c = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "_onReload",
-                value: function() {
+                value: function () {
                     this.props.reload && this.load()
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     this.props.auto && null != this.props.src && "null" != this.props.src && this.load()
                 }
             }, {
                 key: "onSrcChange",
-                value: function() {
+                value: function () {
                     this.props.sendOnSrcChange && this.load()
                 }
             }, {
                 key: "onDataChange",
-                value: function() {
+                value: function () {
                     this.props.sendOnDataChange && this.load()
                 }
             }, {
                 key: "load",
-                value: function() {
+                value: function () {
                     var t = this;
                     if (this.props.headers.Token = a.EventDispatcher.request("token:get"), this.props.src && "get" == this.props.method.toLowerCase()) {
                         var e = u.default.get(this.props.src);
@@ -5737,16 +5769,18 @@
                                     for (var n = 0; n < this.props.data[i].length; n++) {
                                         var o = {};
                                         o[i + "[]"] = this.props.data[i][n], e.query(o)
-                                    } else {
-                                        var r = {};
-                                        r[i] = this.props.data[i], e.query(r)
                                     }
-                                e.set(this.props.headers).end(function(e, i) {
-                            requestAnimationFrame(function() {
+                        else {
+                            var r = {};
+                            r[i] = this.props.data[i], e.query(r)
+                        }
+                        e.set(this.props.headers).end(function (e, i) {
+                            requestAnimationFrame(function () {
                                 e ? t.props.onError(e) : t.props.onSuccess(i)
                             })
                         })
-                    } else {
+                    }
+                    else {
                         if (!this.props.src) return;
                         var s = u.default.post(this.props.src);
                         if ("multipart/form-data" !== this.props.contentType) {
@@ -5755,25 +5789,29 @@
                                 if ("[object Array]" === Object.prototype.toString.call(this.props.data[l])) {
                                     var c = {};
                                     c[l + "[]"] = this.props.data[l], s.send(c)
-                                } else {
-                                    var h = {};
-                                    h[l] = this.props.data[l], s.send(h)
                                 }
-                        } else
+                            else {
+                                var h = {};
+                                h[l] = this.props.data[l], s.send(h)
+                            }
+                        }
+                        else
                             for (var l in this.props.data)
                                 if (this.props.data[l] instanceof File) s.attach(l, this.props.data[l], this.props.data[l].name);
                                 else if ("[object Array]" === Object.prototype.toString.call(this.props.data[l]))
                             for (var p = 0; p < this.props.data[l].length; p++) {
                                 var d = {};
                                 d[l + "[]"] = this.props.data[l][p], s.field(l + "[]", this.props.data[l][p])
-                            } else s.field(l, this.props.data[l]);
-                        s.set(this.props.headers).end(function(e, i) {
+                            }
+                        else s.field(l, this.props.data[l]);
+                        s.set(this.props.headers).end(function (e, i) {
                             if (!i.body) try {
                                 JSON.parse(i.text)
-                            } catch (e) {
+                            }
+                            catch (e) {
                                 return void t.props.onError("internal server error")
                             }
-                            requestAnimationFrame(function() {
+                            requestAnimationFrame(function () {
                                 e ? t.props.onError(e) : t.props.onSuccess(i)
                             })
                         })
@@ -5781,7 +5819,7 @@
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         src: {
                             value: null,
@@ -5795,11 +5833,11 @@
                         },
                         onSuccess: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         onError: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         contentType: {
                             type: "string",
@@ -5831,7 +5869,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("core-ajax", c)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5854,51 +5892,51 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this.bindMethods(["triggerBtn"])
                 }
             }, {
                 key: "detached",
-                value: function() {
+                value: function () {
                     this.removeEventListener("click", this.triggerBtn, !1)
                 }
             }, {
                 key: "_onHrefChange",
-                value: function() {
+                value: function () {
                     var t = this.getAttribute("href");
                     this.setAttribute("_href", t), this.setAttribute("href", "javascript:void(0);")
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     this._onHrefChange(), this.addEventListener("click", this.triggerBtn, !1)
                 }
             }, {
                 key: "triggerBtn",
-                value: function(t) {
+                value: function (t) {
                     t.stopPropagation(), a.EventDispatcher.fire("state:change", [this.props.state, this.props.params])
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         state: null,
                         params: {
@@ -5915,7 +5953,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("core-btn-state", l), (0, a.register)("core-btn-state-link", l, "a"), (0, a.register)("core-btn-state-button", l, "button")
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -5938,25 +5976,25 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     for (this.$parent = this.parentNode; this.$parent;) {
                         if ("CORE-IMG" == this.$parent.tagName) {
                             this._parentNode = this.$parent, this._index = this.$parent.addSource(this.props.src, this.props.query);
@@ -5967,12 +6005,12 @@
                 }
             }, {
                 key: "_updateSource",
-                value: function() {
+                value: function () {
                     this._parentNode && this._parentNode.updateSource(this._index, this.props.src, this.props.query)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         src: {
                             type: "string",
@@ -5989,7 +6027,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("core-img-source", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -6012,30 +6050,30 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._isLoaded = !1, this._sources = []
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     for (this.$parent = this.parentNode; this.$parent;) {
                         if ("SCROLL-OBJECT" == this.$parent.tagName) {
                             this._parentNode = this.$parent, this.$parent._img = this;
@@ -6047,30 +6085,30 @@
                 }
             }, {
                 key: "load",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.props.isReady || this._isLoading || (this._isLoading = !0, this._loadTimer = setTimeout(function() {
+                    this.props.isReady || this._isLoading || (this._isLoading = !0, this._loadTimer = setTimeout(function () {
                         t.props.isReady = !0, t._onSourceChange()
                     }, 300))
                 }
             }, {
                 key: "preventLoad",
-                value: function() {
+                value: function () {
                     this._isLoading && (clearTimeout(this._loadTimer), this._isLoading = !1)
                 }
             }, {
                 key: "_onSourceChange",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this._isLoaded = !1, clearTimeout(this._changeTimer), this._changeTimer = setTimeout(function() {
+                    this._isLoaded = !1, clearTimeout(this._changeTimer), this._changeTimer = setTimeout(function () {
                         for (var e = !1, i = 0; i < t._sources.length; i++) {
-                            if ("break" === function(i) {
+                            if ("break" === function (i) {
                                     var n = t._sources[i].query,
                                         o = t._sources[i].src;
                                     if (window.matchMedia(n).matches) {
                                         e = !0;
                                         var r = new Image;
-                                        return r.onload = function() {
+                                        return r.onload = function () {
                                             r = null, t._isLoaded = !0, t.props.hdSrc = o
                                         }, r.src = o, "break"
                                     }
@@ -6081,7 +6119,7 @@
                 }
             }, {
                 key: "addSource",
-                value: function(t, e) {
+                value: function (t, e) {
                     return this._sources.push({
                         query: e,
                         src: t
@@ -6089,27 +6127,27 @@
                 }
             }, {
                 key: "updateSource",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     void 0 !== this._sources[t] && (this._sources[t].src = e, this._sources[t].query = i, this._onSourceChange())
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this._onSourceChange()
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     this._isLoaded && this.props.alpha < .99 && (this.props.alpha += .1 * (1 - this.props.alpha), this.props.alpha > .99 && (this.props.alpha = 1))
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(106)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         alt: "",
                         src: "",
@@ -6121,7 +6159,7 @@
                         imgClass: "u-fit-w",
                         onLoaded: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         width: 1,
                         height: 1,
@@ -6138,7 +6176,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("core-img", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -6161,46 +6199,46 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
         l = i(26),
-        u = function(t) {
+        u = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(l),
-        c = function(t) {
+        c = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "attached",
-                value: function() {
+                value: function () {
                     u.default.base(this.props.base);
                     for (var t in this.props.routes) this.addRoute(t);
                     (0, u.default)("*", this.notFound.bind(this)), u.default.start(this.props.options)
                 }
             }, {
                 key: "addRoute",
-                value: function(t) {
-                    var e = function(e, i) {
+                value: function (t) {
+                    var e = function (e, i) {
                         this.onRoute(t, e, i)
                     };
                     (0, u.default)(t, e.bind(this))
                 }
             }, {
                 key: "onRoute",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     this.props.oldLocation = null == this.props.location ? {
                         path: null,
                         componentId: null
@@ -6215,14 +6253,14 @@
                 }
             }, {
                 key: "notFound",
-                value: function() {
-                    setTimeout(function() {
+                value: function () {
+                    setTimeout(function () {
                         (0, u.default)("/404")
                     }, 10)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         routes: {
                             type: "json",
@@ -6237,18 +6275,18 @@
                         oldLocation: null,
                         onRouteChange: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         onOpenPopin: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         }
                     }
                 }
             }]), e
         }(a.Component);
     (0, a.register)("core-route", c)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -6271,25 +6309,25 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "attached",
-                value: function() {
+                value: function () {
                     this.range = this.props.max - this.props.min, this.sizeProp = "horizontal" === this.props.orientation ? "width" : "height", this.handlerSizeProp = "horizontal" === this.props.orientation ? "handlerWidth" : "handlerHeight", this.offsetProp = "horizontal" === this.props.orientation ? "x" : "y", this.handlerPositionProp = "horizontal" === this.props.orientation ? "x" : "y", this.offset = {
                         x: 0,
                         y: 0
@@ -6300,14 +6338,14 @@
                 }
             }, {
                 key: "detached",
-                value: function() {
+                value: function () {
                     if (a.support.multipointerdown && a.support.multipointerdown.length > 0)
                         for (var t = 0; t < a.support.multipointerdown.length; t++) this.removeEventListener(a.support.multipointerdown[t], this._onPointerDown, !1), document.removeEventListener(a.support.multipointermove[t], this._onPointerMove, !1), document.removeEventListener(a.support.multipointerup[t], this._onPointerUp, !1);
                     else this.removeEventListener(a.support.pointerdown, this._onPointerDown, !1), document.removeEventListener(a.support.pointermove, this._onPointerMove, !1), document.removeEventListener(a.support.pointerup, this._onPointerUp, !1)
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     if (this.$handler = this.querySelector(".js-handler"), a.support.multipointerdown && a.support.multipointerdown.length > 0)
                         for (var t = 0; t < a.support.multipointerdown.length; t++) this.addEventListener(a.support.multipointerdown[t], this._onPointerDown, !1), document.addEventListener(a.support.multipointermove[t], this._onPointerMove, !1), document.addEventListener(a.support.multipointerup[t], this._onPointerUp, !1);
                     else this.addEventListener(a.support.pointerdown, this._onPointerDown, !1), document.addEventListener(a.support.pointermove, this._onPointerMove, !1), document.addEventListener(a.support.pointerup, this._onPointerUp, !1);
@@ -6315,12 +6353,12 @@
                 }
             }, {
                 key: "onActiveChange",
-                value: function() {
+                value: function () {
                     this.props.active && this.resize()
                 }
             }, {
                 key: "_onPointerDown",
-                value: function(t) {
+                value: function (t) {
                     this.resize(), this.isPointerDown = !0;
                     var e = a.support.touch ? t.touches[0].pageX || t.changedTouches[0].pageX : t.clientX,
                         i = a.support.touch ? t.touches[0].pageY || t.changedTouches[0].pageY : t.clientY;
@@ -6328,7 +6366,7 @@
                 }
             }, {
                 key: "_onPointerMove",
-                value: function(t) {
+                value: function (t) {
                     if (this.isPointerDown) {
                         t && (t.preventDefault(), t.stopPropagation());
                         var e = a.support.touch ? t.touches[0].pageX || t.changedTouches[0].pageX : t.clientX,
@@ -6338,19 +6376,19 @@
                 }
             }, {
                 key: "_onPointerUp",
-                value: function() {
+                value: function () {
                     this.isPointerDown && (this.isPointerDown = !1, this.props.onStop(this.props.value))
                 }
             }, {
                 key: "_track",
-                value: function(t, e) {
+                value: function (t, e) {
                     var i = "horizontal" === this.props.orientation ? t : e,
                         n = this.props.invert ? this.offset[this.offsetProp] + this[this.sizeProp] - i : i - this.offset[this.offsetProp];
                     n < 0 && (n = 0), n > this[this.sizeProp] && (n = this[this.sizeProp]), this.handler[this.handlerPositionProp] = n, this.props.value = this.props.min + this.range / this[this.sizeProp] * n, this.props.onSlide(this.props.value)
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.height = this.clientHeight, this.width = this.clientWidth, this.hanlderWidth = this.$handler.clientWidth, this.hanlderHeight = this.$handler.clientHeight, this.hanlderHalfWidth = this.hanlderWidth >> 1, this.hanlderHalfHeight = this.hanlderHeight >> 1;
                     this.getBoundingClientRect();
                     this.offset.x = 0, this.offset.y = 0;
@@ -6358,22 +6396,22 @@
                 }
             }, {
                 key: "onUpdateValue",
-                value: function() {
+                value: function () {
                     this.range = this.props.max - this.props.min, this.handler[this.handlerPositionProp] = (this.props.value - this.props.min) / this.range * this[this.sizeProp]
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     this.$handler && !isNaN(this.handler.x - this.hanlderHalfWidth) && (this.$handler.style[a.support.transform] = "translate(" + this.handler.x + "px, " + this.handler.y + "px) " + a.support.translateZ)
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {}
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         value: {
                             value: 0,
@@ -6388,11 +6426,11 @@
                         orientation: "horizontal",
                         onSlide: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         onStop: {
                             type: "func",
-                            value: function() {}
+                            value: function () {}
                         },
                         active: {
                             type: "bool",
@@ -6404,7 +6442,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("core-slider", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -6440,14 +6478,14 @@
         var i = t.split("-");
         return 8 * (i[1] - i[0]) / e
     }
-    var l, u, c, h, p = function() {
+    var l, u, c, h, p = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -6458,38 +6496,38 @@
     if (void 0 !== document.cancelFullscreen) l = "requestFullscreen", u = "exitFullscreen", c = "fullscreenchange";
     else
         for (; v--;) "moz" == m[v] && !document.mozFullScreenEnabled || void 0 === document[m[v] + "CancelFullScreen"] || (l = m[v] + "RequestFullScreen", u = m[v] + "CancelFullScreen", c = m[v] + "fullscreenchange", h = "webkit" == m[v] ? m[v] + "IsFullScreen" : m[v] + "FullScreen");
-    var g = function(t) {
+    var g = function (t) {
         function e() {
             return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
         }
         return r(e, t), p(e, [{
             key: "detached",
-            value: function() {
+            value: function () {
                 this.stopProgress()
             }
         }, {
             key: "onCurrentTimeChange",
-            value: function() {
+            value: function () {
                 this.seek(this.props.currentTime)
             }
         }, {
             key: "created",
-            value: function() {
+            value: function () {
                 f++, this.enabled = !0, this.classList.add("c-video-player"), this.paused = !0, this.muted = !1, this.seeksliding = !1, this.duration = 0, this.currentTime = 0, this.isFullScreen = !1, this.progressTimer = null, this.isFirstPlay = !0, this.mouseMoveTimer = null, this.isControlsHidden = !1, this.onFullScrenChange = this.onFullScrenChange.bind(this), this.onPlayerReady = this.onPlayerReady.bind(this), this.onPlayerStateChange = this.onPlayerStateChange.bind(this), this.onPlayerError = this.onPlayerError.bind(this)
             }
         }, {
             key: "disable",
-            value: function() {
+            value: function () {
                 this.enabled = !1, this.pause(), document.getElementById(this.props.uuid + "-video") && (document.getElementById(this.props.uuid + "-video").style.display = "none")
             }
         }, {
             key: "enable",
-            value: function() {
+            value: function () {
                 this.enabled = !0, this.props.autoplay && this.play(), document.getElementById(this.props.uuid + "-video") && (document.getElementById(this.props.uuid + "-video").style.display = "block")
             }
         }, {
             key: "_onVolumeDown",
-            value: function(t) {
+            value: function (t) {
                 if (!this.props.controls) return !0;
                 this.isPointerDown = !0;
                 var e = d.support.touch ? t.touches[0].pageX || t.changedTouches[0].pageX : t.clientX,
@@ -6498,7 +6536,7 @@
             }
         }, {
             key: "_onPointerMove",
-            value: function(t) {
+            value: function (t) {
                 if (this.props.autoHideControls && this.toggleControls(), this.isPointerDown) {
                     t && t.preventDefault();
                     var e = d.support.touch ? t.touches[0].pageX || t.changedTouches[0].pageX : t.clientX,
@@ -6508,18 +6546,18 @@
             }
         }, {
             key: "_onPointerUp",
-            value: function() {
+            value: function () {
                 this.isPointerDown && (this.isPointerDown = !1)
             }
         }, {
             key: "track",
-            value: function(t, e) {
+            value: function (t, e) {
                 var i = t - this.volumeOffset.x;
                 i = Math.min(this.volumeHandlerWidth, Math.max(0, i)), this.props.volume = i / this.volumeHandlerWidth, this.HTMLplayer.volume = this.props.volume
             }
         }, {
             key: "ready",
-            value: function() {
+            value: function () {
                 if (this.$content = this.querySelector(".js-content"), this.$volumeHandler = this.querySelector(".js-volume"), null === this.props.src) return void this.props.onReady(this);
                 for (l && this.classList.add("is-support-fullscreen"), this._onSrcChange(), this.props.onReady(this), this.$parent = this.parentNode; this.$parent;) {
                     if ("SCROLL-OBJECT" == this.$parent.tagName) {
@@ -6531,7 +6569,7 @@
             }
         }, {
             key: "resize",
-            value: function() {
+            value: function () {
                 if (d.support.ipad && this.classList.add("is-ipad"), d.support.iphone && this.classList.add("is-iphone"), d.support.touch && this.classList.add("is-touch"), this.props.cover && (this._parentWidth = this.parentNode.clientWidth, this._parentHeight = this.parentNode.clientHeight, this._computedSize = s(1280, 720, this._parentWidth, this._parentHeight, !1), this._offsetX = .5 * Math.round(this._parentWidth - this._computedSize.width), this._offsetY = .5 * Math.round(this._parentHeight - this._computedSize.height), this.$content.style.width = Math.round(this._computedSize.width) + "px", this.$content.style.height = Math.round(this._computedSize.height) + "px", (this._offsetX || this._offsetY) && (this.$content.style[d.support.transform] = "translate(" + this._offsetX + "px, " + this._offsetY + "px) " + d.support.translateZ)), this.props.controls && null !== this.$volumeHandler) {
                     this.volumeHandlerWidth = this.$volumeHandler.clientWidth, this.volumeHandlerHeight = this.$volumeHandler.clientHeight, this.volumeHandlerHalfWidth = this.volumeHandlerWidth >> 1, this.volumeHandlerHalfHeight = this.volumeHandlerHeight >> 1;
                     this.getBoundingClientRect();
@@ -6541,25 +6579,25 @@
             }
         }, {
             key: "_onSrcChange",
-            value: function() {
+            value: function () {
                 var t = this;
-                null !== this.props.src && setTimeout(function() {
+                null !== this.props.src && setTimeout(function () {
                     t.HTMLplayer = t.querySelector(".js-native-video"), t.createHTML5Player(), t.classList.add("is-native")
                 }, 100)
             }
         }, {
             key: "onSliderSlide",
-            value: function(t) {
+            value: function (t) {
                 this.seeksliding = !0, this.stopProgress()
             }
         }, {
             key: "onSliderStop",
-            value: function(t) {
+            value: function (t) {
                 this.seeksliding = !1, this.seek(t * this.duration), this.startProgress()
             }
         }, {
             key: "getDashParams",
-            value: function(t) {
+            value: function (t) {
                 try {
                     var e = t.querySelectorAll("BaseURL")[0].textContent.toString(),
                         i = t.querySelectorAll("Representation"),
@@ -6572,7 +6610,7 @@
                         u = l[0].getAttribute("range"),
                         c = (t.querySelectorAll("SegmentURL"), t.querySelectorAll("Period"));
                     c[0].getAttribute("duration"), t.querySelectorAll("SegmentList");
-                    return console.log("\n          Media file:  " + e + "\n          Type: " + n + "\n          Codecs: " + o + "\n          Width: " + r + "\n          Height: " + s + "\n          Bandwidth: " + a + "\n          range: " + u + "\n          Segment length: 0 seconds\n          Duration: 0\n        "), {
+                    return console.log("          Media file:  " + e + "          Type: " + n + "          Codecs: " + o + "          Width: " + r + "          Height: " + s + "          Bandwidth: " + a + "          range: " + u + "          Segment length: 0 seconds          Duration: 0        "), {
                         file: e,
                         type: n,
                         codecs: o,
@@ -6583,258 +6621,263 @@
                         segmentLength: 0,
                         duration: 0
                     }
-                } catch (t) {
+                }
+                catch (t) {
                     return void console.warn(t)
                 }
             }
         }, {
             key: "setupDashVideo",
-            value: function() {
+            value: function () {
                 var t = this;
                 if (!window.MediaSource) return void console.warn("mediasource or syntax not supported");
-                this._dashMediaSource = new window.MediaSource, this.props.currentSrc = URL.createObjectURL(this._dashMediaSource), this._dashMediaSource.addEventListener("sourceopen", function(e) {
+                this._dashMediaSource = new window.MediaSource, this.props.currentSrc = URL.createObjectURL(this._dashMediaSource), this._dashMediaSource.addEventListener("sourceopen", function (e) {
                     try {
                         t._dashVideoSource = t._dashMediaSource.addSourceBuffer('video/mp4; codecs="' + t._dashParams.codecs + '"'), t.initDashVideo()
-                    } catch (e) {
+                    }
+                    catch (e) {
                         return void console.warn("Exception calling addSourceBuffer for video", e)
                     }
                 }, !1)
             }
         }, {
             key: "_onDashVideoSourceUpdate",
-            value: function() {}
+            value: function () {}
         }, {
             key: "_dashGetStarted",
-            value: function() {}
+            value: function () {}
         }, {
             key: "initDashVideo",
-            value: function() {
+            value: function () {
                 var t = this,
                     e = new XMLHttpRequest;
                 if (!this._dashParams.range && !this._dashParams.file) return void console.warn('cannot init dash video because no "range" or "file" was found in dashParams');
                 e.open("GET", this._dashParams.file), this._dashSegCheck = (.8 * a(this._dashParams.range, this._dashParams.bandwidth)).toFixed(3), e.send(), e.responseType = "arraybuffer";
                 try {
-                    e.addEventListener("readystatechange", function() {
+                    e.addEventListener("readystatechange", function () {
                         if (e.readyState == e.DONE) try {
                             t._dashVideoSource.appendBuffer(new Uint8Array(e.response)), t._onDashVideoSourceUpdate = t._onDashVideoSourceUpdate.bind(t), t._dashVideoSource.addEventListener("update", t._onDashVideoSourceUpdate, !1)
-                        } catch (t) {}
+                        }
+                        catch (t) {}
                     }, !1)
-                } catch (t) {
+                }
+                catch (t) {
                     console.warn(t)
                 }
             }
         }, {
             key: "clearDashVars",
-            value: function() {}
+            value: function () {}
         }, {
             key: "createHTML5Player",
-            value: function() {
+            value: function () {
                 var t = this;
                 if (/\.mpd$/g.test(this.props.src)) {
                     console.warn("Dash MPEG4 detected " + this.props.src, this._dashPlayer);
                     var e = this.props.src;
                     if ("" !== e) {
                         var i = new XMLHttpRequest;
-                        i.open("GET", e, !0), i.responseType = "text", i.send(), i.onreadystatechange = function() {
+                        i.open("GET", e, !0), i.responseType = "text", i.send(), i.onreadystatechange = function () {
                             if (i.readyState == i.DONE) {
                                 var e = i.response,
                                     n = new DOMParser,
                                     o = n.parseFromString(e, "text/xml", 0);
                                 t._dashParams = t.getDashParams(o), t._dashParams.file = t.props.src.replace(/[^\/]*\.mpd$/g, "") + t._dashParams.file, t.setupDashVideo(), t.clearDashVars()
                             }
-                        }, i.addEventListener("error", function(t) {
+                        }, i.addEventListener("error", function (t) {
                             log("Error: " + t + " Could not load url.")
                         }, !1)
                     }
-                } else this.props.currentSrc = this.props.src, this.HTMLplayer && (this.HTMLplayer.removeEventListener("loadedmetadata", this.onPlayerReady, !1), this.HTMLplayer.removeEventListener("play", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("pause", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("ended", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("progress", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("error", this.onPlayerError, !1), this.HTMLplayer.addEventListener("loadedmetadata", this.onPlayerReady, !1), this.HTMLplayer.addEventListener("play", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("pause", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("ended", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("progress", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("error", this.onPlayerError, !1))
+                }
+                else this.props.currentSrc = this.props.src, this.HTMLplayer && (this.HTMLplayer.removeEventListener("loadedmetadata", this.onPlayerReady, !1), this.HTMLplayer.removeEventListener("play", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("pause", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("ended", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("progress", this.onPlayerStateChange, !1), this.HTMLplayer.removeEventListener("error", this.onPlayerError, !1), this.HTMLplayer.addEventListener("loadedmetadata", this.onPlayerReady, !1), this.HTMLplayer.addEventListener("play", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("pause", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("ended", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("progress", this.onPlayerStateChange, !1), this.HTMLplayer.addEventListener("error", this.onPlayerError, !1))
             }
         }, {
             key: "onPlayerReady",
-            value: function() {
+            value: function () {
                 this.classList.add("is-ready"), this.duration = this.getDuration(), this.addListenners(), this.fire("ready"), d.support.touch && d.support.smallscreen || d.support.ipad || (this.props.autoplay && !1 !== this.paused && this.enabled && this.play(), this.props.preload && (this._isPreload = !0, this.play()))
             }
         }, {
             key: "onPlayerError",
-            value: function(t) {
+            value: function (t) {
                 if (void 0 !== t.target.error) {
                     switch (t.target.error.code) {
-                        case t.target.error.MEDIA_ERR_ABORTED:
-                            console.warn("You aborted the video playback.");
-                            break;
-                        case t.target.error.MEDIA_ERR_NETWORK:
-                            console.warn("A network error caused the video download to fail part-way.");
-                            break;
-                        case t.target.error.MEDIA_ERR_DECODE:
-                            console.warn("The video playback was aborted due to a corruption problem or because the video used features your browser did not support.");
-                            break;
-                        case t.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
-                            console.warn("The video could not be loaded, either because the server or network failed or because the format is not supported.");
-                            break;
-                        default:
-                            console.warn("An unknown error occurred.")
+                    case t.target.error.MEDIA_ERR_ABORTED:
+                        console.warn("You aborted the video playback.");
+                        break;
+                    case t.target.error.MEDIA_ERR_NETWORK:
+                        console.warn("A network error caused the video download to fail part-way.");
+                        break;
+                    case t.target.error.MEDIA_ERR_DECODE:
+                        console.warn("The video playback was aborted due to a corruption problem or because the video used features your browser did not support.");
+                        break;
+                    case t.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                        console.warn("The video could not be loaded, either because the server or network failed or because the format is not supported.");
+                        break;
+                    default:
+                        console.warn("An unknown error occurred.")
                     }
                     this.fire("error")
                 }
             }
         }, {
             key: "onPlayerStateChange",
-            value: function(t) {
+            value: function (t) {
                 if (this.ischangingQuality) return void this.classList.add("is-loading");
                 1 == this.props.mute && this.mute(), "ended" != t.type && 0 != t.data || this.onPlayerEnded(), "play" != t.type && 1 != t.data || this.onPlayerPlay(), "pause" != t.type && 2 != t.data || this.onPlayerPause(), "progress" == t.type && this.onPlayerBuffer()
             }
         }, {
             key: "onPlayerBuffer",
-            value: function() {
+            value: function () {
                 this.fire("buffer"), this.classList.add("is-loading")
             }
         }, {
             key: "addListenners",
-            value: function() {
+            value: function () {
                 this.props.controls && d.EventDispatcher.on("key:escape", this.cancelFullScreen, this)
             }
         }, {
             key: "toggleControls",
-            value: function() {
+            value: function () {
                 var t = this;
-                clearTimeout(this.mouseMoveTimer), this.isControlsHidden && (this.isControlsHidden = !1, this.classList.remove("is-no-controls")), this.mouseMoveTimer = setTimeout(function() {
+                clearTimeout(this.mouseMoveTimer), this.isControlsHidden && (this.isControlsHidden = !1, this.classList.remove("is-no-controls")), this.mouseMoveTimer = setTimeout(function () {
                     t.isControlsHidden = !0, t.classList.add("is-no-controls")
                 }, 2e3)
             }
         }, {
             key: "toggleSound",
-            value: function(t) {
+            value: function (t) {
                 this.muted ? this.unmute() : this.mute()
             }
         }, {
             key: "onPlayerPlay",
-            value: function(t) {
+            value: function (t) {
                 var e = this;
-                this.duration = this.getDuration(), this.classList.add("is-playing"), this.classList.remove("is-paused"), this._loadingTimer = setTimeout(function() {
+                this.duration = this.getDuration(), this.classList.add("is-playing"), this.classList.remove("is-paused"), this._loadingTimer = setTimeout(function () {
                     e.classList.remove("is-loading")
                 }, 10), this.props.isPlaying = !0, this.paused = !1, this.startProgress(), this.props.controls && this.toggleControls(), this.isFirstPlay && (this.isFirstPlay = !1, this.duration = this.getDuration()), this.classList.add("has-started"), this.props.onStart(this), this._isPreload && !this.props.autoplay && (this._isPreload = !1, this.pause()), this.fire("play")
             }
         }, {
             key: "onPlayerPause",
-            value: function() {
+            value: function () {
                 this.classList.remove("is-playing"), this.classList.add("is-paused"), this.classList.remove("is-loading"), this.paused = !0, this.props.isPlaying = !1, this.stopProgress(), this.fire("pause"), clearTimeout(this.mouseMoveTimer), this.isControlsHidden && (this.isControlsHidden = !1, this.classList.remove("is-no-controls"))
             }
         }, {
             key: "onPlayerEnded",
-            value: function() {
+            value: function () {
                 var t = this;
-                this.fire("ended"), this.props.onEnded(this), setTimeout(function() {
+                this.fire("ended"), this.props.onEnded(this), setTimeout(function () {
                     t.onPlayerPause()
                 }, 40)
             }
         }, {
             key: "togglePlay",
-            value: function() {
+            value: function () {
                 this[this.paused ? "play" : "pause"]()
             }
         }, {
             key: "toggleFullScreen",
-            value: function() {
+            value: function () {
                 this.isFullScreen ? this.cancelFullScreen() : this.requestFullScreen()
             }
         }, {
             key: "requestFullScreen",
-            value: function() {
+            value: function () {
                 var t = this;
                 this.isFullScreen = !0, this.isPausedBeforeFullScreen = this.paused, this.pause(), this.classList.add("is-fullscreen"), d.EventDispatcher.fire("video:enterfullscreen");
                 for (var e = this; e.parentNode && e.parentNode.getAttribute;) e.parentNode.classList.add("is-branch"), e = e.parentNode;
-                l ? (document.addEventListener(c, this.onFullScrenChange), this[l]()) : setTimeout(function() {
+                l ? (document.addEventListener(c, this.onFullScrenChange), this[l]()) : setTimeout(function () {
                     1 == t.isPausedBeforeFullScreen ? t.pause() : t.play()
                 }, 0), document.getElementsByTagName("body")[0].classList.add("is-fullscreen")
             }
         }, {
             key: "onFullScrenChange",
-            value: function() {
+            value: function () {
                 document[h] || (document.removeEventListener(c, this.onFullScrenChange), this.isFullScreen && this.cancelFullScreen()), 1 == this.isPausedBeforeFullScreen ? this.pause() : this.play()
             }
         }, {
             key: "cancelFullScreen",
-            value: function() {
+            value: function () {
                 var t = this;
                 this.isFullScreen = !1, this.isPausedBeforeFullScreen = this.paused, this.pause(), this.classList.remove("is-fullscreen");
                 for (var e = this; e.parentNode && e.parentNode.getAttribute;) e.parentNode.classList.remove("is-branch"), e = e.parentNode;
-                u ? document[u]() : setTimeout(function() {
+                u ? document[u]() : setTimeout(function () {
                     1 == t.isPausedBeforeFullScreen ? t.pause() : t.play()
                 }, 0), document.getElementsByTagName("body")[0].classList.remove("is-fullscreen"), d.EventDispatcher.fire("video:leavefullscreen")
             }
         }, {
             key: "play",
-            value: function() {
+            value: function () {
                 this.paused && (void 0 !== this._dashPlayer ? this._dashPlayer.play() : this.HTMLplayer && this.HTMLplayer.play())
             }
         }, {
             key: "pause",
-            value: function() {
+            value: function () {
                 this.paused || (void 0 !== this._dashPlayer ? this._dashPlayer.pause() : this.HTMLplayer && (this.stopProgress(), this.HTMLplayer.pause()))
             }
         }, {
             key: "onActiveChange",
-            value: function() {
+            value: function () {
                 this.props.active ? (this.seek(0, !1), this.play()) : (this.pause(), this.seek(0))
             }
         }, {
             key: "onForceStop",
-            value: function() {
+            value: function () {
                 var t = this;
-                this.props.forceStop && (this.seek(0, !0), setTimeout(function() {
+                this.props.forceStop && (this.seek(0, !0), setTimeout(function () {
                     t.pause()
                 }, 4))
             }
         }, {
             key: "onSeekChange",
-            value: function() {
+            value: function () {
                 this.seek(this.props.seekTo)
             }
         }, {
             key: "changePoster",
-            value: function(t) {
+            value: function (t) {
                 this.props.poster = t
             }
         }, {
             key: "unmute",
-            value: function() {
+            value: function () {
                 this.HTMLplayer && (this.HTMLplayer.muted = !1, this.muted = !1, this.classList.remove("is-muted"))
             }
         }, {
             key: "mute",
-            value: function() {
+            value: function () {
                 this.HTMLplayer && (this.HTMLplayer.muted = !0, this.muted = !0, this.classList.add("is-muted"))
             }
         }, {
             key: "seek",
-            value: function(t, e) {
+            value: function (t, e) {
                 void 0 !== this._dashPlayer ? this._dashPlayer.seek(t) : this.HTMLplayer && (this.HTMLplayer.currentTime = t)
             }
         }, {
             key: "startProgress",
-            value: function() {
+            value: function () {
                 clearTimeout(this.progressTimer), this.updateTime()
             }
         }, {
             key: "stopProgress",
-            value: function() {
+            value: function () {
                 clearTimeout(this.progressTimer), this.progressTimer = null
             }
         }, {
             key: "updateTime",
-            value: function(t, e) {
+            value: function (t, e) {
                 var i = this;
-                this.currentTime = this.getCurrentTime(), this.props.controls && (this.props.timelineValue = this.currentTime / this.duration), this.progressTimer = setTimeout(function() {
+                this.currentTime = this.getCurrentTime(), this.props.controls && (this.props.timelineValue = this.currentTime / this.duration), this.progressTimer = setTimeout(function () {
                     i.updateTime()
                 }, 100), this.props.loop && this.currentTime >= this.duration - .05 && this.seek(0), this.props.onTimeupdate(this, this.currentTime)
             }
         }, {
             key: "setTimeCount",
-            value: function() {
+            value: function () {
                 this.formatTime(1e3 * this.currentTime), this.formatTime(1e3 * this.duration)
             }
         }, {
             key: "formatTime",
-            value: function(t) {
+            value: function (t) {
                 var e = t / 1e3 / 60 << 0,
                     i = t / 1e3 % 60 << 0,
                     n = "";
@@ -6842,27 +6885,27 @@
             }
         }, {
             key: "getCurrentTime",
-            value: function() {
+            value: function () {
                 return this.HTMLplayer.currentTime
             }
         }, {
             key: "getDuration",
-            value: function() {
+            value: function () {
                 return this.HTMLplayer.duration
             }
         }, {
             key: "destroy",
-            value: function() {
+            value: function () {
                 d.EventDispatcher.off("key:escape", this.cancelFullScreen, this)
             }
         }, {
             key: "template",
-            get: function() {
+            get: function () {
                 return i(107)
             }
         }, {
             key: "events",
-            get: function() {
+            get: function () {
                 return {
                     "click .js-video-big-play": "togglePlay",
                     "click .js-video-play": "togglePlay",
@@ -6874,7 +6917,7 @@
             }
         }, {
             key: "defaultProps",
-            get: function() {
+            get: function () {
                 return {
                     src: {
                         type: "string",
@@ -6946,23 +6989,23 @@
                     },
                     onReady: {
                         type: "func",
-                        value: function() {}
+                        value: function () {}
                     },
                     onEnded: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     onPlay: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     onStart: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     onTimeupdate: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     currentTime: {
                         type: "float",
@@ -6999,7 +7042,7 @@
         }]), e
     }(d.Component);
     (0, d.register)("core-video", g)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -7022,35 +7065,35 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._selectNode = null
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     this.$option = this.querySelector("option"), this._addToSelect()
                 }
             }, {
                 key: "_addToSelect",
-                value: function() {
+                value: function () {
                     for (var t = this.parentNode; t;) {
                         if ("LIGHT-UI-SELECT" == t.tagName) {
                             this._selectNode = t, this._selectNode.addOption(this);
@@ -7061,22 +7104,22 @@
                 }
             }, {
                 key: "detached",
-                value: function() {
+                value: function () {
                     this._selectNode && this._selectNode.removeOption(this)
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(108)
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {}
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         value: {
                             type: "string",
@@ -7095,7 +7138,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("light-ui-select-option", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -7118,71 +7161,71 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._options = []
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     this.$select = this.querySelector(".js-select");
                     for (var t = 0; t < this._options.length; t++) this._options[t]._isAppended || (this.$select.appendChild(this._options[t].$option), this._options[t]._isAppended = !0)
                 }
             }, {
                 key: "onValueChange",
-                value: function(t) {
+                value: function (t) {
                     this.currentValue = t.currentTarget.value, this.props.onValueChange({
                         currentTarget: this.$select
                     }, this.currentValue)
                 }
             }, {
                 key: "addOption",
-                value: function(t) {
+                value: function (t) {
                     this._options.push(t), this._updateChildNodes(), this.$select && (this.$select.appendChild(t.$option), t._isAppended = !0)
                 }
             }, {
                 key: "removeOption",
-                value: function(t) {
+                value: function (t) {
                     if (this._options.splice(t.props.index, 1), this._updateChildNodes(), this.$select)
                         for (var e = 0; e < this._options.length; e++) this._options[e].$option.parentNode && this._options[e].$option.parentNode.removeChild(this._options[e].$option)
                 }
             }, {
                 key: "_updateChildNodes",
-                value: function() {
+                value: function () {
                     for (var t = 0; t < this._options.length; t++) this._options[t].props.index = t
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(109)
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {
                         "change .js-select": "onValueChange"
                     }
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         name: {
                             type: "string",
@@ -7194,14 +7237,14 @@
                         },
                         onValueChange: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         }
                     }
                 }
             }]), e
         }(a.Component);
     (0, a.register)("light-ui-select", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -7230,14 +7273,14 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -7246,31 +7289,31 @@
         c = n(u),
         h = i(5),
         p = n(h),
-        d = function(t) {
+        d = function (t) {
             function e() {
                 return o(this, e), r(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return s(e, t), a(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._smoothedScroll = 0, this._ratio = 0, this._swing = 0, this._offset = [0, 0], this._position = [0, 0], this._worldPosition = [0, 0], this._screenPosition = [0, 0], this._smoothedPosition = [0, 0], this._alpha = 1, this._delta = 0, this._navLeft = 0, this._navTop = 0, this._navWidth = 0, this._navHeight = 0, this._img = null, this._lastPosition = [0, 0], this._zoom = 1
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.props.debug && (this.debug = document.createElement("div"), this.debug.style.color = "red", this.debug.style.position = "absolute", this.debug.style.top = 0, this.debug.style.left = 0, this.debug.style.width = "100%", this.debug.style.height = "100%", this.debug.style.lineHeight = "1", this.debug.style.fontSize = "12px", this.debug.style.border = "solid 1px red", this.debug.style.background = "rgba(0,255,0,0.1)", this.debug.style.pointerEvents = "none", this.debug.style.paddingTop = "10px", this.debug.style.display = "none", this.appendChild(this.debug)), this._scrollParent = this._getScrollParent(), this.props.mask && (this.style.overflow = "hidden"), setTimeout(function() {
+                    this.props.debug && (this.debug = document.createElement("div"), this.debug.style.color = "red", this.debug.style.position = "absolute", this.debug.style.top = 0, this.debug.style.left = 0, this.debug.style.width = "100%", this.debug.style.height = "100%", this.debug.style.lineHeight = "1", this.debug.style.fontSize = "12px", this.debug.style.border = "solid 1px red", this.debug.style.background = "rgba(0,255,0,0.1)", this.debug.style.pointerEvents = "none", this.debug.style.paddingTop = "10px", this.debug.style.display = "none", this.appendChild(this.debug)), this._scrollParent = this._getScrollParent(), this.props.mask && (this.style.overflow = "hidden"), setTimeout(function () {
                         t.resize()
                     }, 1e3), l.EventDispatcher.on("nav:position", this._getNavPosition, this)
                 }
             }, {
                 key: "_getNavPosition",
-                value: function(t, e, i, n) {
+                value: function (t, e, i, n) {
                     this._navLeft = t, this._navTop = e, this._navWidth = i, this._navHeight = n
                 }
             }, {
                 key: "_getScrollParent",
-                value: function() {
+                value: function () {
                     for (var t = this.parentNode; t;) {
                         if ("SCROLL-OBJECT" == t.tagName) return t;
                         t = t.parentNode
@@ -7279,7 +7322,7 @@
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     var t = this;
                     this._worldPosition[0] = 0, this._worldPosition[1] = 0, this._scrollParent && (this._worldPosition[0] = this._scrollParent._worldPosition[0], this._worldPosition[1] = this._scrollParent._worldPosition[1]), this._worldPosition[0] += this._offsetLeft, this._worldPosition[1] += this._offsetTop, this._position[0] = 0, this._position[1] = 0, this._ratio = this.props.ratio, this._worldPosition[0] += this.props.position[0], this._worldPosition[1] += this.props.position[1], this._smoothedPosition[0] += (this._worldPosition[0] - this._smoothedPosition[0]) * this.props.ratio, this._smoothedPosition[1] += (this._worldPosition[1] - this._smoothedPosition[1]) * this.props.ratio, this._position[0] += this._smoothedPosition[0] - this._worldPosition[0], this._position[1] += this._smoothedPosition[1] - this._worldPosition[1];
                     var e = this._screenPosition[1] + .5 * this._height - .5 * this._winHeight;
@@ -7288,23 +7331,23 @@
                         this._zoom = 1 + i
                     }
                     var n = "";
-                    this._screenPosition[1] > -this._height && this._screenPosition[1] < this._winHeight ? (n += " translate(" + this._position[0] + "px, " + this._position[1] + "px) translateZ(0)", 0 !== this.props.rotation && (n += " rotate(" + this.props.rotation + "deg)"), 1 === this.props.scale && 1 === this._zoom || (n += " scale(" + this.props.scale * this._zoom + ")"), this._screenPosition[1] < this._winDeltas && this.props.setActive && !this._isActive && (this._isActive = !0, this._setActiveTimer = setTimeout(function() {
+                    this._screenPosition[1] > -this._height && this._screenPosition[1] < this._winHeight ? (n += " translate(" + this._position[0] + "px, " + this._position[1] + "px) translateZ(0)", 0 !== this.props.rotation && (n += " rotate(" + this.props.rotation + "deg)"), 1 === this.props.scale && 1 === this._zoom || (n += " scale(" + this.props.scale * this._zoom + ")"), this._screenPosition[1] < this._winDeltas && this.props.setActive && !this._isActive && (this._isActive = !0, this._setActiveTimer = setTimeout(function () {
                         t.classList.add("is-active")
                     }, this._isMobile ? 1e3 * this.props.delay : 1e3 * this.props.delay + 300)), this._bodyMovin && this._bodyMovin.play(), this._video && this._video.props.autoplay && this._video.play(), this._img && this._img.load(), this.style.visibility = "visible", this.props.setActive ? this._isActive ? this.style.opacity = 1 : this.style.opacity = 0 : this.style.opacity = 1, this.props.isLight && l.EventDispatcher.fire("header:mask", [this._screenPosition[0], this._screenPosition[1], this._width, this._height])) : (this.props.setActive && (clearTimeout(this._setActiveTimer), this._isActive = !1, this.classList.remove("is-active")), this._bodyMovin && this._bodyMovin.pause(), this._img && this._img.preventLoad(), this._video && this._video.pause(), n = "translateY(-200%)", this.style.opacity = 0, this.style.visibility = "hidden", l.EventDispatcher.fire("header:mask", [this._screenPosition[0], this._screenPosition[1], this._width, this._height])), this.props.debug && (this.debug.innerHTML = "active:" + this._offsetTop), this._isMobile ? this.style[l.support.transform] = "none" : this.style[l.support.transform] = n
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.style.visibility = "visible", this._isActive = !1, this._height = this.clientHeight, this._width = this.clientWidth, this._offsetTop = (0, c.default)(this, this._scrollParent || document).top, this._offsetLeft = (0, c.default)(this, this._scrollParent || document).left, this._winDeltas = window.innerHeight, this._winHeight = window.innerHeight, this._winWidth = window.innerWidth, this._isMobile = window.innerWidth < 700
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(110)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         scroll: {
                             type: "float",
@@ -7394,7 +7437,7 @@
             }]), e
         }(l.Component);
     (0, l.register)("scroll-object", d)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -7417,43 +7460,43 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.props.onReady(), setTimeout(function() {
+                    this.props.onReady(), setTimeout(function () {
                         t.props.isReady = !0, t.props.onContentChange()
                     }, 1e3)
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.props.onContentChange()
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(111)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         scroll: {
                             type: "f",
@@ -7465,11 +7508,11 @@
                         },
                         onReady: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         onContentChange: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         isReady: {
                             type: "bool",
@@ -7489,7 +7532,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("page-404", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -7512,40 +7555,40 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "created",
-                value: function() {
+                value: function () {
                     this._slideShowPosition = [0, 0]
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.props.onReady(), setTimeout(function() {
+                    this.props.onReady(), setTimeout(function () {
                         t.props.isReady = !0, t.props.onContentChange()
-                    }, 1e3), this.$staff = this.querySelectorAll(".js-staff"), this.$staffMobile = this.querySelectorAll(".js-staff-mobile"), this.$teamWrapper = this.querySelector(".js-team-wrapper"), this._staffWidth = 0, this.resize(), a.EventDispatcher.fire("interface:show"), setTimeout(function() {
+                    }, 1e3), this.$staff = this.querySelectorAll(".js-staff"), this.$staffMobile = this.querySelectorAll(".js-staff-mobile"), this.$teamWrapper = this.querySelector(".js-team-wrapper"), this._staffWidth = 0, this.resize(), a.EventDispatcher.fire("interface:show"), setTimeout(function () {
                         a.EventDispatcher.fire("resize")
                     }, 1e3)
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.$staff = this.querySelectorAll(".js-staff"), this._isMobile = window.innerWidth < 700, this.props.onContentChange();
                     var t = 0;
                     if (this._isMobile);
@@ -7555,25 +7598,25 @@
                 }
             }, {
                 key: "onSliderSlide",
-                value: function(t) {
+                value: function (t) {
                     this._slideShowPosition[0] = t * this._staffWidth * -1
                 }
             }, {
                 key: "onSliderStop",
-                value: function(t) {}
+                value: function (t) {}
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     this.props.slideshowPosition[0] += .1 * (this._slideShowPosition[0] - this.props.slideshowPosition[0])
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(112)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         scroll: {
                             type: "f",
@@ -7585,11 +7628,11 @@
                         },
                         onReady: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         onContentChange: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         isReady: {
                             type: "bool",
@@ -7613,7 +7656,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("page-about", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -7636,48 +7679,48 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.props.onReady(), setTimeout(function() {
+                    this.props.onReady(), setTimeout(function () {
                         t.props.isReady = !0, t.props.onContentChange()
                     }, 1e3), a.EventDispatcher.fire("interface:show")
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.props.onContentChange()
                 }
             }, {
                 key: "_backToTop",
-                value: function() {
+                value: function () {
                     window.scrollTo(0, 0)
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(113)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         scroll: {
                             type: "f",
@@ -7689,7 +7732,7 @@
                         },
                         onReady: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         isReady: {
                             type: "bool",
@@ -7697,7 +7740,7 @@
                         },
                         onContentChange: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         content: {
                             type: "json",
@@ -7709,7 +7752,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("page-article", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -7738,14 +7781,14 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -7756,42 +7799,42 @@
         p = n(h),
         d = i(26),
         f = n(d),
-        m = function(t) {
+        m = function (t) {
             function e() {
                 return o(this, e), r(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return s(e, t), a(e, [{
                 key: "_onFilterDown",
-                value: function(t) {
+                value: function (t) {
                     var e = this,
                         i = t.currentTarget.getAttribute("data-filter");
-                    this.props.showPosts = !1, this.props.content.filter = i, setTimeout(function() {
-                        e.props.dataUrl = null, requestAnimationFrame(function() {
+                    this.props.showPosts = !1, this.props.content.filter = i, setTimeout(function () {
+                        e.props.dataUrl = null, requestAnimationFrame(function () {
                             e.props.dataUrl = e.props.wsRoot + "community/?filter=" + i
                         })
                     }, 500)
                 }
             }, {
                 key: "_onDataLoaded",
-                value: function(t) {
+                value: function (t) {
                     var e = this;
-                    this.props.content.filter = t.body.filter, this.props.content.posts.splice(0, this.props.content.posts.length), Array.prototype.push.apply(this.props.content.posts, t.body.posts), requestAnimationFrame(function() {
-                        e.props.showPosts = !0, setTimeout(function() {
+                    this.props.content.filter = t.body.filter, this.props.content.posts.splice(0, this.props.content.posts.length), Array.prototype.push.apply(this.props.content.posts, t.body.posts), requestAnimationFrame(function () {
+                        e.props.showPosts = !0, setTimeout(function () {
                             l.EventDispatcher.fire("resize")
                         }, 1e3)
                     })
                 }
             }, {
                 key: "_onDataError",
-                value: function(t) {
+                value: function (t) {
                     console.log("DATA ERROR", t)
                 }
             }, {
                 key: "created",
-                value: function() {
+                value: function () {
                     var t = this;
                     this._heroStartPosition = [0, 0], this._heroStartSize = [0, 0], this._heroEndPosition = [0, 0], this._heroImgScale = [0, 0], this._heroImgPosition = [0, 0], this.heroAnimation = new c.default({
-                        step: function(e) {
+                        step: function (e) {
                             t.props.heroPosition[0] = t._heroStartPosition[0] + (t._heroEndPosition[0] - t._heroStartPosition[0]) * e, t.props.heroPosition[1] = t._heroStartPosition[1] + (t._heroEndPosition[1] - t._heroStartPosition[1]) * e;
                             var i = t._heroStartSize[0] / t.props.heroSize[0],
                                 n = t._heroStartSize[1] / t.props.heroSize[1];
@@ -7804,7 +7847,7 @@
                                 u = a / 2 * (1 / t.props.heroScale[1]) - r / 2;
                             t.props.heroImgPosition[0] = l, t.props.heroImgPosition[1] = u
                         },
-                        end: function(e) {
+                        end: function (e) {
                             (0, f.default)(t._heroLink)
                         },
                         direction: 1,
@@ -7815,48 +7858,48 @@
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.props.onReady(), setTimeout(function() {
+                    this.props.onReady(), setTimeout(function () {
                         t.props.isReady = !0, t.props.onContentChange()
                     }, 1e3), l.EventDispatcher.fire("interface:show"), this.$filterWrapper = this.querySelector(".js-filter-wrapper")
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.props.onContentChange(), window.innerWidth < 700 ? (this._heroEndPosition[0] = window.innerWidth / 12 * 1, this._heroEndPosition[1] = 210, this._heroEndWidth = window.innerWidth / 12 * 11) : (this._heroEndPosition[0] = window.innerWidth / 12 * 3, this._heroEndPosition[1] = 170 + 170 * (window.innerWidth - 320) / 960, this._heroEndWidth = window.innerWidth / 12 * 9), this._winWidth = window.innerWidth, this._winHeight = window.innerHeight, this._filterPos = (0, p.default)(this.$filterWrapper)
                 }
             }, {
                 key: "_onArticleDown",
-                value: function(t) {
+                value: function (t) {
                     var e = t.currentTarget.querySelector(".js-img");
                     return void(location.href = e.getAttribute("href"))
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     this.props.scroll > this._filterPos.top - .1 * this._winHeight && (this.props.filterPos = this.props.scroll - this._filterPos.top + .1 * this._winHeight)
                 }
             }, {
                 key: "_backToTop",
-                value: function() {
+                value: function () {
                     window.scrollTo(0, 0)
                 }
             }, {
                 key: "events",
-                get: function() {
+                get: function () {
                     return {
                         "click .js-article": "_onArticleDown"
                     }
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(114)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         scroll: {
                             type: "f",
@@ -7868,11 +7911,11 @@
                         },
                         onReady: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         onContentChange: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         isReady: {
                             type: "bool",
@@ -7926,7 +7969,7 @@
             }]), e
         }(l.Component);
     (0, l.register)("page-community", m)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -7955,14 +7998,14 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -8061,62 +8104,62 @@
             radius: 1
         }), T.rotation[2] = Math.PI / 2, T.position[2] = 0, M.add(T)
     }
-    var O = function(t) {
+    var O = function (t) {
         function e() {
             return o(this, e), r(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
         }
         return s(e, t), a(e, [{
             key: "created",
-            value: function() {
+            value: function () {
                 this._introCirclePorgress = 0, this._introCircle2Progress = -.35, this._introCircle3Progress = -.7, this._introGridProgress = 0, this._wireSphereProgress = 0, this._autoRotation = 0, this._isMenuActive = !1
             }
         }, {
             key: "detached",
-            value: function() {
+            value: function () {
                 l.EventDispatcher.off("menu:open", this._onMenuOpen, this), l.EventDispatcher.off("menu:close", this._onMenuClose, this)
             }
         }, {
             key: "_onMenuOpen",
-            value: function() {
+            value: function () {
                 this._isMenuActive = !0, clearTimeout(this._menuTimer)
             }
         }, {
             key: "_onMenuClose",
-            value: function() {
+            value: function () {
                 var t = this;
-                this._menuTimer = setTimeout(function() {
+                this._menuTimer = setTimeout(function () {
                     t._isMenuActive = !1
                 }, 1e3)
             }
         }, {
             key: "ready",
-            value: function() {
+            value: function () {
                 var t = this;
-                this.props.onReady(), setTimeout(function() {
+                this.props.onReady(), setTimeout(function () {
                     t.props.isReady = !0, t.props.onContentChange()
                 }, 1e3), l.EventDispatcher.fire("interface:show"), this.$scene = this.querySelector(".js-scene"), this.$scene.appendChild(P.canvas), l.EventDispatcher.on("menu:open", this._onMenuOpen, this), l.EventDispatcher.on("menu:close", this._onMenuClose, this)
             }
         }, {
             key: "resize",
-            value: function() {
+            value: function () {
                 this.props.onContentChange(), this._winWidth = window.innerWidth, this._winHeight = window.innerHeight, this._isMobile = this._winWidth < 700, P.resize(this._winWidth, this._winHeight), k.aspect = this._winWidth / this._winHeight, k.updateProjectionMatrix(), this._globeRadius = Math.min(.85 * this._winWidth / 2, .7 * window.innerHeight / 2), this._cameraZ = this._winHeight / 2 / Math.tan(25 * Math.PI / 360), this._cameraX = window.innerWidth < 700 ? 0 : .5 * window.innerWidth, this._cameraY = window.innerWidth < 700 ? -.6 * window.innerHeight : 0
             }
         }, {
             key: "_onFormSuccess",
-            value: function(t) {
+            value: function (t) {
                 this.props.showDialog = !0
             }
         }, {
             key: "_onFormError",
-            value: function(t) {}
+            value: function (t) {}
         }, {
             key: "_closeDialog",
-            value: function() {
+            value: function () {
                 this.props.showDialog = !1
             }
         }, {
             key: "update",
-            value: function() {
+            value: function () {
                 if (P.gl && !this._isMenuActive) {
                     k.position[2] = this._cameraZ, this._introGridProgress += .0066, this._introGridProgress > 1 && (this._introGridProgress = 1);
                     var t = (0, w.default)(.465, .005, .045, .985, this._introGridProgress, 1);
@@ -8125,12 +8168,12 @@
             }
         }, {
             key: "template",
-            get: function() {
+            get: function () {
                 return i(115)
             }
         }, {
             key: "defaultProps",
-            get: function() {
+            get: function () {
                 return {
                     scroll: {
                         type: "f",
@@ -8142,11 +8185,11 @@
                     },
                     onReady: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     onContentChange: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     isReady: {
                         type: "bool",
@@ -8166,7 +8209,7 @@
         }]), e
     }(l.Component);
     (0, l.register)("page-contact", O)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -8195,14 +8238,14 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -8498,28 +8541,28 @@
             radius: 1
         }), gt.position[2] = 0
     }
-    var bt = function(t) {
+    var bt = function (t) {
         function e() {
             return o(this, e), r(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
         }
         return s(e, t), a(e, [{
             key: "_onVideoBtnDown",
-            value: function() {
+            value: function () {
                 this.props.showVideo = !0, l.EventDispatcher.fire("interface:hide"), this.props.forcePlayVideo = !0, this._videoMaskProgress = 0
             }
         }, {
             key: "_closeVideo",
-            value: function() {
+            value: function () {
                 this.props.showVideo = !1, l.EventDispatcher.fire("interface:show"), this.props.forcePlayVideo = !1, this._videoMaskProgress = 0
             }
         }, {
             key: "created",
-            value: function() {
+            value: function () {
                 this._currentStepProgress = 0, this._cameraLoaderStart = [0, 1.1, .2], this._cameraLoaderEnd = [0, 0, 4], this._hasPlayIntro = !1, this._uCameraPosition = u.vec3.create(), this._circle1Progress = 0, this._onMouseWheel = this._onMouseWheel.bind(this), this._currentIndex = 0, this._maxLineHeight = 0, this._currMaxLineHeight = 0, this._currentStepProgress = 0, this.introMaskProgress = 0, this.introGridRotationProgress = 0, this._loaderMaskRadius = 0, this._loaderAnimationProgress = 0, this._loaderCircleProgress = 0, this._globeRotation = [0, 3.5, 0], this._videoMaskProgress = 1, this._markerLineProgress = 0, this._onPointerDown = this._onPointerDown.bind(this), this._onPointerMove = this._onPointerMove.bind(this), this._onPointerUp = this._onPointerUp.bind(this), this._globeUserRotation = [0, 0, 0], this._autoRotation = [0, 0, 0], this._canScroll = !1, this._direction = 1
             }
         }, {
             key: "ready",
-            value: function() {
+            value: function () {
                 if (this.$scene = this.querySelector(".js-scene"), this.props.onReady(), this.props.isReady = !0, this.props.onContentChange(), this.$scene.appendChild(et.canvas), l.support.touch && (this._swipeIndicator = new W.default({
                         elem: document,
                         preventMouse: !1,
@@ -8534,12 +8577,12 @@
             }
         }, {
             key: "_onPointerDown",
-            value: function(t) {
+            value: function (t) {
                 this._isPointerDown = !0, this.touchEvent = l.support.touch ? t.touches[0] || t.changedTouches[0] : t, this.touchEventPageX = this.touchEvent.pageX, this.touchEventPageY = this.touchEvent.pageY, this.touchEventPageX -= window.pageXOffset || document.documentElement.scrollLeft, this.touchEventPageY -= window.pageYOffset || document.documentElement.scrollTop, this._rotationDownX = this._globeUserRotation[0], this._rotationDownY = this._globeUserRotation[1]
             }
         }, {
             key: "_onPointerMove",
-            value: function(t) {
+            value: function (t) {
                 if (this._isPointerDown) {
                     t.preventDefault(), t.stopPropagation();
                     var e = l.support.touch ? t.touches[0] || t.changedTouches[0] : t,
@@ -8550,39 +8593,39 @@
             }
         }, {
             key: "_onPointerUp",
-            value: function() {
+            value: function () {
                 this._isPointerDown = !1
             }
         }, {
             key: "_onMenuOpen",
-            value: function() {
+            value: function () {
                 this._isMenuActive = !0, clearTimeout(this._menuTimer), this._swipeIndicator && this._swipeIndicator.disable()
             }
         }, {
             key: "_onMenuClose",
-            value: function() {
+            value: function () {
                 var t = this;
-                this._menuTimer = setTimeout(function() {
+                this._menuTimer = setTimeout(function () {
                     t._isMenuActive = !1, t._swipeIndicator && t._swipeIndicator.enable()
                 }, 1e3)
             }
         }, {
             key: "_onMouseWheel",
-            value: function(t) {
+            value: function (t) {
                 var e = this;
                 if (!this.props.isLoading && this._canScroll) {
-                    this._canScroll = !1, setTimeout(function() {
+                    this._canScroll = !1, setTimeout(function () {
                         e._canScroll = !0
                     }, 1e3);
                     var i = this._currentIndex + ("down" == t.direction ? 1 : -1);
-                    i = Math.min(3, Math.max(0, i)), i > this._currentIndex ? this._direction = 1 : this._direction = -1, this._currentIndex = i, setTimeout(function() {
+                    i = Math.min(3, Math.max(0, i)), i > this._currentIndex ? this._direction = 1 : this._direction = -1, this._currentIndex = i, setTimeout(function () {
                         e.props.currentIndex = e._currentIndex
                     }, 150)
                 }
             }
         }, {
             key: "resize",
-            value: function() {
+            value: function () {
                 if (et.gl) {
                     this._winWidth = window.innerWidth, this._winHeight = window.innerHeight, this.props.winHeight = window.innerHeight, this.props.isMobile = window.innerWidth < 700, this.props.onContentChange(), et.resize(this._winWidth, this._winHeight);
                     var t = this._winWidth / 2 + .3 * this._winWidth,
@@ -8594,12 +8637,13 @@
             }
         }, {
             key: "update",
-            value: function() {
+            value: function () {
                 if (!this._isMenuActive && et.gl) {
                     if (et.gl.disable(et.gl.CULL_FACE), this._currMaxLineHeight += .03 * (this._maxLineHeight - this._currMaxLineHeight), this.props.initCircleRadius = this.circle1Radius, pt.scale[0] = pt.scale[1] = pt.scale[2] = this.props.circle1Scale * this.circle1Radius, pt.material.uniforms.scale.value = pt.scale, pt.material.uniforms.alpha.value = this.props.circle1Alpha, pt.material.uniforms.uDirection.value = 1, pt.material.uniforms.uProgress.value = this.props.isMobile ? 0 : this.props.circle1Progress, pt.material.uniforms.lineWidth.value = 1, this.props.handlerPos[0] = Math.cos(2 * Math.PI * pt.material.uniforms.uProgress.value - Math.PI / 2 - .02) * this.props.circle1Scale * this.circle1Radius, this.props.handlerPos[1] = Math.sin(2 * Math.PI * pt.material.uniforms.uProgress.value - Math.PI / 2 - .02) * this.props.circle1Scale * this.circle1Radius, this.props.handlerPos[0] += this._winWidth / 2 + -.9 * ht.position[0], this.props.handlerPos[1] += this._winHeight / 2, this.props.handlerAlpha = pt.material.uniforms.alpha.value, dt.scale[0] = dt.scale[1] = dt.scale[2] = this.props.circle2Scale * this.circle2Radius, dt.material.uniforms.scale.value = dt.scale, dt.material.uniforms.alpha.value = this.props.circle2Alpha, dt.material.uniforms.uDirection.value = 1, dt.material.uniforms.lineWidth.value = 1, ft.scale[0] = ft.scale[1] = ft.scale[2] = this.props.circle3Scale * this.circle3Radius, ft.material.uniforms.scale.value = ft.scale, ft.material.uniforms.alpha.value = this.props.circle3Alpha, ft.material.uniforms.uDirection.value = 1, ft.material.uniforms.lineWidth.value = 1, ot.material.uniforms.cameraPosition && (u.vec3.set(this._uCameraPosition, ht.worldMatrix[12], ht.worldMatrix[13], ht.worldMatrix[14]), ot.material.uniforms.cameraPosition.value = this._uCameraPosition), et.clearColor(0, 0, 0, 0), et.clear(), et.gl.enable(et.gl.CULL_FACE), et.gl.cullFace(et.gl.BACK), lt.material.depthTest = !0, lt.material.uniforms.pass.value = 0, lt.material.uniforms.uMaxHeight.value = this._currMaxLineHeight, et.render(it, ht), this._videoMaskProgress <= 1) {
                         var t = (0, X.default)(.465, .005, .045, .985, this._videoMaskProgress, 1);
                         this.props.showVideo ? (this.props.outterRotation = -20 * (1 - t), this.props.outterScale = 1 - t + 1, this.props.innerRotation = -1 * this.props.outterRotation, this.props.innerScale = 1 / this.props.outterScale, this.props.outterPosition = -2 * this._winHeight * (1 - t), this.props.innerPosition = 2 * this._winHeight * (1 - t)) : (this.props.outterRotation = -20 * t, this.props.outterScale = 1 + t, this.props.innerRotation = -1 * this.props.outterRotation, this.props.innerScale = 1 / this.props.outterScale, this.props.outterPosition = -2 * this._winHeight * t, this.props.innerPosition = 2 * this._winHeight * t), this._videoMaskProgress += .01
-                    } else this._videoMaskProgress = 1;
+                    }
+                    else this._videoMaskProgress = 1;
                     this._loaderAnimationProgress += .0045, this._loaderAnimationProgress > 1 && (this._loaderAnimationProgress = 1);
                     var e = (0, X.default)(1, 0, .46, 1, this._loaderAnimationProgress, 1),
                         i = (0, X.default)(.865, .13, .46, 1, this._loaderAnimationProgress, 1);
@@ -8639,7 +8683,7 @@
             }
         }, {
             key: "_computeMarkerLinePosition",
-            value: function() {
+            value: function () {
                 var t = 49.2872 * Math.PI / 180,
                     e = 74.006 * Math.PI / 180,
                     i = u.mat4.create();
@@ -8653,26 +8697,26 @@
             }
         }, {
             key: "detached",
-            value: function() {
+            value: function () {
                 if (this._indicator && this._indicator.destroy(), this._swipeIndicator && this._swipeIndicator.destroy(), l.support.multipointerdown && l.support.multipointerdown.length > 0)
                     for (var t = 0; t < l.support.multipointerdown.length; t++) this.removeEventListener(l.support.multipointerdown[t], this._onPointerDown, !1), document.removeEventListener(l.support.multipointermove[t], this._onPointerMove, !1), document.removeEventListener(l.support.multipointerup[t], this._onPointerUp, !1);
                 else this.removeEventListener(l.support.pointerdown, this._onPointerDown, !1), document.removeEventListener(l.support.pointermove, this._onPointerMove, !1), document.removeEventListener(l.support.pointerup, this._onPointerUp, !1)
             }
         }, {
             key: "events",
-            get: function() {
+            get: function () {
                 return {
                     "pointerdown .js-home-video-btn": "_onVideoBtnDown"
                 }
             }
         }, {
             key: "template",
-            get: function() {
+            get: function () {
                 return i(116)
             }
         }, {
             key: "defaultProps",
-            get: function() {
+            get: function () {
                 return {
                     scroll: {
                         type: "f",
@@ -8684,11 +8728,11 @@
                     },
                     onReady: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     onContentChange: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     isReady: {
                         type: "bool",
@@ -8812,7 +8856,7 @@
         }]), e
     }(l.Component);
     (0, l.register)("page-home", bt)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -8835,43 +8879,43 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    console.log("<page-home> ready()"), this.props.onReady(), setTimeout(function() {
+                    console.log("<page-home> ready()"), this.props.onReady(), setTimeout(function () {
                         t.props.isReady = !0, t.props.onContentChange()
                     }, 1e3), a.EventDispatcher.fire("interface:show")
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.props.onContentChange()
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(117)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         scroll: {
                             type: "f",
@@ -8883,11 +8927,11 @@
                         },
                         onReady: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         onContentChange: {
                             type: "fn",
-                            value: function() {}
+                            value: function () {}
                         },
                         isReady: {
                             type: "bool",
@@ -8903,7 +8947,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("page-policies", l)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -8932,14 +8976,14 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -9128,53 +9172,53 @@
             })
         }
     }
-    var F = function(t) {
+    var F = function (t) {
         function e() {
             return o(this, e), r(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
         }
         return s(e, t), a(e, [{
             key: "detached",
-            value: function() {
+            value: function () {
                 l.EventDispatcher.off("menu:open", this._onMenuOpen, this), l.EventDispatcher.off("menu:close", this._onMenuClose, this)
             }
         }, {
             key: "_onMenuOpen",
-            value: function() {
+            value: function () {
                 this._isMenuActive = !0, clearTimeout(this._menuTimer)
             }
         }, {
             key: "_onMenuClose",
-            value: function() {
+            value: function () {
                 var t = this;
-                this._menuTimer = setTimeout(function() {
+                this._menuTimer = setTimeout(function () {
                     t._isMenuActive = !1
                 }, 1e3)
             }
         }, {
             key: "created",
-            value: function() {
+            value: function () {
                 this._introCirclePorgress = 0, this._introCircle2Progress = -.35, this._introCircle3Progress = -.7, this._introGridProgress = 0, this._wireSphereProgress = 0, this._autoRotation = 0, this._isMenuActive = !1
             }
         }, {
             key: "ready",
-            value: function() {
+            value: function () {
                 var t = this;
-                this.props.onReady(), setTimeout(function() {
+                this.props.onReady(), setTimeout(function () {
                     t.props.isReady = !0, t.props.onContentChange()
-                }, 1e3), this.$scene = this.querySelector(".js-scene"), this.$scene.appendChild(M.canvas), l.EventDispatcher.fire("interface:show"), this.$sphere = this.querySelector(".js-sphere"), this.$sphereMobile = this.querySelector(".js-sphere-mobile"), this.$node = this.querySelector(".js-node"), this.$nodeMobile = this.querySelector(".js-node-mobile"), setTimeout(function() {
+                }, 1e3), this.$scene = this.querySelector(".js-scene"), this.$scene.appendChild(M.canvas), l.EventDispatcher.fire("interface:show"), this.$sphere = this.querySelector(".js-sphere"), this.$sphereMobile = this.querySelector(".js-sphere-mobile"), this.$node = this.querySelector(".js-node"), this.$nodeMobile = this.querySelector(".js-node-mobile"), setTimeout(function () {
                     t.resize()
-                }, 1e3), setTimeout(function() {
+                }, 1e3), setTimeout(function () {
                     t.resize()
                 }, 2e3), l.EventDispatcher.on("menu:open", this._onMenuOpen, this), l.EventDispatcher.on("menu:close", this._onMenuClose, this)
             }
         }, {
             key: "resize",
-            value: function() {
+            value: function () {
                 M.gl && (this.props.onContentChange(), this._winWidth = window.innerWidth, this._winHeight = window.innerHeight, this._isMobile = this._winWidth < 700, M.resize(this._winWidth, this._winHeight), E.aspect = this._winWidth / this._winHeight, E.updateProjectionMatrix(), this._globeRadius = this._isMobile ? Math.min(.9 * this._winWidth / 2, .9 * window.innerHeight / 2) : Math.min(.6 * this._winWidth / 2, .6 * window.innerHeight / 2), this._cameraZ = this._winHeight / 2 / Math.tan(25 * Math.PI / 360), this._spherePosition = (0, P.default)(this._isMobile ? this.$sphereMobile : this.$sphere), this._sphereWidth = this._isMobile ? this.$sphereMobile.clientWidth : this.$sphere.clientWidth, this._sphereHeight = this._isMobile ? this.$sphereMobile.clientHeight : this.$sphere.clientHeight, this._nodePosition = (0, P.default)(this._isMobile ? this.$nodeMobile : this.$node))
             }
         }, {
             key: "update",
-            value: function() {
+            value: function () {
                 if (M.gl && !this._isMenuActive) {
                     this._autoRotation += .001;
                     for (var t = 0; t < D.length; t++) D[t].progress += .006, D[t].progress > 1 && (D[t].progress = 0), D[t].mesh.scale[0] = D[t].mesh.scale[1] = D[t].mesh.scale[2] = .5 * this._winHeight * D[t].progress, D[t].mesh.material.uniforms.alpha.value = .6 * (1 - D[t].progress), D[t].mesh.material.uniforms.scale.value = D[t].mesh.scale, D[t].mesh.position[0] = this._nodePosition.left - this._winWidth / 2, D[t].mesh.position[1] = -1 * this._nodePosition.top;
@@ -9184,18 +9228,19 @@
                         this._wireSphereProgress += .0066, this._wireSphereProgress > 1 && (this._wireSphereProgress = 1);
                         var i = (0, w.default)(.465, .005, .045, .985, this._wireSphereProgress, 1);
                         j.material.uniforms.alpha.value = .4 * i, j.scale[0] = j.scale[1] = j.scale[2] = this._globeRadius + this._globeRadius * (1 - i), j.position[0] = this._spherePosition.left - this._winWidth / 2 + this._sphereWidth / 2, j.position[1] = -1 * this._spherePosition.top - this._sphereHeight / 2, j.rotation[0] = Math.PI / 4 * (1 - i) + this._autoRotation, j.rotation[1] = Math.PI / 4 * (1 - i) + this._autoRotation, j.rotation[2] = Math.PI / 4 * (1 - i) + this._autoRotation, L.rotation[0] = j.rotation[0], L.rotation[1] = j.rotation[1], L.rotation[2] = j.rotation[2], L.position[0] = j.position[0], L.position[1] = j.position[1], L.position[2] = j.position[2], L.scale[0] = j.scale[0], L.scale[1] = j.scale[1], L.scale[2] = j.scale[2], A.scale[0] = A.scale[1] = A.scale[2] = .6 * this._globeRadius, A.position[0] = this._spherePosition.left - this._winWidth / 2 + this._sphereWidth / 2, A.position[1] = -1 * this._spherePosition.top - this._sphereHeight / 2, A.rotation[0] = j.rotation[0], A.rotation[1] = j.rotation[1], A.rotation[2] = j.rotation[2], R.rotation[0] = A.rotation[0], R.rotation[1] = A.rotation[1], R.rotation[2] = A.rotation[2], R.position[0] = A.position[0], R.position[1] = A.position[1], R.position[2] = A.position[2], R.scale[0] = A.scale[0], R.scale[1] = A.scale[1], R.scale[2] = A.scale[2]
-                    } else this._wireSphereProgress = 0;
+                    }
+                    else this._wireSphereProgress = 0;
                     M.clearColor(0, 0, 0, 0), M.clear(), M.render(k, E), E.position[1] = -1 * this.props.scroll - .5 * this._winHeight
                 }
             }
         }, {
             key: "template",
-            get: function() {
+            get: function () {
                 return i(118)
             }
         }, {
             key: "defaultProps",
-            get: function() {
+            get: function () {
                 return {
                     scroll: {
                         type: "f",
@@ -9207,11 +9252,11 @@
                     },
                     onReady: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     onContentChange: {
                         type: "fn",
-                        value: function() {}
+                        value: function () {}
                     },
                     isReady: {
                         type: "bool",
@@ -9231,7 +9276,7 @@
         }]), e
     }(l.Component);
     (0, l.register)("page-solution", F)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -9254,104 +9299,104 @@
             }
         }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
     }
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(0),
         l = i(6),
-        u = function(t) {
+        u = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(l),
-        c = function(t) {
+        c = function (t) {
             function e() {
                 return n(this, e), o(this, (e.__proto__ || Object.getPrototypeOf(e)).apply(this, arguments))
             }
             return r(e, t), s(e, [{
                 key: "_toggleMenu",
-                value: function() {
+                value: function () {
                     this.props.isMenuActive = !this.props.isMenuActive, this.props.isMenuActive ? a.EventDispatcher.fire("menu:open") : a.EventDispatcher.fire("menu:close")
                 }
             }, {
                 key: "created",
-                value: function() {
+                value: function () {
                     this.isScrollEnabled = !0, this._scrollTop = 0, this._onScroll = this._onScroll.bind(this), this._disableScroll = this._disableScroll.bind(this), this._enableScroll = this._enableScroll.bind(this), this._pageIndex = 0, this._cumulatedScroll = 0, this._cumulatedScrollStart = 0, this._headerPosition = 0
                 }
             }, {
                 key: "attached",
-                value: function() {
+                value: function () {
                     a.support.touch ? document.getElementsByTagName("html")[0].classList.add("has-touch") : document.getElementsByTagName("html")[0].classList.add("has-not-touch"), document.addEventListener("scroll", this._onScroll, !1), this._onScroll()
                 }
             }, {
                 key: "_onScroll",
-                value: function() {
+                value: function () {
                     var t = this.props.direction;
                     this._lastScroll > this.props.scrollTop && (this.props.direction = -1), this._lastScroll < this.props.scrollTop && (this.props.direction = 1), t !== this.props.direction && (this._cumulatedScrollStart = this._scrollTop), 1 == this.props.direction ? this._headerPosition = -1 * (this._scrollTop - this._cumulatedScrollStart) : (this._headerPosition = -this._headerHeight + (this._cumulatedScrollStart - this._scrollTop), this._headerPosition = Math.min(this._headerPosition, 0)), -1 == this.props.direction && this.props.scroll < this._headerHeight && (this._headerPosition = -this._headerHeight + -1 * this.props.scroll), this._lastScroll = this.props.scrollTop, this._scrollTop = window.pageYOffset || document.documentElement.scrollTop
                 }
             }, {
                 key: "ready",
-                value: function() {
+                value: function () {
                     var t = this;
-                    this.$header = this.querySelector(".js-header"), this.$fakeScroll = this.querySelector(".js-fake-scroll"), this.$content = this.querySelector(".js-content"), a.EventDispatcher.on("scroll:disable", this._disableScroll, this), a.EventDispatcher.on("scroll:enable", this._enableScroll, this), this.$menuButton = this.querySelector(".js-menu-button"), a.EventDispatcher.on("interface:show", function() {
+                    this.$header = this.querySelector(".js-header"), this.$fakeScroll = this.querySelector(".js-fake-scroll"), this.$content = this.querySelector(".js-content"), a.EventDispatcher.on("scroll:disable", this._disableScroll, this), a.EventDispatcher.on("scroll:enable", this._enableScroll, this), this.$menuButton = this.querySelector(".js-menu-button"), a.EventDispatcher.on("interface:show", function () {
                         t.props.showInterface = !0
-                    }, this), a.EventDispatcher.on("interface:hide", function() {
+                    }, this), a.EventDispatcher.on("interface:hide", function () {
                         t.props.showInterface = !1
                     }, this)
                 }
             }, {
                 key: "_disableScroll",
-                value: function() {
+                value: function () {
                     this.isScrollEnabled = !1, this.props.scrollTop = this._scrollTop
                 }
             }, {
                 key: "_enableScroll",
-                value: function() {
+                value: function () {
                     this.isScrollEnabled = !0, this.props.scrollTop = this._scrollTop
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     if (!this.isScrollEnabled) return !0;
                     this._isMobile ? (this.props.scrollTop = this._scrollTop, this.props.headerPosition = this._headerPosition) : (this.props.scrollTop += .1 * (this._scrollTop - this.props.scrollTop), this.props.headerPosition += .1 * (this._headerPosition - this.props.headerPosition))
                 }
             }, {
                 key: "resize",
-                value: function() {
+                value: function () {
                     this.props.winHeight = window.innerHeight, this.props.winWidth = window.innerWidth, this.props.isMobile = window.innerWidth < 700, this.props.width = window.innerWidth, this.props.height = window.innerHeight, this._updateContentHeight();
                     var t = (0, u.default)(this.$menuButton);
                     this.props.menuButtonPosition[0] = t.left + this.$menuButton.clientWidth / 2, this.props.menuButtonPosition[1] = t.top + this.$menuButton.clientHeight / 2, this._headerHeight = this.$header.clientHeight, this._isMobile = window.innerWidth < 700
                 }
             }, {
                 key: "_updateContentHeight",
-                value: function() {
+                value: function () {
                     this.$content && (this._contentHeight = this.$content.clientHeight, this.$fakeScroll.style.height = this._contentHeight + "px")
                 }
             }, {
                 key: "_onPageReady",
-                value: function() {
+                value: function () {
                     var t = this;
-                    console.log("__PAGEREADY__"), this._pageIndex % 2 == 0 ? this.props.pageAltComponentId = null : this.props.pageComponentId = null, this._pageIndex++, "page-home" !== this._pageComponentId && (this.props.showInterface = !0), requestAnimationFrame(function() {
+                    console.log("__PAGEREADY__"), this._pageIndex % 2 == 0 ? this.props.pageAltComponentId = null : this.props.pageComponentId = null, this._pageIndex++, "page-home" !== this._pageComponentId && (this.props.showInterface = !0), requestAnimationFrame(function () {
                         t._updateContentHeight(), t.props.showOverlay = !1
                     })
                 }
             }, {
                 key: "onRouteChange",
-                value: function(t, e) {
+                value: function (t, e) {
                     var i = this;
                     if ("" != t.params.page && void 0 != t.params.page || (t.params.page = "home", t.completePath = "/home"), this.props.isMenuActive = !1, t.path != e.path || t.query !== this._lastQuery) {
                         this._lastQuery = t.query, window.scrollTo(0, 0), this._scrollTop = 0, this.props.scrollTop = 0, a.EventDispatcher.fire("scroll:enable"), this.props.isPageLoading = !0, this._pageComponentId = "page-" + t.params.page;
                         var n = void 0;
-                        "article" == t.params.page && e && e.params && "community" == e.params.page ? n = 100 : (n = 800, this.props.showOverlay = !0), setTimeout(function() {
-                            i.props.pageDataUrl = null, "page-home" == i._pageComponentId && (i.props.showInterface = !1), requestAnimationFrame(function() {
+                        "article" == t.params.page && e && e.params && "community" == e.params.page ? n = 100 : (n = 800, this.props.showOverlay = !0), setTimeout(function () {
+                            i.props.pageDataUrl = null, "page-home" == i._pageComponentId && (i.props.showInterface = !1), requestAnimationFrame(function () {
                                 i.props.pageDataUrl = i.props.wsRoot + t.completePath.replace(/^\//, "").replace(/^\/?(fr|en)\//g, "")
                             })
                         }, n)
@@ -9359,7 +9404,7 @@
                 }
             }, {
                 key: "_onPageDataLoaded",
-                value: function(t) {
+                value: function (t) {
                     if (console.log("_onPageDataLoaded", t.body), this.props.pageContent = t.body, t.body.meta) {
                         document.title = t.body.meta.title;
                         for (var e = document.getElementsByTagName("meta"), i = 0; i < e.length; i++) "description" == e[i].name.toLowerCase() && (e[i].content = t.body.meta.description)
@@ -9368,12 +9413,12 @@
                 }
             }, {
                 key: "template",
-                get: function() {
+                get: function () {
                     return i(119)
                 }
             }, {
                 key: "defaultProps",
-                get: function() {
+                get: function () {
                     return {
                         wsRoot: "",
                         lang: "",
@@ -9444,7 +9489,7 @@
             }]), e
         }(a.Component);
     (0, a.register)("x-application", c)
-}, function(t, e, i) {
+}, function (t, e, i) {
     var n = i(92);
     "string" == typeof n && (n = [
         [t.i, n, ""]
@@ -9453,7 +9498,7 @@
     o.transform = void 0;
     i(27)(n, o);
     n.locals && (t.exports = n.locals)
-}, function(t, e, i) {
+}, function (t, e, i) {
     var n = i(93);
     "string" == typeof n && (n = [
         [t.i, n, ""]
@@ -9462,7 +9507,7 @@
     o.transform = void 0;
     i(27)(n, o);
     n.locals && (t.exports = n.locals)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -9489,20 +9534,20 @@
         value: !0
     });
     var s = i(3),
-        a = function(t) {
+        a = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(s),
         l = i(4),
-        u = function(t) {
+        u = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
                 for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e.default = t, e
         }(l),
-        c = function(t) {
+        c = function (t) {
             function e(t, i) {
                 function r(t, e, i, n, o, r, s, m, v, g) {
                     f = 0;
@@ -9553,7 +9598,7 @@
             return r(e, t), e
         }(a.default);
     e.default = c
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -9598,14 +9643,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var u = function() {
+    var u = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -9637,7 +9682,7 @@
         k = _ ? "touchend" : w ? "pointerup" : x ? "MSPointerUp" : "mouseup",
         E = [];
     l();
-    var C = function(t) {
+    var C = function (t) {
         function e(t) {
             r(this, e);
             var i = s(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this));
@@ -9662,90 +9707,90 @@
         }
         return a(e, t), u(e, [{
             key: "updateProjectionMatrix",
-            value: function() {
+            value: function () {
                 "perspective" == this.type ? v.perspective(this.projectionMatrix, this.fov * Math.PI / 180, this.aspect, this.near, this.far) : "orthographic" != this.type && "ortho" != this.type || v.ortho(this.projectionMatrix, this.left, this.right, this.bottom, this.top, this.near, this.far)
             }
         }, {
             key: "_initPointerEvents",
-            value: function() {
+            value: function () {
                 this.winWidth = window.innerWidth, this.winHeight = window.innerHeight, this._isPointerDown = !1, this.isRightClick = !1, this.pointerXMove = 0, this.pointerYMove = 0, this.pointerX = 0, this.pointerY = 0, this.pointerZ = 0, this.lastPointerX = 0, this.lastPointerY = 0, this.lastPointerZ = 0, this.theta = 0, this.phi = 0, this.thetaDown = 0, this.phiDown = 0, this.currTheta = 0, this.currPhi = 0, this._minPolarAngle = -.5 * Math.PI, this._maxPolarAngle = .5 * Math.PI, this._onPointerDown = this._onPointerDown.bind(this), this._onPointerMove = this._onPointerMove.bind(this), this._onPointerUp = this._onPointerUp.bind(this), this._onMouseWheel = this._onMouseWheel.bind(this), this.onContextMenu = this.onContextMenu.bind(this), this._pointerParent.addEventListener(P, this._onPointerDown, !1), document.addEventListener(M, this._onPointerMove, !1), document.addEventListener(k, this._onPointerUp, !1), this._pointerParent.addEventListener("contextmenu", this.onContextMenu, !1), this.wheel && (this._pointerParent.addEventListener("DOMMouseScroll", this._onMouseWheel, !1), this._pointerParent.addEventListener("mousewheel", this._onMouseWheel, !1))
             }
         }, {
             key: "delete",
-            value: function() {
+            value: function () {
                 this._pointerParent.removeEventListener(P, this._onPointerDown, !1), document.removeEventListener(M, this._onPointerMove, !1), document.removeEventListener(k, this._onPointerUp, !1), this._pointerParent.removeEventListener("contextmenu", this.onContextMenu, !1), this.wheel && (this._pointerParent.removeEventListener("DOMMouseScroll", this._onMouseWheel, !1), this._pointerParent.removeEventListener("mousewheel", this._onMouseWheel, !1))
             }
         }, {
             key: "onContextMenu",
-            value: function(t) {
+            value: function (t) {
                 event.preventDefault()
             }
         }, {
             key: "onKeyDown",
-            value: function(t) {
+            value: function (t) {
                 switch (t.keyCode) {
-                    case 87:
-                        this._moveForward = !0;
-                        break;
-                    case 65:
-                        this._moveLeft = !0;
-                        break;
-                    case 83:
-                        this._moveBackward = !0;
-                        break;
-                    case 68:
-                        this._moveRight = !0;
-                        break;
-                    case 32:
-                        this._velocity[1] += 5
+                case 87:
+                    this._moveForward = !0;
+                    break;
+                case 65:
+                    this._moveLeft = !0;
+                    break;
+                case 83:
+                    this._moveBackward = !0;
+                    break;
+                case 68:
+                    this._moveRight = !0;
+                    break;
+                case 32:
+                    this._velocity[1] += 5
                 }
             }
         }, {
             key: "onKeyUp",
-            value: function(t) {
+            value: function (t) {
                 switch (t.keyCode) {
-                    case 38:
-                    case 87:
-                        this._moveForward = !1;
-                        break;
-                    case 37:
-                    case 65:
-                        this._moveLeft = !1;
-                        break;
-                    case 40:
-                    case 83:
-                        this._moveBackward = !1;
-                        break;
-                    case 39:
-                    case 68:
-                        this._moveRight = !1
+                case 38:
+                case 87:
+                    this._moveForward = !1;
+                    break;
+                case 37:
+                case 65:
+                    this._moveLeft = !1;
+                    break;
+                case 40:
+                case 83:
+                    this._moveBackward = !1;
+                    break;
+                case 39:
+                case 68:
+                    this._moveRight = !1
                 }
             }
         }, {
             key: "_onMouseWheel",
-            value: function(t) {
+            value: function (t) {
                 t.preventDefault();
                 var e;
                 t.wheelDelta ? e = t.wheelDelta : t.detail ? e = 40 * -t.detail : t.wheelDeltaX ? (e = t.wheelDeltaY / 12, t.wheelDeltaX) : void 0 !== t.axis && t.axis === t.HORIZONTAL_AXIS ? e = 0 : e = 0, this._cameraDistance += -2 * e * .1
             }
         }, {
             key: "_onPointerDown",
-            value: function(t) {
+            value: function (t) {
                 3 == t.which && (this.isRightClick = !0, t.preventDefault(), t.stopPropagation()), this._isPointerDown = !0, this.touchEvent = _ ? t.touches[0] || t.changedTouches[0] : t, this.touchEventPageX = this.touchEvent.pageX, this.touchEventPageY = this.touchEvent.pageY, this.touchEventPageX -= window.pageXOffset || document.documentElement.scrollLeft, this.touchEventPageY -= window.pageYOffset || document.documentElement.scrollTop, this.pointerXDown = this.touchEventPageX, this.pointerYDown = this.touchEventPageY, this.isRightClick && (this.startPointerX = this.pointerXMove, this.startPointerY = this.pointerYMove), this.thetaDown = this.theta, this.phiDown = this.phi
             }
         }, {
             key: "_onPointerMove",
-            value: function(t) {
+            value: function (t) {
                 this._isPointerDown && (t.preventDefault(), this.touchEvent = _ ? t.touches[0] || t.changedTouches[0] : t, this.touchEventPageX = this.touchEvent.pageX, this.touchEventPageY = this.touchEvent.pageY, this.touchEventPageX -= window.pageXOffset || document.documentElement.scrollLeft, this.touchEventPageY -= window.pageYOffset || document.documentElement.scrollTop, this.isRightClick ? (this.pointerXMove = this.startPointerX + (this.touchEventPageX - this.pointerXDown), this.pointerYMove = this.startPointerY + (this.touchEventPageY - this.pointerYDown)) : (this.pointerXOrbiter = this.pointerXDown - this.touchEventPageX, this.pointerYOrbiter = this.pointerYDown - this.touchEventPageY, this.theta = this.thetaDown + this.pointerXOrbiter / this.winWidth * 2 * Math.PI, this.phi = this.phiDown + this.pointerYOrbiter / this.winHeight * 2 * Math.PI * -1, this.phi = Math.max(this._minPolarAngle, Math.min(this._maxPolarAngle, this.phi))))
             }
         }, {
             key: "_onPointerUp",
-            value: function() {
+            value: function () {
                 this._isPointerDown = !1, this.isRightClick = !1
             }
         }, {
             key: "update",
-            value: function(t) {
+            value: function (t) {
                 if (this.orbitControl)(this._canUpdate || t) && (this.currTheta += .1 * (this.theta - this.currTheta), this.currPhi += .1 * (this.phi - this.currPhi), this.position[0] = Math.sin(this.currTheta) * Math.cos(this.phi) * this._cameraDistance, this.position[1] = Math.sin(this.phi) * this._cameraDistance, this.position[2] = Math.cos(this.currTheta) * Math.cos(this.phi) * this._cameraDistance, this.lookAt[0] = this.pointerXMove / -100, this.lookAt[1] = this.pointerYMove / 100, c(e.prototype.__proto__ || Object.getPrototypeOf(e.prototype), "render", this).call(this));
                 else if (this.firstPerson) {
                     if (this._canUpdate || t) {
@@ -9757,13 +9802,14 @@
                         var r = b.create();
                         v.getTranslation(r, o), this.position[0] = this._oldPosition[0] + r[0], this.position[1] = this._oldPosition[1] + r[1], this.position[2] = this._oldPosition[2] + r[2], this.lookAt[0] = Math.sin(this.currTheta) * Math.cos(this.currPhi) * this._cameraDistance + this.position[0], this.lookAt[1] = Math.sin(this.currPhi) * this._cameraDistance * -1 + this.position[1], this.lookAt[2] = Math.cos(this.currTheta) * Math.cos(this.currPhi) * this._cameraDistance + this.position[2], this.updateMatrix(), this.updateWorldMatrix(), this.time = i
                     }
-                } else c(e.prototype.__proto__ || Object.getPrototypeOf(e.prototype), "render", this).call(this);
+                }
+                else c(e.prototype.__proto__ || Object.getPrototypeOf(e.prototype), "render", this).call(this);
                 this._canUpdate = !1
             }
         }]), e
     }(p.default);
     e.default = C
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -9778,14 +9824,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var r = function() {
+    var r = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -9794,7 +9840,7 @@
         l = i(15),
         u = n(l),
         c = i(16),
-        h = (n(c), function() {
+        h = (n(c), function () {
             function t(e, i) {
                 var n = this;
                 o(this, t), i = Object.assign({}, {
@@ -9813,44 +9859,44 @@
                 e.getExtension("OES_texture_float_linear");
                 if (!r) throw "trying to create a FrameBuffer of with gl.FLOAT type but theres no floating point texture support";
                 this._texture = this.gl.createTexture(), e.bindTexture(e.TEXTURE_CUBE_MAP, this._texture), e.texImage2D(e.TEXTURE_CUBE_MAP_POSITIVE_X, 0, this.format, this.width, this.height, 0, this.format, this.type, new Uint8Array([0, 0, 0, 255])), e.texImage2D(e.TEXTURE_CUBE_MAP_NEGATIVE_X, 0, this.format, this.width, this.height, 0, this.format, this.type, new Uint8Array([0, 0, 0, 255])), e.texImage2D(e.TEXTURE_CUBE_MAP_POSITIVE_Y, 0, this.format, this.width, this.height, 0, this.format, this.type, new Uint8Array([0, 0, 0, 255])), e.texImage2D(e.TEXTURE_CUBE_MAP_NEGATIVE_Y, 0, this.format, this.width, this.height, 0, this.format, this.type, new Uint8Array([0, 0, 0, 255])), e.texImage2D(e.TEXTURE_CUBE_MAP_POSITIVE_Z, 0, this.format, this.width, this.height, 0, this.format, this.type, new Uint8Array([0, 0, 0, 255])), e.texImage2D(e.TEXTURE_CUBE_MAP_NEGATIVE_Z, 0, this.format, this.width, this.height, 0, this.format, this.type, new Uint8Array([0, 0, 0, 255])), e.texParameteri(e.TEXTURE_CUBE_MAP, e.TEXTURE_WRAP_S, e.CLAMP_TO_EDGE), e.texParameteri(e.TEXTURE_CUBE_MAP, e.TEXTURE_WRAP_T, e.CLAMP_TO_EDGE), e.texParameteri(e.TEXTURE_CUBE_MAP, e.TEXTURE_MIN_FILTER, e.LINEAR), e.texParameteri(e.TEXTURE_CUBE_MAP, e.TEXTURE_MAG_FILTER, e.LINEAR), Object.defineProperty(this, "wrapS", {
-                    set: function(t) {
+                    set: function (t) {
                         n.gl.bindTexture(n.gl.TEXTURE_CUBE_MAP, n._texture), n.gl.texParameteri(n.gl.TEXTURE_CUBE_MAP, n.gl.TEXTURE_WRAP_S, t)
                     }
                 }), Object.defineProperty(this, "wrapT", {
-                    set: function(t) {
+                    set: function (t) {
                         n.gl.bindTexture(n.gl.TEXTURE_CUBE_MAP, n._texture), n.gl.texParameteri(n.gl.TEXTURE_CUBE_MAP, n.gl.TEXTURE_WRAP_T, t)
                     }
                 }), this.wrapS = i.wrapS, this.wrapT = i.wrapT, this.setFilter(i.linear, i.mipmap, i.mipmapLinear), null !== i.urls && this.load(i.urls)
             }
             return r(t, [{
                 key: "load",
-                value: function(t) {
-                    for (var e = this, i = [this.gl.TEXTURE_CUBE_MAP_POSITIVE_X, this.gl.TEXTURE_CUBE_MAP_NEGATIVE_X, this.gl.TEXTURE_CUBE_MAP_POSITIVE_Y, this.gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, this.gl.TEXTURE_CUBE_MAP_POSITIVE_Z, this.gl.TEXTURE_CUBE_MAP_NEGATIVE_Z], n = 0; n < t.length; n++) ! function(n) {
+                value: function (t) {
+                    for (var e = this, i = [this.gl.TEXTURE_CUBE_MAP_POSITIVE_X, this.gl.TEXTURE_CUBE_MAP_NEGATIVE_X, this.gl.TEXTURE_CUBE_MAP_POSITIVE_Y, this.gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, this.gl.TEXTURE_CUBE_MAP_POSITIVE_Z, this.gl.TEXTURE_CUBE_MAP_NEGATIVE_Z], n = 0; n < t.length; n++) ! function (n) {
                         var o = i[n],
                             r = new Image;
-                        r.onload = function() {
+                        r.onload = function () {
                             r.onload = null, e.bindFaceImage(o, r)
                         }, r.src = t[n]
                     }(n)
                 }
             }, {
                 key: "bindFaceImage",
-                value: function(t, e) {
+                value: function (t, e) {
                     this.gl.bindTexture(this.gl.TEXTURE_CUBE_MAP, this._texture), this.gl.pixelStorei(this.gl.UNPACK_FLIP_Y_WEBGL, !0), this.gl.texImage2D(t, 0, this.format, this.format, this.type, e)
                 }
             }, {
                 key: "bind",
-                value: function(t) {
+                value: function (t) {
                     void 0 !== t && this.gl.activeTexture(this.gl.TEXTURE0 + (0 | t)), this.gl.bindTexture(this.gl.TEXTURE_CUBE_MAP, this._texture)
                 }
             }, {
                 key: "delete",
-                value: function() {
+                value: function () {
                     this.gl.deleteTexture(this._texture), this._texture = null, this.gl = null
                 }
             }, {
                 key: "setFilter",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     var n = this.gl;
                     n.bindTexture(n.TEXTURE_CUBE_MAP, this._texture);
                     var o = (0, u.default)(!!t, !!e, !!i);
@@ -9859,7 +9905,7 @@
             }]), t
         }());
     e.default = h
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -9868,18 +9914,18 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var o = function() {
+    var o = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
-        r = function() {
+        r = function () {
             function t(e, i) {
                 if (n(this, t), !e.getExtension("WEBGL_depth_texture")) throw "FrameBuffer useDepthTexture:true => Cannot render depth to texture, the browser doesnt support WEBKIT_WEBGL_depth_texture extension";
                 i = Object.assign({}, {
@@ -9894,23 +9940,23 @@
             }
             return o(t, [{
                 key: "bind",
-                value: function(t) {
+                value: function (t) {
                     void 0 !== t && this.gl.activeTexture(this.gl.TEXTURE0 + (0 | t)), this.gl.bindTexture(this.gl.TEXTURE_2D, this._texture)
                 }
             }, {
                 key: "delete",
-                value: function() {
+                value: function () {
                     this.gl.deleteTexture(this._texture), this._texture = null, this.gl = null
                 }
             }, {
                 key: "resize",
-                value: function(t, e) {
+                value: function (t, e) {
                     this.width = t, this.height = e, this.gl.bindTexture(this.gl.TEXTURE_2D, this._texture), this.gl.texImage2D(this.gl.TEXTURE_2D, 0, this.gl.DEPTH_COMPONENT, this.width, this.height, 0, this.gl.DEPTH_COMPONENT, this.type, null), gl.bindTexture(gl.TEXTURE_2D, null)
                 }
             }]), t
         }();
     e.default = r
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -9936,19 +9982,19 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var s = function() {
+    var s = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         a = i(1),
-        l = function(t) {
+        l = function (t) {
             function e() {
                 var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                 n(this, e), t = Object.assign({}, {
@@ -9978,13 +10024,13 @@
             }
             return r(e, t), s(e, [{
                 key: "update",
-                value: function() {
+                value: function () {
                     this.updateMatrix(), this.updateWorldMatrix(), this.shadowMap && (this._cacheAngle !== this.angle && (this._cacheAngle = this.angle, this.shadowMapCamera.fov = 2 * this._cacheAngle * 180 / Math.PI, this.shadowMapCamera.updateProjectionMatrix()), this.shadowMapCamera.position[0] = this.position[0], this.shadowMapCamera.position[1] = this.position[1], this.shadowMapCamera.position[2] = this.position[2], this.shadowMapCamera.lookAt[0] = this.lookAt[0], this.shadowMapCamera.lookAt[1] = this.lookAt[1], this.shadowMapCamera.lookAt[2] = this.lookAt[2], this.shadowMapCamera.rotation[0] = this.rotation[0], this.shadowMapCamera.rotation[1] = this.rotation[1], this.shadowMapCamera.rotation[2] = this.rotation[2], this.shadowMapCamera.updateMatrix(), this.shadowMapCamera.updateWorldMatrix())
                 }
             }]), e
         }(a.Object3d);
     e.default = l
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -10029,7 +10075,7 @@
         g = n(v),
         b = i(126),
         y = n(b),
-        _ = function(t) {
+        _ = function (t) {
             function e(t, i) {
                 o(this, e);
                 var n = r(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this));
@@ -10052,7 +10098,7 @@
             return s(e, t), e
         }(u.default);
     e.default = _
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -10061,18 +10107,18 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var o = function() {
+    var o = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
-        r = function() {
+        r = function () {
             function t(e) {
                 n(this, t), this.canvas = e && e.canvas || document.createElement("canvas"), this.canvas.style.transformOrigin = "0 0", this.contextAttributes = Object.assign({}, {
                     alpha: !1,
@@ -10086,33 +10132,33 @@
             }
             return o(t, [{
                 key: "handleContextLost",
-                value: function(t) {
+                value: function (t) {
                     t.preventDefault()
                 }
             }, {
                 key: "handleContextRestored",
-                value: function() {}
+                value: function () {}
             }, {
                 key: "handleContextRestored",
-                value: function() {}
+                value: function () {}
             }, {
                 key: "render",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     this.gl && (e.update(), i ? (i.bindFrame(), t.render(e), i.unbind()) : (this.gl.viewport(0, 0, this._width * this._pixelRatio, this._height * this._pixelRatio), t.render(e)))
                 }
             }, {
                 key: "resize",
-                value: function(t, e) {
+                value: function (t, e) {
                     this.gl && (this._width = t, this._height = e, this.canvas.width = this._width * this._pixelRatio, this.canvas.height = this._height * this._pixelRatio, this.canvas.style.transform = "scale(" + 1 / this._pixelRatio + ") translateZ(0)", this.gl.viewport(0, 0, this._width * this._pixelRatio, this._height * this._pixelRatio))
                 }
             }, {
                 key: "clearColor",
-                value: function(t, e, i, n) {
+                value: function (t, e, i, n) {
                     this.gl && this.gl.clearColor(t, e, i, n)
                 }
             }, {
                 key: "clear",
-                value: function(t, e, i) {
+                value: function (t, e, i) {
                     if (this.gl) {
                         var n = 0;
                         (void 0 === t || t) && (n |= this.gl.COLOR_BUFFER_BIT), (void 0 === e || e) && (n |= this.gl.DEPTH_BUFFER_BIT), (void 0 === i || i) && (n |= this.gl.STENCIL_BUFFER_BIT), this.gl.clear(n)
@@ -10120,13 +10166,13 @@
                 }
             }, {
                 key: "setPixelRatio",
-                value: function(t) {
+                value: function (t) {
                     this._pixelRatio = t, this.resize(this._width, this._height)
                 }
             }]), t
         }();
     e.default = r
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -10157,14 +10203,14 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var a = function() {
+    var a = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
@@ -10182,7 +10228,7 @@
         u = i(1),
         c = [];
     s();
-    var h = function(t) {
+    var h = function (t) {
         function e() {
             n(this, e);
             var t = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this));
@@ -10199,12 +10245,12 @@
         }
         return r(e, t), a(e, [{
             key: "add",
-            value: function(t) {
+            value: function (t) {
                 t instanceof u.Light ? this.lights.push(t) : l(e.prototype.__proto__ || Object.getPrototypeOf(e.prototype), "add", this).call(this, t)
             }
         }, {
             key: "render",
-            value: function(t) {
+            value: function (t) {
                 if (this._needsUpdate) {
                     this.uniforms.lightAngleCos = [], this.uniforms.lightColor = [], this.uniforms.lightDecay = [], this.uniforms.lightDirection = [], this.uniforms.lightDistance = [], this.uniforms.lightExponent = [], this.uniforms.lightPosition = [], this.uniforms.lightPenumbraCos = [];
                     for (var i = 0; i < this.lights.length; i++) this.lights[i].update(), this.uniforms.lightAngleCos.push(Math.cos(this.lights[i].angle)), this.uniforms.lightDecay.push(this.lights[i].decay), this.uniforms.lightDistance.push(this.lights[i].distance), this.uniforms.lightExponent.push(this.lights[i].exponent), this.uniforms.lightPenumbraCos.push(Math.cos(this.lights[i].angle * (1 - this.lights[i].penumbra))), u.vec3.copy(this._lightColor, this.lights[i].color), u.vec3.scale(this._lightColor, this._lightColor, this.lights[i].intensity), this.uniforms.lightColor.push(this._lightColor[0], this._lightColor[1], this._lightColor[2]), u.vec3.set(this._lightPosition, this.lights[i].worldMatrix[12], this.lights[i].worldMatrix[13], this.lights[i].worldMatrix[14]), this.uniforms.lightPosition.push(this._lightPosition[0], this._lightPosition[1], this._lightPosition[2]), u.vec3.copy(this._lightDirection, this._lightPosition), u.vec3.subtract(this._lightDirection, this._lightDirection, this.lights[i].lookAt), u.vec3.normalize(this._lightDirection, this._lightDirection), this.uniforms.lightDirection.push(this._lightDirection[0], this._lightDirection[1], this._lightDirection[2])
@@ -10214,7 +10260,7 @@
         }]), e
     }(u.Container);
     e.default = h
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -10241,20 +10287,20 @@
         value: !0
     });
     var s = i(3),
-        a = function(t) {
+        a = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(s),
         l = i(4),
-        u = function(t) {
+        u = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
                 for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e.default = t, e
         }(l),
-        c = function(t) {
+        c = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -10306,7 +10352,7 @@
             return r(e, t), e
         }(a.default);
     e.default = c
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t) {
@@ -10348,11 +10394,11 @@
         f = n(d),
         m = i(23),
         v = n(m),
-        g = function(t) {
+        g = function (t) {
             function e(t, i) {
                 o(this, e);
                 var n = r(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this));
-                return n.gl = t, l.default.loadImage(i, function(t) {
+                return n.gl = t, l.default.loadImage(i, function (t) {
                     n.texture = f.default.fromImage(n.gl, t), n.material = new p.default(n.gl, {
                         blend: !0
                     }), n.material.map = n.texture, n.geometry = new v.default(n.gl, {
@@ -10364,7 +10410,7 @@
             return s(e, t), e
         }(c.default);
     e.default = g
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -10391,12 +10437,12 @@
         value: !0
     });
     var s = i(3),
-        a = function(t) {
+        a = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(s),
-        l = function(t) {
+        l = function (t) {
             function e(t) {
                 n(this, e);
                 var i = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 3));
@@ -10405,7 +10451,7 @@
             return r(e, t), e
         }(a.default);
     e.default = l
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -10439,7 +10485,8 @@
         if (t === e) {
             var i = e[1];
             t[1] = e[2], t[2] = i
-        } else t[0] = e[0], t[1] = e[2], t[2] = e[1], t[3] = e[3];
+        }
+        else t[0] = e[0], t[1] = e[2], t[2] = e[1], t[3] = e[3];
         return t
     }
 
@@ -10550,7 +10597,7 @@
         value: !0
     }), e.sub = e.mul = void 0, e.create = n, e.clone = o, e.copy = r, e.identity = s, e.fromValues = a, e.set = l, e.transpose = u, e.invert = c, e.adjoint = h, e.determinant = p, e.multiply = d, e.rotate = f, e.scale = m, e.fromRotation = v, e.fromScaling = g, e.str = b, e.frob = y, e.LDU = _, e.add = w, e.subtract = x, e.exactEquals = P, e.equals = M, e.multiplyScalar = k, e.multiplyScalarAndAdd = E;
     var C = i(2),
-        S = function(t) {
+        S = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
@@ -10558,7 +10605,7 @@
             return e.default = t, e
         }(C);
     e.mul = d, e.sub = x
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -10716,7 +10763,7 @@
         value: !0
     }), e.sub = e.mul = void 0, e.create = n, e.clone = o, e.copy = r, e.identity = s, e.fromValues = a, e.set = l, e.invert = u, e.determinant = c, e.multiply = h, e.rotate = p, e.scale = d, e.translate = f, e.fromRotation = m, e.fromScaling = v, e.fromTranslation = g, e.str = b, e.frob = y, e.add = _, e.subtract = w, e.multiplyScalar = x, e.multiplyScalarAndAdd = P, e.exactEquals = M, e.equals = k;
     var E = i(2),
-        C = function(t) {
+        C = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
@@ -10724,7 +10771,7 @@
             return e.default = t, e
         }(E);
     e.mul = h, e.sub = w
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n() {
@@ -10897,30 +10944,30 @@
         value: !0
     }), e.forEach = e.sqrLen = e.sqrDist = e.dist = e.div = e.mul = e.sub = e.len = void 0, e.create = n, e.clone = o, e.fromValues = r, e.copy = s, e.set = a, e.add = l, e.subtract = u, e.multiply = c, e.divide = h, e.ceil = p, e.floor = d, e.min = f, e.max = m, e.round = v, e.scale = g, e.scaleAndAdd = b, e.distance = y, e.squaredDistance = _, e.length = w, e.squaredLength = x, e.negate = P, e.inverse = M, e.normalize = k, e.dot = E, e.cross = C, e.lerp = S, e.random = T, e.transformMat2 = O, e.transformMat2d = A, e.transformMat3 = R, e.transformMat4 = j, e.str = L, e.exactEquals = D, e.equals = I;
     var N = i(2),
-        F = function(t) {
+        F = function (t) {
             if (t && t.__esModule) return t;
             var e = {};
             if (null != t)
                 for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
             return e.default = t, e
         }(N);
-    e.len = w, e.sub = u, e.mul = c, e.div = h, e.dist = y, e.sqrDist = _, e.sqrLen = x, e.forEach = function() {
+    e.len = w, e.sub = u, e.mul = c, e.div = h, e.dist = y, e.sqrDist = _, e.sqrLen = x, e.forEach = function () {
         var t = n();
-        return function(e, i, n, o, r, s) {
+        return function (e, i, n, o, r, s) {
             var a = void 0,
                 l = void 0;
             for (i || (i = 2), n || (n = 0), l = o ? Math.min(o * i + n, e.length) : e.length, a = n; a < l; a += i) t[0] = e[a], t[1] = e[a + 1], r(t, t, s), e[a] = t[0], e[a + 1] = t[1];
             return e
         }
     }()
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
     var n = {};
     n[5126] = "1f", n[35664] = "2f", n[35665] = "3f", n[35666] = "4f", n[35670] = n[5124] = n[35678] = n[35680] = "1i", n[35671] = n[35667] = "2i", n[35672] = n[35668] = "3i", n[35673] = n[35669] = "4i", n[35674] = "Matrix2f", n[35675] = "Matrix3f", n[35676] = "Matrix4f", e.default = n
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -10947,7 +10994,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -10969,7 +11016,7 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -10996,7 +11043,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -11018,7 +11065,7 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11045,7 +11092,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -11065,7 +11112,7 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11092,7 +11139,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -11137,7 +11184,7 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11164,7 +11211,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -11186,9 +11233,9 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
-    "function" != typeof Object.assign && (Object.assign = function(t, e) {
+    "function" != typeof Object.assign && (Object.assign = function (t, e) {
         if (null == t) throw new TypeError("Cannot convert undefined or null to object");
         for (var i = Object(t), n = 1; n < arguments.length; n++) {
             var o = arguments[n];
@@ -11197,7 +11244,7 @@
         }
         return i
     }), console.log("Clarity Movement Co. v7"), i(63), i(64), i(48), i(45), i(50), i(49), i(44), i(43), i(47), i(46), i(53), i(52), i(51), i(35), i(39), i(38), i(37), i(40), i(41), i(36), i(34), i(42), i(59), i(61), i(55), i(58), i(60), i(56), i(57), i(54), i(62)
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11206,60 +11253,60 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var o = function() {
+    var o = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         r = i(5),
-        s = function(t) {
+        s = function (t) {
             return t && t.__esModule ? t : {
                 default: t
             }
         }(r),
         a = i(0),
-        l = function() {
+        l = function () {
             function t(e) {
-                n(this, t), this.step = e.step || function() {}, this.end = e.end || function() {}, this.direction = e.direction || 1, this.duration = e.duration || 1e3, this.easing = e.easing || [.55, .085, .68, .53], this.delay = e.delay || 0, this._progress = 0, this._easedProgress = 0, this.update = this.update.bind(this), a.EventDispatcher.on("requestAnimationFrame", this.update, this), this.update()
+                n(this, t), this.step = e.step || function () {}, this.end = e.end || function () {}, this.direction = e.direction || 1, this.duration = e.duration || 1e3, this.easing = e.easing || [.55, .085, .68, .53], this.delay = e.delay || 0, this._progress = 0, this._easedProgress = 0, this.update = this.update.bind(this), a.EventDispatcher.on("requestAnimationFrame", this.update, this), this.update()
             }
             return o(t, [{
                 key: "destroy",
-                value: function() {
+                value: function () {
                     a.EventDispatcher.off("requestAnimationFrame", this.update, this)
                 }
             }, {
                 key: "play",
-                value: function() {
+                value: function () {
                     var t = this;
-                    clearTimeout(this._delayTimer), this._delayTimer = setTimeout(function() {
+                    clearTimeout(this._delayTimer), this._delayTimer = setTimeout(function () {
                         t._progress = 1 == t.direction ? 0 : 1, t._easedProgress = 1 == t.direction ? 0 : 1, t.isPlaying = !0
                     }, this.delay)
                 }
             }, {
                 key: "pause",
-                value: function() {
+                value: function () {
                     clearTimeout(this._delayTimer), this.isPlaying = !1
                 }
             }, {
                 key: "reset",
-                value: function() {
+                value: function () {
                     this._progress = 0
                 }
             }, {
                 key: "update",
-                value: function() {
+                value: function () {
                     this.isPlaying && (this._progress += 1 / (this.duration / (1e3 / 60)) * this.direction, this._easedProgress = (0, s.default)(this.easing[0], this.easing[1], this.easing[2], this.easing[3], Math.max(0, Math.min(1, this._progress)), 1), 1 == this.direction && this._easedProgress < 1 || -1 == this.direction && this._easedProgress > 0 ? this.step(this._easedProgress, this._progress) : (this.isPlaying = !1, this._progress = 1 == this.direction ? 1 : 0, this._easedProgress = 1 == this.direction ? 1 : 0, this.step(this._easedProgress, this._progress), this.end()))
                 }
             }]), t
         }();
     e.default = l
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11269,7 +11316,7 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     }), e.default = n
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11278,50 +11325,50 @@
     Object.defineProperty(e, "__esModule", {
         value: !0
     });
-    var o = function() {
+    var o = function () {
             function t(t, e) {
                 for (var i = 0; i < e.length; i++) {
                     var n = e[i];
                     n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(t, n.key, n)
                 }
             }
-            return function(e, i, n) {
+            return function (e, i, n) {
                 return i && t(e.prototype, i), n && t(e, n), e
             }
         }(),
         r = i(0),
-        s = function() {
+        s = function () {
             function t(e) {
                 n(this, t), e = Object.assign({}, {
                     elem: document,
-                    callback: function() {},
+                    callback: function () {},
                     maxDelta: 50,
                     preventMouse: !0
                 }, e), this.elem = e.elem, this.callback = e.callback, this.maxDelta = e.maxDelta, this.preventMouse = e.preventMouse, this._onPointerDown = this._onPointerDown.bind(this), this._onPointerMove = this._onPointerMove.bind(this), this._onPointerUp = this._onPointerUp.bind(this), this.elem.addEventListener(r.support.pointerdown, this._onPointerDown, !1), document.addEventListener(r.support.pointermove, this._onPointerMove, !1), document.addEventListener(r.support.pointerup, this._onPointerUp, !1), this._isPointerDown = !1, this._enabled = !0
             }
             return o(t, [{
                 key: "disable",
-                value: function() {
+                value: function () {
                     this._enabled = !1
                 }
             }, {
                 key: "enable",
-                value: function() {
+                value: function () {
                     this._enabled = !0
                 }
             }, {
                 key: "destroy",
-                value: function() {
+                value: function () {
                     this.elem.removeEventListener(r.support.pointerdown, this._onPointerDown), document.removeEventListener(r.support.pointermove, this._onPointerMove), document.removeEventListener(r.support.pointerup, this._onPointerUp)
                 }
             }, {
                 key: "_onPointerDown",
-                value: function(t) {
+                value: function (t) {
                     this._enabled && (this._isPointerDown = !0, this._moveDelta = 0, this._pointerStartEvent = r.support.touch && "mousemove" != t.type ? t.touches[0] || t.changedTouches[0] : t, this._pointerStart = this._pointerStartEvent.pageY - (window.pageYOffset || document.documentElement.scrollTop))
                 }
             }, {
                 key: "_onPointerMove",
-                value: function(t) {
+                value: function (t) {
                     if (this._enabled && this._isPointerDown) {
                         this.preventMouse && t.preventDefault();
                         var e = r.support.touch && "mousemove" != t.type ? t.touches[0] || t.changedTouches[0] : t,
@@ -11331,7 +11378,7 @@
                 }
             }, {
                 key: "_onPointerUp",
-                value: function(t) {
+                value: function (t) {
                     this._enabled && this._isPointerDown && Math.abs(this._moveDelta) > this.maxDelta && this.callback({
                         direction: this._moveDelta > 0 ? "up" : "down"
                     }), this._isPointerDown = !1
@@ -11339,7 +11386,7 @@
             }]), t
         }();
     e.default = s
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11366,7 +11413,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -11397,7 +11444,7 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     "use strict";
 
     function n(t, e) {
@@ -11424,7 +11471,7 @@
         value: !0
     });
     var s = i(1),
-        a = function(t) {
+        a = function (t) {
             function e(t, i) {
                 n(this, e);
                 var r = o(this, (e.__proto__ || Object.getPrototypeOf(e)).call(this, t, 0));
@@ -11446,7 +11493,7 @@
             return r(e, t), e
         }(s.GeometryBuffer);
     e.default = a
-}, function(t, e, i) {
+}, function (t, e, i) {
     function n(t) {
         if (t) return o(t)
     }
@@ -11455,14 +11502,14 @@
         for (var e in n.prototype) t[e] = n.prototype[e];
         return t
     }
-    t.exports = n, n.prototype.on = n.prototype.addEventListener = function(t, e) {
+    t.exports = n, n.prototype.on = n.prototype.addEventListener = function (t, e) {
         return this._callbacks = this._callbacks || {}, (this._callbacks["$" + t] = this._callbacks["$" + t] || []).push(e), this
-    }, n.prototype.once = function(t, e) {
+    }, n.prototype.once = function (t, e) {
         function i() {
             this.off(t, i), e.apply(this, arguments)
         }
         return i.fn = e, this.on(t, i), this
-    }, n.prototype.off = n.prototype.removeListener = n.prototype.removeAllListeners = n.prototype.removeEventListener = function(t, e) {
+    }, n.prototype.off = n.prototype.removeListener = n.prototype.removeAllListeners = n.prototype.removeEventListener = function (t, e) {
         if (this._callbacks = this._callbacks || {}, 0 == arguments.length) return this._callbacks = {}, this;
         var i = this._callbacks["$" + t];
         if (!i) return this;
@@ -11473,7 +11520,7 @@
                 break
             }
         return this
-    }, n.prototype.emit = function(t) {
+    }, n.prototype.emit = function (t) {
         this._callbacks = this._callbacks || {};
         var e = [].slice.call(arguments, 1),
             i = this._callbacks["$" + t];
@@ -11482,16 +11529,16 @@
             for (var n = 0, o = i.length; n < o; ++n) i[n].apply(this, e)
         }
         return this
-    }, n.prototype.listeners = function(t) {
+    }, n.prototype.listeners = function (t) {
         return this._callbacks = this._callbacks || {}, this._callbacks["$" + t] || []
-    }, n.prototype.hasListeners = function(t) {
+    }, n.prototype.hasListeners = function (t) {
         return !!this.listeners(t).length
     }
-}, function(t, e) {}, function(t, e) {}, function(t, e) {
+}, function (t, e) {}, function (t, e) {}, function (t, e) {
     t.exports = {
         team: config["about"]["team_member_list"]
     }
-}, function(t, e) {
+}, function (t, e) {
     function i(t, e, o) {
         o = o || {}, e = e || [];
         var r, s = o.strict,
@@ -11509,10 +11556,10 @@
             });
             return t
         }
-        if (Array.isArray(t)) return t = t.map(function(t) {
+        if (Array.isArray(t)) return t = t.map(function (t) {
             return i(t, e, o).source
         }), new RegExp("(?:" + t.join("|") + ")", l);
-        for (t = ("^" + t + (s ? "" : "/" === t[t.length - 1] ? "?" : "/?")).replace(/\/\(/g, "/(?:").replace(/([\/\.])/g, "\\$1").replace(/(\\\/)?(\\\.)?:(\w+)(\(.*?\))?(\*)?(\?)?/g, function(t, i, n, o, r, s, a, l) {
+        for (t = ("^" + t + (s ? "" : "/" === t[t.length - 1] ? "?" : "/?")).replace(/\/\(/g, "/(?:").replace(/([\/\.])/g, "\\$1").replace(/(\\\/)?(\\\.)?:(\w+)(\(.*?\))?(\*)?(\?)?/g, function (t, i, n, o, r, s, a, l) {
                 i = i || "", n = n || "", r = r || "([^\\/" + n + "]+?)", a = a || "", e.push({
                     name: o,
                     optional: !!a,
@@ -11520,7 +11567,7 @@
                 });
                 var c = (a ? "" : i) + "(?:" + n + (a ? i : "") + r + (s ? "((?:[\\/" + n + "].+?)?)" : "") + ")" + a;
                 return u += c.length - t.length, c
-            }).replace(/\*/g, function(t, i) {
+            }).replace(/\*/g, function (t, i) {
                 for (var n = e.length; n-- > c && e[n].offset > i;) e[n].offset += 3;
                 return "(.*)"
             }); r = n.exec(t);) {
@@ -11536,7 +11583,7 @@
     }
     t.exports = i;
     var n = /\((?!\?)/g
-}, function(t, e) {
+}, function (t, e) {
     function i() {
         throw new Error("setTimeout has not been defined")
     }
@@ -11550,10 +11597,12 @@
         if ((c === i || !c) && setTimeout) return c = setTimeout, setTimeout(t, 0);
         try {
             return c(t, 0)
-        } catch (e) {
+        }
+        catch (e) {
             try {
                 return c.call(null, t, 0)
-            } catch (e) {
+            }
+            catch (e) {
                 return c.call(this, t, 0)
             }
         }
@@ -11564,10 +11613,12 @@
         if ((h === n || !h) && clearTimeout) return h = clearTimeout, clearTimeout(t);
         try {
             return h(t)
-        } catch (e) {
+        }
+        catch (e) {
             try {
                 return h.call(null, t)
-            } catch (e) {
+            }
+            catch (e) {
                 return h.call(this, t)
             }
         }
@@ -11595,99 +11646,101 @@
 
     function u() {}
     var c, h, p = t.exports = {};
-    ! function() {
+    ! function () {
         try {
             c = "function" == typeof setTimeout ? setTimeout : i
-        } catch (t) {
+        }
+        catch (t) {
             c = i
         }
         try {
             h = "function" == typeof clearTimeout ? clearTimeout : n
-        } catch (t) {
+        }
+        catch (t) {
             h = n
         }
     }();
     var d, f = [],
         m = !1,
         v = -1;
-    p.nextTick = function(t) {
+    p.nextTick = function (t) {
         var e = new Array(arguments.length - 1);
         if (arguments.length > 1)
             for (var i = 1; i < arguments.length; i++) e[i - 1] = arguments[i];
         f.push(new l(t, e)), 1 !== f.length || m || o(a)
-    }, l.prototype.run = function() {
+    }, l.prototype.run = function () {
         this.fun.apply(null, this.array)
-    }, p.title = "browser", p.browser = !0, p.env = {}, p.argv = [], p.version = "", p.versions = {}, p.on = u, p.addListener = u, p.once = u, p.off = u, p.removeListener = u, p.removeAllListeners = u, p.emit = u, p.prependListener = u, p.prependOnceListener = u, p.listeners = function(t) {
+    }, p.title = "browser", p.browser = !0, p.env = {}, p.argv = [], p.version = "", p.versions = {}, p.on = u, p.addListener = u, p.once = u, p.off = u, p.removeListener = u, p.removeAllListeners = u, p.emit = u, p.prependListener = u, p.prependOnceListener = u, p.listeners = function (t) {
         return []
-    }, p.binding = function(t) {
+    }, p.binding = function (t) {
         throw new Error("process.binding is not supported")
-    }, p.cwd = function() {
+    }, p.cwd = function () {
         return "/"
-    }, p.chdir = function(t) {
+    }, p.chdir = function (t) {
         throw new Error("process.chdir is not supported")
-    }, p.umask = function() {
+    }, p.umask = function () {
         return 0
     }
-}, function(t, e) {
-    t.exports = function(t, e, i) {
+}, function (t, e) {
+    t.exports = function (t, e, i) {
         for (var n = 0, o = t.length, r = 3 == arguments.length ? i : t[n++]; n < o;) r = e.call(null, r, t[n], ++n, t);
         return r
     }
-}, function(t, e) {
-    t.exports = '<button class="u-pointer-auto js-expand__btn c-button c-text--md u-color--brand ">\t{{!isActive ? "Expand +":"Close -"}}</button><div class="u-relative | js-expand__content">\t<content></content>\t</div>'
-}, function(t, e) {
-    t.exports = '\t<div class="u-flex u-justify-space-between u-marg-b-md | u-block@sm u-marg-r-0@sm u-align-center@sm u-marg-b-sm@sm">\t\t<a href="#" class="c-link u-inline-block">\t\t\t<img src="' + config["global"]["logo"] + '" alt="" class="c-logo ' + config["global"]["logo_size"] + '" />\t\t</a>\t\t<ul class="o-list--inline | u-fit-w@sm u-marg-b-sm@sm u-hide@sm">\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["facebook_link"] + '" class="c-link">\t\t\t\t\t<svg width="18px" height="18px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<path fill="#959595" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["twitter_link"] + '" class="c-link">\t\t\t\t\t<svg width="18px" height="18px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<g transform="translate(-539.18 -568.86)">\t\t\t\t\t\t\t<path fill="#959595" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/>\t\t\t\t\t\t</g>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["linkedin_link"] + '" class="c-link">\t\t\t\t\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 510 510">\t\t\t\t\t\t<path fill="#959595" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9    S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204    V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" />\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["medium_link"] + '" class="c-link">\t\t\t\t\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"  viewBox="0 0 1792 1792" width="1792">\t\t\t\t\t\t<path fill="#959595" d="M597 421v1173q0 25-12.5 42.5t-36.5 17.5q-17 0-33-8l-465-233q-21-10-35.5-33.5t-14.5-46.5v-1140q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5zm64 101l534 866-534-266v-600zm1131 18v1054q0 25-14 40.5t-38 15.5-47-13l-441-220zm-3-120q0 3-256.5 419.5t-300.5 487.5l-390-634 324-527q17-28 52-28 14 0 26 6l541 270q4 2 4 6z"/>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t\t\t</ul>\t</div>\t\t<div class="u-flex u-justify-space-between | u-block@sm u-marg-r-0@sm u-align-center@sm">\t\t<ul class="o-list--inline | u-fit-w@sm u-marg-b-md@sm">\t\t\t<li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">\t\t\t\t<a href="/" class="c-link c-text--nano u-color--grey">Home</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">\t\t\t\t<a href="/solution" class="c-link c-text--nano u-color--grey">Solution</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">\t\t\t\t<a href="' + config["global"]["community_link"] + '" class="c-link c-text--nano u-color--grey">Community</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">\t\t\t\t<a href="/about" class="c-link c-text--nano u-color--grey">About</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">\t\t\t\t<a href="/contact" class="c-link c-text--nano u-color--grey">Contact</a>\t\t\t</li>\t\t</ul>\t\t<ul class="o-list--inline | u-fit-w@sm u-marg-b-sm@sm u-hide u-block@sm">\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["facebook_link"] + '" class="c-link">\t\t\t\t\t<svg width="18px" height="18px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<path fill="#959595" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["twitter_link"] + '" class="c-link">\t\t\t\t\t<svg width="18px" height="18px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<g transform="translate(-539.18 -568.86)">\t\t\t\t\t\t\t<path fill="#959595" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/>\t\t\t\t\t\t</g>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["linkedin_link"] + '" class="c-link">\t\t\t\t\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 510 510">\t\t\t\t\t\t<path fill="#959595" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9    S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204    V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" />\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="u-inline-block u-marg-r-xs">\t\t\t\t<a href="' + config["global"]["medium_link"] + '" class="c-link">\t\t\t\t\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"  viewBox="0 0 1792 1792" width="1792">\t\t\t\t\t\t<path fill="#959595" d="M597 421v1173q0 25-12.5 42.5t-36.5 17.5q-17 0-33-8l-465-233q-21-10-35.5-33.5t-14.5-46.5v-1140q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5zm64 101l534 866-534-266v-600zm1131 18v1054q0 25-14 40.5t-38 15.5-47-13l-441-220zm-3-120q0 3-256.5 419.5t-300.5 487.5l-390-634 324-527q17-28 52-28 14 0 26 6l541 270q4 2 4 6z"/>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t</ul>\t\t<ul class="o-list--inline | u-fit-w@sm">\t\t\t<li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-sm@sm">\t\t\t\t<a href="/privacy-policy" class="c-link u-underline c-text--nano u-color--grey">Privacy Policy</a>\t\t\t</li>\t\t\t<li class="u-inline-block c-text--nano u-color--grey | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">\t\t\t\t© Clarity 2017 — All rights reserved\t\t\t</li>\t\t</ul>\t</div>'
-}, function(t, e) {
-    t.exports = '<div class="u-block u-viewport-fit-h u-fit-w u-fixed u-pos-tl js-scene"><div class="c-menu u-viewport-fit-h  u-fit-w u-fixed u-pos-tl u-pad-y-md u-pad-x-vw1of24 {{isActive?\'is-active\':\'\'}} u-overflow-a">\t<div class="u-inline-block u-fit-w u-valign-middle valign-top@sm u-pad-t-xl@sm">\t\t<div class="u-flex u-justify-space-between u-align-items-center | u-block@sm u-justify-center@sm">\t\t\t<div class="u-inline-block | u-block@sm u-w10of10@sm u-align-center@sm u-marg-b-0@sm">\t\t\t\t<a href="/" data-mode="home" class="js-menu-link c-menu__link c-anim--slide-x c-anim--3 c-link u-color--white c-h3 u-inline-block u-marg-r-vw1of24 | u-marg-r-0@sm u-pad-r-0@sm u-marg-b-sm@sm {{currentPage == \'page-home\'?\'is-active\':\'\'}}">Home</a>\t\t\t\t<br class="u-hide u-block@sm"/>\t\t\t\t<a href="/solution" data-mode="solution" class="js-menu-link c-menu__link c-anim--slide-x c-anim--4 c-link u-color--white c-h3 u-inline-block u-marg-r-vw1of24 | u-marg-r-0@sm u-pad-r-0@s u-marg-b-sm@sm {{currentPage == \'page-solution\'?\'is-active\':\'\'}}">Solution</a>\t\t\t\t<br class="u-hide u-block@sm"/>\t\t\t\t<a  href="/contact" data-mode="about" class="js-menu-link c-menu__link c-anim--slide-x c-anim--5 c-link u-color--white c-h3 u-inline-block | u-marg-r-0@sm u-marg-b-sm@sm {{currentPage == \'page-contact\'?\'is-active\':\'\'}}">Contact</a>\t\t\t</div>\t\t\t<div class="u-inline-block | u-hide@sm" >\t\t\t\t<div class="c-anim--fade-in c-anim--9 u-inline-block u-marg-r-vw1of24">\t\t\t\t\t<a href="/about" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-about\'?\'is-active\':\'\'}}">\t\t\t\t\t\tAbout\t\t\t\t\t</a>\t\t\t\t</div>\t\t\t\t<div class="c-anim--fade-in c-anim--10 u-inline-block ">\t\t\t\t\t<a href="' + config["global"]["community_link"] + '" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-community\'?\'is-active\':\'\'}}">\t\t\t\t\t\tCommunity\t\t\t\t\t</a>\t\t\t\t</div>\t\t\t</div>\t\t\t<div class="u-hide | u-block@sm u-w10of10 u-align-center u-marg-b-sm" >\t\t\t\t<div class="c-anim--slide-x c-anim--6 u-block@">\t\t\t\t\t<a href="/about" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-about\'?\'is-active\':\'\'}} | u-marg-b-sm@sm">\t\t\t\t\t\tAbout\t\t\t\t\t</a>\t\t\t\t</div>\t\t\t\t<div class="c-anim--slide-x c-anim--7 u-block">\t\t\t\t\t<a href="' + config["global"]["community_link"] + '" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-community\'?\'is-active\':\'\'}} | u-marg-b-md@sm">\t\t\t\t\t\tCommunity\t\t\t\t\t</a>\t\t\t\t</div>\t\t\t</div>\t\t\t<div class="u-hide u-block@sm u-align-center' + config["global"]["add_btn_container_class_xs"] + '">' + config["global"]["one_more_button_tpl"] + '<a href="' + config["global"]["open_map_link"] + '" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-b-xs c-anim--slide-x c-anim--8 | u-marg-b-md@sm " onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'openmap-event\', transport: \'beacon\'});">' + config["global"]["open_map_button_text"] + '</a>\t\t\t\t<br />\t\t\t\t<a href="' + config["global"]["login_link"] + '" target="_blank"  class="c-link u-inline-block u-valign-middle  c-button--login c-anim--slide-x c-anim--9 | u-marg-b-lg@sm"\t\t\t\tstyle="min-width:134px;" onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'login-event\', transport: \'beacon\'});">' + config["global"]["login_button_text"] + '</a>\t\t\t</div>\t\t</div>\t</div>\t<div class="c-anim--fade-in c-anim--10 u-absolute u-vacuum u-pad-x-vw1of24 u-pos-bl u-fit-w u-pad-y-md u-flex u-justify-space-between u-align-items-bottom | u-relative@sm u-pad-a-0@sm u-fit-w@sm u-justify-center@sm">\t\t<div class="u-block | u-align-center@sm">\t\t\t<ul class="o-list--inline u-inline-block u-valign-bottom | u-marg-b-sm@sm">\t\t\t\t<li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm">\t\t\t\t\t<a href="' + config["global"]["facebook_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'facebook-event\', transport: \'beacon\'});">\t\t\t\t\t\t<svg width="18px" height="18px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t\t<path fill="#fff" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/>\t\t\t\t\t\t</svg>\t\t\t\t\t</a>\t\t\t\t</li>\t\t\t\t<li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm">\t\t\t\t\t<a href="' + config["global"]["twitter_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'twitter-event\', transport: \'beacon\'});">\t\t\t\t\t\t<svg width="18px" height="18px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t\t<g transform="translate(-539.18 -568.86)">\t\t\t\t\t\t\t\t<path fill="#fff" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/>\t\t\t\t\t\t\t</g>\t\t\t\t\t\t</svg>\t\t\t\t\t</a>\t\t\t\t</li>\t\t\t\t<li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm">\t\t\t\t\t<a href="' + config["global"]["linkedin_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'linkedin-event\', transport: \'beacon\'});">\t\t\t\t\t\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 510 510">\t\t\t\t\t\t\t<path fill="#FFFFFF" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9    S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204    V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" />\t\t\t\t\t\t</svg>\t\t\t\t\t</a>\t\t\t\t</li>\t\t\t\t<li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm">\t\t\t\t\t<a href="' + config["global"]["medium_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'medium-event\', transport: \'beacon\'});">\t\t\t\t\t\t<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"  viewBox="0 0 1792 1792" width="1792">\t\t\t\t\t\t<path fill="#FFFFFF" d="M597 421v1173q0 25-12.5 42.5t-36.5 17.5q-17 0-33-8l-465-233q-21-10-35.5-33.5t-14.5-46.5v-1140q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5zm64 101l534 866-534-266v-600zm1131 18v1054q0 25-14 40.5t-38 15.5-47-13l-441-220zm-3-120q0 3-256.5 419.5t-300.5 487.5l-390-634 324-527q17-28 52-28 14 0 26 6l541 270q4 2 4 6z"/>\t\t\t\t\t</svg>\t\t\t\t\t</a>\t\t\t\t</li>\t\t\t</ul>\t\t\t<br class="u-hide u-block@sm"/>\t\t\t<div class="u-inline-block u-valign-bottom c-text--nano u-color--white | u-marg-t-sm@sm u-marg-b-lg@sm"\t\t\t\tstyle="opacity:0.5">\t\t\t\t© Clarity 2017 — All rights reserved\t\t\t</div>\t\t</div>\t\t<div class="u-hide@sm">' + config["global"]["one_more_button_xs_tpl"] + '<a href="' + config["global"]["open_map_link"] + '" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-r-sm" onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'openmap-event\', transport: \'beacon\'});">' + config["global"]["open_map_button_text"] + '</a>\t\t\t<a href="' + config["global"]["login_link"] + '" target="_blank"  class="c-link u-inline-block u-valign-middle  c-button--login" onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'login-event\', transport: \'beacon\'});">' + config["global"]["login_button_text"] + '</a>\t\t</div>\t</div></div>'
-}, function(t, e) {
-    t.exports = '<div class="js-content u-hide" style="opacity: 0">\t<content></content></div><div class="u-fit-w | js-placeholder" style="opacity: 0;transform: translateZ(0); padding-right: 10px;"></div><div class="u-absolute u-pos-tl u-fit-w" style="transform: translateZ(0)">\t<template is="light-core-template" if="{{useMask === false}}" remove-nodes="true">\t\t<template is="light-core-template" repeat="{{line in lines}}" remove-nodes="true">\t\t\t<span class="u-inline-block u-relative c-anim c-anim--slide-y" \t\t\t\t  style="padding-right: 10px;transition-delay:{{$index*0.1+delay}}s">\t\t\t\t{{@line}}\t\t\t</span>\t\t</template>\t</template></div>'
-}, function(t, e) {
-    t.exports = '<content></content><template is="light-core-template" if="{{controls === true}}">\t<div class="c-btn c-slideshow__prev-btn {{currentIndex==items.length - 1?\'\':\'is-active\'}}" on-pointerdown="_next"></div>\t<div class="c-btn c-slideshow__next-btn {{currentIndex==0?\'\':\'is-active\'}}" on-pointerdown="_prev"></div></template>'
-}, function(t, e) {
-    t.exports = '<div class="u-relative">\t<div class="js-word-content {{wordClass}}" style="opacity: 0; visibility: hidden;">\t\t<content></content>\t</div>\t<div class="u-absolute u-pos-tl u-fit js-words-wrapper">\t\t<template is="light-core-template" repeat="{{word in words}}">\t\t\t<span class="{{wordClass}} c-anim c-anim--slide-x u-inline-block"\t\t\t\tstyle="transition-delay: {{step*$index}}s">{{@word}}</span>\t\t</template>\t\t</div></div>'
-}, function(t, e) {
-    t.exports = '<input id="core-input-{{name}}" name="{{name}}" type="text" value="{{value}}"\t   class="t-input c-input--text__text js-input {{isRequired?\'js-required\':\'\'}} {{type===\'email\'?\'js-email\':\'\'}} {{!isValid && hasFocusedOnce?\'is-error\':\'\'}}" /><label for="core-input-{{name}}" class="c-input--text__label">\t{{label}} <span class="c-input--text__placeholder">{{placeholder}}</span></label><div class="c-input--text__border"></div><span class="c-input--text__check {{isValid && hasFocusedOnce ?\'\':\'u-hide\'}}"></span>'
-}, function(t, e) {
+}, function (t, e) {
+    t.exports = '<button class="u-pointer-auto js-expand__btn c-button c-text--md u-color--brand ">{{!isActive ? "Expand +":"Close -"}}</button><div class="u-relative | js-expand__content"><content></content></div>'
+}, function (t, e) {
+    t.exports = '<div class="u-flex u-justify-space-between u-marg-b-md | u-block@sm u-marg-r-0@sm u-align-center@sm u-marg-b-sm@sm"><a href="#" class="c-link u-inline-block"><img src="' + config["global"]["logo"] + '" alt="" class="c-logo ' + config["global"]["logo_size"] + '" /></a><ul class="o-list--inline | u-fit-w@sm u-marg-b-sm@sm u-hide@sm"><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["facebook_link"] + '" class="c-link"><svg width="18px" height="18px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg"><path fill="#959595" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/></svg></a></li><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["twitter_link"] + '" class="c-link"><svg width="18px" height="18px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg"><g transform="translate(-539.18 -568.86)"><path fill="#959595" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/></g></svg></a></li><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["linkedin_link"] + '" class="c-link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 510 510"><path fill="#959595" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9    S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204    V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" /></svg></a></li><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["medium_link"] + '" class="c-link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"  viewBox="0 0 1792 1792" width="1792"><path fill="#959595" d="M597 421v1173q0 25-12.5 42.5t-36.5 17.5q-17 0-33-8l-465-233q-21-10-35.5-33.5t-14.5-46.5v-1140q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5zm64 101l534 866-534-266v-600zm1131 18v1054q0 25-14 40.5t-38 15.5-47-13l-441-220zm-3-120q0 3-256.5 419.5t-300.5 487.5l-390-634 324-527q17-28 52-28 14 0 26 6l541 270q4 2 4 6z"/></svg></a></li></ul></div><div class="u-flex u-justify-space-between | u-block@sm u-marg-r-0@sm u-align-center@sm"><ul class="o-list--inline | u-fit-w@sm u-marg-b-md@sm"><li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm"><a href="/" class="c-link c-text--nano u-color--grey">Home</a></li><li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm"><a href="/solution" class="c-link c-text--nano u-color--grey">Solution</a></li><li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm"><a href="' + config["global"]["community_link"] + '" class="c-link c-text--nano u-color--grey">Community</a></li><li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm"><a href="/about" class="c-link c-text--nano u-color--grey">About</a></li><li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm"><a href="/contact" class="c-link c-text--nano u-color--grey">Contact</a></li></ul><ul class="o-list--inline | u-fit-w@sm u-marg-b-sm@sm u-hide u-block@sm"><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["facebook_link"] + '" class="c-link"><svg width="18px" height="18px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg"><path fill="#959595" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/></svg></a></li><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["twitter_link"] + '" class="c-link"><svg width="18px" height="18px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg"><g transform="translate(-539.18 -568.86)"><path fill="#959595" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/></g></svg></a></li><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["linkedin_link"] + '" class="c-link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 510 510"><path fill="#959595" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9    S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204    V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" /></svg></a></li><li class="u-inline-block u-marg-r-xs"><a href="' + config["global"]["medium_link"] + '" class="c-link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"  viewBox="0 0 1792 1792" width="1792"><path fill="#959595" d="M597 421v1173q0 25-12.5 42.5t-36.5 17.5q-17 0-33-8l-465-233q-21-10-35.5-33.5t-14.5-46.5v-1140q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5zm64 101l534 866-534-266v-600zm1131 18v1054q0 25-14 40.5t-38 15.5-47-13l-441-220zm-3-120q0 3-256.5 419.5t-300.5 487.5l-390-634 324-527q17-28 52-28 14 0 26 6l541 270q4 2 4 6z"/></svg></a></li></ul><ul class="o-list--inline | u-fit-w@sm"><li class="u-inline-block u-marg-r-sm | u-block@sm u-marg-r-0@sm u-marg-b-sm@sm"><a href="/privacy-policy" class="c-link u-underline c-text--nano u-color--grey">Privacy Policy</a></li><li class="u-inline-block c-text--nano u-color--grey | u-block@sm u-marg-r-0@sm u-marg-b-xs@sm">© Clarity 2017 — All rights reserved</li></ul></div>'
+}, function (t, e) {
+    t.exports = '<div class="u-block u-viewport-fit-h u-fit-w u-fixed u-pos-tl js-scene"><div class="c-menu u-viewport-fit-h  u-fit-w u-fixed u-pos-tl u-pad-y-md u-pad-x-vw1of24 {{isActive?\'is-active\':\'\'}} u-overflow-a"><div class="u-inline-block u-fit-w u-valign-middle valign-top@sm u-pad-t-xl@sm"><div class="u-flex u-justify-space-between u-align-items-center | u-block@sm u-justify-center@sm"><div class="u-inline-block | u-block@sm u-w10of10@sm u-align-center@sm u-marg-b-0@sm"><a href="/" data-mode="home" class="js-menu-link c-menu__link c-anim--slide-x c-anim--3 c-link u-color--white c-h3 u-inline-block u-marg-r-vw1of24 | u-marg-r-0@sm u-pad-r-0@sm u-marg-b-sm@sm {{currentPage == \'page-home\'?\'is-active\':\'\'}}">Home</a><br class="u-hide u-block@sm"/><a href="/solution" data-mode="solution" class="js-menu-link c-menu__link c-anim--slide-x c-anim--4 c-link u-color--white c-h3 u-inline-block u-marg-r-vw1of24 | u-marg-r-0@sm u-pad-r-0@s u-marg-b-sm@sm {{currentPage == \'page-solution\'?\'is-active\':\'\'}}">Solution</a><br class="u-hide u-block@sm"/><a  href="/contact" data-mode="about" class="js-menu-link c-menu__link c-anim--slide-x c-anim--5 c-link u-color--white c-h3 u-inline-block | u-marg-r-0@sm u-marg-b-sm@sm {{currentPage == \'page-contact\'?\'is-active\':\'\'}}">Contact</a></div><div class="u-inline-block | u-hide@sm" ><div class="c-anim--fade-in c-anim--9 u-inline-block u-marg-r-vw1of24"><a href="/about" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-about\'?\'is-active\':\'\'}}">About</a></div><div class="c-anim--fade-in c-anim--10 u-inline-block "><a href="' + config["global"]["community_link"] + '" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-community\'?\'is-active\':\'\'}}">Community</a></div></div><div class="u-hide | u-block@sm u-w10of10 u-align-center u-marg-b-sm" ><div class="c-anim--slide-x c-anim--6 u-block@"><a href="/about" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-about\'?\'is-active\':\'\'}} | u-marg-b-sm@sm">About</a></div><div class="c-anim--slide-x c-anim--7 u-block"><a href="' + config["global"]["community_link"] + '" class="c-link c-menu__small-link u-inline-block c-text--md u-color--white {{currentPage == \'page-community\'?\'is-active\':\'\'}} | u-marg-b-md@sm">Community</a></div></div><div class="u-hide u-block@sm u-align-center' + config["global"]["add_btn_container_class_xs"] + '">' + config["global"]["one_more_button_tpl"] + '<a href="' + config["global"]["open_map_link"] + '" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-b-xs c-anim--slide-x c-anim--8 | u-marg-b-md@sm " onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'openmap-event\', transport: \'beacon\'});">' + config["global"]["open_map_button_text"] + '</a><br /><a href="' + config["global"]["login_link"] + '" target="_blank"  class="c-link u-inline-block u-valign-middle  c-button--login c-anim--slide-x c-anim--9 | u-marg-b-lg@sm"style="min-width:134px;" onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'login-event\', transport: \'beacon\'});">' + config["global"]["login_button_text"] + '</a></div></div></div><div class="c-anim--fade-in c-anim--10 u-absolute u-vacuum u-pad-x-vw1of24 u-pos-bl u-fit-w u-pad-y-md u-flex u-justify-space-between u-align-items-bottom | u-relative@sm u-pad-a-0@sm u-fit-w@sm u-justify-center@sm"><div class="u-block | u-align-center@sm"><ul class="o-list--inline u-inline-block u-valign-bottom | u-marg-b-sm@sm"><li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm"><a href="' + config["global"]["facebook_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'facebook-event\', transport: \'beacon\'});"><svg width="18px" height="18px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/></svg></a></li><li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm"><a href="' + config["global"]["twitter_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'twitter-event\', transport: \'beacon\'});"><svg width="18px" height="18px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg"><g transform="translate(-539.18 -568.86)"><path fill="#fff" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/></g></svg></a></li><li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm"><a href="' + config["global"]["linkedin_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'linkedin-event\', transport: \'beacon\'});"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 510 510"><path fill="#FFFFFF" d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z     M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9    S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204    V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" /></svg></a></li><li class="o-list__item u-valign-bottom u-marg-r-sm | u-marg-r-md@sm"><a href="' + config["global"]["medium_link"] + '" target="_blank" class="c-link" onclick="ga(\'send\', \'event\', {eventCategory:\'Social Media\', eventAction:\'click\', eventLabel:\'medium-event\', transport: \'beacon\'});"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px"  viewBox="0 0 1792 1792" width="1792"><path fill="#FFFFFF" d="M597 421v1173q0 25-12.5 42.5t-36.5 17.5q-17 0-33-8l-465-233q-21-10-35.5-33.5t-14.5-46.5v-1140q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5zm64 101l534 866-534-266v-600zm1131 18v1054q0 25-14 40.5t-38 15.5-47-13l-441-220zm-3-120q0 3-256.5 419.5t-300.5 487.5l-390-634 324-527q17-28 52-28 14 0 26 6l541 270q4 2 4 6z"/></svg></a></li></ul><br class="u-hide u-block@sm"/><div class="u-inline-block u-valign-bottom c-text--nano u-color--white | u-marg-t-sm@sm u-marg-b-lg@sm"style="opacity:0.5">© Clarity 2017 — All rights reserved</div></div><div class="u-hide@sm">' + config["global"]["one_more_button_xs_tpl"] + '<a href="' + config["global"]["open_map_link"] + '" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-r-sm" onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'openmap-event\', transport: \'beacon\'});">' + config["global"]["open_map_button_text"] + '</a><a href="' + config["global"]["login_link"] + '" target="_blank"  class="c-link u-inline-block u-valign-middle  c-button--login" onclick="ga(\'send\', \'event\', {eventCategory:\'Navigation\', eventAction:\'click\', eventLabel:\'login-event\', transport: \'beacon\'});">' + config["global"]["login_button_text"] + '</a></div></div></div>'
+}, function (t, e) {
+    t.exports = '<div class="js-content u-hide" style="opacity: 0"><content></content></div><div class="u-fit-w | js-placeholder" style="opacity: 0;transform: translateZ(0); padding-right: 10px;"></div><div class="u-absolute u-pos-tl u-fit-w" style="transform: translateZ(0)"><template is="light-core-template" if="{{useMask === false}}" remove-nodes="true"><template is="light-core-template" repeat="{{line in lines}}" remove-nodes="true"><span class="u-inline-block u-relative c-anim c-anim--slide-y"   style="padding-right: 10px;transition-delay:{{$index*0.1+delay}}s">{{@line}}</span></template></template></div>'
+}, function (t, e) {
+    t.exports = '<content></content><template is="light-core-template" if="{{controls === true}}"><div class="c-btn c-slideshow__prev-btn {{currentIndex==items.length - 1?\'\':\'is-active\'}}" on-pointerdown="_next"></div><div class="c-btn c-slideshow__next-btn {{currentIndex==0?\'\':\'is-active\'}}" on-pointerdown="_prev"></div></template>'
+}, function (t, e) {
+    t.exports = '<div class="u-relative"><div class="js-word-content {{wordClass}}" style="opacity: 0; visibility: hidden;"><content></content></div><div class="u-absolute u-pos-tl u-fit js-words-wrapper"><template is="light-core-template" repeat="{{word in words}}"><span class="{{wordClass}} c-anim c-anim--slide-x u-inline-block"style="transition-delay: {{step*$index}}s">{{@word}}</span></template></div></div>'
+}, function (t, e) {
+    t.exports = '<input id="core-input-{{name}}" name="{{name}}" type="text" value="{{value}}"   class="t-input c-input--text__text js-input {{isRequired?\'js-required\':\'\'}} {{type===\'email\'?\'js-email\':\'\'}} {{!isValid && hasFocusedOnce?\'is-error\':\'\'}}" /><label for="core-input-{{name}}" class="c-input--text__label">{{label}} <span class="c-input--text__placeholder">{{placeholder}}</span></label><div class="c-input--text__border"></div><span class="c-input--text__check {{isValid && hasFocusedOnce ?\'\':\'u-hide\'}}"></span>'
+}, function (t, e) {
     t.exports = '<form enctype="{{enctype}}" method="{{method}}" action="{{action}}" class="js-form {{classForm}}">    <content></content></form><core-ajax src="{{action}}" method="{{method}}" send-on-src-change="{{sendOnSrcChange}}" content-type="{{enctype}}"  data="{{formData}}" on-success="onAjaxSuccess" on-error="onAjaxError" auto="false" headers="{{headers}}"></core-ajax>'
-}, function(t, e) {
-    t.exports = '<content></content><template is="light-core-template" if="{{cover}}">\t<template is="light-core-template" if="{{isReady}}">\t\t<div class="u-absolute u-fit u-pos-tl" style="background-size: cover; background-position: center center; background-image: url(\'{{hdSrc}}\'); -webkit-backface-visibility: hidden; transform: translateZ(0);""></div>\t</template></template><template is="light-core-template" if="{{!cover}}">\t<img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\' viewBox%3D\'0 0 {{width}} {{height}}\'%2F%3E" alt="{{alt}}" class="{{imgClass}}" style="; -webkit-backface-visibility: hidden; visibility: hidden;"/>\t\t<img $src="{{hdSrc}}" alt="{{alt}}" class="{{imgClass}} u-pos-tl u-absolute" style="opacity: {{alpha}}; transform: translateZ(0); -webkit-backface-visibility: hidden;"/></template>'
-}, function(t, e) {
+}, function (t, e) {
+    t.exports = '<content></content><template is="light-core-template" if="{{cover}}"><template is="light-core-template" if="{{isReady}}"><div class="u-absolute u-fit u-pos-tl" style="background-size: cover; background-position: center center; background-image: url(\'{{hdSrc}}\'); -webkit-backface-visibility: hidden; transform: translateZ(0);""></div></template></template><template is="light-core-template" if="{{!cover}}"><img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D\'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\' viewBox%3D\'0 0 {{width}} {{height}}\'%2F%3E" alt="{{alt}}" class="{{imgClass}}" style="; -webkit-backface-visibility: hidden; visibility: hidden;"/><img $src="{{hdSrc}}" alt="{{alt}}" class="{{imgClass}} u-pos-tl u-absolute" style="opacity: {{alpha}}; transform: translateZ(0); -webkit-backface-visibility: hidden;"/></template>'
+}, function (t, e) {
     t.exports = '<div class="js-content">            <template is="light-core-template" if="{{load}}" remove-nodes="true">        <template is="light-core-template" if="{{useNative && src !== null}}" remove-nodes="true">            <video class="o-wrapper--panel u-fit js-native-video" $src="{{src}}" ></video>        </template>        <template is="light-core-template" if="{{!useNative}}" remove-nodes="true">            <div class="o-wrapper--panel u-fit c-video__yt-wrapper" id="{{uuid}}-video" style=""></div>        </template>    </template>        <template is="light-core-template" if="{{poster!==\'\' && poster!==null && poster!==\'null\'}}">        <div class="u-absolute u-pos-tl c-video-player__poster u-fit u-bg-cover" style="transform: translateZ(0); z-index: 1;background-image:url(\'{{poster}}\'); background-position: 50% 50%; top: 0px; left: 0px; width: 100%; height: 100%; background-repeat: none;"></div>    </template>    <div style="padding-top: 56.25%;"></div>    <template is="light-core-template" if="{{showBigPlay}}" remove-nodes="true">        <button class="c-button--none u-align-left o-wrapper--panel u-fit js-video-big-play u-pad-a-vw1of12" style="z-index: 3">            <span class="u-inline-block u-relative u-fit {{!controls?\'u-hide\':\'\'}}">                <span class="u-absolute u-pos-bl c-h3 u-color--white u-inline-block u-marg-b-md">Play video</span>            </span>        </button>    </template>    <template is="light-core-template" if="{{controls}}">        <div class="c-video-player__controls u-marg-b-md u-absolute u-pos-bl u-align-center u-fit-w" style="z-index: 3">            <a href="javascript:void(0);" class="u-inline-block u-valign-middle js-video-play">                <svg class="c-video__play" viewBox="0 0 13.1 15.8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">                    <path d="M0,0l13.1,7.9L0,15.8"/>                </svg>                <svg class="c-video__pause" viewBox="0 0 13.1 15.8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">                    <rect x="0.9" y="1.4" width="3.3" height="13"/>                    <rect x="8.9" y="1.4" width="3.3" height="13"/>                </svg>            </a>            <core-slider active="{{active}}" class="c-video-player__progressbar u-inline-block u-valign-middle u-overflow-h" on-slide="onSliderSlide" on-stop="onSliderStop" value="{{timelineValue}}">                <div class="js-handler c-video-player__track u-fit-h u-relative">                    <svg width="24" height="24" class="c-video-player__handler">                        <circle fill="#0093e5" cx="12" cy="12" r="3.5" />                                                <circle stroke="#0093e5" cx="12" cy="12" r="11" fill="none" />                    </svg>                </div>            </core-slider>            <svg class="c-video__fullscreen u-inline-block u-valign-middle js-video-fullscreen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 18">              <rect x="2" y="2" width="21" height="14"/>            </svg>            <div class="c-video-player__volume-wrapper u-inline-block u-valign-middle u-relative u-marg-r-sm js-volume">                <div class="c-video-player__volume u-relative ">                    <span class="c-video-player__volume-bar"></span>                    <span class="c-video-player__volume-bar"></span>                    <span class="c-video-player__volume-bar"></span>                    <span class="c-video-player__volume-bar"></span>                </div>                <div class="c-video-player__volume u-absolute u-pos-tl u-fit u-overflow-h" style="transform: translateX({{volume*100-100}}%) translateZ(0)">                    <div class="u-absolute u-pos-tl u-fit" style="transform: translateX({{100 - volume*100}}%) translateZ(0)">                        <span class="c-video-player__volume-bar--light"></span>                        <span class="c-video-player__volume-bar--light"></span>                        <span class="c-video-player__volume-bar--light"></span>                        <span class="c-video-player__volume-bar--light"></span>                    </div>                </div>            </div>                   </div>    </template></div>'
-}, function(t, e) {
+}, function (t, e) {
     t.exports = '<option value="{{value}}" :selected="{{selected}}" index="{{index}}"><content></content></option>'
-}, function(t, e) {
+}, function (t, e) {
     t.exports = '<select name="{{name}}" class="js-select | {{selectClass}}"></select><content></content>'
-}, function(t, e) {
-    t.exports = '\x3c!-- <template is="light-core-template" if="{{mask===true}}">\t\t<div class="c-mask is-{{maskDirection}} u-overflow-h {{maskClass}}" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s">\t\t<div class="c-mask__mask is-{{maskDirection}} {{maskClass}} u-relative" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s">\t\t\t<template is="light-core-template" if="{{parallax===true}}">\t\t\t\t<scroll-object class="u-relative u-block" z="-300" scale="1.3">\t\t\t\t\t<content></content>\t\t\t\t</scroll-object>\t\t\t</template>\t\t\t<template is="light-core-template" if="{{mask===true}}">\t\t\t\t<content></content>\t\t\t</template>\t\t</div>\t</div>\t\t<template is="light-core-template" if="{{useBackground===true}}">\t\t<div class="c-mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s">\t\t\t<div class="c-mask__mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s">\t\t\t\t<div class="c-mask__bg is-{{maskDirection}} u-fit u-absolute u-pos-tl"\t\t\t\t\t\tstyle="transition-delay: {{maskDelay+backgroundDelay}}s; background-color: {{backgroundColor}};">\t\t\t\t</div>\t\t\t</div>\t\t</div>\t</template></template><template is="light-core-template" if="{{mask !== true}}">\t<content></content></template> --\x3e <template is="light-core-template" if="{{mask===true}}">\t\t<div class="c-mask is-{{maskDirection}} u-overflow-h {{maskClass}}" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s">\t\t<div class="c-mask__mask is-{{maskDirection}} {{maskClass}} u-relative" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s">\t\t\t<template is="light-core-template" if="{{parallax===true}}">\t\t\t\t<scroll-object class="u-relative u-block" z="-300" scale="1.3">\t\t\t\t\t<content></content>\t\t\t\t</scroll-object>\t\t\t</template>\t\t\t<template is="light-core-template" if="{{mask===true}}">\t\t\t\t<content></content>\t\t\t</template>\t\t</div>\t</div>\t\t<template is="light-core-template" if="{{useBackground===true}}">\t\t<div class="c-mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s">\t\t\t<div class="c-mask__mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s">\t\t\t\t<div class="c-mask__bg is-{{maskDirection}} u-fit u-absolute u-pos-tl"\t\t\t\t\t\tstyle="transition-delay: {{maskDelay+backgroundDelay}}s; background-color: {{backgroundColor}};">\t\t\t\t</div>\t\t\t</div>\t\t</div>\t</template></template><template is="light-core-template" if="{{mask !== true}}">\t<template is="light-core-template" if="{{parallax===true}}">\t\t<scroll-object class="u-relative u-block" z="-200" scale="1.3">\t\t\t<content></content>\t\t</scroll-object>\t</template>\t<template is="light-core-template" if="{{parallax===false}}">\t\t<content></content>\t</template></template>'
-}, function(t, e) {
-    t.exports = '<scroll-object set-active="true" position="{{[0, scroll * -1]}}"  \t\t\tclass=" u-viewport-fit-h o-wrapper--valign  u-block u-relative u-align-center u-vacuum u-pad-y-xxl | u-height-a@sm ">\t\t<div class="u-inline-block u-valign-middle ">\t\t<h1 class="c-hgiga u-color--brand">\t\t\t404\t\t</h1>\t\t\t<h1 class="c-h1 u-color--grey u-marg-b-md">\t\t\tPage not found\t\t</h1>\t\t\t<a href="/" class="c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back to Home</a>\t</div></scroll-object>\x3c!-- fOOTER --\x3e<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12">\t<app-footer class="u-block"></app-footer></scroll-object>'
-}, function(t, e) {
-    t.exports = '<scroll-object position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-left u-pad-t-xl u-marg-b-xl | u-pad-t-xxl@sm">\t<h1 class="u-vacuum  u-color--brand u-marg-l-vw3of12 u-vw7of12 u-marg-b-sm | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm">\t\t<app-words word-class="c-hgiga--tall" class="u-block" step="0.04">\t\t\t' + config["about"]["hero_title"] + '\t\t</app-words>\t</h1>\t<p class="c-text--sm u-color--grey u-marg-l-vw3of12 u-vw5of12 u-marg-b-xl c-anim--fade-in c-anim--10 | u-marg-l-vw1of12@sm u-vw10of12@sm">\t\t' + config["about"]["hero_description"] + '\t</p></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-inline-block u-relative u-marg-b-xl u-vacuum u-fit-w">\t<div class="c-slideshow__meet u-relative u-w4of24 u-inline-block u-valign-top u-marg-x-w1of24 | u-marg-x-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm">\t\t<h4 class="c-h4 u-color--brand | u-hide@sm">Meet the Team</h4>\t\t<h4 class="c-h3 u-color--brand u-hide | u-block@sm">Meet the Team</h4>\t\t<core-slider active="{{active}}" class=" c-slideshow-slider u-inline-block u-valign-middle u-hide@sm"\t\t\t\ton-slide="onSliderSlide" on-stop="onSliderStop" value="0">\t\t    <svg class="js-handler c-slideshow-handler" width="26" height="26">\t\t    \t<circle fill="#fff" cx="13" cy="13" r="13"></circle>\t\t    \t<circle stroke="#c6c6c6" fill="none" cx="13" cy="13" r="9"></circle>\t\t    \t<circle fill="#0093e5" cx="13" cy="13" r="3"></circle>\t\t    </svg>\t\t</core-slider>\t</div>\t<div class="u-w9of12 u-inline-block u-valign-top u-overflow-h | u-marg-l-vw1of12@sm u-vw11of12@sm u-relative">\t\t<div class="u-marg-b-xs@sm u-overflow-s@sm js-team-wrapper">\t\t\t<div class="u-vw7of24 u-relative u-force-inline u-vacuum | u-vw9of12@sm u-marg-b-md@sm">\t\t\t\t<template is="light-core-template" repeat="{{team in data.team}}">\t\t\t\t\t<scroll-object position="{{slideshowPosition}}" ratio="{{0.3 - $index*0.01}}"\t\t\t\t\t\t\t\t\tclass="u-inline-block u-fit-w js-staff | u-hide@sm">\t\t\t\t\t\t<core-img width="375" height="484" \t\t\t\t\t\t\t\t\tclass="u-marg-b-md u-inline-block u-relative u-fit-w" alt="">\t\t\t\t\t\t\t<core-img-source src="{{team.img}}" query="(max-width: 3000px)"></core-img-source>\t\t\t\t\t\t</core-img>\t\t\t\t\t\t<h5 class="c-text--sm u-color--dark-grey">{{team.name}}</h5>\t\t\t\t\t\t<h6 class="c-text--sm u-color--grey">{{team.role}}</h6>\t\t\t\t\t</scroll-object>\t\t\t\t\t<div class="u-hide u-fit-w js-staff-mobile | u-inline-block@sm" >\t\t\t\t\t\t<core-img width="375" height="484" \t\t\t\t\t\t\t\t\tclass="u-marg-b-md u-inline-block u-relative u-fit-w" alt="">\t\t\t\t\t\t\t<core-img-source src="{{team.img}}" query="(max-width: 3000px)"></core-img-source>\t\t\t\t\t\t</core-img>\t\t\t\t\t\t<h5 class="c-text--sm u-color--dark-grey">{{team.name}}</h5>\t\t\t\t\t\t<h6 class="c-text--sm u-color--grey">{{team.role}}</h6>\t\t\t\t\t</div>\t\t\t\t</template>\t\t\t</div>\t\t</div>\t\t\x3c!-- <core-slider active="{{active}}" \t\t\t\tclass="u-marg-l-vw1of24 c-slideshow-slider u-inline-block u-valign-middle u-hide | u-block@sm u-marg-l-0@sm"\t\t\t\ton-slide="onSliderSlide" on-stop="onSliderStop" >\t\t    <svg class="js-handler c-slideshow-handler" viewBox=\'0 0 26 26\'>\t\t    \t<circle fill="#fff" cx="13" cy="13" r="13"></circle>\t\t    \t<circle stroke="#c6c6c6" fill="none" cx="13" cy="13" r="9"></circle>\t\t    \t<circle fill="#0093e5" cx="13" cy="13" r="3"></circle>\t\t    </svg>\t\t</core-slider> --\x3e\t</div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-marg-b-xl u-vacuum">\t<div class="u-relative u-w4of24 u-inline-block u-valign-top u-marg-x-w1of24 | u-marg-x-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm">\t\t<h4 class="c-h4 u-color--brand | u-hide@sm">' + config["about"]["hiring_title"] + '</h4>\t\t<h4 class="c-h4 u-color--brand u-hide u-marg-b-md | u-block@sm">' + config["about"]["hiring_title"] + '</h4>\t</div>\t<div class="u-w9of12 u-inline-block u-valign-top u-overflow-h | u-marg-l-vw1of12@sm u-vw11of12@sm u-relative">\t\t<p class="c-text--sm u-color--grey u-marg-b-lg u-vw13of24 | u-fit-w@sm">\t\t\t' + config["about"]["hiring_description"] + '\t\t</p>\t\t<h3 class="c-text--xs u-color--dark-grey u-marg-b-md">' + config["about"]["job_positions"] + '</h3>\t\t<ul class="o-list--none">\t\t\t<li class="u-vw8of12 u-flex u-justify-space-between u-marg-b-sm | u-fit-w@sm u-block@sm u-marg-b-lg@sm">\t\t\t\t<div class="u-marg-b-md@sm">\t\t\t\t\t<h3 class="c-h3 u-color--dark-grey">' + config["about"]["job_title"] + '</h3>\t\t\t\t\t<p class="c-text--sm u-color--grey">' + config["about"]["job_summary"] + '</p>\t\t\t\t</div>\t\t\t\t<div>\t\t\t\t\t<a href="' + config["about"]["job_link"] + '" target="_blank" class="c-link c-button--rounded c-button--primary">Apply</a>\t\t\t\t</div>\t\t\t</li>\t\t</ul>\t</div></scroll-object>\x3c!-- fOOTER --\x3e<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12">\t<app-footer class="u-block"></app-footer></scroll-object>'
-}, function(t, e) {
-    t.exports = '<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-right u-vacuum u-pad-t-xxl u-marg-b-xl | u-align-left@sm | u-marg-b-md@sm">\t\t<div class="u-w2of12 u-marg-r-w1of12 u-align-right u-inline-block u-valign-top u-relative">\t\t<a href="' + config["global"]["community_link"] + '" class="u-inline-block c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back</a>\t</div>\t\t<img class="u-w9of12 u-inline-block u-valign-top | u-vw11of12@sm u-marg-l-w1of12@sm" src="{{content.img.sizes.medium_large}}" alt="" />\t</scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-align-left u-relative u-vacuum">\t\t\t<div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top u-pad-t-xxs | u-marg-r-0@sm u-marg-l-vw1of12@sm u-vw5of12@sm u-align-left@sm u-pad-t-0@sm">\t\t<p class="c-text--xs u-color--brand u-uppercase u-marg-b-md | u-inline-block@sm u-marg-r-sm@sm">{{content.category[0].name}}</p>\t\t<h3 class="c-text--nano u-uppercase u-color--dark u-marg-b-xx u-marg-b-xxs | u-inline-block@sm u-marg-r-sm@sm | u-hide@sm">{{content.date}}</h3>\t\t<h4 class="c-text--nano u-uppercase u-color--dark | u-inline-block@sm u-marg-r-sm@sm u-marg-b-md@sm | u-hide@sm">by {{content.author}}</h4>\t</div>\t<div class="u-vw5of12 u-align-right u-hide u-valign-top | u-inline-block@sm u-marg-b-md@sm">\t\t<p class="c-text--xs u-color--dark u-uppercase u-marg-b-sm">SHARE</p>\t\t<ul class="o-list--inline">\t\t\t<li class="o-list__item u-marg-r-xs">\t\t\t\t<a href="#" class="c-link">\t\t\t\t\t<svg width="20px" height="20px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<g transform="translate(-539.18 -568.86)">\t\t\t\t\t\t\t<path fill="#d5d5d5" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/>\t\t\t\t\t\t</g>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="o-list__item">\t\t\t\t<a href="#" class="c-link">\t\t\t\t\t<svg width="20px" height="20px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<path fill="#d5d5d5" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t</ul>\t</div>\t\t<div class="u-marg-l-vw1of12@sm u-vw5of12@sm u-align-left@sm u-hide | u-block@sm u-marg-b-sm@sm">\t\t<h3 class="c-text--nano u-uppercase u-color--dark u-marg-b-xx u-marg-b-xxs | u-inline-block@sm u-marg-r-sm@sm">{{content.date}}</h3>\t\t<h4 class="c-text--nano u-uppercase u-color--dark | u-inline-block@sm u-marg-r-sm@sm u-marg-b-md@sm">by {{content.author}}</h4>\t</div>\t<div class="u-inline-block u-valign-top u-vw7of12 | u-vw10of12@sm u-marg-l-vw1of12@sm">\t\t<h1 class="c-hgiga u-color--dark-grey u-marg-b-sm">{{content.title}}</h1>\t</div>\t<div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top | u-hide@sm">\t\t<p class="c-text--xs u-color--dark u-uppercase u-marg-b-xs">SHARE</p>\t\t<ul class="o-list--inline">\t\t\t<li class="o-list__item u-marg-r-xs">\t\t\t\t<a href="#" class="c-link">\t\t\t\t\t<svg width="20px" height="20px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<g transform="translate(-539.18 -568.86)">\t\t\t\t\t\t\t<path fill="#d5d5d5" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/>\t\t\t\t\t\t</g>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t\t<li class="o-list__item">\t\t\t\t<a href="#" class="c-link">\t\t\t\t\t<svg width="20px" height="20px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg">\t\t\t\t\t\t<path fill="#d5d5d5" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/>\t\t\t\t\t</svg>\t\t\t\t</a>\t\t\t</li>\t\t</ul>\t</div>\t<div class="u-inline-block u-valign-top u-vw7of12 u-marg-b-md | u-vw10of12@sm u-marg-l-vw1of12@sm">\t\t<ul class="o-list--inline u-color--dark u-uppercase">\t\t\t<template is="light-core-template" repeat="{{tag in content.tags}}">\t\t\t\t<li class="o-list__item c-text--nano u-marg-r-sm">{{tag.name}}</li>\t\t\t</template>\t\t</ul>\t</div>\t</scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-align-left u-relative u-marg-b-xl u-vacuum">\t{{@content.content}}</scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-align-left u-relative u-marg-b-xl u-vacuum | u-marg-l-vw1of12@sm u-vw10of12@sm ">\t\t<div class="u-flex | u-justify-space-between@sm">\t\t<div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top | u-align-left@sm u-marg-r-0@sm">\t\t\t<a href="' + config["global"]["community_link"] + '" class="c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back</a>\t\t</div>\t\t<div class="u-align-left u-inline-block u-valign-top">\t\t\t<button on-click="_backToTop" class="c-button--none c-text--xs u-color--dark u-uppercase u-marg-b-sm u-force-inline">Back to top</button>\t\t</div>\t</div></scroll-object>\x3c!-- fOOTER --\x3e<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12">\t<app-footer class="u-block"></app-footer></scroll-object>'
-}, function(t, e) {
-    t.exports = '<template is="light-core-template" if="{{dataUrl !== null}}" remove-nodes>\t<core-ajax src="{{dataUrl}}" on-success="_onDataLoaded" on-error="_onDataError"></core-ajax></template>    <scroll-object position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-left u-vacuum u-pad-t-xxl">\t<h1 class="u-vw6of12 u-marg-l-vw3of12 u-inline-block u-color--brand u-marg-b-lg | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm">\t\t<app-words  word-class="c-hgiga--tall" class="u-block u-relative" step="0.04">\t\t\tThis is where we share thoughts, case studies, news, and resources.\t\t</app-words>\t</h1></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-align-left u-relative u-marg-b-lg u-vacuum">\t\t<div class="u-vw2of12 u-marg-l-vw1of12 u-inline-block u-valign-top | u-marg-l-vw1of12@sm u-vw11of12@sm u-marg-b-md@sm u-overflow-s@sm | js-filter-wrapper" _style="transform: translateY({{filterPos}}px) translateZ(0);">\t\t<ul class="o-list--none | u-force-inline@sm">\t\t\t<li class="u-marg-b-sm | u-inline-block@sm u-marg-r-sm@sm u-pad-x-xs@sm">\t\t\t\t<button data-filter="all" on-click="_onFilterDown" \t\t\t\t\t\tclass="c-link c-button--none u-color--dark-grey c-filter c-h4 {{\'all\' == content.filter?\'is-active\':\'\'}}">\t\t\t\t\tAll\t\t\t\t</button>\t\t\t</li>\t\t\t<template is="light-core-template" repeat="{{filter in content.filters}}">\t\t\t\t<template is="light-core-template" if="{{filter.term_id !==1}}">\t\t\t\t\t<li class="u-marg-b-sm | u-inline-block@sm u-marg-r-sm@sm u-pad-x-xs@sm">\t\t\t\t\t\t<button data-filter="{{filter.slug}}" \t\t\t\t\t\t\ton-click="_onFilterDown" class="c-link c-button--none u-color--dark-grey c-filter c-h4 {{filter.slug == content.filter?\'is-active\':\'\'}}">\t\t\t\t\t\t\t{{filter.name}}<sup class="{{!filter.count?\'u-hide\':\'\'}}\'">{{filter.count}}</sup>\t\t\t\t\t\t</button>\t\t\t\t\t</li>\t\t\t\t</template>\t\t\t</template>\t\t</ul>\t</div>\t<div class="u-inline-block u-valign-top u-vw8of12 u-align-left | u-marg-l-vw1of12@sm u-vw10of12@sm | c-overlay--fast {{showPosts?\'is-active\':\'\'}}">\t\t\t\t<div class="u-inline-block u-valign-top u-vw4of12 | u-w10of10@sm">\t\t\t<template is="light-core-template" repeat="{{article in content.posts}}">\t\t\t\t<template is="light-core-template" if="{{ $index % 2 == 0 }}">\t\t\t\t\t<scroll-object class="u-block u-relative u-marg-b-md | u-marg-b-lg@sm">\t\t\t\t\t\t\t<div class="u-inline-block c-anim--slide-y u-align-left {{article.type==\'large\' && $index>0?\'u-vw7of24 | u-w10of10@sm\':\'u-vw2of12 | u-w10of10@sm\'}} | u-cursor-pointer js-article">\t\t\t\t\t\t\t\t<div href="https://medium.com/clarity-movement/{{article.name}}"\t\t\t\t\t\t\t\t\t\t    class="c-zoom u-marg-b-sm js-img | u-marg-b-md@sm" \t\t\t\t\t\t\t\t\t\t\tdata-src="{{article.img.sizes.medium_large}}"\t\t\t\t\t\t\t\t\t\t\tdata-width="{{article.img.width}}"\t\t\t\t\t\t\t\t\t\t\tdata-height="{{article.img.height}}"\t\t\t\t\t\t\t\t\t\t\tstyle="padding-top: 100%;">\t\t\t\t\t\t\t\t\t<div class="u-absolute u-pos-tl u-fit u-bg-cover u-bg-center" \t\t\t\t\t\t\t\t\t\tstyle="background-image: url(\'{{article.img.sizes[article.type==\'large\'? \'medium_large\' : \'medium\']}}\')">\t\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--left"></span>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--right"></span>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--bottom"></span>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--top"></span>\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\t<h4 class="c-text--xs u-color--brand u-marg-b-xs u-uppercase">{{article.category[0].name}}</h4>\t\t\t\t\t\t\t\t<h3 class="u-vw6of24 c-h4--alt u-color--dark-grey | u-fit-w@sm">{{article.title}}</h3>\t\t\t\t\t\t\t</div>\t\t\t\t\t\t</scroll-object>\t\t\t\t</template>\t\t\t</template>\t\t</div>\t\t<div class="u-inline-block u-valign-top u-vw4of12  | u-w10of10@sm">\t\t\t<template is="light-core-template" repeat="{{article in content.posts}}">\t\t\t\t<template is="light-core-template" if="{{ $index % 2 != 0 }}">\t\t\t\t\t<scroll-object class="u-block u-relative u-marg-b-md  | u-marg-b-lg@sm">\t\t\t\t\t\t<div class="u-inline-block c-anim--slide-y u-align-left {{article.type==\'large\' && $index>0?\'u-vw7of24 | u-w10of10@sm\':\'u-vw2of12 | u-w10of10@sm\'}} | u-cursor-pointer  js-article ">\t\t\t\t\t\t\t<div href="https://medium.com/clarity-movement/{{article.name}}"\t\t\t\t\t\t\t\t\t\t    class="c-zoom u-marg-b-sm js-img | u-marg-b-md@sm" \t\t\t\t\t\t\t\t\t\t\tdata-src="{{article.img.sizes.medium_large}}"\t\t\t\t\t\t\t\t\t\t\tdata-width="{{article.img.width}}"\t\t\t\t\t\t\t\t\t\t\tdata-height="{{article.img.height}}"\t\t\t\t\t\t\t\t\t\t\tstyle="padding-top: 100%;">\t\t\t\t\t\t\t\t\t<div class="u-absolute u-pos-tl u-fit u-bg-cover u-bg-center" \t\t\t\t\t\t\t\t\t\tstyle="background-image: url(\'{{article.img.sizes[article.type==\'large\'? \'medium_large\' : \'medium\']}}\')">\t\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--left"></span>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--right"></span>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--bottom"></span>\t\t\t\t\t\t\t\t\t<span class="c-zoom__border--top"></span>\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t\t<h4 class="c-text--xs u-color--brand u-marg-b-xs u-uppercase">{{article.category[0].name}}</h4>\t\t\t\t\t\t\t\t<h3 class="u-vw6of24 c-h4--alt u-color--dark-grey | u-fit-w@sm">{{article.title}}</h3>\t\t\t\t\t\t</div>\t\t\t\t\t</scroll-object>\t\t\t\t</template>\t\t\t</template>\t\t</div>\t</div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-align-left u-relative u-marg-b-xl u-vacuum | u-hide@sm">\t\t<div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top">\t\t\x3c!-- <a href="' + config["global"]["community_link"] + '" class="c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back</a> --\x3e\t</div>\t<div class="u-vw2of12 u-align-left u-inline-block u-valign-top | u-vw6of12@sm">\t\t<button on-click="_backToTop" class="c-button--none c-text--xs u-color--dark u-uppercase u-marg-b-sm">Back to top</button>\t</div></scroll-object>\x3c!-- fOOTER --\x3e<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12">\t<app-footer class="u-block"></app-footer></scroll-object>\x3c!-- HERO TRANSITION --\x3e<div class="u-absolute u-pos-tl u-fit u-bg--white u-pointer-none c-overlay {{showHero?\'is-active\': \'\'}}"></div><div class="u-absolute u-pos-tl u-overflow-h" \tstyle="transform-origin: 0 0; transform: translate({{heroPosition[0]}}px,{{heroPosition[1]}}px) scaleX({{heroScale[0]}}) scaleY({{heroScale[1]}}) translateZ(0); width: {{heroSize[0]}}px; height: {{heroSize[1]}}px; z-index: 2;">\t\t<img class="u-block u-absolute u-pos-tl" src="{{heroSrc}}" \t\t\tstyle="transform-origin: 0 0; transform: translate({{heroImgPosition[0]}}px,{{heroImgPosition[1]}}px) scaleX({{heroImgScale[0]}}) scaleY({{heroImgScale[1]}}); width: {{heroSize[0]}}px; height: {{heroSize[1]}}px" alt="" /></div>'
-}, function(t, e) {
-    t.exports = '<div class="js-scene u-absolute u-pos-tl u-pointer-none"></div><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-right u-pad-t-xl u-marg-b-xl u-vacuum | u-align-left@sm">\t\t<scroll-object class="u-block u-relative u-align-left u-pad-t-xl u-marg-b-xl">\t\t\t<h1 class="u-vacuum u-color--brand u-marg-l-vw3of12 u-vw7of12 u-marg-b-sm  | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm">\t\t\t\t<app-words  word-class="c-hgiga" class="u-block" step="0.04">' + config["contact"]["hero_title"] + '</app-words>\t\t\t</h1>\t\t\t<h1 class="c-text--sm u-color--grey u-marg-l-vw3of12 u-vw5of12 u-marg-b-xl c-anim--slide-y c-anim--2 | u-marg-l-vw1of12@sm u-vw10of12@sm">' + config["contact"]["hero_description"] + '</h1>\t\t</scroll-object>\t\t<scroll-object class="u-relative u-vw9of12 u-inline-block u-align-left | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm">\t\t\t<core-ajax-form on-success="_onFormSuccess" on-error="_onFormError" action="{{wsRoot}}mail" method="POST" class="">\t\t\t\t<light-ui-select name="interest" class="c-input--select u-vw3of12 u-marg-r-vw1of12 u-marg-b-md c-anim c-anim--slide-y c-anim--3 | u-w10of10@sm">\t\t\t\t\t<light-ui-select-option value="">Interested in</light-ui-select-option>'+ config["contact"]["interested_list_tpl"] + '</light-ui-select>\t\t\t\t\t<core-input-text name="company" label="Company" type="text" class="c-input--text u-vw3of12 u-marg-r-vw1of12 u-marg-b-md  c-anim c-anim--slide-y c-anim--4 | u-w10of10@sm"></core-input-text>\t\t\t\t<core-input-text is-required="true" name="name" label="Name" type="text" class="c-input--text u-vw3of12 u-marg-r-vw1of12 u-marg-b-md  c-anim c-anim--slide-y c-anim--5 | u-w10of10@sm"></core-input-text>\t\t\t\t\t<core-input-text type="email" is-required="true" name="email" label="Email" type="text" class="c-input--text u-vw3of12 u-marg-r-vw1of12 u-marg-b-md  c-anim c-anim--slide-y c-anim--6 | u-w10of10@sm"></core-input-text>\t\t\t\t<div class="u-vw7of12 u-marg-b-md c-anim c-anim--slide-y c-anim--7 | u-w10of10@sm u-marg-b-lg@sm">\t\t\t\t\t<textarea name="message" placeholder="Your message..." rows="5" class="u-block c-textarea  js-required"></textarea>\t\t\t\t</div>\t\t\t\t<div class="c-anim c-anim--slide-y c-anim--8 | u-align-center@sm">\t\t\t\t\t\t\t\t\t<button type="submit" class="c-button--rounded c-button--primary">Submit</button>\t\t\t\t</div>\t\t\t</core-ajax-form>\t\t</scroll-object>\t</scroll-object><div class="u-fixed u-pos-tl o-wrapper--valign u-viewport-fit u-bg--white c-overlay {{showDialog?\'is-active\':\'\'}}  u-align-center" \t\tstyle="background: #fff; z-index: 10000">\t<div class="u-inline-block u-valign-middle u-vw10of12 u-relative">\t\t<h1 class="u-color--brand c-h1 u-marg-b-xs c-anim c-anim--slide-y">\t\t\tThank you\t\t</h1>\t\t\t<p class="c-text--sm u-color--grey c-anim c-anim--slide-y c-anim--2 u-marg-b-md">Your message has been sent. We will be in touch shortly.</p>\t\t<div class="c-anim c-anim--slide-y">\t\t\t\t\t<a href="/" class="c-link c-button--rounded c-button--primary ">Go to Homepage</a>\t\t</div>\t</div></div>\x3c!-- fOOTER --\x3e<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12">\t<app-footer class="u-block"></app-footer></scroll-object>'
-}, function(t, e) {
-    t.exports = '<div class="u-absolute u-fit u-pos-tl u-bg-cover u-bg-center" style="background-image:url(' + config["global"]["background_image"] + '); height:{{winHeight}}px;">\t</div><div class="u-absolute u-viewport-fit u-pos-tl {{currentIndex > 0 ? \'is-active\':\'\'}} u-hide@sm" style="height:{{winHeight}}px;">\t<div class="u-overflow-h u-force-inline c-hgiga u-absolute c-number-wrapper u-inline-block u-vacuum">\t\t<span class="u-inline-block u-valign-middle c-number c-anim--slide-x c-anim--2">0</span>\t\t<span class="u-inline-block u-relative u-valign-middle c-anim--slide-x c-anim--3">\t\t\t<span class="u-inline-block c-slide-mask__inner c-number" style="opacity:0">0</span>\t\t\t<span class="u-inline-block  u-absolute  u-pos-tl  c-number c-slide-mask {{currentIndex==1?\'is-active\':currentIndex>1?\'is-prev\':\'is-next\'}}">\t\t\t\t<span class="u-inline-block c-slide-mask__inner">1</span>\t\t\t</span>\t\t\t<span class="u-inline-block u-absolute  u-pos-tl c-number c-slide-mask {{currentIndex==2?\'is-active\':currentIndex>2?\'is-prev\':\'is-next\'}}">\t\t\t\t<span class="u-inline-block c-slide-mask__inner">2</span>\t\t\t</span>\t\t\t<span class="u-inline-block u-absolute  u-pos-tl c-number c-slide-mask {{currentIndex==3?\'is-active\':currentIndex>3?\'is-prev\':\'is-next\'}}">\t\t\t\t<span class="u-inline-block c-slide-mask__inner">3</span>\t\t\t</span>\t\t</span>\t</div></div><div class="js-scene u-relative u-pointer-none"></div><div class="u-viewport-fit u-absolute u-pos-tl o-wrapper--valign u-pointer-none {{currentIndex>0?\'is-prev\':currentIndex==0?\'is-active\' : \'is-next\'}}" style="height:{{winHeight}}px;">\t<div class="u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw6of12 | u-fit-w@sm u-marg-l-0@sm u-align-center@sm u-marg-b-vh2of10@sm">\t\t<h2 class="c-h4 u-color--grey u-force-inline c-anim--slide-x c-anim--2 | u-marg-b-0@sm" >\t\t\t' + config["home"]["main_title_1"] + '\t\t</h2>\t\t<h1 class="u-vacuum u-color--brand u-marg-b-xs u-marg-t-0@sm">\t\t\t<app-words word-class="c-hgiga--alt" class="u-inline-block u-fit-w">\t\t\t\t' + config["home"]["main_title_2"] + '\t\t\t</app-words>\t\t</h1>\t\t\t</div></div><div class="u-viewport-fit u-absolute u-pos-tl o-wrapper--valign u-pointer-none {{currentIndex>1?\'is-prev\':currentIndex==1?\'is-active\' : \'is-next\'}} | o-wrapper--valign-bottom@sm u-pad-x-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;">\t<div class="u-relative u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw10of12 | u-fit-w@sm u-valign-bottom@sm u-marg-l-0@sm">\t\t<div class="c-home__title-wrapper">\t\t\t<h1 class="u-marg-b-xs c-h4 u-color--grey c-anim--slide-x c-anim--0 | u-marg-b-0@sm">' + config["home"]["section-1_main_title_1"] + '</h1>\t\t\t<h2 class="u-vacuum u-color--brand" style="line-height: 1">\t\t\t\t<app-words word-class="c-hgiga--small">' + config["home"]["section-1_main_title_2"] + '</app-words>\t\t\t</h2>\t\t</div>\t\t<div class="u-relative u-vw4of12 c-anim--slide-x c-anim--1 | u-vw8of12@sm">\t\t\t<app-accordion class="u-block u-fit-w u-absolute u-offset-l-0 u-offset-t-w10of10 | u-offset-t-0@sm u-relative@sm u-hide@sm">\t\t\t\t\t\t<div class="c-text--md u-color--grey">\t\t\t\t\t' + config["home"]["section-1_description"] + '\t\t\t\t</div>\t\t\t</app-accordion>\t\t</div>\t</div></div><div class="u-viewport-fit u-absolute u-pos-tl o-wrapper--valign u-pointer-none {{currentIndex>2?\'is-prev\':currentIndex==2?\'is-active\' : \'is-next\'}} | o-wrapper--valign-bottom@sm u-pad-x-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;">\t<div class="u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw10of12 | u-fit-w@sm u-valign-bottom@sm u-marg-l-0@sm">\t\t<div class="c-home__title-wrapper">\t\t\t<h1 class="u-marg-b-xs c-h4 u-color--grey c-anim--slide-x c-anim--0 | u-marg-b-0@sm">' + config["home"]["section-2_main_title_1"] + '</h1>\t\t\t<h2 class="u-vacuum u-color--brand" style="line-height: 1">\t\t\t\t<app-words word-class="c-hgiga--small">' + config["home"]["section-2_main_title_2"] + '</app-words>\t\t\t</h2>\t\t</div>\t\t<div class="u-relative u-vw4of12 c-anim--slide-x c-anim--1 | u-vw8of12@sm">\t\t\t<app-accordion class="u-block u-fit-w u-absolute u-offset-l-0 u-offset-t-w10of10 | u-offset-t-0@sm u-relative@sm u-hide@sm">\t\t\t\t\t\t<div class="c-text--md u-color--grey">\t\t\t\t\t' + config["home"]["section-2_description"] + '\t\t\t\t</div>\t\t\t</app-accordion>\t\t</div>\t</div></div><div class="u-pointer-none u-viewport-fit u-absolute u-pos-tl o-wrapper--valign {{currentIndex>3?\'is-prev\':currentIndex==3?\'is-active\' : \'is-next\'}}  | o-wrapper--valign-bottom@sm u-pad-x-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;">\t<div class="u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw10of12 | u-fit-w@sm u-valign-bottom@sm u-marg-l-0@sm">\t\t\t\t<div class="c-home__title-wrapper">\t\t\t<h1 class="u-marg-b-xs c-h4 u-color--grey c-anim--slide-x c-anim--0 | u-marg-b-0@sm">' + config["home"]["section-3_main_title_1"] + '</h1>\t\t\t<h2 class="u-vacuum u-color--brand u-force-inline" style="line-height: 1">\t\t\t\t<app-words word-class="c-hgiga--small">' + config["home"]["section-3_main_title_2"] + '</app-words>\t\t\t</h2>\t\t</div>\t\t\t\t<div class="u-relative u-vw4of12 c-anim--slide-x c-anim--1 | u-vw8of12@sm">\t\t\t<app-accordion class="u-block u-fit-w u-absolute u-offset-l-0 u-offset-t-w10of10 | u-offset-t-0@sm u-relative@sm u-hide@sm">\t\t\t\t<div class="c-text--md u-color--grey">\t\t\t\t\t' + config["home"]["section-3_description"] + '\t\t\t\t</div>\t\t\t</app-accordion>\t\t</div>\t\t<div class="u-hide u-block@sm u-pad-t-sm' + config["home"]["add_btn_container_class_xs"] +'" style="padding-left: 25px;">\t\t\t<button class="u-pointer-auto u-marg-b-xxs c-button--expand {{currentIndex==3?\'is-active\':\'\'}} js-home-video-btn">\t\t\t\t<svg  class="c-button--expand__left-block" viewbox="0 0 24 24">\t\t\t\t\t<circle cx="12" cy="12" r="12" />\t\t\t\t</svg>\t\t\t\t<span class="c-button--expand__center-block"></span>\t\t\t\t<svg  class="c-button--expand__right-block" viewbox="0 0 24 24">\t\t\t\t\t<circle cx="12" cy="12" r="12" />\t\t\t\t</svg>\t\t\t\t<span class="c-button--expand__text">' + config["home"]["discover_button_text"] + '</span>\t\t\t</button>\t\t\t\t\t\t<br/>\t\t\t<a href="/solution" class="u-pointer-auto c-link u-inline-block c-button--expand2 {{currentIndex==3?\'is-active\':\'\'}}">\t\t\t\t<svg  class="c-button--expand2__left-block" viewbox="0 0 24 24">\t\t\t\t\t<circle  cx="12" cy="12" r="12" />\t\t\t\t</svg>\t\t\t\t<span class="c-button--expand2__center-block"></span>\t\t\t\t<svg  class="c-button--expand2__right-block" viewbox="0 0 24 24">\t\t\t\t\t<circle  cx="12" cy="12" r="12" />\t\t\t\t</svg>\t\t\t\t<span class="c-button--expand2__text">' + config["home"]["solution_button_text"] + '</span>\t\t\t</a>' + config["home"]["one_more_button_tpl"] + '</div>\t</div>\t<div class="' + config["home"]["add_btn_container_class"] + 'u-align-center u-pointer-auto u-absolute u-block u-force-inline  c-home__video-btn u-hide@sm"\t\tstyle="left: {{width*0.5 + initCircleRadius*1.5}}px; top: 50%; transform: translate(-50%,-50%) translateZ(0)">\t\t<button class="c-button--expand u-marg-b-xxs {{currentIndex==3?\'is-active\':\'\'}} js-home-video-btn">\t\t\t<svg  class="c-button--expand__left-block" viewbox="0 0 24 24">\t\t\t\t<circle cx="12" cy="12" r="12" />\t\t\t</svg>\t\t\t<span class="c-button--expand__center-block"></span>\t\t\t<svg  class="c-button--expand__right-block" viewbox="0 0 24 24">\t\t\t\t<circle cx="12" cy="12" r="12" />\t\t\t</svg>\t\t\t<span class="c-button--expand__text">' + config["home"]["discover_button_text"] + '</span>\t\t</button>\t\t<br/>\t\t<a href="/solution" class="c-link u-inline-block c-button--expand2 {{currentIndex==3?\'is-active\':\'\'}}">\t\t\t<svg  class="c-button--expand2__left-block" viewbox="0 0 24 24">\t\t\t\t<circle  cx="12" cy="12" r="12" />\t\t\t</svg>\t\t\t<span class="c-button--expand2__center-block"></span>\t\t\t<svg  class="c-button--expand2__right-block" viewbox="0 0 24 24">\t\t\t\t<circle  cx="12" cy="12" r="12" />\t\t\t</svg>\t\t\t<span class="c-button--expand2__text">' + config["home"]["solution_button_text"] + '</span>\t\t</a>' + config["home"]["one_more_button_xs_tpl"] + '</div></div><div id="number" class="u-viewport-fit u-absolute  u-pos-tl o-wrapper--valign u-pointer-none | u-align-right@sm o-wrapper--valign-bottom@sm u-pad-r-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;">\t<div class="u-relative u-inline-block u-valign-middle u-pad-l-vw1of24 u-color--grey u-vacuum u-align-center | u-valign-bottom@sm ">\t\t<div class="u-relative u-inline-block u-fit-w">\t\t\t<span class="c-counter__number c-text--md {{currentIndex==1?\'is-active\':\'\'}}">1</span>\t\t\t<span class="c-counter__number c-text--md u-pos-tl u-absolute {{currentIndex==2?\'is-active\':\'\'}}">2</span>\t\t\t<span class="c-counter__number c-text--md u-pos-tl u-absolute {{currentIndex==3?\'is-active\':\'\'}}">3</span>\t\t</div>\t\t<div class="c-counter__sepa u-block u-bg--grey u-marg-y-xxs {{currentIndex>0?\'is-active\':\'\'}}"></div>\t\t<div class="u-inline-block u-fit-w c-text--md c-counter__total {{currentIndex>0?\'is-active\':\'\'}}">3</div>\t</div></div><div class="u-fixed u-pos-br u-marg-r-vw1of24 c-scroll-btn u-force-inline {{!isLoading && !isMenuActive && ((isMobile && currentIndex<=0) || !isMobile) ?\'is-active\':\'\'}}" \tstyle="z-index: 10000">\t<span class="u-valign-middle u-inline-block c-scroll-btn__line">\t\t<span class="c-scroll-btn__progress" style="transform: scaleX({{circle1Progress}}) translateZ(0)"></span>\t</span>\t<span class="u-valign-middle u-inline-block c-text--sm u-color--brand c-anim--slide-x c-anim--2">scroll</span></div><div class="u-pointer-none u-fixed u-pos-tl u-viewport-fit u-flex u-align-center u-align-items-center u-justify-center c-overlay {{isLoading?\'is-active\':\'\'}}"\tstyle="transform: scale({{1 - 0.4 * loaderProgress}}) translateZ(0); height:{{winHeight}}px;">\t<svg width="170" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 543.4 164.1" xml:space="preserve">\t\t<g fill="#fff">\t\t\t<path d="M70.2,126.2c-3.9-1.9-7.9-3.8-11.8-5.6c0.6-0.8,0.4-1.7-0.4-2.1c-2.7-1.6-5.6-3-8.3-4.8 c-1.5-0.9-0.9-4.2-4-3.5c-0.4-0.1-0.8-0.3-1.2-0.4c-0.2,0-0.3,0-0.5,0.1c-0.2-0.1-0.4-0.1-0.5-0.2c-0.1,0-0.3,0-0.4,0 c-0.8-1.2-1.6-2.4-2.3-3.6c-0.1-1-0.1-1.9-0.2-2.9c1.8,1.2,3.7,2.4,5.5,3.6c0.1,0.5,0.1,1.7,0.8,1.1c1.2-1.1,2.5-2.6,2.6-4.1 c0.3-2.1-1.7-0.2-2.5-0.8c-3-2.4-6-4.7-8.9-7.1c-0.1-0.1-0.2-0.3-0.3-0.4c-0.6-0.8-1.2-1.6-1.9-2.4c0.8-0.8,0.1-0.9-0.5-1.1 c-0.5-0.7-0.9-1.3-1.4-2c-0.1-0.4-0.2-0.8-0.3-1.2c-0.2-0.8-0.5-1.5-0.7-2.3l0,0c-0.3-1-0.8-2-1-3c-0.7-3.8-3.1-7.7,0-11.5l0,0 c-0.3-1.7,2-1,2.3-2.5c0.4-1.9,0.3-3.9,0.6-5.7c0.4-2.5,3-4.6,3.7-7.4c0.2-0.6,0.9-1.1,1.4-1.7c0.1,0.5,0.2,1.1,0.3,1.6l0,0 c0,0.3,0,0.5,0,0.8c-0.6,0.5-1.3,1-0.9,2c0,0.2,0,0.3,0,0.5c-1.7,1.4-0.2,3.5-1.3,5c0,0,0.4,0.5,0.6,0.4c0.2,0,0.6-0.3,0.7-0.5 c0.4-1,0.7-2.1,1-3.1c0.2-0.4,0.5-0.9,0.7-1.3c0.5-1,1-2,1.6-2.9l0,0c1.7-3.6,4.4-6.1,8-7.6c2-1.3,3.9-3,6.6-2c3-0.1,6-0.1,9-0.3 c0.7,0,1.4-0.5,2.1-0.7c-0.2-0.3-0.2-0.8-0.5-1c-2-1.3-3.8-2.9-6.2-3c-6.9-0.2-13.4-2.7-17.9-7.9c-6.2-7.3-12.1-7.7-18-3.7 C15.4,37.9,7.6,47,3.4,59.3c-5.2,15.1-5.1,29.6,2.8,43.8c4.6,8.3,12,13.2,19.9,17.7c0.7,0.3,1.4,0.6,2.1,0.9v0 c0.2,0.1,0.4,0.2,0.5,0.4c1,1.1,2.4,1.1,3.7,1.2c1,0.4,2,0.7,3,1.1c1.1,0.7,2.2,0.8,3.4,0.4c0.6,0.2,1,0.3,1.6,0.5 c2.6,3.7,6.5,2.3,9.9,2.8c3.7,0.3,7.4,0.7,11.1,0.9c3.2,0.1,6.5,0,9.7-0.1C69.8,128.2,68.5,127.7,70.2,126.2z M30.8,83.2 c0.1,0.5,0.1,1.3,0.4,2C31,84.5,31,83.6,30.8,83.2c-0.7-2.9-1.3-5.8-1.2-8.7C29.5,77.3,30.1,80.3,30.8,83.2z M41.9,53.3 c-0.8,0.5-0.4,1.6-0.8,2.4C41.5,54.9,41.1,53.8,41.9,53.3c0.4-0.2,0.8-0.3,1.2-0.4c-0.1,0-0.2-0.1-0.3-0.1c0.1,0,0.2,0.1,0.3,0.1 C42.7,53,42.3,53.1,41.9,53.3z M41.6,52.3c-0.1,0-0.3,0-0.3,0c-0.5,0.3-1.1,0.7-1.6,1c0.5-0.3,1.1-0.7,1.6-1 C41.3,52.3,41.4,52.3,41.6,52.3z"/>\t\t\t<path d="M92.2,24c-0.6-0.7-1.4-1.4-0.8-2.5c-0.6-0.4-1.2-0.8-1.8-1.2c-2.4-3.8-6-6-9.9-7.9c-0.6-0.4-1.3-0.7-1.9-1.1 c-0.2-0.1-0.5-0.3-0.7-0.4c-5-3.5-9.9-7.1-15-10.6c-1.7-1.2-6.9,1.6-7.1,3.6c-0.3,4.2,10.4,14.9,15.8,15.9c0,0,0,0,0,0 c0.5,1.4,3,2.7,3.9,2l0,0c0.2,0.1,0.3,0.1,0.5,0.2c1.4-0.1,1.4,2.7,3.3,1.6c1.2,0.7,2.5,1.4,3.7,2.1c0.9,0.1,1.8,0.1,2.6-0.1 c-0.1-1.2,0.5-1.5,2.6,0.1c0.2,0.1,0.7,0.1,0.7,0.1c0.8-3.2,2.3,0.2,3.4-0.4c0.2-0.2,0.8-0.2,0.8-0.3 C92.5,24.7,92.4,24.3,92.2,24z"/>\t\t\t<path d="M43.2,24.8c3.1,1.2,6.7,1.9,9.1,3.9c3.5,2.8,7.3,4.9,11.2,6.9c0,0,0,0,0-0.1c0,0,0,0,0,0.1 c1.3,0.7,2.6,1.4,4,0.3c-0.7-0.7-1.4-1.4-2.3-1.8c0.8,0.4,1.6,1.1,2.3,1.8c1.1,0.4,2.2,0.9,3.2,1.3c0.1,0,0.2,0,0.3,0 c0.6,0.1,1.2-0.1,1.8-0.3c0.1-0.1,0.3-0.2,0.5-0.4c1.4-0.8,0.8-1.9,0.4-3.3c-1.6-6.7-7.6-7.9-12.4-10.8c-3.5-2.1-8.5-2.8-9.8-7.8 c-0.4-0.4-0.8-0.8-1.2-1.1c-1-1.2-2.2-1.8-3.7-1.1c-0.3,0-0.6,0.1-0.9,0.1c-0.2,0-0.4,0-0.7-0.1c-2.6,1.6-4.2,3.1-4.6,6.9 C40,22.6,40.4,23.8,43.2,24.8z M70.3,30.4C70.3,30.4,70.3,30.4,70.3,30.4C70.3,30.4,70.3,30.4,70.3,30.4c0-0.1-0.1-0.1-0.1-0.2 C70.2,30.3,70.2,30.3,70.3,30.4z"/>\t\t\t<path d="M80.2,117.1c-2.4,0.8-3.7-3.9-6.3-1c-1.1-4.4-6.1-1.4-8.1-4.4c-0.5-0.8-2.2-0.7-2.4,1.1 c-0.2,2.2,0,4.5,2.8,3.9c2.3-0.5,2.7,4.1,5.3,1.5c0.3-0.1,0.6-0.1,1-0.2c0.7,3.6,3.5,1.6,5.4,1.9c1.2,1.4,2.5,1.1,3.9,0.5l0-0.1 l0.1,0c0-0.2,0.1-0.4,0.1-0.7C81.9,118.5,82.1,116.5,80.2,117.1z"/>\t\t\t<path d="M59.4,112.8c0.4,0.1,0.8,0.3,1.2,0.4c3.2-1.4-0.5-2.6-0.1-3.8c0.9-3.1-1.9-2.2-2.7-2.2 c-1.9-0.1-0.2,1.3-0.4,2C56.8,111,58,112,59.4,112.8z"/>\t\t\t<path d="M72.1,128.2c0.6-0.1,1.2-0.2,1.7-0.2c-0.9-0.7-1.7-1.5-2.6-2.2C70.2,127,70.5,127.8,72.1,128.2z"/>\t\t\t<polygon points="33,72.2 33,72.2 33,72.2"/>\t\t\t<polygon points="33,72.2 33,72.2 32.9,72.1"/>\t\t\t<path d="M34.8,69.2c-0.3-0.7-0.4-1.5-0.6-2c-0.7-2.1-1.3-4.4-1.7-6.6c0.3,2.2,0.9,4.4,1.7,6.6 C34.4,67.7,34.5,68.5,34.8,69.2z"/>\t\t</g>\t\t<g fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="7">\t\t\t<path d="M175.3,37.5l-1.4,0.1c-7.7-2.4-15.6-4.1-23.6-4.1c-28.5,0-39.8,21-39.8,45.6 c0,24.9,13.2,39.5,38.5,39.5c7.2,0,14.4-1.5,21.5-3.3l1.2,0.1"/>\t\t\t<path d="M233.6,38.7c10-3.6,20.7-5.6,30.5-5.6c16.9,0,29.1,4.6,29.1,18.4c0,2-0.2,11.7-0.3,14.3l0,0 c-1,16-1.8,38.2-2.7,56.5"/>\t\t\t<path d="M293.2,57.6c-6.2,19.7-66.7,13.4-66.7,44.5c0,17.3,17.5,19.3,27.3,19.3c6.7,0,13.3-1.1,19.7-3 l1.7,0.2"/>\t\t\t<line x1="202" y1="0.3" x2="196.4" y2="120.6"/>\t\t\t<path d="M324.1,120.6c0-1.2,0-6.1,0.1-7.3c0.3-20.3,2.2-38.7,3.2-46.3c1.4-10.2,4.5-16.7,5.9-19 c0-0.1,0.2-0.3,0.3-0.3c4.7-8.5,12.3-13,21.5-13.7c1.8-0.1,3.7-0.1,5.5,0c2.1,0.2,4.3,0.6,6.5,1.2l1.2,0"/>\t\t\t<polyline points="326.3,76.1 328.4,33.1 328.4,31.5"/>\t\t\t<line x1="386.8" y1="120.6" x2="390.6" y2="31.5"/>\t\t\t<line x1="390.8" y1="11.1" x2="391.3" y2="0.3"/>\t\t\t<path d="M457.5,116.5l-1.8-0.3c-4.7,1.4-9.5,2.4-14.3,2.4c-12.8,0-16.5-7.1-16.5-18.9 c0-15.3,2.1-37,2.8-60.2l1.1-24.5l-0.5-1.4"/>\t\t\t<path d="M423.1,31.5"/>\t\t\t<polyline points="458.4,34.9 457.6,34.7 413.5,34.7 412.7,34.5"/>\t\t\t<path d="M537.2,30.2v1.3c-5,13.8-32.9,72.9-38.3,86.3l-5.4,11.7c-8.9,21.3-16.1,29.7-29.3,29.8 c-0.3,0-0.6,0-1,0c-4.5-0.1-9-1.2-13.2-2.8l-2.2,0.4"/>\t\t\t<polyline points="497.7,120.6 467.7,31.5 467.7,30.8"/>\t\t</g>\t\t<g fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="175" $stroke-dashoffset="{{175 - (175*loaderProgress)}}">\t\t\t<path d="M175.3,37.5l-1.4,0.1c-7.7-2.4-15.6-4.1-23.6-4.1c-28.5,0-39.8,21-39.8,45.6 c0,24.9,13.2,39.5,38.5,39.5c7.2,0,14.4-1.5,21.5-3.3l1.2,0.1"/>\t\t\t<path d="M233.6,38.7c10-3.6,20.7-5.6,30.5-5.6c16.9,0,29.1,4.6,29.1,18.4c0,2-0.2,11.7-0.3,14.3l0,0 c-1,16-1.8,38.2-2.7,56.5"/>\t\t\t<path d="M293.2,57.6c-6.2,19.7-66.7,13.4-66.7,44.5c0,17.3,17.5,19.3,27.3,19.3c6.7,0,13.3-1.1,19.7-3 l1.7,0.2"/>\t\t\t<line x1="202" y1="0.3" x2="196.4" y2="120.6"/>\t\t\t<path d="M324.1,120.6c0-1.2,0-6.1,0.1-7.3c0.3-20.3,2.2-38.7,3.2-46.3c1.4-10.2,4.5-16.7,5.9-19 c0-0.1,0.2-0.3,0.3-0.3c4.7-8.5,12.3-13,21.5-13.7c1.8-0.1,3.7-0.1,5.5,0c2.1,0.2,4.3,0.6,6.5,1.2l1.2,0"/>\t\t\t<polyline points="326.3,76.1 328.4,33.1 328.4,31.5"/>\t\t\t<line x1="386.8" y1="120.6" x2="390.6" y2="31.5"/>\t\t\t<line x1="390.8" y1="11.1" x2="391.3" y2="0.3"/>\t\t\t<path d="M457.5,116.5l-1.8-0.3c-4.7,1.4-9.5,2.4-14.3,2.4c-12.8,0-16.5-7.1-16.5-18.9 c0-15.3,2.1-37,2.8-60.2l1.1-24.5l-0.5-1.4"/>\t\t\t<path d="M423.1,31.5"/>\t\t\t<polyline points="458.4,34.9 457.6,34.7 413.5,34.7 412.7,34.5"/>\t\t\t<path d="M537.2,30.2v1.3c-5,13.8-32.9,72.9-38.3,86.3l-5.4,11.7c-8.9,21.3-16.1,29.7-29.3,29.8 c-0.3,0-0.6,0-1,0c-4.5-0.1-9-1.2-13.2-2.8l-2.2,0.4"/>\t\t\t<polyline points="497.7,120.6 467.7,31.5 467.7,30.8"/>\t\t</g>\t\t\t</svg></div><div class=" u-viewport-fit u-align-center u-absolute u-pos-tl  c-skew-mask u-overflow-h {{showVideo && !isLoading?\'is-active\':\'u-pointer-none is-prev\'}}"\tstyle="z-index:10000">\t<div class="u-overflow-h u-absolute u-pos-tl u-fit c-skew-mask__inner o-wrapper--valign u-overflow-h js-video-mask-out"\t\t\tstyle="transform: translateY({{outterPosition}}px) scale({{outterScale}}) rotate({{outterRotation}}deg)  translateZ(0)"> \t\t\t\t<div class="u-overflow-h  u-bg--white u-absolute u-pos-tl u-fit c-skew-mask__inner__inner o-wrapper--valign js-video-mask-in"\t\t\t style="transform: scale({{innerScale}}) rotate({{innerRotation}}deg) translateY({{innerPosition}}px) translateZ(0)">\t\t\t\t\t\t<div class="u-bg--brand u-relative u-inline-block u-vw10of12 u-valign-middle" style="padding-top: 47%; background-color: #000;">\t\t\t\t<core-video active="{{forcePlayVideo}}" autoplay="false" controls="true" loop="false"\t\t\t\t\t\t\tsrc="' + config["solution"]["section_4_video"] + '"\t\t\t\t\t\t\tposter="' + config["solution"]["section_4_image_for_video"] + '"\t\t\t\t\t\t\tclass="u-absolute u-pos-tl u-fit u-block c-anim--fade-in c-anim--8">\t\t\t\t</core-video>\t\t\t</div>\t\t</div>\t</div>\t<button class="u-absolute u-pos-tr u-inline-block c-button u-marg-r-vw1of24 u-marg-t-md c-anim c-anim--fade-in" on-click="_closeVideo" style="top:2px; right:2px;">\t\t<svg height="18" width="18" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 57.599998 57.599998" xml:space="preserve">\t\t   <g transform="translate(-21.2,-21.2)">\t\t      <path fill="#0093e5" d="m 21.2,73.8 5,5 L 50,55 l 23.8,23.8 5,-5 L 55,50 78.8,26.2 73.8,21.2 50,45 26.2,21.2 l -5,5 L 45,50 Z"/>\t\t    </g>\t\t</svg>\t</button></div>\x3c!-- <div class="u-absolute u-pos-tl u-force-inline {{currentIndex == 0 ? \'is-active\' : \'is-next\'}} | u-hide@sm"\tstyle="transform: translate({{cityScreenPos[0]}}px, {{cityScreenPos[1]}}px) translateZ(0);">\t<div class="u-absolute u-pos-tl" style="transform: translate(-100%, -100%)">\t\t<h1 class="c-h4 u-color--grey c-anim--slide-y c-anim--{{currentIndex==0?8:0}}">\t\t\tTransform your city\t\t</h1>\t\t<h2 class="c-h2 u-color--dark-grey c-anim--slide-y c-anim--{{currentIndex==0?9:0}}" style="line-height: 1">\t\t\tNew York\t\t</h2>\t</div></div><div class="u-absolute u-pos-tl u-force-inline {{currentIndex == 0 ? \'is-active\' : \'is-next\'}}"\tstyle="transform: translate({{cityScreenStartPos[0]}}px, {{cityScreenStartPos[1]}}px) translateZ(0);">\t<div class="u-absolute u-pos-tl u-bg--brand c-anim--fade-in" style="width: 6px; height: 6px; top:-3px;left:-3px;border-radius: 6px;"></div></div> --\x3e<div class="u-absolute u-pos-tl u-force-inline {{currentIndex == 0 ? \'is-active\' : \'is-next\'}} | u-hide@sm"\tstyle="transform: translate({{handlerPos[0]}}px, {{handlerPos[1]}}px) translateZ(0); opacity: {{handlerAlpha}}">\t<svg width="24" height="24" class="u-absolute u-pos-tl" style="transform: translate(-50%, -50%)">\t\t<circle fill="#fff"  cx="12" cy="12" r="8" />\t\t<circle stroke="#000" fill="none" opacity="0.3" cx="12" cy="12" r="8" />\t\t<circle fill="#0093e5" cx="12" cy="12" r="2.5" />\t</svg></div>'
-}, function(t, e) {
+}, function (t, e) {
+    t.exports = '<!-- <template is="light-core-template" if="{{mask===true}}"><div class="c-mask is-{{maskDirection}} u-overflow-h {{maskClass}}" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s"><div class="c-mask__mask is-{{maskDirection}} {{maskClass}} u-relative" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s"><template is="light-core-template" if="{{parallax===true}}"><scroll-object class="u-relative u-block" z="-300" scale="1.3"><content></content></scroll-object></template><template is="light-core-template" if="{{mask===true}}"><content></content></template></div></div><template is="light-core-template" if="{{useBackground===true}}"><div class="c-mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s"><div class="c-mask__mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s"><div class="c-mask__bg is-{{maskDirection}} u-fit u-absolute u-pos-tl"style="transition-delay: {{maskDelay+backgroundDelay}}s; background-color: {{backgroundColor}};"></div></div></div></template></template><template is="light-core-template" if="{{mask !== true}}"><content></content></template> --> <template is="light-core-template" if="{{mask===true}}"><div class="c-mask is-{{maskDirection}} u-overflow-h {{maskClass}}" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s"><div class="c-mask__mask is-{{maskDirection}} {{maskClass}} u-relative" style="transition-delay: {{maskDelay+(useBackground?backgroundDelay:0)}}s"><template is="light-core-template" if="{{parallax===true}}"><scroll-object class="u-relative u-block" z="-300" scale="1.3"><content></content></scroll-object></template><template is="light-core-template" if="{{mask===true}}"><content></content></template></div></div><template is="light-core-template" if="{{useBackground===true}}"><div class="c-mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s"><div class="c-mask__mask is-{{maskDirection}} u-overflow-h u-fit u-absolute u-pos-tl" style="transition-delay: {{maskDelay}}s"><div class="c-mask__bg is-{{maskDirection}} u-fit u-absolute u-pos-tl"style="transition-delay: {{maskDelay+backgroundDelay}}s; background-color: {{backgroundColor}};"></div></div></div></template></template><template is="light-core-template" if="{{mask !== true}}"><template is="light-core-template" if="{{parallax===true}}"><scroll-object class="u-relative u-block" z="-200" scale="1.3"><content></content></scroll-object></template><template is="light-core-template" if="{{parallax===false}}"><content></content></template></template>'
+}, function (t, e) {
+    t.exports = '<scroll-object set-active="true" position="{{[0, scroll * -1]}}"  class=" u-viewport-fit-h o-wrapper--valign  u-block u-relative u-align-center u-vacuum u-pad-y-xxl | u-height-a@sm "><div class="u-inline-block u-valign-middle "><h1 class="c-hgiga u-color--brand">404</h1><h1 class="c-h1 u-color--grey u-marg-b-md">Page not found</h1><a href="/" class="c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back to Home</a></div></scroll-object><!-- fOOTER --><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object>'
+}, function (t, e) {
+    t.exports = '<scroll-object position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-left u-pad-t-xl u-marg-b-xl | u-pad-t-xxl@sm"><h1 class="u-vacuum  u-color--brand u-marg-l-vw3of12 u-vw7of12 u-marg-b-sm | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm"><app-words word-class="c-hgiga--tall" class="u-block" step="0.04">' + config["about"]["hero_title"] + '</app-words></h1><p class="c-text--sm u-color--grey u-marg-l-vw3of12 u-vw5of12 u-marg-b-xl c-anim--fade-in c-anim--10 | u-marg-l-vw1of12@sm u-vw10of12@sm">' + config["about"]["hero_description"] + '</p></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-inline-block u-relative u-marg-b-xl u-vacuum u-fit-w"><div class="c-slideshow__meet u-relative u-w4of24 u-inline-block u-valign-top u-marg-x-w1of24 | u-marg-x-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm"><h4 class="c-h4 u-color--brand | u-hide@sm">Meet the Team</h4><h4 class="c-h3 u-color--brand u-hide | u-block@sm">Meet the Team</h4><core-slider active="{{active}}" class=" c-slideshow-slider u-inline-block u-valign-middle u-hide@sm"on-slide="onSliderSlide" on-stop="onSliderStop" value="0">    <svg class="js-handler c-slideshow-handler" width="26" height="26">    <circle fill="#fff" cx="13" cy="13" r="13"></circle>    <circle stroke="#c6c6c6" fill="none" cx="13" cy="13" r="9"></circle>    <circle fill="#0093e5" cx="13" cy="13" r="3"></circle>    </svg></core-slider></div><div class="u-w9of12 u-inline-block u-valign-top u-overflow-h | u-marg-l-vw1of12@sm u-vw11of12@sm u-relative"><div class="u-marg-b-xs@sm u-overflow-s@sm js-team-wrapper"><div class="u-vw7of24 u-relative u-force-inline u-vacuum | u-vw9of12@sm u-marg-b-md@sm"><template is="light-core-template" repeat="{{team in data.team}}"><scroll-object position="{{slideshowPosition}}" ratio="{{0.3 - $index*0.01}}"class="u-inline-block u-fit-w js-staff | u-hide@sm"><core-img width="375" height="484" class="u-marg-b-md u-inline-block u-relative u-fit-w" alt=""><core-img-source src="{{team.img}}" query="(max-width: 3000px)"></core-img-source></core-img><h5 class="c-text--sm u-color--dark-grey">{{team.name}}</h5><h6 class="c-text--sm u-color--grey">{{team.role}}</h6></scroll-object><div class="u-hide u-fit-w js-staff-mobile | u-inline-block@sm" ><core-img width="375" height="484" class="u-marg-b-md u-inline-block u-relative u-fit-w" alt=""><core-img-source src="{{team.img}}" query="(max-width: 3000px)"></core-img-source></core-img><h5 class="c-text--sm u-color--dark-grey">{{team.name}}</h5><h6 class="c-text--sm u-color--grey">{{team.role}}</h6></div></template></div></div><!-- <core-slider active="{{active}}" class="u-marg-l-vw1of24 c-slideshow-slider u-inline-block u-valign-middle u-hide | u-block@sm u-marg-l-0@sm"on-slide="onSliderSlide" on-stop="onSliderStop" >    <svg class="js-handler c-slideshow-handler" viewBox=\'0 0 26 26\'>    <circle fill="#fff" cx="13" cy="13" r="13"></circle>    <circle stroke="#c6c6c6" fill="none" cx="13" cy="13" r="9"></circle>    <circle fill="#0093e5" cx="13" cy="13" r="3"></circle>    </svg></core-slider> --></div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-marg-b-xl u-vacuum"><div class="u-relative u-w4of24 u-inline-block u-valign-top u-marg-x-w1of24 | u-marg-x-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm"><h4 class="c-h4 u-color--brand | u-hide@sm">' + config["about"]["hiring_title"] + '</h4><h4 class="c-h4 u-color--brand u-hide u-marg-b-md | u-block@sm">' + config["about"]["hiring_title"] + '</h4></div><div class="u-w9of12 u-inline-block u-valign-top u-overflow-h | u-marg-l-vw1of12@sm u-vw11of12@sm u-relative"><p class="c-text--sm u-color--grey u-marg-b-lg u-vw13of24 | u-fit-w@sm">' + config["about"]["hiring_description"] + '</p><h3 class="c-text--xs u-color--dark-grey u-marg-b-md">' + config["about"]["job_positions"] + '</h3><ul class="o-list--none"><li class="u-vw8of12 u-flex u-justify-space-between u-marg-b-sm | u-fit-w@sm u-block@sm u-marg-b-lg@sm"><div class="u-marg-b-md@sm"><h3 class="c-h3 u-color--dark-grey">' + config["about"]["job_title"] + '</h3><p class="c-text--sm u-color--grey">' + config["about"]["job_summary"] + '</p></div><div><a href="' + config["about"]["job_link"] + '" target="_blank" class="c-link c-button--rounded c-button--primary">Apply</a></div></li></ul></div></scroll-object><!-- fOOTER --><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object>'
+}, function (t, e) {
+    t.exports = '<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-right u-vacuum u-pad-t-xxl u-marg-b-xl | u-align-left@sm | u-marg-b-md@sm"><div class="u-w2of12 u-marg-r-w1of12 u-align-right u-inline-block u-valign-top u-relative"><a href="' + config["global"]["community_link"] + '" class="u-inline-block c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back</a></div><img class="u-w9of12 u-inline-block u-valign-top | u-vw11of12@sm u-marg-l-w1of12@sm" src="{{content.img.sizes.medium_large}}" alt="" /></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-align-left u-relative u-vacuum"><div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top u-pad-t-xxs | u-marg-r-0@sm u-marg-l-vw1of12@sm u-vw5of12@sm u-align-left@sm u-pad-t-0@sm"><p class="c-text--xs u-color--brand u-uppercase u-marg-b-md | u-inline-block@sm u-marg-r-sm@sm">{{content.category[0].name}}</p><h3 class="c-text--nano u-uppercase u-color--dark u-marg-b-xx u-marg-b-xxs | u-inline-block@sm u-marg-r-sm@sm | u-hide@sm">{{content.date}}</h3><h4 class="c-text--nano u-uppercase u-color--dark | u-inline-block@sm u-marg-r-sm@sm u-marg-b-md@sm | u-hide@sm">by {{content.author}}</h4></div><div class="u-vw5of12 u-align-right u-hide u-valign-top | u-inline-block@sm u-marg-b-md@sm"><p class="c-text--xs u-color--dark u-uppercase u-marg-b-sm">SHARE</p><ul class="o-list--inline"><li class="o-list__item u-marg-r-xs"><a href="#" class="c-link"><svg width="20px" height="20px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg"><g transform="translate(-539.18 -568.86)"><path fill="#d5d5d5" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/></g></svg></a></li><li class="o-list__item"><a href="#" class="c-link"><svg width="20px" height="20px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg"><path fill="#d5d5d5" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/></svg></a></li></ul></div><div class="u-marg-l-vw1of12@sm u-vw5of12@sm u-align-left@sm u-hide | u-block@sm u-marg-b-sm@sm"><h3 class="c-text--nano u-uppercase u-color--dark u-marg-b-xx u-marg-b-xxs | u-inline-block@sm u-marg-r-sm@sm">{{content.date}}</h3><h4 class="c-text--nano u-uppercase u-color--dark | u-inline-block@sm u-marg-r-sm@sm u-marg-b-md@sm">by {{content.author}}</h4></div><div class="u-inline-block u-valign-top u-vw7of12 | u-vw10of12@sm u-marg-l-vw1of12@sm"><h1 class="c-hgiga u-color--dark-grey u-marg-b-sm">{{content.title}}</h1></div><div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top | u-hide@sm"><p class="c-text--xs u-color--dark u-uppercase u-marg-b-xs">SHARE</p><ul class="o-list--inline"><li class="o-list__item u-marg-r-xs"><a href="#" class="c-link"><svg width="20px" height="20px" viewBox="0 0 300.00006 244.18703" version="1.1"  xmlns="http://www.w3.org/2000/svg"><g transform="translate(-539.18 -568.86)"><path fill="#d5d5d5" d="m633.9 812.04c112.46 0 173.96-93.168 173.96-173.96 0-2.6463-0.0539-5.2806-0.1726-7.903 11.938-8.6302 22.314-19.4 30.498-31.66-10.955 4.8694-22.744 8.1474-35.111 9.6255 12.623-7.5693 22.314-19.543 26.886-33.817-11.813 7.0031-24.895 12.093-38.824 14.841-11.157-11.884-27.041-19.317-44.629-19.317-33.764 0-61.144 27.381-61.144 61.132 0 4.7978 0.5364 9.4646 1.5854 13.941-50.815-2.5569-95.874-26.886-126.03-63.88-5.2508 9.0354-8.2785 19.531-8.2785 30.73 0 21.212 10.794 39.938 27.208 50.893-10.031-0.30992-19.454-3.0635-27.69-7.6468-0.009 0.25652-0.009 0.50661-0.009 0.78077 0 29.61 21.075 54.332 49.051 59.934-5.1376 1.4006-10.543 2.1516-16.122 2.1516-3.9336 0-7.766-0.38716-11.491-1.1026 7.7838 24.293 30.355 41.971 57.115 42.465-20.926 16.402-47.287 26.171-75.937 26.171-4.929 0-9.7983-0.28036-14.584-0.84634 27.059 17.344 59.189 27.464 93.722 27.464" fill="#1da1f2"/></g></svg></a></li><li class="o-list__item"><a href="#" class="c-link"><svg width="20px" height="20px" viewBox="88.428 12.828 107.543 207.085" version="1.1"  xmlns="http://www.w3.org/2000/svg"><path fill="#d5d5d5" d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z"/></svg></a></li></ul></div><div class="u-inline-block u-valign-top u-vw7of12 u-marg-b-md | u-vw10of12@sm u-marg-l-vw1of12@sm"><ul class="o-list--inline u-color--dark u-uppercase"><template is="light-core-template" repeat="{{tag in content.tags}}"><li class="o-list__item c-text--nano u-marg-r-sm">{{tag.name}}</li></template></ul></div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-align-left u-relative u-marg-b-xl u-vacuum">{{@content.content}}</scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-align-left u-relative u-marg-b-xl u-vacuum | u-marg-l-vw1of12@sm u-vw10of12@sm "><div class="u-flex | u-justify-space-between@sm"><div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top | u-align-left@sm u-marg-r-0@sm"><a href="' + config["global"]["community_link"] + '" class="c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back</a></div><div class="u-align-left u-inline-block u-valign-top"><button on-click="_backToTop" class="c-button--none c-text--xs u-color--dark u-uppercase u-marg-b-sm u-force-inline">Back to top</button></div></div></scroll-object><!-- fOOTER --><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object>'
+}, function (t, e) {
+    t.exports = '<template is="light-core-template" if="{{dataUrl !== null}}" remove-nodes><core-ajax src="{{dataUrl}}" on-success="_onDataLoaded" on-error="_onDataError"></core-ajax></template>    <scroll-object position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-left u-vacuum u-pad-t-xxl"><h1 class="u-vw6of12 u-marg-l-vw3of12 u-inline-block u-color--brand u-marg-b-lg | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm"><app-words  word-class="c-hgiga--tall" class="u-block u-relative" step="0.04">This is where we share thoughts, case studies, news, and resources.</app-words></h1></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-align-left u-relative u-marg-b-lg u-vacuum"><div class="u-vw2of12 u-marg-l-vw1of12 u-inline-block u-valign-top | u-marg-l-vw1of12@sm u-vw11of12@sm u-marg-b-md@sm u-overflow-s@sm | js-filter-wrapper" _style="transform: translateY({{filterPos}}px) translateZ(0);"><ul class="o-list--none | u-force-inline@sm"><li class="u-marg-b-sm | u-inline-block@sm u-marg-r-sm@sm u-pad-x-xs@sm"><button data-filter="all" on-click="_onFilterDown" class="c-link c-button--none u-color--dark-grey c-filter c-h4 {{\'all\' == content.filter?\'is-active\':\'\'}}">All</button></li><template is="light-core-template" repeat="{{filter in content.filters}}"><template is="light-core-template" if="{{filter.term_id !==1}}"><li class="u-marg-b-sm | u-inline-block@sm u-marg-r-sm@sm u-pad-x-xs@sm"><button data-filter="{{filter.slug}}" on-click="_onFilterDown" class="c-link c-button--none u-color--dark-grey c-filter c-h4 {{filter.slug == content.filter?\'is-active\':\'\'}}">{{filter.name}}<sup class="{{!filter.count?\'u-hide\':\'\'}}\'">{{filter.count}}</sup></button></li></template></template></ul></div><div class="u-inline-block u-valign-top u-vw8of12 u-align-left | u-marg-l-vw1of12@sm u-vw10of12@sm | c-overlay--fast {{showPosts?\'is-active\':\'\'}}"><div class="u-inline-block u-valign-top u-vw4of12 | u-w10of10@sm"><template is="light-core-template" repeat="{{article in content.posts}}"><template is="light-core-template" if="{{ $index % 2 == 0 }}"><scroll-object class="u-block u-relative u-marg-b-md | u-marg-b-lg@sm"><div class="u-inline-block c-anim--slide-y u-align-left {{article.type==\'large\' && $index>0?\'u-vw7of24 | u-w10of10@sm\':\'u-vw2of12 | u-w10of10@sm\'}} | u-cursor-pointer js-article"><div href="https://medium.com/clarity-movement/{{article.name}}"    class="c-zoom u-marg-b-sm js-img | u-marg-b-md@sm" data-src="{{article.img.sizes.medium_large}}"data-width="{{article.img.width}}"data-height="{{article.img.height}}"style="padding-top: 100%;"><div class="u-absolute u-pos-tl u-fit u-bg-cover u-bg-center" style="background-image: url(\'{{article.img.sizes[article.type==\'large\'? \'medium_large\' : \'medium\']}}\')"></div><span class="c-zoom__border--left"></span><span class="c-zoom__border--right"></span><span class="c-zoom__border--bottom"></span><span class="c-zoom__border--top"></span></div><h4 class="c-text--xs u-color--brand u-marg-b-xs u-uppercase">{{article.category[0].name}}</h4><h3 class="u-vw6of24 c-h4--alt u-color--dark-grey | u-fit-w@sm">{{article.title}}</h3></div></scroll-object></template></template></div><div class="u-inline-block u-valign-top u-vw4of12  | u-w10of10@sm"><template is="light-core-template" repeat="{{article in content.posts}}"><template is="light-core-template" if="{{ $index % 2 != 0 }}"><scroll-object class="u-block u-relative u-marg-b-md  | u-marg-b-lg@sm"><div class="u-inline-block c-anim--slide-y u-align-left {{article.type==\'large\' && $index>0?\'u-vw7of24 | u-w10of10@sm\':\'u-vw2of12 | u-w10of10@sm\'}} | u-cursor-pointer  js-article "><div href="https://medium.com/clarity-movement/{{article.name}}"    class="c-zoom u-marg-b-sm js-img | u-marg-b-md@sm" data-src="{{article.img.sizes.medium_large}}"data-width="{{article.img.width}}"data-height="{{article.img.height}}"style="padding-top: 100%;"><div class="u-absolute u-pos-tl u-fit u-bg-cover u-bg-center" style="background-image: url(\'{{article.img.sizes[article.type==\'large\'? \'medium_large\' : \'medium\']}}\')"></div><span class="c-zoom__border--left"></span><span class="c-zoom__border--right"></span><span class="c-zoom__border--bottom"></span><span class="c-zoom__border--top"></span></div><h4 class="c-text--xs u-color--brand u-marg-b-xs u-uppercase">{{article.category[0].name}}</h4><h3 class="u-vw6of24 c-h4--alt u-color--dark-grey | u-fit-w@sm">{{article.title}}</h3></div></scroll-object></template></template></div></div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-align-left u-relative u-marg-b-xl u-vacuum | u-hide@sm"><div class="u-vw2of12 u-marg-r-vw1of12 u-align-right u-inline-block u-valign-top"><!-- <a href="' + config["global"]["community_link"] + '" class="c-link c-text--xs u-color--brand u-uppercase u-marg-b-md">Back</a> --></div><div class="u-vw2of12 u-align-left u-inline-block u-valign-top | u-vw6of12@sm"><button on-click="_backToTop" class="c-button--none c-text--xs u-color--dark u-uppercase u-marg-b-sm">Back to top</button></div></scroll-object><!-- fOOTER --><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object><!-- HERO TRANSITION --><div class="u-absolute u-pos-tl u-fit u-bg--white u-pointer-none c-overlay {{showHero?\'is-active\': \'\'}}"></div><div class="u-absolute u-pos-tl u-overflow-h" style="transform-origin: 0 0; transform: translate({{heroPosition[0]}}px,{{heroPosition[1]}}px) scaleX({{heroScale[0]}}) scaleY({{heroScale[1]}}) translateZ(0); width: {{heroSize[0]}}px; height: {{heroSize[1]}}px; z-index: 2;"><img class="u-block u-absolute u-pos-tl" src="{{heroSrc}}" style="transform-origin: 0 0; transform: translate({{heroImgPosition[0]}}px,{{heroImgPosition[1]}}px) scaleX({{heroImgScale[0]}}) scaleY({{heroImgScale[1]}}); width: {{heroSize[0]}}px; height: {{heroSize[1]}}px" alt="" /></div>'
+}, function (t, e) {
+    t.exports = '<div class="js-scene u-absolute u-pos-tl u-pointer-none"></div><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-right u-pad-t-xl u-marg-b-xl u-vacuum | u-align-left@sm"><scroll-object class="u-block u-relative u-align-left u-pad-t-xl u-marg-b-xl"><h1 class="u-vacuum u-color--brand u-marg-l-vw3of12 u-vw7of12 u-marg-b-sm  | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm"><app-words  word-class="c-hgiga" class="u-block" step="0.04">' + config["contact"]["hero_title"] + '</app-words></h1><h1 class="c-text--sm u-color--grey u-marg-l-vw3of12 u-vw5of12 u-marg-b-xl c-anim--slide-y c-anim--2 | u-marg-l-vw1of12@sm u-vw10of12@sm">' + config["contact"]["hero_description"] + '</h1></scroll-object><scroll-object class="u-relative u-vw9of12 u-inline-block u-align-left | u-marg-l-vw1of12@sm u-vw10of12@sm u-marg-b-md@sm"><core-ajax-form on-success="_onFormSuccess" on-error="_onFormError" action="{{wsRoot}}mail" method="POST" class=""><light-ui-select name="interest" class="c-input--select u-vw3of12 u-marg-r-vw1of12 u-marg-b-md c-anim c-anim--slide-y c-anim--3 | u-w10of10@sm"><light-ui-select-option value="">Interested in</light-ui-select-option>' + config["contact"]["interested_list_tpl"] + '</light-ui-select><core-input-text name="company" label="Company" type="text" class="c-input--text u-vw3of12 u-marg-r-vw1of12 u-marg-b-md  c-anim c-anim--slide-y c-anim--4 | u-w10of10@sm"></core-input-text><core-input-text is-required="true" name="name" label="Name" type="text" class="c-input--text u-vw3of12 u-marg-r-vw1of12 u-marg-b-md  c-anim c-anim--slide-y c-anim--5 | u-w10of10@sm"></core-input-text><core-input-text type="email" is-required="true" name="email" label="Email" type="text" class="c-input--text u-vw3of12 u-marg-r-vw1of12 u-marg-b-md  c-anim c-anim--slide-y c-anim--6 | u-w10of10@sm"></core-input-text><div class="u-vw7of12 u-marg-b-md c-anim c-anim--slide-y c-anim--7 | u-w10of10@sm u-marg-b-lg@sm"><textarea name="message" placeholder="Your message..." rows="5" class="u-block c-textarea  js-required"></textarea></div><div class="c-anim c-anim--slide-y c-anim--8 | u-align-center@sm"><button type="submit" class="c-button--rounded c-button--primary">Submit</button></div></core-ajax-form></scroll-object></scroll-object><div class="u-fixed u-pos-tl o-wrapper--valign u-viewport-fit u-bg--white c-overlay {{showDialog?\'is-active\':\'\'}}  u-align-center" style="background: #fff; z-index: 10000"><div class="u-inline-block u-valign-middle u-vw10of12 u-relative"><h1 class="u-color--brand c-h1 u-marg-b-xs c-anim c-anim--slide-y">Thank you</h1><p class="c-text--sm u-color--grey c-anim c-anim--slide-y c-anim--2 u-marg-b-md">Your message has been sent. We will be in touch shortly.</p><div class="c-anim c-anim--slide-y"><a href="/" class="c-link c-button--rounded c-button--primary ">Go to Homepage</a></div></div></div><!-- fOOTER --><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object>'
+}, function (t, e) {
+    t.exports = '<div class="u-absolute u-fit u-pos-tl u-bg-cover u-bg-center" style="background-image:url(' + config["global"]["background_image"] + '); height:{{winHeight}}px;"></div><div class="u-absolute u-viewport-fit u-pos-tl {{currentIndex > 0 ? \'is-active\':\'\'}} u-hide@sm" style="height:{{winHeight}}px;"><div class="u-overflow-h u-force-inline c-hgiga u-absolute c-number-wrapper u-inline-block u-vacuum"><span class="u-inline-block u-valign-middle c-number c-anim--slide-x c-anim--2">0</span><span class="u-inline-block u-relative u-valign-middle c-anim--slide-x c-anim--3"><span class="u-inline-block c-slide-mask__inner c-number" style="opacity:0">0</span><span class="u-inline-block  u-absolute  u-pos-tl  c-number c-slide-mask {{currentIndex==1?\'is-active\':currentIndex>1?\'is-prev\':\'is-next\'}}"><span class="u-inline-block c-slide-mask__inner">1</span></span><span class="u-inline-block u-absolute  u-pos-tl c-number c-slide-mask {{currentIndex==2?\'is-active\':currentIndex>2?\'is-prev\':\'is-next\'}}"><span class="u-inline-block c-slide-mask__inner">2</span></span><span class="u-inline-block u-absolute  u-pos-tl c-number c-slide-mask {{currentIndex==3?\'is-active\':currentIndex>3?\'is-prev\':\'is-next\'}}"><span class="u-inline-block c-slide-mask__inner">3</span></span></span></div></div><div class="js-scene u-relative u-pointer-none"></div><div class="u-viewport-fit u-absolute u-pos-tl o-wrapper--valign u-pointer-none {{currentIndex>0?\'is-prev\':currentIndex==0?\'is-active\' : \'is-next\'}}" style="height:{{winHeight}}px;"><div class="u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw6of12 | u-fit-w@sm u-marg-l-0@sm u-align-center@sm u-marg-b-vh2of10@sm"><h2 class="c-h4 u-color--grey u-force-inline c-anim--slide-x c-anim--2 | u-marg-b-0@sm" >' + config["home"]["main_title_1"] + '</h2><h1 class="u-vacuum u-color--brand u-marg-b-xs u-marg-t-0@sm"><app-words word-class="c-hgiga--alt" class="u-inline-block u-fit-w">' + config["home"]["main_title_2"] + '</app-words></h1></div></div><div class="u-viewport-fit u-absolute u-pos-tl o-wrapper--valign u-pointer-none {{currentIndex>1?\'is-prev\':currentIndex==1?\'is-active\' : \'is-next\'}} | o-wrapper--valign-bottom@sm u-pad-x-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;"><div class="u-relative u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw10of12 | u-fit-w@sm u-valign-bottom@sm u-marg-l-0@sm"><div class="c-home__title-wrapper"><h1 class="u-marg-b-xs c-h4 u-color--grey c-anim--slide-x c-anim--0 | u-marg-b-0@sm">' + config["home"]["section-1_main_title_1"] + '</h1><h2 class="u-vacuum u-color--brand" style="line-height: 1"><app-words word-class="c-hgiga--small">' + config["home"]["section-1_main_title_2"] + '</app-words></h2></div><div class="u-relative u-vw4of12 c-anim--slide-x c-anim--1 | u-vw8of12@sm"><app-accordion class="u-block u-fit-w u-absolute u-offset-l-0 u-offset-t-w10of10 | u-offset-t-0@sm u-relative@sm u-hide@sm"><div class="c-text--md u-color--grey">' + config["home"]["section-1_description"] + '</div></app-accordion></div></div></div><div class="u-viewport-fit u-absolute u-pos-tl o-wrapper--valign u-pointer-none {{currentIndex>2?\'is-prev\':currentIndex==2?\'is-active\' : \'is-next\'}} | o-wrapper--valign-bottom@sm u-pad-x-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;"><div class="u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw10of12 | u-fit-w@sm u-valign-bottom@sm u-marg-l-0@sm"><div class="c-home__title-wrapper"><h1 class="u-marg-b-xs c-h4 u-color--grey c-anim--slide-x c-anim--0 | u-marg-b-0@sm">' + config["home"]["section-2_main_title_1"] + '</h1><h2 class="u-vacuum u-color--brand" style="line-height: 1"><app-words word-class="c-hgiga--small">' + config["home"]["section-2_main_title_2"] + '</app-words></h2></div><div class="u-relative u-vw4of12 c-anim--slide-x c-anim--1 | u-vw8of12@sm"><app-accordion class="u-block u-fit-w u-absolute u-offset-l-0 u-offset-t-w10of10 | u-offset-t-0@sm u-relative@sm u-hide@sm"><div class="c-text--md u-color--grey">' + config["home"]["section-2_description"] + '</div></app-accordion></div></div></div><div class="u-pointer-none u-viewport-fit u-absolute u-pos-tl o-wrapper--valign {{currentIndex>3?\'is-prev\':currentIndex==3?\'is-active\' : \'is-next\'}}  | o-wrapper--valign-bottom@sm u-pad-x-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;"><div class="u-inline-block u-valign-middle u-marg-l-vw2of12 u-vw10of12 | u-fit-w@sm u-valign-bottom@sm u-marg-l-0@sm"><div class="c-home__title-wrapper"><h1 class="u-marg-b-xs c-h4 u-color--grey c-anim--slide-x c-anim--0 | u-marg-b-0@sm">' + config["home"]["section-3_main_title_1"] + '</h1><h2 class="u-vacuum u-color--brand u-force-inline" style="line-height: 1"><app-words word-class="c-hgiga--small">' + config["home"]["section-3_main_title_2"] + '</app-words></h2></div><div class="u-relative u-vw4of12 c-anim--slide-x c-anim--1 | u-vw8of12@sm"><app-accordion class="u-block u-fit-w u-absolute u-offset-l-0 u-offset-t-w10of10 | u-offset-t-0@sm u-relative@sm u-hide@sm"><div class="c-text--md u-color--grey">' + config["home"]["section-3_description"] + '</div></app-accordion></div><div class="u-hide u-block@sm u-pad-t-sm' + config["home"]["add_btn_container_class_xs"] + '" style="padding-left: 25px;"><button class="u-pointer-auto u-marg-b-xxs c-button--expand {{currentIndex==3?\'is-active\':\'\'}} js-home-video-btn"><svg  class="c-button--expand__left-block" viewbox="0 0 24 24"><circle cx="12" cy="12" r="12" /></svg><span class="c-button--expand__center-block"></span><svg  class="c-button--expand__right-block" viewbox="0 0 24 24"><circle cx="12" cy="12" r="12" /></svg><span class="c-button--expand__text">' + config["home"]["discover_button_text"] + '</span></button><br/><a href="/solution" class="u-pointer-auto c-link u-inline-block c-button--expand2 {{currentIndex==3?\'is-active\':\'\'}}"><svg  class="c-button--expand2__left-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__center-block"></span><svg  class="c-button--expand2__right-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__text">' + config["home"]["solution_button_text"] + '</span></a>' + config["home"]["one_more_button_tpl"] + '</div></div><div class="' + config["home"]["add_btn_container_class"] + 'u-align-center u-pointer-auto u-absolute u-block u-force-inline  c-home__video-btn u-hide@sm"style="left: {{width*0.5 + initCircleRadius*1.5}}px; top: 50%; transform: translate(-50%,-50%) translateZ(0)"><button class="c-button--expand u-marg-b-xxs {{currentIndex==3?\'is-active\':\'\'}} js-home-video-btn"><svg  class="c-button--expand__left-block" viewbox="0 0 24 24"><circle cx="12" cy="12" r="12" /></svg><span class="c-button--expand__center-block"></span><svg  class="c-button--expand__right-block" viewbox="0 0 24 24"><circle cx="12" cy="12" r="12" /></svg><span class="c-button--expand__text">' + config["home"]["discover_button_text"] + '</span></button><br/><a href="/solution" class="c-link u-inline-block c-button--expand2 {{currentIndex==3?\'is-active\':\'\'}}"><svg  class="c-button--expand2__left-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__center-block"></span><svg  class="c-button--expand2__right-block" viewbox="0 0 24 24"><circle  cx="12" cy="12" r="12" /></svg><span class="c-button--expand2__text">' + config["home"]["solution_button_text"] + '</span></a>' + config["home"]["one_more_button_xs_tpl"] + '</div></div><div id="number" class="u-viewport-fit u-absolute  u-pos-tl o-wrapper--valign u-pointer-none | u-align-right@sm o-wrapper--valign-bottom@sm u-pad-r-vw1of12@sm u-pad-b-md@sm" style="height:{{winHeight}}px;"><div class="u-relative u-inline-block u-valign-middle u-pad-l-vw1of24 u-color--grey u-vacuum u-align-center | u-valign-bottom@sm "><div class="u-relative u-inline-block u-fit-w"><span class="c-counter__number c-text--md {{currentIndex==1?\'is-active\':\'\'}}">1</span><span class="c-counter__number c-text--md u-pos-tl u-absolute {{currentIndex==2?\'is-active\':\'\'}}">2</span><span class="c-counter__number c-text--md u-pos-tl u-absolute {{currentIndex==3?\'is-active\':\'\'}}">3</span></div><div class="c-counter__sepa u-block u-bg--grey u-marg-y-xxs {{currentIndex>0?\'is-active\':\'\'}}"></div><div class="u-inline-block u-fit-w c-text--md c-counter__total {{currentIndex>0?\'is-active\':\'\'}}">3</div></div></div><div class="u-fixed u-pos-br u-marg-r-vw1of24 c-scroll-btn u-force-inline {{!isLoading && !isMenuActive && ((isMobile && currentIndex<=0) || !isMobile) ?\'is-active\':\'\'}}" style="z-index: 10000"><span class="u-valign-middle u-inline-block c-scroll-btn__line"><span class="c-scroll-btn__progress" style="transform: scaleX({{circle1Progress}}) translateZ(0)"></span></span><span class="u-valign-middle u-inline-block c-text--sm u-color--brand c-anim--slide-x c-anim--2">scroll</span></div><div class="u-pointer-none u-fixed u-pos-tl u-viewport-fit u-flex u-align-center u-align-items-center u-justify-center c-overlay {{isLoading?\'is-active\':\'\'}}"style="transform: scale({{1 - 0.4 * loaderProgress}}) translateZ(0); height:{{winHeight}}px;"><svg width="170" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 543.4 164.1" xml:space="preserve"><g fill="#fff"><path d="M70.2,126.2c-3.9-1.9-7.9-3.8-11.8-5.6c0.6-0.8,0.4-1.7-0.4-2.1c-2.7-1.6-5.6-3-8.3-4.8 c-1.5-0.9-0.9-4.2-4-3.5c-0.4-0.1-0.8-0.3-1.2-0.4c-0.2,0-0.3,0-0.5,0.1c-0.2-0.1-0.4-0.1-0.5-0.2c-0.1,0-0.3,0-0.4,0 c-0.8-1.2-1.6-2.4-2.3-3.6c-0.1-1-0.1-1.9-0.2-2.9c1.8,1.2,3.7,2.4,5.5,3.6c0.1,0.5,0.1,1.7,0.8,1.1c1.2-1.1,2.5-2.6,2.6-4.1 c0.3-2.1-1.7-0.2-2.5-0.8c-3-2.4-6-4.7-8.9-7.1c-0.1-0.1-0.2-0.3-0.3-0.4c-0.6-0.8-1.2-1.6-1.9-2.4c0.8-0.8,0.1-0.9-0.5-1.1 c-0.5-0.7-0.9-1.3-1.4-2c-0.1-0.4-0.2-0.8-0.3-1.2c-0.2-0.8-0.5-1.5-0.7-2.3l0,0c-0.3-1-0.8-2-1-3c-0.7-3.8-3.1-7.7,0-11.5l0,0 c-0.3-1.7,2-1,2.3-2.5c0.4-1.9,0.3-3.9,0.6-5.7c0.4-2.5,3-4.6,3.7-7.4c0.2-0.6,0.9-1.1,1.4-1.7c0.1,0.5,0.2,1.1,0.3,1.6l0,0 c0,0.3,0,0.5,0,0.8c-0.6,0.5-1.3,1-0.9,2c0,0.2,0,0.3,0,0.5c-1.7,1.4-0.2,3.5-1.3,5c0,0,0.4,0.5,0.6,0.4c0.2,0,0.6-0.3,0.7-0.5 c0.4-1,0.7-2.1,1-3.1c0.2-0.4,0.5-0.9,0.7-1.3c0.5-1,1-2,1.6-2.9l0,0c1.7-3.6,4.4-6.1,8-7.6c2-1.3,3.9-3,6.6-2c3-0.1,6-0.1,9-0.3 c0.7,0,1.4-0.5,2.1-0.7c-0.2-0.3-0.2-0.8-0.5-1c-2-1.3-3.8-2.9-6.2-3c-6.9-0.2-13.4-2.7-17.9-7.9c-6.2-7.3-12.1-7.7-18-3.7 C15.4,37.9,7.6,47,3.4,59.3c-5.2,15.1-5.1,29.6,2.8,43.8c4.6,8.3,12,13.2,19.9,17.7c0.7,0.3,1.4,0.6,2.1,0.9v0 c0.2,0.1,0.4,0.2,0.5,0.4c1,1.1,2.4,1.1,3.7,1.2c1,0.4,2,0.7,3,1.1c1.1,0.7,2.2,0.8,3.4,0.4c0.6,0.2,1,0.3,1.6,0.5 c2.6,3.7,6.5,2.3,9.9,2.8c3.7,0.3,7.4,0.7,11.1,0.9c3.2,0.1,6.5,0,9.7-0.1C69.8,128.2,68.5,127.7,70.2,126.2z M30.8,83.2 c0.1,0.5,0.1,1.3,0.4,2C31,84.5,31,83.6,30.8,83.2c-0.7-2.9-1.3-5.8-1.2-8.7C29.5,77.3,30.1,80.3,30.8,83.2z M41.9,53.3 c-0.8,0.5-0.4,1.6-0.8,2.4C41.5,54.9,41.1,53.8,41.9,53.3c0.4-0.2,0.8-0.3,1.2-0.4c-0.1,0-0.2-0.1-0.3-0.1c0.1,0,0.2,0.1,0.3,0.1 C42.7,53,42.3,53.1,41.9,53.3z M41.6,52.3c-0.1,0-0.3,0-0.3,0c-0.5,0.3-1.1,0.7-1.6,1c0.5-0.3,1.1-0.7,1.6-1 C41.3,52.3,41.4,52.3,41.6,52.3z"/><path d="M92.2,24c-0.6-0.7-1.4-1.4-0.8-2.5c-0.6-0.4-1.2-0.8-1.8-1.2c-2.4-3.8-6-6-9.9-7.9c-0.6-0.4-1.3-0.7-1.9-1.1 c-0.2-0.1-0.5-0.3-0.7-0.4c-5-3.5-9.9-7.1-15-10.6c-1.7-1.2-6.9,1.6-7.1,3.6c-0.3,4.2,10.4,14.9,15.8,15.9c0,0,0,0,0,0 c0.5,1.4,3,2.7,3.9,2l0,0c0.2,0.1,0.3,0.1,0.5,0.2c1.4-0.1,1.4,2.7,3.3,1.6c1.2,0.7,2.5,1.4,3.7,2.1c0.9,0.1,1.8,0.1,2.6-0.1 c-0.1-1.2,0.5-1.5,2.6,0.1c0.2,0.1,0.7,0.1,0.7,0.1c0.8-3.2,2.3,0.2,3.4-0.4c0.2-0.2,0.8-0.2,0.8-0.3 C92.5,24.7,92.4,24.3,92.2,24z"/><path d="M43.2,24.8c3.1,1.2,6.7,1.9,9.1,3.9c3.5,2.8,7.3,4.9,11.2,6.9c0,0,0,0,0-0.1c0,0,0,0,0,0.1 c1.3,0.7,2.6,1.4,4,0.3c-0.7-0.7-1.4-1.4-2.3-1.8c0.8,0.4,1.6,1.1,2.3,1.8c1.1,0.4,2.2,0.9,3.2,1.3c0.1,0,0.2,0,0.3,0 c0.6,0.1,1.2-0.1,1.8-0.3c0.1-0.1,0.3-0.2,0.5-0.4c1.4-0.8,0.8-1.9,0.4-3.3c-1.6-6.7-7.6-7.9-12.4-10.8c-3.5-2.1-8.5-2.8-9.8-7.8 c-0.4-0.4-0.8-0.8-1.2-1.1c-1-1.2-2.2-1.8-3.7-1.1c-0.3,0-0.6,0.1-0.9,0.1c-0.2,0-0.4,0-0.7-0.1c-2.6,1.6-4.2,3.1-4.6,6.9 C40,22.6,40.4,23.8,43.2,24.8z M70.3,30.4C70.3,30.4,70.3,30.4,70.3,30.4C70.3,30.4,70.3,30.4,70.3,30.4c0-0.1-0.1-0.1-0.1-0.2 C70.2,30.3,70.2,30.3,70.3,30.4z"/><path d="M80.2,117.1c-2.4,0.8-3.7-3.9-6.3-1c-1.1-4.4-6.1-1.4-8.1-4.4c-0.5-0.8-2.2-0.7-2.4,1.1 c-0.2,2.2,0,4.5,2.8,3.9c2.3-0.5,2.7,4.1,5.3,1.5c0.3-0.1,0.6-0.1,1-0.2c0.7,3.6,3.5,1.6,5.4,1.9c1.2,1.4,2.5,1.1,3.9,0.5l0-0.1 l0.1,0c0-0.2,0.1-0.4,0.1-0.7C81.9,118.5,82.1,116.5,80.2,117.1z"/><path d="M59.4,112.8c0.4,0.1,0.8,0.3,1.2,0.4c3.2-1.4-0.5-2.6-0.1-3.8c0.9-3.1-1.9-2.2-2.7-2.2 c-1.9-0.1-0.2,1.3-0.4,2C56.8,111,58,112,59.4,112.8z"/><path d="M72.1,128.2c0.6-0.1,1.2-0.2,1.7-0.2c-0.9-0.7-1.7-1.5-2.6-2.2C70.2,127,70.5,127.8,72.1,128.2z"/><polygon points="33,72.2 33,72.2 33,72.2"/><polygon points="33,72.2 33,72.2 32.9,72.1"/><path d="M34.8,69.2c-0.3-0.7-0.4-1.5-0.6-2c-0.7-2.1-1.3-4.4-1.7-6.6c0.3,2.2,0.9,4.4,1.7,6.6 C34.4,67.7,34.5,68.5,34.8,69.2z"/></g><g fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="7"><path d="M175.3,37.5l-1.4,0.1c-7.7-2.4-15.6-4.1-23.6-4.1c-28.5,0-39.8,21-39.8,45.6 c0,24.9,13.2,39.5,38.5,39.5c7.2,0,14.4-1.5,21.5-3.3l1.2,0.1"/><path d="M233.6,38.7c10-3.6,20.7-5.6,30.5-5.6c16.9,0,29.1,4.6,29.1,18.4c0,2-0.2,11.7-0.3,14.3l0,0 c-1,16-1.8,38.2-2.7,56.5"/><path d="M293.2,57.6c-6.2,19.7-66.7,13.4-66.7,44.5c0,17.3,17.5,19.3,27.3,19.3c6.7,0,13.3-1.1,19.7-3 l1.7,0.2"/><line x1="202" y1="0.3" x2="196.4" y2="120.6"/><path d="M324.1,120.6c0-1.2,0-6.1,0.1-7.3c0.3-20.3,2.2-38.7,3.2-46.3c1.4-10.2,4.5-16.7,5.9-19 c0-0.1,0.2-0.3,0.3-0.3c4.7-8.5,12.3-13,21.5-13.7c1.8-0.1,3.7-0.1,5.5,0c2.1,0.2,4.3,0.6,6.5,1.2l1.2,0"/><polyline points="326.3,76.1 328.4,33.1 328.4,31.5"/><line x1="386.8" y1="120.6" x2="390.6" y2="31.5"/><line x1="390.8" y1="11.1" x2="391.3" y2="0.3"/><path d="M457.5,116.5l-1.8-0.3c-4.7,1.4-9.5,2.4-14.3,2.4c-12.8,0-16.5-7.1-16.5-18.9 c0-15.3,2.1-37,2.8-60.2l1.1-24.5l-0.5-1.4"/><path d="M423.1,31.5"/><polyline points="458.4,34.9 457.6,34.7 413.5,34.7 412.7,34.5"/><path d="M537.2,30.2v1.3c-5,13.8-32.9,72.9-38.3,86.3l-5.4,11.7c-8.9,21.3-16.1,29.7-29.3,29.8 c-0.3,0-0.6,0-1,0c-4.5-0.1-9-1.2-13.2-2.8l-2.2,0.4"/><polyline points="497.7,120.6 467.7,31.5 467.7,30.8"/></g><g fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="175" $stroke-dashoffset="{{175 - (175*loaderProgress)}}"><path d="M175.3,37.5l-1.4,0.1c-7.7-2.4-15.6-4.1-23.6-4.1c-28.5,0-39.8,21-39.8,45.6 c0,24.9,13.2,39.5,38.5,39.5c7.2,0,14.4-1.5,21.5-3.3l1.2,0.1"/><path d="M233.6,38.7c10-3.6,20.7-5.6,30.5-5.6c16.9,0,29.1,4.6,29.1,18.4c0,2-0.2,11.7-0.3,14.3l0,0 c-1,16-1.8,38.2-2.7,56.5"/><path d="M293.2,57.6c-6.2,19.7-66.7,13.4-66.7,44.5c0,17.3,17.5,19.3,27.3,19.3c6.7,0,13.3-1.1,19.7-3 l1.7,0.2"/><line x1="202" y1="0.3" x2="196.4" y2="120.6"/><path d="M324.1,120.6c0-1.2,0-6.1,0.1-7.3c0.3-20.3,2.2-38.7,3.2-46.3c1.4-10.2,4.5-16.7,5.9-19 c0-0.1,0.2-0.3,0.3-0.3c4.7-8.5,12.3-13,21.5-13.7c1.8-0.1,3.7-0.1,5.5,0c2.1,0.2,4.3,0.6,6.5,1.2l1.2,0"/><polyline points="326.3,76.1 328.4,33.1 328.4,31.5"/><line x1="386.8" y1="120.6" x2="390.6" y2="31.5"/><line x1="390.8" y1="11.1" x2="391.3" y2="0.3"/><path d="M457.5,116.5l-1.8-0.3c-4.7,1.4-9.5,2.4-14.3,2.4c-12.8,0-16.5-7.1-16.5-18.9 c0-15.3,2.1-37,2.8-60.2l1.1-24.5l-0.5-1.4"/><path d="M423.1,31.5"/><polyline points="458.4,34.9 457.6,34.7 413.5,34.7 412.7,34.5"/><path d="M537.2,30.2v1.3c-5,13.8-32.9,72.9-38.3,86.3l-5.4,11.7c-8.9,21.3-16.1,29.7-29.3,29.8 c-0.3,0-0.6,0-1,0c-4.5-0.1-9-1.2-13.2-2.8l-2.2,0.4"/><polyline points="497.7,120.6 467.7,31.5 467.7,30.8"/></g></svg></div><div class=" u-viewport-fit u-align-center u-absolute u-pos-tl  c-skew-mask u-overflow-h {{showVideo && !isLoading?\'is-active\':\'u-pointer-none is-prev\'}}"style="z-index:10000"><div class="u-overflow-h u-absolute u-pos-tl u-fit c-skew-mask__inner o-wrapper--valign u-overflow-h js-video-mask-out"style="transform: translateY({{outterPosition}}px) scale({{outterScale}}) rotate({{outterRotation}}deg)  translateZ(0)"> <div class="u-overflow-h  u-bg--white u-absolute u-pos-tl u-fit c-skew-mask__inner__inner o-wrapper--valign js-video-mask-in" style="transform: scale({{innerScale}}) rotate({{innerRotation}}deg) translateY({{innerPosition}}px) translateZ(0)"><div class="u-bg--brand u-relative u-inline-block u-vw10of12 u-valign-middle" style="padding-top: 47%; background-color: #000;"><core-video active="{{forcePlayVideo}}" autoplay="false" controls="true" loop="false"src="' + config["solution"]["section_4_video"] + '"poster="' + config["solution"]["section_4_image_for_video"] + '"class="u-absolute u-pos-tl u-fit u-block c-anim--fade-in c-anim--8"></core-video></div></div></div><button class="u-absolute u-pos-tr u-inline-block c-button u-marg-r-vw1of24 u-marg-t-md c-anim c-anim--fade-in" on-click="_closeVideo" style="top:2px; right:2px;"><svg height="18" width="18" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 57.599998 57.599998" xml:space="preserve">   <g transform="translate(-21.2,-21.2)">      <path fill="#0093e5" d="m 21.2,73.8 5,5 L 50,55 l 23.8,23.8 5,-5 L 55,50 78.8,26.2 73.8,21.2 50,45 26.2,21.2 l -5,5 L 45,50 Z"/>    </g></svg></button></div><!-- <div class="u-absolute u-pos-tl u-force-inline {{currentIndex == 0 ? \'is-active\' : \'is-next\'}} | u-hide@sm"style="transform: translate({{cityScreenPos[0]}}px, {{cityScreenPos[1]}}px) translateZ(0);"><div class="u-absolute u-pos-tl" style="transform: translate(-100%, -100%)"><h1 class="c-h4 u-color--grey c-anim--slide-y c-anim--{{currentIndex==0?8:0}}">Transform your city</h1><h2 class="c-h2 u-color--dark-grey c-anim--slide-y c-anim--{{currentIndex==0?9:0}}" style="line-height: 1">New York</h2></div></div><div class="u-absolute u-pos-tl u-force-inline {{currentIndex == 0 ? \'is-active\' : \'is-next\'}}"style="transform: translate({{cityScreenStartPos[0]}}px, {{cityScreenStartPos[1]}}px) translateZ(0);"><div class="u-absolute u-pos-tl u-bg--brand c-anim--fade-in" style="width: 6px; height: 6px; top:-3px;left:-3px;border-radius: 6px;"></div></div> --><div class="u-absolute u-pos-tl u-force-inline {{currentIndex == 0 ? \'is-active\' : \'is-next\'}} | u-hide@sm"style="transform: translate({{handlerPos[0]}}px, {{handlerPos[1]}}px) translateZ(0); opacity: {{handlerAlpha}}"><svg width="24" height="24" class="u-absolute u-pos-tl" style="transform: translate(-50%, -50%)"><circle fill="#fff"  cx="12" cy="12" r="8" /><circle stroke="#000" fill="none" opacity="0.3" cx="12" cy="12" r="8" /><circle fill="#0093e5" cx="12" cy="12" r="2.5" /></svg></div>'
+}, function (t, e) {
     t.exports = '<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-marg-b-xl u-vacuum u-pad-t-xl"><h4 class="c-h3 u-color--brand u-marg-l-vw4of12 u-align-left u-marg-b-lg | u-marg-l-vw1of12@sm u-marg-t-lg@sm">' + config["privacy"]["hero_title"] + '</h4><img class="u-vw11of12 u-inline-block | u-vw12of12@sm u-marg-b-md" src="' + config["privacy"]["hero_image"] + '" alt="" /><div class="u-inline-block u-vw8of12 u-align-left  | u-vw10of12@sm u-marg-l-vw1of123@sm"><p class="u-marg-l-vw2of12 c-text--sm u-color--grey u-marg-b-md | u-marg-l-0@sm">' + config["privacy"]["hero_description"] + '</p>' + config["privacy"]["privacy_and_policy"] + '</div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object>'
-}, function(t, e) {
-    t.exports = '<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-marg-b-xl | u-marg-b-lg@sm">\t<scroll-object class="u-relative u-block u-pad-x-vw1of12@sm">\t\t<div class="u-relative">\t\t\t<h3 class="c-h4 u-color--brand u-marg-t-md u-absolute u-pos-tl u-fit-w c-anim--slide-y c-anim--0 | u-marg-b-xs@sm u-relative@sm" style="z-index: 2;">\t\t\t\t' + config["solution"]["hero_title"] + '\t\t\t</h3>\t\t\t<img class="u-w6of12 u-inline-block c-anim--scale-down c-anim--1 | u-fit-w@sm" \t\t\t\tsrc="' + config["solution"]["hero_image"] + '" alt="" />\t\t</div>\t\t<h2 class="c-h1 u-color--brand u-marg-b-lg c-anim--slide-y c-anim--4 | u-marg-b-0@sm">' + config["solution"]["product_name"] + '</h2>\t</scroll-object>\t<hr class="u-vw2of12 u-vw7of10@sm u-marg-b-lg u-marg-y-lg@sm" style="opacity: 0.1">\t<scroll-object class="u-relative u-block">\t\t<h3 class="c-h5 u-marg-b-md c-anim--slide-y">How It Works</h3>\t\t<p class="u-inline-block c-text--md u-color--grey u-marg-b-xl u-vw7of12 | u-vw10of12@sm u-marg-b-0@sm">\t\t\t<app-multiline delay="0.1" class="u-block u-relative">\t\t\t\t' + config["solution"]["how_it_works"] + '\t\t\t</app-multiline>\t\t</p>\t</scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center  u-marg-b-xl | u-align-left@sm u-marg-b-lg@sm u-pad-t-lg@sm">\t<scroll-object class="u-inline-block u-relative u-w4of12 u-valign-middle u-align-left u-marg-r-w1of12 | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm">\t\t<h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">01</h2>\t\t<h3 class="c-h4 u-color--brand u-marg-b-sm c-anim--slide-y c-anim--2 | u-marg-b-md@sm">' + config["solution"]["section_1_title"] + '</h3>\t\t<img class="u-hide u-fit-w c-anim--slide-y c-anim--3 | u-block@sm u-marg-b-md@sm" \t\t\t\tsrc="' + config["solution"]["section_1_mobile_image_for_video"] + '" alt=""/>\t\t<p class="c-text--md u-color--grey u-marg-b-md">\t\t\t<app-multiline delay="0.3" class="u-block u-relative">\t\t\t\t' + config["solution"]["section_1_description"] + '\t\t\t</app-multiline>\t\t</p>\t\t<p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_1_option_title"] + '</p>\t\t<ul class="o-list--inline u-color--grey u-uppercase">\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7">' + config["solution"]["section_1_option_1"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8">' + config["solution"]["section_1_option_2"] + '</li>\t\t</ul>\t</scroll-object>\t<scroll-object class="u-inline-block u-relative u-w5of12 u-valign-middle u-relative | u-vw12of12@sm | u-hide@sm">\t\t<img class="u-fit-w c-anim--slide-y c-anim--0" src="' + config["solution"]["section_1_image"] + '" alt=""/>\t\t<core-video autoplay="true" controls="false" loop="true"\t\t\t\t\tsrc="' + config["solution"]["section_1_video"] + '"\t\t\t\t\tposter="' + config["solution"]["section_1_image"] + '"\t\t\t\t\tclass="u-block u-fit u-absolute u-pos-tl | u-hide@sm"></core-video>\t</scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center  u-marg-b-xl  | u-align-left@sm">\t<scroll-object class="u-inline-block u-relative u-w5of12 u-valign-middle u-marg-r-w3of24  | u-hide@sm">\t\t<img class="u-fit-w c-anim--slide-y c-anim--0" src="' + config["solution"]["section_2_image_for_video"] + '" />\t\t<core-video autoplay="true" controls="false" loop="true"\t\t\t\t\tsrc="' + config["solution"]["section_2_video"] + '"\t\t\t\t\tposter="' + config["solution"]["section_2_image_for_video"] + '"\t\t\t\t\tclass="u-block u-fit u-absolute u-pos-tl | u-hide@sm"></core-video>\t</scroll-object>\t<scroll-object class="u-relative u-inline-block u-w9of24 u-valign-middle u-align-left | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm">\t\t<h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">02</h2>\t\t<h3 class="c-h4 u-color--brand u-marg-b-sm  c-anim--slide-y c-anim--2  | u-marg-b-md@sm">' + config["solution"]["section_2_title"] + '</h3>\t\t<img class="u-hide u-fit-w c-anim--slide-y c-anim--3 | u-block@sm u-marg-b-md@sm" src="' + config["solution"]["section_2_mobile_image_for_video"] + '" alt=""/>\t\t<p class="c-text--md u-color--grey u-marg-b-md">\t\t\t<app-multiline delay="0.3" class="u-block u-relative">\t\t\t\t' + config["solution"]["section_2_description"] + '\t\t\t</app-multiline>\t\t</p>\t\t<p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_2_option_title"] + '</p>\t\t<ul class="o-list--inline u-color--grey ">\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm  c-anim--slide-y c-anim--7 u-uppercase">' + config["solution"]["section_2_option_1"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm  c-anim--slide-y c-anim--8">' + config["solution"]["section_2_option_2"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm  c-anim--slide-y c-anim--9 u-uppercase">' + config["solution"]["section_2_option_3"] + '</li>\t\t</ul>\t</scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-left u-marg-b-xl  | u-align-left@sm">\t<scroll-object class="u-relative u-inline-block u-w4of12 u-valign-middle u-align-left u-marg-l-w1of12  u-marg-r-w3of24  | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm u-marg-b-md@sm">\t\t<h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">03</h2>\t\t<h3 class="c-h4 u-color--brand u-marg-b-md c-anim--slide-y c-anim--3 | u-marg-b-md@sm">' + config["solution"]["section_3_title"] + '</h3>\t\t<img class="u-hide u-fit-w c-anim--slide-y c-anim--3 | u-block@sm u-marg-b-md@sm  js-node-mobile" src="' + config["solution"]["section_3_image_for_video"] + '" alt=""/>\t\t<p class="c-text--md u-color--grey u-marg-b-md">\t\t\t<app-multiline delay="0.3" class="u-block u-relative">\t\t\t\t' + config["solution"]["section_3_description"] + '\t\t\t</app-multiline>\t\t</p>\t\t<p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_3_option_title"] + '</p>\t\t<ul class="o-list--inline u-color--grey ">\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7 u-uppercase">' + config["solution"]["section_3_option_1"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8 u-uppercase">' + config["solution"]["section_3_option_2"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--9">' + config["solution"]["section_3_option_3"] + '</li>\t\t</ul>\t</scroll-object>\t<scroll-object class="u-relative u-inline-block u-w5of12 u-valign-middle | u-hide@sm ">\t\t<img class="u-fit-w" src="' + config["solution"]["section_3_image_for_video"] + '" alt=""/>\t\t<div class="u-absolute u-pos-tl | js-node" style="width: 1px; height: 1px; left: 18%;"></div>\t</scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-left  u-marg-b-xl  | u-align-left@sm">\t<div class="u-inline-block u-w5of12 u-valign-middle u-marg-r-w2of24  | u-hide@sm js-sphere">\t\t<img class="u-fit-w c-solution__smart" src="' + config["solution"]["section_4_image_for_video"] + '" alt="" />\t\t</div>\t<scroll-object class="u-inline-block u-relative u-w4of12 u-valign-middle u-align-left  | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm">\t\t<h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">04</h2>\t\t<h3 class="c-h4 u-color--brand u-marg-b-sm  c-anim--slide-y c-anim--3  | u-marg-b-md@sm">' + config["solution"]["section_4_title"] + '</h3>\t\t<img class="u-fit-w h-hide u-block@sm u-hide | u-block@sm u-marg-b-md@sm  js-sphere-mobile" src="' + config["solution"]["section_4_mobile_image_for_video"] + '" alt="" />\t\t\t<p class="c-text--md u-color--grey u-marg-b-md">\t\t\t<app-multiline delay="0.3" class="u-block u-relative">\t\t\t' + config["solution"]["section_4_description"] + '\t\t\t</app-multiline>\t\t</p>\t\t<p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_4_option_title"] + '</p>\t\t<ul class="o-list--inline u-color--grey u-uppercase">\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7">' + config["solution"]["section_4_option_1"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8">' + config["solution"]["section_4_option_2"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--9">' + config["solution"]["section_4_option_3"] + '</li>\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--10">' + config["solution"]["section_4_option_4"] + '</li>\t\t</ul>\t</scroll-object></scroll-object> <scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-right u-marg-b-xl | u-align-left@sm">\t<scroll-object class="u-relative u-inline-block u-w4of12 u-valign-middle u-align-left u-marg-r-w1of24  |  u-vw12of12@sm u-marg-l-0@sm u-marg-b-md@sm">\t\t<div class="u-pad-x-vw1of12@sm">\t\t\t<h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">05</h2>\t\t\t<h3 class="c-h4 u-color--brand u-marg-b-sm  c-anim--slide-y c-anim--3  | u-marg-b-0@sm">'+ config["solution"]["section_5_title"] +'</h3>\t\t</div>\t\t<img class="u-fit-w h-hide u-hide | u-block@sm u-marg-b-md@sm" src="' + config["solution"]["section_5_gmap_image"] + '" alt="" />\t\t\t<div class="u-pad-x-vw1of12@sm">\t\t\t<p class="c-text--md u-color--grey u-marg-b-md">\t\t\t\t<app-multiline delay="0.3" class="u-block u-relative">\t\t\t\t\t'+ config["solution"]["section_5_description"] +'\t\t\t\t</app-multiline>\t\t\t</p>\t\t\t<p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_5_option_title"] + '</p>\t\t\t<ul class="o-list--inline u-color--grey u-uppercase">\t\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7">' + config["solution"]["section_5_option_1"] + '</li>\t\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8">' + config["solution"]["section_5_option_2"] + '</li>\t\t\t\t<li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--9">' + config["solution"]["section_5_option_3"] + '</li>\t\t\t</ul>\t\t</div>\t</scroll-object>\t<scroll-object class="u-relative u-inline-block u-w13of24 u-valign-middle | u-hide@sm">\t\t<div class="u-relative  c-anim--slide-y c-anim--0">\t\t\t<img class="u-fit-w" src="' + config["solution"]["section_5_image_for_video"] + '" alt=""/>\t\t\t<div class="c-gmap-ui u-overflow-h">\t\t\t\t<core-video autoplay="true" controls="false" loop="true"\t\t\t\t\t\t\tsrc="' + config["solution"]["section_5_video"] + '"\t\t\t\t\t\t   class="u-block u-fit u-absolute u-pos-tl"></core-video>\t\t\t\t<img src="' + config["solution"]["section_5_gmap_image"] + '" class="u-block u-fit u-absolute u-pos-tl" />\t\t\t</div>\t\t</div>\t</scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-marg-b-xl">\t<div class="c-zoom u-inline-block u-w10of12 | u-vw12of12@sm" style="background-color: #000;">\t\t<core-video autoplay="false" controls="true" loop="false"\t\t\t\t\tsrc="' + config["solution"]["section_6_video"] + '"\t\t\t\t\tposter="/wp-content/uploads/2018/05/poster.jpg"\t\t\t\t\tclass="u-block u-fitc-zoom__content"></core-video>\t</div></scroll-object><scroll-object  position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-marg-b-xl u-vw10of12@sm u-marg-l-vw1of12@sm">\t<h2 class="c-h1 u-marg-b-lg u-color--brand c-anim--slide-y c-anim--0 u-hide | u-block@sm ">' + config["solution"]["benefits_main_title"] + '</h2>\t<img class="u-inline-block u-w5of12 u-marg-r-w1of12 u-inline-block u-valign-middle  | u-marg-r-0@sm u-fit-w@sm u-marg-b-md@sm" \t\tsrc="' + config["solution"]["benefits_hero_image"] + '" alt=""/>\t<div class="u-inline-block u-w4of12 u-valign-middle u-align-left | u-marg-r-0@sm u-fit-w@sm u-align-center@sm">\t\t<h2 class="c-h2 u-marg-b-md u-color--brand  c-anim--slide-y c-anim--0 | u-hide@sm">' + config["solution"]["benefits_main_title"] + '</h2>\t\t<ul class="o-list--none u-marg-b-md u-inline-block u-align-left u-color--grey">\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--1">' + config["solution"]["benefit_option_1"] + '</li><br/>\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--2">' + config["solution"]["benefit_option_2"] + '</li><br/>\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--3">' + config["solution"]["benefit_option_3"] + '</li><br/>\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--4">' + config["solution"]["benefit_option_4"] + '/li><br/>\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--5">' + config["solution"]["benefit_option_5"] + '</li><br/>\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--6">' + config["solution"]["benefit_option_6"] + '</li><br/>\t\t\t<li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--7">' + config["solution"]["benefit_option_7"] + '</li>\t\t</ul><br/>\t\t<div class="c-anim c-anim--slide-y c-anim--8 u-align-center@sm">\t\t\t\t\t<a href="/contact" class="c-button--rounded c-button--primary" onclick="ga(\'send\', \'event\', \'navigation\', \'click\', \'solution page-learn more\')";>Learn more</a>\t\t</div>\t</div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-marg-b-xl">\t<h3 class="c-h2 u-color--brand u-w3of12 u-inline-block u-valign-top u-align-left | u-hide@sm">\t\tPartners\t</h3>\t<h3 class="c-h1 u-color--brand u-inline-block u-valign-top u-hide u-marg-b-lg@sm | u-block@sm">\t\tPartners\t</h3>\t<ul class="o-list--inline u-w7of12 u-inline-block u-valign-top u-align-left u-vacuum  | u-marg-r-0@sm u-fit-w@sm u-marg-l-0@sm">\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_1"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_2"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_3"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_4"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_5"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_6"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_7"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_8"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_9"] + '" class="u-fit-w" alt="" />\t\t</li>\t\t<li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm">\t\t\t<img src="' + config["solution"]["partner_logo_10"] + '" class="u-fit-w" alt="" />\t\t</li>\t</ul></scroll-object>\x3c!-- fOOTER --\x3e<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  \t\t\tclass="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12">\t<app-footer class="u-block"></app-footer></scroll-object><div class="js-scene u-absolute u-pos-tl  u-pointer-none"></div>'
-}, function(t, e) {
-    t.exports = '\x3c!-- <light-core-state-machine>    <light-core-state state="page" on-state-change="_onPageChange" route="(/)(:page)(/:project)(/)" /></light-core-state-machine> --\x3e<core-route routes="{{routes}}" base="{{baseUrl}}" options="{{routeOptions}}" on-route-change="onRouteChange" class="u-hide"></core-route><template is="light-core-template" if="{{pageDataUrl !== null}}" remove-nodes>\t<core-ajax src="{{pageDataUrl}}" on-success="_onPageDataLoaded" on-error="_onDataError"></core-ajax></template>    <div id="fake-scroll" class="js-fake-scroll {{isMobile?\'u-hide\':\'u-block\'}}"></div><header class="c-header u-pad-x-vw1of24 u-pad-t-md u-flex u-justify-space-between {{!showInterface?\'u-pointer-none\':\'\'}} | u-pad-x-vw1of12@sm | js-header" style="transform: translateY({{headerPosition}}px) translateZ(0)">\t<a href="" class="c-link u-relative ">\t\t<span class="u-inline-block c-logo ' + config["global"]["logo_size"] + ' {{showInterface && !isMenuActive ?\'is-active\':\'\'}}">\t\t\t<img src="' + config["global"]["logo"] + '" alt="" class="u-fit-w c-anim--fade-in c-anim--4" />\t\t</span>\t\t<span class="u-inline-block c-logo ' + config["global"]["logo_size"] + ' u-absolute u-pos-tl {{showInterface && isMenuActive ?\'is-active\':\'\'}}">\t\t\t<img src="' + config["global"]["logo-light"] + '" alt="" class="u-fit-w c-anim--fade-in c-anim--3" />\t\t</span>\t</a>\t<div>\t\t<button class="u-valign-middle u-inline-block c-button {{isMenuActive?\'u-color--white\':\'u-color--grey\'}} {{showInterface?\'is-active\':\'is-prev\'}}"\t\t\t\ton-click="_toggleMenu">\t\t\t<span  class="u-inline-block u-valign-middle c-anim--fade-in c-anim--5"\t\t\t\tstyle="margin-right: 5px;">\t\t\t\tmenu\t\t\t</span>\t\t\t<span class="u-inline-block u-valign-middle u-relative c-anim--scale-up c-anim--6">\t\t\t\t<app-trigger class="u-inline-block js-menu-button">\t\t\t\t\t<div class="u-vacuum js-trigger-parallax" ratio="0.2" >\t\t\t\t\t\t<svg width="24" height="24" class="c-button--menu__dot">\t\t\t\t\t\t\t<circle fill="{{isMenuActive?\'#fff\':\'#0093e5\'}}" cx="12" cy="12" r="3.5" />\t\t\t\t\t\t</svg>\t\t\t\t\t</div>\t\t\t\t\t<div class="u-absolute u-pos-tl" style="top:50%;left:50%; width: 72px; height: 72px; margin-top:-38px;margin-left:-36px;">\t\t\t\t\t\t<div class="js-trigger-parallax" ratio="0.3">\t\t\t\t\t\t\t<svg class="c-button--menu__stroke" width="72" height="72">\t\t\t\t\t\t\t\t<circle stroke="{{isMenuActive?\'#fff\':\'#0093e5\'}}" cx="36" cy="36" r="34" fill="none" />\t\t\t\t\t\t\t</svg>\t\t\t\t\t\t</div>\t\t\t\t\t</div>\t\t\t\t</app-trigger>\t\t\t</span>\t\t</button>\t</div>\t</header><div class="u-fixed u-pos-bl u-pad-x-vw1of24  u-fit-w u-pad-y-md u-pointer-none {{currPageComponentId == \'page-home\' && showInterface && !isMenuActive ?\'is-active\':\'\'}} u-hide@sm" style="z-index: 3">\t<div class="u-vacuum u-color--brand c-anim--fade-in">\t\t<app-words word-class="c-text--sm c-footer-text" class="u-block ">\t\t\tLeading the clean air movement™\t\t</app-words>\t</div></div>\x3c!-- <app-scene  menu-position="{{menuButtonPosition}}"\t\t   class="u-block u-viewport-fit u-fixed u-pos-tl"></app-scene> --\x3e<div class="{{isMobile?\'u-relative\':\'u-fixed\'}} u-pos-tl u-fit-w js-content">\t<template is="light-core-template" if="{{pageComponentId !== null}}" remove-nodes="true">\t\t<div is="{{pageComponentId}}" class="u-block u-pos-tl {{currPageComponentId!=pageComponentId?\'u-absolute\':\'\'}}"\t\t\t scroll="{{scrollTop}}" content="{{pageContent}}" direction="{{direction}}" \t\t\t on-ready="_onPageReady" on-content-change="_updateContentHeight"\t\t\t ws-root="{{wsRoot}}"\t\t\t is-menu-active="{{isMenuActive}}"></div>\t</template>\t<template is="light-core-template" if="{{pageAltComponentId !== null}}" remove-nodes="true">\t\t<div is="{{pageAltComponentId}}" class="u-block u-pos-tl {{currPageComponentId!=pageAltComponentId?\'u-absolute\':\'\'}}"  \t\t\t\tscroll="{{scrollTop}}" content="{{pageContent}}" direction="{{direction}}" \t\t\t\ton-ready="_onPageReady" on-content-change="_updateContentHeight"\t\t\t\tws-root="{{wsRoot}}"\t\t\t\tis-menu-active="{{isMenuActive}}"></div>\t</template></div><div class="u-fixed u-pos-tl u-viewport-fit u-bg--white c-overlay {{showOverlay?\'is-active\':\'\'}}">\t</div><app-menu is-active="{{isMenuActive}}"\t\t  current-page="{{currPageComponentId}}"\t\t  menu-position="{{menuButtonPosition}}"\t\t  default-mode="{{currPageComponentId==\'page-solution\'?\'solution\':currPageComponentId==\'page-about\'?\'about\':\'home\'}}"\t\t  class="c-app-menu u-viewport-fit-h u-fit-w u-fixed u-pos-tl {{isMenuActive?\'is-active\':\'u-pointer-none\'}}"></app-menu>\x3c!-- <div class="u-fixed u-viewport-fit u-pos-tl u-pointer-none" style="z-index: 100;">\t<div class="u-relative u-fit-h">\t\t<div class="u-absolute u-fit-h u-offset-l-w0of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w1of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w2of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w3of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w4of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w5of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w6of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w7of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w8of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w9of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w10of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w11of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w12of12" style="top: 0; margin-left:-1px;width: 1px; background: #00ffff; opacity:0.75"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w1of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w3of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w5of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w7of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w9of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w11of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w13of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w15of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w17of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w19of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w21of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t\t<div class="u-absolute u-fit-h u-offset-l-w23of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div>\t</div></div> --\x3e'
-}, function(t, e) {
-    t.exports = function(t) {
+}, function (t, e) {
+    t.exports = '<scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-marg-b-xl | u-marg-b-lg@sm"><scroll-object class="u-relative u-block u-pad-x-vw1of12@sm"><div class="u-relative"><h3 class="c-h4 u-color--brand u-marg-t-md u-absolute u-pos-tl u-fit-w c-anim--slide-y c-anim--0 | u-marg-b-xs@sm u-relative@sm" style="z-index: 2;">' + config["solution"]["hero_title"] + '</h3><img class="u-w6of12 u-inline-block c-anim--scale-down c-anim--1 | u-fit-w@sm" src="' + config["solution"]["hero_image"] + '" alt="" /></div><h2 class="c-h1 u-color--brand u-marg-b-lg c-anim--slide-y c-anim--4 | u-marg-b-0@sm">' + config["solution"]["product_name"] + '</h2></scroll-object><hr class="u-vw2of12 u-vw7of10@sm u-marg-b-lg u-marg-y-lg@sm" style="opacity: 0.1"><scroll-object class="u-relative u-block"><h3 class="c-h5 u-marg-b-md c-anim--slide-y">How It Works</h3><p class="u-inline-block c-text--md u-color--grey u-marg-b-xl u-vw7of12 | u-vw10of12@sm u-marg-b-0@sm"><app-multiline delay="0.1" class="u-block u-relative">' + config["solution"]["how_it_works"] + '</app-multiline></p></scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center  u-marg-b-xl | u-align-left@sm u-marg-b-lg@sm u-pad-t-lg@sm"><scroll-object class="u-inline-block u-relative u-w4of12 u-valign-middle u-align-left u-marg-r-w1of12 | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm"><h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">01</h2><h3 class="c-h4 u-color--brand u-marg-b-sm c-anim--slide-y c-anim--2 | u-marg-b-md@sm">' + config["solution"]["section_1_title"] + '</h3><img class="u-hide u-fit-w c-anim--slide-y c-anim--3 | u-block@sm u-marg-b-md@sm" src="' + config["solution"]["section_1_mobile_image_for_video"] + '" alt=""/><p class="c-text--md u-color--grey u-marg-b-md"><app-multiline delay="0.3" class="u-block u-relative">' + config["solution"]["section_1_description"] + '</app-multiline></p><p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_1_option_title"] + '</p><ul class="o-list--inline u-color--grey u-uppercase"><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7">' + config["solution"]["section_1_option_1"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8">' + config["solution"]["section_1_option_2"] + '</li></ul></scroll-object><scroll-object class="u-inline-block u-relative u-w5of12 u-valign-middle u-relative | u-vw12of12@sm | u-hide@sm"><img class="u-fit-w c-anim--slide-y c-anim--0" src="' + config["solution"]["section_1_image_for_video"] + '" alt=""/><core-video autoplay="true" controls="false" loop="true"src="' + config["solution"]["section_1_video"] + '"poster="' + config["solution"]["section_1_image_for_video"] + '"class="u-block u-fit u-absolute u-pos-tl | u-hide@sm"></core-video></scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center  u-marg-b-xl  | u-align-left@sm"><scroll-object class="u-inline-block u-relative u-w5of12 u-valign-middle u-marg-r-w3of24  | u-hide@sm"><img class="u-fit-w c-anim--slide-y c-anim--0" src="' + config["solution"]["section_2_image_for_video"] + '" /><core-video autoplay="true" controls="false" loop="true"src="' + config["solution"]["section_2_video"] + '"poster="' + config["solution"]["section_2_image_for_video"] + '"class="u-block u-fit u-absolute u-pos-tl | u-hide@sm"></core-video></scroll-object><scroll-object class="u-relative u-inline-block u-w9of24 u-valign-middle u-align-left | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm"><h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">02</h2><h3 class="c-h4 u-color--brand u-marg-b-sm  c-anim--slide-y c-anim--2  | u-marg-b-md@sm">' + config["solution"]["section_2_title"] + '</h3><img class="u-hide u-fit-w c-anim--slide-y c-anim--3 | u-block@sm u-marg-b-md@sm" src="' + config["solution"]["section_2_mobile_image_for_video"] + '" alt=""/><p class="c-text--md u-color--grey u-marg-b-md"><app-multiline delay="0.3" class="u-block u-relative">' + config["solution"]["section_2_description"] + '</app-multiline></p><p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_2_option_title"] + '</p><ul class="o-list--inline u-color--grey "><li class="o-list__item c-text--xs u-marg-r-sm  c-anim--slide-y c-anim--7 u-uppercase">' + config["solution"]["section_2_option_1"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm  c-anim--slide-y c-anim--8">' + config["solution"]["section_2_option_2"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm  c-anim--slide-y c-anim--9 u-uppercase">' + config["solution"]["section_2_option_3"] + '</li></ul></scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-left u-marg-b-xl  | u-align-left@sm"><scroll-object class="u-relative u-inline-block u-w4of12 u-valign-middle u-align-left u-marg-l-w1of12  u-marg-r-w3of24  | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm u-marg-b-md@sm"><h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">03</h2><h3 class="c-h4 u-color--brand u-marg-b-md c-anim--slide-y c-anim--3 | u-marg-b-md@sm">' + config["solution"]["section_3_title"] + '</h3><img class="u-hide u-fit-w c-anim--slide-y c-anim--3 | u-block@sm u-marg-b-md@sm  js-node-mobile" src="' + config["solution"]["section_3_image_for_video"] + '" alt=""/><p class="c-text--md u-color--grey u-marg-b-md"><app-multiline delay="0.3" class="u-block u-relative">' + config["solution"]["section_3_description"] + '</app-multiline></p><p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_3_option_title"] + '</p><ul class="o-list--inline u-color--grey "><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7 u-uppercase">' + config["solution"]["section_3_option_1"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8 u-uppercase">' + config["solution"]["section_3_option_2"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--9">' + config["solution"]["section_3_option_3"] + '</li></ul></scroll-object><scroll-object class="u-relative u-inline-block u-w5of12 u-valign-middle | u-hide@sm "><img class="u-fit-w" src="' + config["solution"]["section_3_image_for_video"] + '" alt=""/><div class="u-absolute u-pos-tl | js-node" style="width: 1px; height: 1px; left: 18%;"></div></scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-left  u-marg-b-xl  | u-align-left@sm"><div class="u-inline-block u-w5of12 u-valign-middle u-marg-r-w2of24  | u-hide@sm js-sphere"><img class="u-fit-w c-solution__smart" src="' + config["solution"]["section_4_image_for_video"] + '" alt="" /></div><scroll-object class="u-inline-block u-relative u-w4of12 u-valign-middle u-align-left  | u-marg-r-0@sm u-vw10of12@sm u-marg-l-vw1of12@sm"><h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">04</h2><h3 class="c-h4 u-color--brand u-marg-b-sm  c-anim--slide-y c-anim--3  | u-marg-b-md@sm">' + config["solution"]["section_4_title"] + '</h3><img class="u-fit-w h-hide u-block@sm u-hide | u-block@sm u-marg-b-md@sm  js-sphere-mobile" src="' + config["solution"]["section_4_mobile_image_for_video"] + '" alt="" /><p class="c-text--md u-color--grey u-marg-b-md"><app-multiline delay="0.3" class="u-block u-relative">' + config["solution"]["section_4_description"] + '</app-multiline></p><p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_4_option_title"] + '</p><ul class="o-list--inline u-color--grey u-uppercase"><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7">' + config["solution"]["section_4_option_1"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8">' + config["solution"]["section_4_option_2"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--9">' + config["solution"]["section_4_option_3"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--10">' + config["solution"]["section_4_option_4"] + '</li></ul></scroll-object></scroll-object> <scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-right u-marg-b-xl | u-align-left@sm"><scroll-object class="u-relative u-inline-block u-w4of12 u-valign-middle u-align-left u-marg-r-w1of24  |  u-vw12of12@sm u-marg-l-0@sm u-marg-b-md@sm"><div class="u-pad-x-vw1of12@sm"><h2 class="c-h2 u-color--light-grey u-marg-b-sm c-anim--slide-y c-anim--1">05</h2><h3 class="c-h4 u-color--brand u-marg-b-sm  c-anim--slide-y c-anim--3  | u-marg-b-0@sm">' + config["solution"]["section_5_title"] + '</h3></div><img class="u-fit-w h-hide u-hide | u-block@sm u-marg-b-md@sm" src="' + config["solution"]["section_5_gmap_image"] + '" alt="" /><div class="u-pad-x-vw1of12@sm"><p class="c-text--md u-color--grey u-marg-b-md"><app-multiline delay="0.3" class="u-block u-relative">' + config["solution"]["section_5_description"] + '</app-multiline></p><p class="c-text--xs u-color--brand u-uppercase u-marg-b-xxs c-anim--slide-y c-anim--6">' + config["solution"]["section_5_option_title"] + '</p><ul class="o-list--inline u-color--grey u-uppercase"><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--7">' + config["solution"]["section_5_option_1"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--8">' + config["solution"]["section_5_option_2"] + '</li><li class="o-list__item c-text--xs u-marg-r-sm c-anim--slide-y c-anim--9">' + config["solution"]["section_5_option_3"] + '</li></ul></div></scroll-object><scroll-object class="u-relative u-inline-block u-w13of24 u-valign-middle | u-hide@sm"><div class="u-relative  c-anim--slide-y c-anim--0"><img class="u-fit-w" src="' + config["solution"]["section_5_image_for_video"] + '" alt=""/><div class="c-gmap-ui u-overflow-h"><core-video autoplay="true" controls="false" loop="true"src="' + config["solution"]["section_5_video"] + '"   class="u-block u-fit u-absolute u-pos-tl"></core-video><img src="' + config["solution"]["section_5_gmap_image"] + '" class="u-block u-fit u-absolute u-pos-tl" /></div></div></scroll-object></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-marg-b-xl"><div class="c-zoom u-inline-block u-w10of12 | u-vw12of12@sm" style="background-color: #000;"><core-video autoplay="false" controls="true" loop="false"src="' + config["solution"]["section_6_video"] + '"poster="' + config["solution"]["section_6_image_for_video"] + '"class="u-block u-fitc-zoom__content"></core-video></div></scroll-object><scroll-object  position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-marg-b-xl u-vw10of12@sm u-marg-l-vw1of12@sm"><h2 class="c-h1 u-marg-b-lg u-color--brand c-anim--slide-y c-anim--0 u-hide | u-block@sm ">' + config["solution"]["benefits_main_title"] + '</h2><img class="u-inline-block u-w5of12 u-marg-r-w1of12 u-inline-block u-valign-middle  | u-marg-r-0@sm u-fit-w@sm u-marg-b-md@sm" src="' + config["solution"]["benefits_hero_image"] + '" alt=""/><div class="u-inline-block u-w4of12 u-valign-middle u-align-left | u-marg-r-0@sm u-fit-w@sm u-align-center@sm"><h2 class="c-h2 u-marg-b-md u-color--brand  c-anim--slide-y c-anim--0 | u-hide@sm">' + config["solution"]["benefits_main_title"] + '</h2><ul class="o-list--none u-marg-b-md u-inline-block u-align-left u-color--grey"><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--1">' + config["solution"]["benefit_option_1"] + '</li><br/><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--2">' + config["solution"]["benefit_option_2"] + '</li><br/><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--3">' + config["solution"]["benefit_option_3"] + '</li><br/><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--4">' + config["solution"]["benefit_option_4"] + '/li><br/><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--5">' + config["solution"]["benefit_option_5"] + '</li><br/><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--6">' + config["solution"]["benefit_option_6"] + '</li><br/><li class="u-inline-block c-text--sm u-marg-b-xs c-list--check  c-anim--slide-y c-anim--7">' + config["solution"]["benefit_option_7"] + '</li></ul><br/><div class="c-anim c-anim--slide-y c-anim--8 u-align-center@sm"><a href="/contact" class="c-button--rounded c-button--primary" onclick="ga(\'send\', \'event\', \'navigation\', \'click\', \'solution page-learn more\')";>Learn more</a></div></div></scroll-object><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-marg-b-xl"><h3 class="c-h2 u-color--brand u-w3of12 u-inline-block u-valign-top u-align-left | u-hide@sm">Partners</h3><h3 class="c-h1 u-color--brand u-inline-block u-valign-top u-hide u-marg-b-lg@sm | u-block@sm">Partners</h3><ul class="o-list--inline u-w7of12 u-inline-block u-valign-top u-align-left u-vacuum  | u-marg-r-0@sm u-fit-w@sm u-marg-l-0@sm"><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_1"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_2"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_3"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_4"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_5"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_6"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_7"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_8"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_9"] + '" class="u-fit-w" alt="" /></li><li class="o-list__item u-w1of4 u-marg-b-md | u-w1of2@sm"><img src="' + config["solution"]["partner_logo_10"] + '" class="u-fit-w" alt="" /></li></ul></scroll-object><!-- fOOTER --><scroll-object set-active="false" position="{{[0, scroll * -1]}}"  class="u-block u-relative u-align-center u-pad-t-xl u-pad-b-lg u-bg--almost-white u-pad-x-vw1of12"><app-footer class="u-block"></app-footer></scroll-object><div class="js-scene u-absolute u-pos-tl  u-pointer-none"></div>'
+}, function (t, e) {
+    t.exports = '<!-- <light-core-state-machine>    <light-core-state state="page" on-state-change="_onPageChange" route="(/)(:page)(/:project)(/)" /></light-core-state-machine> --><core-route routes="{{routes}}" base="{{baseUrl}}" options="{{routeOptions}}" on-route-change="onRouteChange" class="u-hide"></core-route><template is="light-core-template" if="{{pageDataUrl !== null}}" remove-nodes><core-ajax src="{{pageDataUrl}}" on-success="_onPageDataLoaded" on-error="_onDataError"></core-ajax></template>    <div id="fake-scroll" class="js-fake-scroll {{isMobile?\'u-hide\':\'u-block\'}}"></div><header class="c-header u-pad-x-vw1of24 u-pad-t-md u-flex u-justify-space-between {{!showInterface?\'u-pointer-none\':\'\'}} | u-pad-x-vw1of12@sm | js-header" style="transform: translateY({{headerPosition}}px) translateZ(0)"><a href="" class="c-link u-relative "><span class="u-inline-block c-logo ' + config["global"]["logo_size"] + ' {{showInterface && !isMenuActive ?\'is-active\':\'\'}}"><img src="' + config["global"]["logo"] + '" alt="" class="u-fit-w c-anim--fade-in c-anim--4" /></span><span class="u-inline-block c-logo ' + config["global"]["logo_size"] + ' u-absolute u-pos-tl {{showInterface && isMenuActive ?\'is-active\':\'\'}}"><img src="' + config["global"]["logo-light"] + '" alt="" class="u-fit-w c-anim--fade-in c-anim--3" /></span></a><div><button class="u-valign-middle u-inline-block c-button {{isMenuActive?\'u-color--white\':\'u-color--grey\'}} {{showInterface?\'is-active\':\'is-prev\'}}"on-click="_toggleMenu"><span  class="u-inline-block u-valign-middle c-anim--fade-in c-anim--5"style="margin-right: 5px;">menu</span><span class="u-inline-block u-valign-middle u-relative c-anim--scale-up c-anim--6"><app-trigger class="u-inline-block js-menu-button"><div class="u-vacuum js-trigger-parallax" ratio="0.2" ><svg width="24" height="24" class="c-button--menu__dot"><circle fill="{{isMenuActive?\'#fff\':\'#0093e5\'}}" cx="12" cy="12" r="3.5" /></svg></div><div class="u-absolute u-pos-tl" style="top:50%;left:50%; width: 72px; height: 72px; margin-top:-38px;margin-left:-36px;"><div class="js-trigger-parallax" ratio="0.3"><svg class="c-button--menu__stroke" width="72" height="72"><circle stroke="{{isMenuActive?\'#fff\':\'#0093e5\'}}" cx="36" cy="36" r="34" fill="none" /></svg></div></div></app-trigger></span></button></div></header><div class="u-fixed u-pos-bl u-pad-x-vw1of24  u-fit-w u-pad-y-md u-pointer-none {{currPageComponentId == \'page-home\' && showInterface && !isMenuActive ?\'is-active\':\'\'}} u-hide@sm" style="z-index: 3"><div class="u-vacuum u-color--brand c-anim--fade-in"><app-words word-class="c-text--sm c-footer-text" class="u-block ">Leading the clean air movement™</app-words></div></div><!-- <app-scene  menu-position="{{menuButtonPosition}}"   class="u-block u-viewport-fit u-fixed u-pos-tl"></app-scene> --><div class="{{isMobile?\'u-relative\':\'u-fixed\'}} u-pos-tl u-fit-w js-content"><template is="light-core-template" if="{{pageComponentId !== null}}" remove-nodes="true"><div is="{{pageComponentId}}" class="u-block u-pos-tl {{currPageComponentId!=pageComponentId?\'u-absolute\':\'\'}}" scroll="{{scrollTop}}" content="{{pageContent}}" direction="{{direction}}"  on-ready="_onPageReady" on-content-change="_updateContentHeight" ws-root="{{wsRoot}}" is-menu-active="{{isMenuActive}}"></div></template><template is="light-core-template" if="{{pageAltComponentId !== null}}" remove-nodes="true"><div is="{{pageAltComponentId}}" class="u-block u-pos-tl {{currPageComponentId!=pageAltComponentId?\'u-absolute\':\'\'}}"  scroll="{{scrollTop}}" content="{{pageContent}}" direction="{{direction}}" on-ready="_onPageReady" on-content-change="_updateContentHeight"ws-root="{{wsRoot}}"is-menu-active="{{isMenuActive}}"></div></template></div><div class="u-fixed u-pos-tl u-viewport-fit u-bg--white c-overlay {{showOverlay?\'is-active\':\'\'}}"></div><app-menu is-active="{{isMenuActive}}"  current-page="{{currPageComponentId}}"  menu-position="{{menuButtonPosition}}"  default-mode="{{currPageComponentId==\'page-solution\'?\'solution\':currPageComponentId==\'page-about\'?\'about\':\'home\'}}"  class="c-app-menu u-viewport-fit-h u-fit-w u-fixed u-pos-tl {{isMenuActive?\'is-active\':\'u-pointer-none\'}}"></app-menu><!-- <div class="u-fixed u-viewport-fit u-pos-tl u-pointer-none" style="z-index: 100;"><div class="u-relative u-fit-h"><div class="u-absolute u-fit-h u-offset-l-w0of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w1of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w2of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w3of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w4of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w5of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w6of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w7of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w8of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w9of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w10of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w11of12" style="top: 0; width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w12of12" style="top: 0; margin-left:-1px;width: 1px; background: #00ffff; opacity:0.75"></div><div class="u-absolute u-fit-h u-offset-l-w1of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w3of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w5of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w7of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w9of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w11of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w13of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w15of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w17of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w19of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w21of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div><div class="u-absolute u-fit-h u-offset-l-w23of24" style="top: 0; width: 1px; background: #ff0000; opacity: 0.15"></div></div></div> -->'
+}, function (t, e) {
+    t.exports = function (t) {
         var e = "undefined" != typeof window && window.location;
         if (!e) throw new Error("fixUrls requires window.location");
         if (!t || "string" != typeof t) return t;
         var i = e.protocol + "//" + e.host,
             n = i + e.pathname.replace(/\/[^\/]*$/, "/");
-        return t.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(t, e) {
-            var o = e.trim().replace(/^"(.*)"$/, function(t, e) {
+        return t.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function (t, e) {
+            var o = e.trim().replace(/^"(.*)"$/, function (t, e) {
                 return e
-            }).replace(/^'(.*)'$/, function(t, e) {
+            }).replace(/^'(.*)'$/, function (t, e) {
                 return e
             });
             if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(o)) return t;
@@ -11695,17 +11748,17 @@
             return r = 0 === o.indexOf("//") ? o : 0 === o.indexOf("/") ? i + o : n + o.replace(/^\.\//, ""), "url(" + JSON.stringify(r) + ")"
         })
     }
-}, function(t, e, i) {
+}, function (t, e, i) {
     function n() {}
 
     function o(t) {
         switch ({}.toString.call(t)) {
-            case "[object File]":
-            case "[object Blob]":
-            case "[object FormData]":
-                return !0;
-            default:
-                return !1
+        case "[object File]":
+        case "[object Blob]":
+        case "[object FormData]":
+            return !0;
+        default:
+            return !1
         }
     }
 
@@ -11717,7 +11770,7 @@
     }
 
     function s(t, e, i) {
-        if (Array.isArray(i)) return i.forEach(function(i) {
+        if (Array.isArray(i)) return i.forEach(function (i) {
             s(t, e, i)
         });
         t.push(encodeURIComponent(e) + "=" + encodeURIComponent(i))
@@ -11729,7 +11782,7 @@
     }
 
     function l(t) {
-        var e, i, n, o, r = t.split(/\r?\n/),
+        var e, i, n, o, r = t.split(/\r?/),
             s = {};
         r.pop();
         for (var a = 0, l = r.length; a < l; ++a) i = r[a], e = i.indexOf(":"), n = i.slice(0, e).toLowerCase(), o = w(i.slice(e + 1)), s[n] = o;
@@ -11745,7 +11798,7 @@
     }
 
     function h(t) {
-        return g(t.split(/ *; */), function(t, e) {
+        return g(t.split(/ *; */), function (t, e) {
             var i = e.split(/ *= */),
                 n = i.shift(),
                 o = i.shift();
@@ -11759,12 +11812,13 @@
 
     function d(t, e) {
         var i = this;
-        this._query = this._query || [], this.method = t, this.url = e, this.header = {}, this._header = {}, this.on("end", function() {
+        this._query = this._query || [], this.method = t, this.url = e, this.header = {}, this._header = {}, this.on("end", function () {
             var t = null,
                 e = null;
             try {
                 e = new p(i)
-            } catch (e) {
+            }
+            catch (e) {
                 return t = new Error("Parser is unable to parse the response"), t.parse = !0, t.original = e, t.rawResponse = i.xhr && i.xhr.responseText ? i.xhr.responseText : null, t.statusCode = i.xhr && i.xhr.status ? i.xhr.status : null, i.callback(t)
             }
             if (i.emit("response", e), t) return i.callback(t, e);
@@ -11784,25 +11838,29 @@
         y = i(28);
     m = "undefined" != typeof window ? window : "undefined" != typeof self ? self : this;
     var _ = t.exports = i(123).bind(null, d);
-    _.getXHR = function() {
+    _.getXHR = function () {
         if (!(!m.XMLHttpRequest || m.location && "file:" == m.location.protocol && m.ActiveXObject)) return new XMLHttpRequest;
         try {
             return new ActiveXObject("Microsoft.XMLHTTP")
-        } catch (t) {}
+        }
+        catch (t) {}
         try {
             return new ActiveXObject("Msxml2.XMLHTTP.6.0")
-        } catch (t) {}
+        }
+        catch (t) {}
         try {
             return new ActiveXObject("Msxml2.XMLHTTP.3.0")
-        } catch (t) {}
+        }
+        catch (t) {}
         try {
             return new ActiveXObject("Msxml2.XMLHTTP")
-        } catch (t) {}
+        }
+        catch (t) {}
         return !1
     };
-    var w = "".trim ? function(t) {
+    var w = "".trim ? function (t) {
         return t.trim()
-    } : function(t) {
+    } : function (t) {
         return t.replace(/(^\s*|\s*$)/g, "")
     };
     _.serializeObject = r, _.parseString = a, _.types = {
@@ -11818,21 +11876,21 @@
     }, _.parse = {
         "application/x-www-form-urlencoded": a,
         "application/json": JSON.parse
-    }, p.prototype.get = function(t) {
+    }, p.prototype.get = function (t) {
         return this.header[t.toLowerCase()]
-    }, p.prototype.setHeaderProperties = function(t) {
+    }, p.prototype.setHeaderProperties = function (t) {
         var e = this.header["content-type"] || "";
         this.type = c(e);
         var i = h(e);
         for (var n in i) this[n] = i[n]
-    }, p.prototype.parseBody = function(t) {
+    }, p.prototype.parseBody = function (t) {
         var e = _.parse[this.type];
         return !e && u(this.type) && (e = _.parse["application/json"]), e && t && (t.length || t instanceof Object) ? e(t) : null
-    }, p.prototype.setStatusProperties = function(t) {
+    }, p.prototype.setStatusProperties = function (t) {
         1223 === t && (t = 204);
         var e = t / 100 | 0;
         this.status = this.statusCode = t, this.statusType = e, this.info = 1 == e, this.ok = 2 == e, this.clientError = 4 == e, this.serverError = 5 == e, this.error = (4 == e || 5 == e) && this.toError(), this.accepted = 202 == t, this.noContent = 204 == t, this.badRequest = 400 == t, this.unauthorized = 401 == t, this.notAcceptable = 406 == t, this.notFound = 404 == t, this.forbidden = 403 == t
-    }, p.prototype.toError = function() {
+    }, p.prototype.toError = function () {
         var t = this.req,
             e = t.method,
             i = t.url,
@@ -11841,67 +11899,68 @@
         return o.status = this.status, o.method = e, o.url = i, o
     }, _.Response = p, v(d.prototype);
     for (var x in b) d.prototype[x] = b[x];
-    d.prototype.abort = function() {
+    d.prototype.abort = function () {
         if (!this.aborted) return this.aborted = !0, this.xhr && this.xhr.abort(), this.clearTimeout(), this.emit("abort"), this
-    }, d.prototype.type = function(t) {
+    }, d.prototype.type = function (t) {
         return this.set("Content-Type", _.types[t] || t), this
-    }, d.prototype.responseType = function(t) {
+    }, d.prototype.responseType = function (t) {
         return this._responseType = t, this
-    }, d.prototype.accept = function(t) {
+    }, d.prototype.accept = function (t) {
         return this.set("Accept", _.types[t] || t), this
-    }, d.prototype.auth = function(t, e, i) {
+    }, d.prototype.auth = function (t, e, i) {
         switch (i || (i = {
             type: "basic"
         }), i.type) {
-            case "basic":
-                var n = btoa(t + ":" + e);
-                this.set("Authorization", "Basic " + n);
-                break;
-            case "auto":
-                this.username = t, this.password = e
+        case "basic":
+            var n = btoa(t + ":" + e);
+            this.set("Authorization", "Basic " + n);
+            break;
+        case "auto":
+            this.username = t, this.password = e
         }
         return this
-    }, d.prototype.query = function(t) {
+    }, d.prototype.query = function (t) {
         return "string" != typeof t && (t = r(t)), t && this._query.push(t), this
-    }, d.prototype.attach = function(t, e, i) {
+    }, d.prototype.attach = function (t, e, i) {
         return this._getFormData().append(t, e, i || e.name), this
-    }, d.prototype._getFormData = function() {
+    }, d.prototype._getFormData = function () {
         return this._formData || (this._formData = new m.FormData), this._formData
-    }, d.prototype.send = function(t) {
+    }, d.prototype.send = function (t) {
         var e = y(t),
             i = this._header["content-type"];
         if (e && y(this._data))
             for (var n in t) this._data[n] = t[n];
         else "string" == typeof t ? (i || this.type("form"), i = this._header["content-type"], this._data = "application/x-www-form-urlencoded" == i ? this._data ? this._data + "&" + t : t : (this._data || "") + t) : this._data = t;
         return !e || o(t) ? this : (i || this.type("json"), this)
-    }, p.prototype.parse = function(t) {
+    }, p.prototype.parse = function (t) {
         return m.console && console.warn("Client-side parse() method has been renamed to serialize(). This method is not compatible with superagent v2.0"), this.serialize(t), this
-    }, p.prototype.serialize = function(t) {
+    }, p.prototype.serialize = function (t) {
         return this._parser = t, this
-    }, d.prototype.callback = function(t, e) {
+    }, d.prototype.callback = function (t, e) {
         var i = this._callback;
         this.clearTimeout(), i(t, e)
-    }, d.prototype.crossDomainError = function() {
-        var t = new Error("Request has been terminated\nPossible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.");
+    }, d.prototype.crossDomainError = function () {
+        var t = new Error("Request has been terminatedPossible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.");
         t.crossDomain = !0, t.status = this.status, t.method = this.method, t.url = this.url, this.callback(t)
-    }, d.prototype.timeoutError = function() {
+    }, d.prototype.timeoutError = function () {
         var t = this._timeout,
             e = new Error("timeout of " + t + "ms exceeded");
         e.timeout = t, this.callback(e)
-    }, d.prototype.withCredentials = function() {
+    }, d.prototype.withCredentials = function () {
         return this._withCredentials = !0, this
-    }, d.prototype.end = function(t) {
+    }, d.prototype.end = function (t) {
         var e = this,
             i = this.xhr = _.getXHR(),
             r = this._query.join("&"),
             s = this._timeout,
             a = this._formData || this._data;
-        this._callback = t || n, i.onreadystatechange = function() {
+        this._callback = t || n, i.onreadystatechange = function () {
             if (4 == i.readyState) {
                 var t;
                 try {
                     t = i.status
-                } catch (e) {
+                }
+                catch (e) {
                     t = 0
                 }
                 if (0 == t) {
@@ -11912,14 +11971,15 @@
                 e.emit("end")
             }
         };
-        var l = function(t) {
+        var l = function (t) {
             t.total > 0 && (t.percent = t.loaded / t.total * 100), t.direction = "download", e.emit("progress", t)
         };
         this.hasListeners("progress") && (i.onprogress = l);
         try {
             i.upload && this.hasListeners("progress") && (i.upload.onprogress = l)
-        } catch (t) {}
-        if (s && !this._timer && (this._timer = setTimeout(function() {
+        }
+        catch (t) {}
+        if (s && !this._timer && (this._timer = setTimeout(function () {
                 e.timedout = !0, e.abort()
             }, s)), r && (r = _.serializeObject(r), this.url += ~this.url.indexOf("?") ? "&" + r : "?" + r), this.username && this.password ? i.open(this.method, this.url, !0, this.username, this.password) : i.open(this.method, this.url, !0), this._withCredentials && (i.withCredentials = !0), "GET" != this.method && "HEAD" != this.method && "string" != typeof a && !o(a)) {
             var c = this._header["content-type"],
@@ -11928,106 +11988,106 @@
         }
         for (var p in this.header) null != this.header[p] && i.setRequestHeader(p, this.header[p]);
         return this._responseType && (i.responseType = this._responseType), this.emit("request", this), i.send(void 0 !== a ? a : null), this
-    }, _.Request = d, _.get = function(t, e, i) {
+    }, _.Request = d, _.get = function (t, e, i) {
         var n = _("GET", t);
         return "function" == typeof e && (i = e, e = null), e && n.query(e), i && n.end(i), n
-    }, _.head = function(t, e, i) {
+    }, _.head = function (t, e, i) {
         var n = _("HEAD", t);
         return "function" == typeof e && (i = e, e = null), e && n.send(e), i && n.end(i), n
-    }, _.del = f, _.delete = f, _.patch = function(t, e, i) {
+    }, _.del = f, _.delete = f, _.patch = function (t, e, i) {
         var n = _("PATCH", t);
         return "function" == typeof e && (i = e, e = null), e && n.send(e), i && n.end(i), n
-    }, _.post = function(t, e, i) {
+    }, _.post = function (t, e, i) {
         var n = _("POST", t);
         return "function" == typeof e && (i = e, e = null), e && n.send(e), i && n.end(i), n
-    }, _.put = function(t, e, i) {
+    }, _.put = function (t, e, i) {
         var n = _("PUT", t);
         return "function" == typeof e && (i = e, e = null), e && n.send(e), i && n.end(i), n
     }
-}, function(t, e, i) {
+}, function (t, e, i) {
     var n = i(28);
-    e.clearTimeout = function() {
+    e.clearTimeout = function () {
         return this._timeout = 0, clearTimeout(this._timer), this
-    }, e.parse = function(t) {
+    }, e.parse = function (t) {
         return this._parser = t, this
-    }, e.timeout = function(t) {
+    }, e.timeout = function (t) {
         return this._timeout = t, this
-    }, e.then = function(t, e) {
-        return this.end(function(i, n) {
+    }, e.then = function (t, e) {
+        return this.end(function (i, n) {
             i ? e(i) : t(n)
         })
-    }, e.use = function(t) {
+    }, e.use = function (t) {
         return t(this), this
-    }, e.get = function(t) {
+    }, e.get = function (t) {
         return this._header[t.toLowerCase()]
-    }, e.getHeader = e.get, e.set = function(t, e) {
+    }, e.getHeader = e.get, e.set = function (t, e) {
         if (n(t)) {
             for (var i in t) this.set(i, t[i]);
             return this
         }
         return this._header[t.toLowerCase()] = e, this.header[t] = e, this
-    }, e.unset = function(t) {
+    }, e.unset = function (t) {
         return delete this._header[t.toLowerCase()], delete this.header[t], this
-    }, e.field = function(t, e) {
+    }, e.field = function (t, e) {
         return this._getFormData().append(t, e), this
     }
-}, function(t, e) {
+}, function (t, e) {
     function i(t, e, i) {
         return "function" == typeof i ? new t("GET", e).end(i) : 2 == arguments.length ? new t("GET", e) : new t(e, i)
     }
     t.exports = i
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nuniform float alpha;\nvarying vec2 vUv;\n\nvoid main(void) {\n    gl_FragColor = vec4( vec3(1., 1., 1.), alpha);\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nuniform float alpha;\nvarying vec3 vColor;\nvarying vec2 vUv;\n\nuniform vec2 offset;\n\n#ifdef USE_MAP\n\tuniform sampler2D map;\n\tuniform vec2 mapOffset;\n#endif\n\n#ifdef USE_ALPHA_MAP\n\tuniform sampler2D alphaMap;\n\tuniform vec2 alphaMapOffset;\n#endif\n\n\nuniform vec3 color;\n\nvoid main(void) {\n\n\tvec4 color = vec4(color, alpha);\n\n\t#ifdef USE_MAP\n\t\tcolor = texture2D(map, vUv + offset);\n\t\tcolor.a *= alpha;\n\t#endif\n\n\n    gl_FragColor = color;\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\n\nvarying vec2 vUv;\n\nvoid main(void) {\n\n    vec4 outColor = vec4(1., 0., 0., 1.0);\n    gl_FragColor = outColor;\n\n}"
-}, function(t, e) {
-    t.exports = "\nattribute vec2 uv;\nattribute vec3 color;\nattribute vec3 position;\nattribute float vertexIndex;\nattribute float particleIndex;\n\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n// uniform float pointSize;\n\nvarying vec2 vUv;\n\nvoid main() {\n\n    vUv = uv;\n\n    vec3 newPosition = position;\n\n    if (vertexIndex == 0.0) {\n      newPosition += vec3(-1.,1.,0.);\n    }\n    else if (vertexIndex == 1.0) {\n      newPosition += vec3(1.,1.,0.);\n    }\n    else if (vertexIndex == 2.0) {\n      newPosition += vec3(-1.,-1.,0.);\n    }\n    else if (vertexIndex == 3.0) {\n      newPosition += vec3(1.,-1.,0.);\n    }\n\n    newPosition *= 10.;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4( newPosition, 1.0 );\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\n#define BLUR_ITERATION 3.0\n\nuniform sampler2D tInput;\nuniform vec2 uDirection;\n\nvarying vec2 vUv;\n\nfloat randomize(vec3 scale, float seed) {\n    return fract(sin(dot(gl_FragCoord.xyz + seed, scale)) * 43758.5453 + seed);\n}\n\nvoid main() {\n\n    vec4 color   = vec4(0.0);\n    float total  = 0.0;\n\n   \tfloat offset = 0.;//randomize(vec3(12.9898, 78.233, 151.7182), 0.0);\n\n    for (float t = -BLUR_ITERATION; t <= BLUR_ITERATION; t++) \n    {\n        float percent = (t + offset - 0.5) / BLUR_ITERATION;\n        float weight  = 1.0 - abs(percent);\n        vec4 sample   = texture2D( tInput, vUv + uDirection * percent );\n        color += sample * weight;\n        total += weight;\n    }\n\n    color = color / total;\n    // color.rgb /= color.a + 0.00001;\n\n    gl_FragColor = vec4(color.rgb, 1.);\n\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\n\nvoid main(void) {\n\tvUv = uv;\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\n// uniform sampler2D tMask;\nvarying vec2 vUv;\n\n// uniform vec2 resolution;\n// uniform sampler2D tDepth;\n// uniform int pass;\n\nvarying float vRatio;\n\nuniform float alpha;\nuniform float uProgress;\nuniform vec3 color;\n\nuniform int useDash;\n\nuniform int uDirection;\n\n\nvoid main() {\n\n\tvec4 outColor;\n\n\toutColor.rgb = color;\n\n    if (uDirection == 0) {\n        if ( vRatio < (uProgress) ) {\n    \t    outColor.a = 1.0;\n        }\n        else {\n        \tif (useDash == 1) {\n    \t\t    float dasharray = cos( vRatio * 1500. ) - 0.6;\n    \t    \toutColor.a = dasharray < 0.0 ? 0.0 : 0.75;\n        \t}\n        \telse {\n        \t\toutColor.a = 0.;\n        \t}\n        }\n    }\n    else {\n        if ( vRatio > (1.0 - uProgress) ) {\n            outColor.a = 1.0;\n        }\n        else {\n            if (useDash == 1) {\n                float dasharray = cos( vRatio * 1500. ) - 0.6;\n                outColor.a = dasharray < 0.0 ? 0.0 : 0.75;\n            }\n            else {\n                outColor.a = 0.;\n            }\n        }\n    }\n    // if (pass == 1) {\n\t   //  float depth = texture2D(tDepth, gl_FragCoord.xy/resolution).r;\n\t   //  float currDepth = gl_FragCoord.z;\n\t   //  if (depth > currDepth) {\n\t   //  \tdiscard;\n\t   //  }\n    // }\n\n    outColor.a *= alpha;\n    \n\n    gl_FragColor = outColor;\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\nattribute float ratio;\nattribute vec3 direction;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\n\nvarying float vRatio;\n\nuniform vec3 scale;\n\nvoid main(void) {\n\n\tvec3 worldPos = position;\n\n\tworldPos += (direction * 1.) / scale;\n\n\n\tvRatio = ratio;\n\tvUv       = uv;\n\n\tvec4 mvPosition = uMVMatrix * vec4( worldPos, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(worldPos, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nuniform sampler2D tFront;\n// uniform sampler2D tBack;\n// uniform sampler2D tOcean;\nvarying vec2 vUv;\n\nvoid main() {\n\n\t// vec4 outColor = vec4(1.);\n\n\tvec4 frontColor = texture2D(tFront, vUv);\n\t// vec4 backColor  = texture2D(tBack, vUv);\n\t// float oceanMask = texture2D(tOcean, vUv).r;\n\n\t// outColor.rgb = mix(\n\t// \tfrontColor.rgb,\n\t// \tmix( backColor.rgb , frontColor.rgb, 0.6),\n //        oceanMask);\n\n\t// //darken the continents parts\n\t// outColor.rgb = mix( \n\t// \toutColor.rgb,\n\t// \toutColor.rgb * vec3(0.95),\n\t// \t1. - oceanMask\n\t// );\n\n    gl_FragColor = frontColor;\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\n\nvoid main(void) {\n\tvUv = uv;\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nuniform float alpha;\nuniform vec3 color;\n\nuniform vec3 cameraPosition;\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\nvoid main() {\n\n\n\tvec3 worldPos = vPosition;\n    vec3 normal = vNormal;\n\n\tvec3 N      = normal;\n\tvec3 V      = normalize(cameraPosition - worldPos);\n\n\tfloat NdotV = abs( dot (N , V )) + 0.001;\n\n\tif (NdotV>0.5) {\n\t\tNdotV = 1.;\n\t}\n\telse {\n\t\tNdotV = (NdotV)/0.5; \n\t}\n\n\tgl_FragColor = vec4(color, alpha*(1.-NdotV) );\n\n\n\n}\n\n\n\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\nuniform mat4 uMMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\nvoid main(void) {\n\n\tvNormal   = normalize( (uMMatrix * vec4(normal, 1.0)).rgb );\n\tvPosition = (uMMatrix * vec4(position, 1.0)).rgb;\n\tvUv       = uv;\n\t\t\n\tvec4 mvPosition = uMVMatrix * vec4( position, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nuniform sampler2D tMask;\nvarying vec2 vUv;\n\nuniform vec2 resolution;\nuniform sampler2D tDepth;\nuniform int pass;\n\nvarying float vLinePointIndex;\nvarying float vOpacity;\n\nvoid main() {\n\n\tvec4 outColor;\n\n\toutColor.rgb = vec3(0./255.,147./255.,229./255.);\n\n    outColor.a = vOpacity;\n\n    if (pass == 1) {\n\t    float depth = texture2D(tDepth, gl_FragCoord.xy/resolution).r;\n\t    float currDepth = gl_FragCoord.z;\n\n\t    if (depth > currDepth) {\n\t    \tdiscard;\n\t    }\n    }\n\n    gl_FragColor = outColor;\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\nattribute float linePointIndex;\nattribute float lineHeight;\n\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vViewPosition; \n\nvarying float vLinePointIndex;\nvarying float vOpacity;\n\n\nuniform sampler2D tMask;\nuniform float uMaxHeight;\n\nvoid main(void) {\n\n\tvec3 worldPos = position;\n\n\tvNormal   = normalize( (vec4(normal, 0.0)).rgb );\n\tvLinePointIndex = linePointIndex;\n\tvUv       = uv;\n\n\tvOpacity = 1.;\n\n\tif (linePointIndex == 0. ||\n\t\tlinePointIndex == 3.) {\n\t\tvOpacity = 0.;\n\t}\n\n\tif (linePointIndex == 2. ||\n\t\t linePointIndex == 3. ) {\n\n    \tfloat h = texture2D(tMask, vUv).r;\n    \th = pow(h, 2.2) * 0.25 * uMaxHeight;\n\n\t    worldPos += vNormal * h;\n\t}\n\t\n\n\tvec4 mvPosition = uMVMatrix * vec4( worldPos, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(worldPos, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\n\nvarying float vSide;\nuniform vec3 color;\nuniform float alpha;\nuniform float uProgress;\n\nvoid main() {\n\n\tif ( vSide > uProgress ) {\n\t\tdiscard;\n\t}\n\n\tgl_FragColor = vec4(color, alpha);\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute float side;\nvarying float vSide;\n\nuniform vec3 color;\nuniform vec3 start;\nuniform vec3 end;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvoid main() {\n\n    vSide = side;\n\n    vec3 newPosition;\n\n    if (side == 0.) {\n        newPosition = start;\n    }\n    else{\n        newPosition = end;\n    }\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(newPosition, 1.0);\n    \n}"
-}, function(t, e) {
-    t.exports = 'precision highp float;\n\n#define PI 3.34159265359\n#define RECIPROCAL_PI 0.31830988618\n#define saturate(a) clamp( a, 0.0, 1.0 )\n\n#ifdef NUM_LIGHTS\n    // uniform float lightAngleCos[NUM_LIGHTS];\n    // uniform vec3  lightColor[NUM_LIGHTS];\n    // uniform float lightDecay[NUM_LIGHTS];\n    // uniform vec3  lightDirection[NUM_LIGHTS];\n    // uniform float lightDistance[NUM_LIGHTS];\n    // uniform float lightExponent[NUM_LIGHTS];\n    uniform vec3  lightPosition[NUM_LIGHTS];\n    // uniform float lightPenumbraCos[NUM_LIGHTS];\n#endif\n\nuniform float alpha;\n\n// uniform int useDepth;\n// uniform int useAlpha;\n// \n// #ifdef USE_METALNESS_MAP\n    // uniform sampler2D tMetalness;\n// #endif\n\n// #ifdef USE_ROUGHNESS_MAP\n    // uniform sampler2D tRoughness;\n// #endif\n\n// #ifdef USE_ALBEDO_MAP\n    uniform sampler2D tAlbedo;\n// #endif\n\n// #ifdef USE_ALPHA_MAP\n//     uniform sampler2D tAlpha;\n// #endif\n\n\nuniform vec2 resolution;\nuniform float uMaskRadius;\nuniform vec2 uMaskCenter;\nuniform vec3 cameraPosition;\n\n// uniform int uInvertMask;\n// uniform int useMask;\n\nstruct IncidentLight {\n    float angleCos;\n    vec3  color;\n    vec3  position;\n    vec3  direction;\n    float distance;\n    float decay;\n    float exponent;\n    float penumbraCos;\n};\n\nstruct ReflectedLight {\n    vec3 directDiffuse;\n    vec3 directSpecular;\n    vec3 indirectDiffuse;\n    vec3 indirectSpecular;\n};\n\nstruct PBRMaterial {\n    vec3  diffuseColor;\n    float specularRoughness;\n    vec3  specularColor;\n    float clearCoat;\n    float clearCoatRoughness;\n};\n\nstruct GeometricContext {\n    vec3 position;\n    vec3 normal;\n    vec3 viewDir;\n};\n\nfloat calcLightAttenuation( float lightDistance, float cutoffDistance, float decayExponent ) {\n    if ( decayExponent > 0.0 ) {\n      return pow( clamp( -lightDistance / cutoffDistance + 1.0 , 0., 1.), decayExponent );\n    }\n    return 1.0;\n}\n\n// https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdf\nvec3 F_Schlick( const in vec3 specularColor, const in float dotLH ) {\n    // Original approximation by Christophe Schlick \'94\n    //;float fresnel = pow( 1.0 - dotLH, 5.0 );\n    // Optimized variant (presented by Epic at SIGGRAPH \'13)\n    float fresnel = exp2( ( -5.55473 * dotLH - 6.98316 ) * dotLH );\n    return ( 1.0 - specularColor ) * fresnel + specularColor;\n}\nvec3 F_Schlick_Frostbite (in vec3 f0 , in float f90 , in float u )\n{\n    return f0 + ( f90 - f0 ) * pow (1. - u, 5.);\n}\n// Microfacet Models for Refraction through Rough Surfaces - equation (34)\n// http://graphicrants.blogspot.com/2013/08/specular-brdf-reference.html\n// alpha is "roughness squared" in Disney’s reparameterization\nfloat V_SmithGGXCorrelated ( float NdotL , float NdotV , float alphaG )\n{\n    // This is the optimize version\n    float alphaG2 = alphaG * alphaG ;\n    // Caution : the " NdotL *" and " NdotV *" are explicitely inversed , this is not a mistake .\n    float Lambda_GGXV = NdotL * sqrt (( - NdotV * alphaG2 + NdotV ) * NdotV + alphaG2 );\n    float Lambda_GGXL = NdotV * sqrt (( - NdotL * alphaG2 + NdotL ) * NdotL + alphaG2 );\n\n    return 0.5 / ( Lambda_GGXV + Lambda_GGXL );\n}\n// Microfacet Models for Refraction through Rough Surfaces - equation (33)\n// http://graphicrants.blogspot.com/2013/08/specular-brdf-reference.html\n// alpha is "roughness squared" in Disney’s reparameterization\nfloat D_GGX ( float NdotH, float m )\n{\n    // Divide by PI is apply later\n    float m2 = m * m ;\n    float f  = ( NdotH * m2 - NdotH ) * NdotH + 1.;\n    return m2 / (f * f) ;\n}\nfloat Fr_DisneyDiffuse ( float NdotV, float NdotL, float LdotH,\n                         float linearRoughness )\n{\n    float energyBias   = mix(0., 0.5, linearRoughness );\n    float energyFactor = mix(1.0, 1.0 / 1.51, linearRoughness );\n    float f90 = energyBias + 2.0 * LdotH * LdotH * linearRoughness ;\n    vec3 f0    = vec3(1.0, 1.0, 1.0);\n    float lightScatter = F_Schlick_Frostbite ( f0 , f90 , NdotL ) .r;\n    float viewScatter  = F_Schlick_Frostbite (f0 , f90 , NdotV ).r;\n    return lightScatter * viewScatter * energyFactor ;\n}\n\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\n\nfloat blendScreen(float base, float blend) {\n    return 1.0-((1.0-base)*(1.0-blend));\n}\n\nvec3 blendScreen(vec3 base, vec3 blend) {\n    return vec3(blendScreen(base.r,blend.r),blendScreen(base.g,blend.g),blendScreen(base.b,blend.b));\n}\n\n\nvoid main() {\n\n\n\n        if ( length( gl_FragCoord.xy - (resolution*uMaskCenter) ) > uMaskRadius  ) {\n            discard;\n        }\n    \n\n\n    vec3 worldPos = vPosition;\n    vec3 normal = vNormal;\n\n    vec3 outColor = vec3(0.);\n\n    float _alpha = alpha;\n\n    // #ifdef USE_ALPHA_MAP\n    //     _alpha = texture2D(tAlpha, vUv).r;\n    // #endif\n\n    vec3 _albedo     = vec3(1.);\n    float _roughness = 1.;\n    float _metalness = 0.;\n    float _ior       = 0.;\n\n    // #ifdef USE_ALBEDO_MAP\n        _albedo = texture2D(tAlbedo, vUv).rgb;\n        _albedo = pow(_albedo, vec3(2.2));\n    // #endif\n\n    // #ifdef USE_ROUGHNESS_MAP\n    //     _roughness = texture2D(tRoughness, vUv).r;\n    // #endif\n    \n    // #ifdef USE_METALNESS_MAP\n    //     _metalness = texture2D(tMetalness, vUv).r;\n    // #endif\n\n\n\n    vec3 diffuseColor = _albedo;\n\n\n\n        PBRMaterial material;\n        material.diffuseColor      = diffuseColor.rgb * ( 1.0 - _metalness );\n        material.specularRoughness = clamp( _roughness, 0.04, 1.0 );\n        material.specularColor     = mix( vec3( 0.00 ), diffuseColor.rgb, _metalness );\n\n        vec3 N      = normal;\n        vec3 V      = normalize(cameraPosition - worldPos);\n        float NdotV = abs( dot (N , V )) + 0.001;\n\n        #ifdef NUM_LIGHTS\n\n            for (int i=0; i<NUM_LIGHTS; i++) {\n\n                IncidentLight directLight;\n                directLight.angleCos    = 0.9510565162951535;//lightAngleCos[i];\n                directLight.color       = vec3(3.);//lightColor[i];\n                directLight.direction   = vec3(0.,-1.,0.);//lightDirection[i];\n                directLight.distance    = 10000.;//lightDistance[i];\n                directLight.decay       = 0.;//lightDecay[i];\n                directLight.position    = lightPosition[i];\n                // directLight.penumbraCos = lightPenumbraCos[i];\n\n                // calculate per-light radiance\n                vec3 L = normalize(directLight.position - worldPos);\n                vec3 H = normalize(V + L);\n\n                float LdotH = saturate ( dot (L , H ));\n                float NdotH = saturate ( dot (N , H ));\n                float NdotL = saturate ( dot (N , L ));\n\n                vec3 radiance  = vec3(0.);        \n                float angleCos = dot(L, directLight.direction);\n\n                // if ( angleCos > directLight.angleCos ) {\n                //     float penumbra = smoothstep( directLight.angleCos, 0.0, angleCos );\n                //     directLight.color *= penumbra;\n                // }\n                // else{\n                //     directLight.color *= 0.;\n                // }\n\n                vec3 irradiance = NdotL * directLight.color;\n                irradiance *= PI;// punctual light\n\n                // BRDF_Specular_GGX\n                float a   = material.specularRoughness;// * material.specularRoughness;\n                vec3 F    = F_Schlick( material.specularColor, LdotH );\n                float Vis = V_SmithGGXCorrelated ( NdotV , NdotL , a );\n                float D   = D_GGX ( NdotH , a );\n                vec3 Fr   =  F * Vis * D;// / PI;\n                vec3 directSpecular = Fr * irradiance / PI;\n        \n                // Diffuse BRDF   \n                float Fd  = Fr_DisneyDiffuse( NdotV , NdotL , LdotH , material.specularRoughness ) / PI;\n                vec3 directDiffuse  = Fd * irradiance * material.diffuseColor  / PI;\n\n                float attenuation = calcLightAttenuation(length(directLight.position - worldPos), directLight.distance, directLight.decay);\n                attenuation = 1.;\n\n                vec3 F0      = mix(vec3(_ior), vec3(1.)/*diffuseColor*/, 0.);\n                vec3 fresnel = F0 + (1.0 - F0) * pow(1.0 - NdotV, 5.0);\n                    \n                outColor.rgb += (directDiffuse + directSpecular) * attenuation;\n                outColor.rgb += vec3(1.) * fresnel;\n                //irradiance  * material.diffuseColor;//(directDiffuse + directSpecular) * attenuation;\n\n            }\n\n        #endif\n\n        float gamma = 2.2;\n        outColor.rgb = pow(outColor.rgb, vec3(1.0 / gamma));\n\n\n        outColor.r = max(0.8666666667, 0.8666666667+(1.-0.866666666)*outColor.r   );\n        outColor.g = max(0.8823529412, 0.8823529412+(1.-0.8823529412)*outColor.g  );\n        outColor.b = max(0.917647058,  0.917647058 +(1.-0.917647058)*outColor.b   );\n        \n        \n        gl_FragColor = vec4(outColor.rgb, 1.0 );\n\n\n\n}\n\n\n\n'
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\nuniform mat4 uMMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \n\nvoid main(void) {\n\n\tvNormal   = normalize( (uMMatrix * vec4(normal, 1.0)).rgb );\n\tvPosition = (uMMatrix * vec4(position, 1.0)).rgb;\n\tvUv       = uv;\n\t\t\n\tvec4 mvPosition = uMVMatrix * vec4( position, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nuniform sampler2D tMask;\nuniform sampler2D tParticle;\nvarying vec2 vUv;\n\n\nuniform vec2 resolution;\nuniform float uMaskRadius;\nuniform vec2 uMaskCenter;\n\nuniform vec3 color;\nuniform int useMask;\nuniform vec3 cameraPosition;\n\nvarying vec3 vPosition;\nvarying vec3 vNormal;\n\n\nuniform float alpha;\n\nfloat randomize(vec3 scale, float seed, vec3 coords) {\n    return fract(sin(dot(coords + seed, scale)) * 43758.5453 + seed);\n}\n//;\n//\nvoid main() {\n\n    // float _maskRadius = uMaskRadius;\n    // if ( length( gl_FragCoord.xy - (resolution*0.5) ) > uMaskRadius  ) {\n    //     discard;\n    // }\n\n    float maskColor = texture2D(tMask, vUv ).r ;\n\n    maskColor = maskColor > 0.5 ? 1.0 : maskColor;\n\n    vec3 worldPos = vPosition;\n\n\tvec3 N      = vNormal;\n\tvec3 V      = normalize(cameraPosition - worldPos);\n\tfloat NdotV = abs( dot (N , V )) + 0.001;\n\n    vec3 F0      = mix(vec3(1.4), vec3(1.)/*diffuseColor*/, 0.);\n    vec3 fresnel = F0 + (1.0 - F0) * pow(1.0 - NdotV, 5.0);\n    \n    float numX = 1. / 1000.;\n    float numY = 1. / 1000.;\n\n    vec2 _localUvs = vec2( mod(vUv.x, numX) / numX, mod(vUv.y, numY) / numY );\n\n    float indexX =  floor(vUv.x / numX) / 600.;\n    float indexY =  floor(vUv.y / numY) / 600.;\n\n    float randRadius = randomize(vec3(12.9898, 78.233, 151.7182), 0.0, vec3(indexX, indexY, 0.));\n\n    vec3 outColor;\n\n    // float particleMask = texture2D(tParticle, vec2(mod(vUv.x * 2., 1.), mod(vUv.y * 2., 1.)) ).r;\n\n    // particleMask = particleMask > 0.4 ? 1. : particleMask;\n\n    float _a = alpha;\n\n    // if ( length( _localUvs - 0.5 ) < randRadius  ) {\n        outColor = vec3(color) ;\n        gl_FragColor = vec4( outColor,  /*particleMask * */(1.-NdotV) * maskColor * randRadius * 0.5 );\n    \n    // }\n    // else {\n    //     discard;\n    // }\n\n\n    // vec3 outColor = vec3( mod(vUv.x, numX) / numX, mod(vUv.y, numY) / numY, 0. );\n\n\n}"
-}, function(t, e) {
-    t.exports = "precision highp float;\n\nattribute vec2 uv;\nattribute vec3 position;\nattribute vec3 normal;\n\nuniform mat4 uMVMatrix;\nuniform mat4 uPMatrix;\n\nvarying vec2 vUv;\nvarying vec3 vNormal;\nvarying vec3 vPosition;\nvarying vec3 vViewPosition; \nuniform vec3 cameraPosition;\n\nuniform float uPointSize;\n\nfloat randomize(vec3 scale, float seed, vec3 coords) {\n    return fract(sin(dot(coords + seed, scale)) * 43758.5453 + seed);\n}\n\nvoid main(void) {\n\n\tvUv       = uv;\n\n\tvec4 mvPosition = uMVMatrix * vec4( position, 1.0 );\n \tvViewPosition = mvPosition.xyz;\n \t\t\n\n \tfloat numX = 1. / 1000.;\n    float numY = 1. / 1000.;\n\n    float indexX =  floor(vUv.x / numX) / 1000.;\n    float indexY =  floor(vUv.y / numY) / 1000.;\n    float randRadius = 0.2 + 0.8 * randomize(vec3(12.9898, 78.233, 151.7182), 0.0, vec3(indexX, indexY, 0.));\n\n    gl_PointSize = uPointSize * randRadius;\n\n    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);\n}\n"
-}, function(t, e, i) {
+}, function (t, e) {
+    t.exports = "precision highp float;uniform float alpha;varying vec2 vUv;void main(void) {    gl_FragColor = vec4( vec3(1., 1., 1.), alpha);}"
+}, function (t, e) {
+    t.exports = "precision highp float;uniform float alpha;varying vec3 vColor;varying vec2 vUv;uniform vec2 offset;#ifdef USE_MAPuniform sampler2D map;uniform vec2 mapOffset;#endif#ifdef USE_ALPHA_MAPuniform sampler2D alphaMap;uniform vec2 alphaMapOffset;#endifuniform vec3 color;void main(void) {vec4 color = vec4(color, alpha);#ifdef USE_MAPcolor = texture2D(map, vUv + offset);color.a *= alpha;#endif    gl_FragColor = color;}"
+}, function (t, e) {
+    t.exports = "precision highp float;varying vec2 vUv;void main(void) {    vec4 outColor = vec4(1., 0., 0., 1.0);    gl_FragColor = outColor;}"
+}, function (t, e) {
+    t.exports = "attribute vec2 uv;attribute vec3 color;attribute vec3 position;attribute float vertexIndex;attribute float particleIndex;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;// uniform float pointSize;varying vec2 vUv;void main() {    vUv = uv;    vec3 newPosition = position;    if (vertexIndex == 0.0) {      newPosition += vec3(-1.,1.,0.);    }    else if (vertexIndex == 1.0) {      newPosition += vec3(1.,1.,0.);    }    else if (vertexIndex == 2.0) {      newPosition += vec3(-1.,-1.,0.);    }    else if (vertexIndex == 3.0) {      newPosition += vec3(1.,-1.,0.);    }    newPosition *= 10.;    gl_Position = uPMatrix * uMVMatrix * vec4( newPosition, 1.0 );}"
+}, function (t, e) {
+    t.exports = "precision highp float;#define BLUR_ITERATION 3.0uniform sampler2D tInput;uniform vec2 uDirection;varying vec2 vUv;float randomize(vec3 scale, float seed) {    return fract(sin(dot(gl_FragCoord.xyz + seed, scale)) * 43758.5453 + seed);}void main() {    vec4 color   = vec4(0.0);    float total  = 0.0;   float offset = 0.;//randomize(vec3(12.9898, 78.233, 151.7182), 0.0);    for (float t = -BLUR_ITERATION; t <= BLUR_ITERATION; t++)     {        float percent = (t + offset - 0.5) / BLUR_ITERATION;        float weight  = 1.0 - abs(percent);        vec4 sample   = texture2D( tInput, vUv + uDirection * percent );        color += sample * weight;        total += weight;    }    color = color / total;    // color.rgb /= color.a + 0.00001;    gl_FragColor = vec4(color.rgb, 1.);}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;void main(void) {vUv = uv;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;// uniform sampler2D tMask;varying vec2 vUv;// uniform vec2 resolution;// uniform sampler2D tDepth;// uniform int pass;varying float vRatio;uniform float alpha;uniform float uProgress;uniform vec3 color;uniform int useDash;uniform int uDirection;void main() {vec4 outColor;outColor.rgb = color;    if (uDirection == 0) {        if ( vRatio < (uProgress) ) {        outColor.a = 1.0;        }        else {        if (useDash == 1) {        float dasharray = cos( vRatio * 1500. ) - 0.6;        outColor.a = dasharray < 0.0 ? 0.0 : 0.75;        }        else {        outColor.a = 0.;        }        }    }    else {        if ( vRatio > (1.0 - uProgress) ) {            outColor.a = 1.0;        }        else {            if (useDash == 1) {                float dasharray = cos( vRatio * 1500. ) - 0.6;                outColor.a = dasharray < 0.0 ? 0.0 : 0.75;            }            else {                outColor.a = 0.;            }        }    }    // if (pass == 1) {   //  float depth = texture2D(tDepth, gl_FragCoord.xy/resolution).r;   //  float currDepth = gl_FragCoord.z;   //  if (depth > currDepth) {   //  discard;   //  }    // }    outColor.a *= alpha;        gl_FragColor = outColor;}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;attribute float ratio;attribute vec3 direction;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; varying float vRatio;uniform vec3 scale;void main(void) {vec3 worldPos = position;worldPos += (direction * 1.) / scale;vRatio = ratio;vUv       = uv;vec4 mvPosition = uMVMatrix * vec4( worldPos, 1.0 ); vViewPosition = mvPosition.xyz;    gl_Position = uPMatrix * uMVMatrix * vec4(worldPos, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;uniform sampler2D tFront;// uniform sampler2D tBack;// uniform sampler2D tOcean;varying vec2 vUv;void main() {// vec4 outColor = vec4(1.);vec4 frontColor = texture2D(tFront, vUv);// vec4 backColor  = texture2D(tBack, vUv);// float oceanMask = texture2D(tOcean, vUv).r;// outColor.rgb = mix(// frontColor.rgb,// mix( backColor.rgb , frontColor.rgb, 0.6), //        oceanMask);// //darken the continents parts// outColor.rgb = mix( // outColor.rgb,// outColor.rgb * vec3(0.95),// 1. - oceanMask// );    gl_FragColor = frontColor;}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;void main(void) {vUv = uv;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;uniform float alpha;uniform vec3 color;uniform vec3 cameraPosition;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; void main() {vec3 worldPos = vPosition;    vec3 normal = vNormal;vec3 N      = normal;vec3 V      = normalize(cameraPosition - worldPos);float NdotV = abs( dot (N , V )) + 0.001;if (NdotV>0.5) {NdotV = 1.;}else {NdotV = (NdotV)/0.5; }gl_FragColor = vec4(color, alpha*(1.-NdotV) );}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;uniform mat4 uMMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; void main(void) {vNormal   = normalize( (uMMatrix * vec4(normal, 1.0)).rgb );vPosition = (uMMatrix * vec4(position, 1.0)).rgb;vUv       = uv;vec4 mvPosition = uMVMatrix * vec4( position, 1.0 ); vViewPosition = mvPosition.xyz;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;uniform sampler2D tMask;varying vec2 vUv;uniform vec2 resolution;uniform sampler2D tDepth;uniform int pass;varying float vLinePointIndex;varying float vOpacity;void main() {vec4 outColor;outColor.rgb = vec3(0./255.,147./255.,229./255.);    outColor.a = vOpacity;    if (pass == 1) {    float depth = texture2D(tDepth, gl_FragCoord.xy/resolution).r;    float currDepth = gl_FragCoord.z;    if (depth > currDepth) {    discard;    }    }    gl_FragColor = outColor;}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;attribute float linePointIndex;attribute float lineHeight;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vViewPosition; varying float vLinePointIndex;varying float vOpacity;uniform sampler2D tMask;uniform float uMaxHeight;void main(void) {vec3 worldPos = position;vNormal   = normalize( (vec4(normal, 0.0)).rgb );vLinePointIndex = linePointIndex;vUv       = uv;vOpacity = 1.;if (linePointIndex == 0. ||linePointIndex == 3.) {vOpacity = 0.;}if (linePointIndex == 2. || linePointIndex == 3. ) {    float h = texture2D(tMask, vUv).r;    h = pow(h, 2.2) * 0.25 * uMaxHeight;    worldPos += vNormal * h;}vec4 mvPosition = uMVMatrix * vec4( worldPos, 1.0 ); vViewPosition = mvPosition.xyz;    gl_Position = uPMatrix * uMVMatrix * vec4(worldPos, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;varying float vSide;uniform vec3 color;uniform float alpha;uniform float uProgress;void main() {if ( vSide > uProgress ) {discard;}gl_FragColor = vec4(color, alpha);}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute float side;varying float vSide;uniform vec3 color;uniform vec3 start;uniform vec3 end;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;void main() {    vSide = side;    vec3 newPosition;    if (side == 0.) {        newPosition = start;    }    else{        newPosition = end;    }    gl_Position = uPMatrix * uMVMatrix * vec4(newPosition, 1.0);    }"
+}, function (t, e) {
+    t.exports = 'precision highp float;#define PI 3.34159265359#define RECIPROCAL_PI 0.31830988618#define saturate(a) clamp( a, 0.0, 1.0 )#ifdef NUM_LIGHTS    // uniform float lightAngleCos[NUM_LIGHTS];    // uniform vec3  lightColor[NUM_LIGHTS];    // uniform float lightDecay[NUM_LIGHTS];    // uniform vec3  lightDirection[NUM_LIGHTS];    // uniform float lightDistance[NUM_LIGHTS];    // uniform float lightExponent[NUM_LIGHTS];    uniform vec3  lightPosition[NUM_LIGHTS];    // uniform float lightPenumbraCos[NUM_LIGHTS];#endifuniform float alpha;// uniform int useDepth;// uniform int useAlpha;// // #ifdef USE_METALNESS_MAP    // uniform sampler2D tMetalness;// #endif// #ifdef USE_ROUGHNESS_MAP    // uniform sampler2D tRoughness;// #endif// #ifdef USE_ALBEDO_MAP    uniform sampler2D tAlbedo;// #endif// #ifdef USE_ALPHA_MAP//     uniform sampler2D tAlpha;// #endifuniform vec2 resolution;uniform float uMaskRadius;uniform vec2 uMaskCenter;uniform vec3 cameraPosition;// uniform int uInvertMask;// uniform int useMask;struct IncidentLight {    float angleCos;    vec3  color;    vec3  position;    vec3  direction;    float distance;    float decay;    float exponent;    float penumbraCos;};struct ReflectedLight {    vec3 directDiffuse;    vec3 directSpecular;    vec3 indirectDiffuse;    vec3 indirectSpecular;};struct PBRMaterial {    vec3  diffuseColor;    float specularRoughness;    vec3  specularColor;    float clearCoat;    float clearCoatRoughness;};struct GeometricContext {    vec3 position;    vec3 normal;    vec3 viewDir;};float calcLightAttenuation( float lightDistance, float cutoffDistance, float decayExponent ) {    if ( decayExponent > 0.0 ) {      return pow( clamp( -lightDistance / cutoffDistance + 1.0 , 0., 1.), decayExponent );    }    return 1.0;}// https://seblagarde.files.wordpress.com/2015/07/course_notes_moving_frostbite_to_pbr_v32.pdfvec3 F_Schlick( const in vec3 specularColor, const in float dotLH ) {    // Original approximation by Christophe Schlick \'94    //;float fresnel = pow( 1.0 - dotLH, 5.0 );    // Optimized variant (presented by Epic at SIGGRAPH \'13)    float fresnel = exp2( ( -5.55473 * dotLH - 6.98316 ) * dotLH );    return ( 1.0 - specularColor ) * fresnel + specularColor;}vec3 F_Schlick_Frostbite (in vec3 f0 , in float f90 , in float u ){    return f0 + ( f90 - f0 ) * pow (1. - u, 5.);}// Microfacet Models for Refraction through Rough Surfaces - equation (34)// http://graphicrants.blogspot.com/2013/08/specular-brdf-reference.html// alpha is "roughness squared" in Disney’s reparameterizationfloat V_SmithGGXCorrelated ( float NdotL , float NdotV , float alphaG ){    // This is the optimize version    float alphaG2 = alphaG * alphaG ;    // Caution : the " NdotL *" and " NdotV *" are explicitely inversed , this is not a mistake .    float Lambda_GGXV = NdotL * sqrt (( - NdotV * alphaG2 + NdotV ) * NdotV + alphaG2 );    float Lambda_GGXL = NdotV * sqrt (( - NdotL * alphaG2 + NdotL ) * NdotL + alphaG2 );    return 0.5 / ( Lambda_GGXV + Lambda_GGXL );}// Microfacet Models for Refraction through Rough Surfaces - equation (33)// http://graphicrants.blogspot.com/2013/08/specular-brdf-reference.html// alpha is "roughness squared" in Disney’s reparameterizationfloat D_GGX ( float NdotH, float m ){    // Divide by PI is apply later    float m2 = m * m ;    float f  = ( NdotH * m2 - NdotH ) * NdotH + 1.;    return m2 / (f * f) ;}float Fr_DisneyDiffuse ( float NdotV, float NdotL, float LdotH,                         float linearRoughness ){    float energyBias   = mix(0., 0.5, linearRoughness );    float energyFactor = mix(1.0, 1.0 / 1.51, linearRoughness );    float f90 = energyBias + 2.0 * LdotH * LdotH * linearRoughness ;    vec3 f0    = vec3(1.0, 1.0, 1.0);    float lightScatter = F_Schlick_Frostbite ( f0 , f90 , NdotL ) .r;    float viewScatter  = F_Schlick_Frostbite (f0 , f90 , NdotV ).r;    return lightScatter * viewScatter * energyFactor ;}varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; float blendScreen(float base, float blend) {    return 1.0-((1.0-base)*(1.0-blend));}vec3 blendScreen(vec3 base, vec3 blend) {    return vec3(blendScreen(base.r,blend.r),blendScreen(base.g,blend.g),blendScreen(base.b,blend.b));}void main() {        if ( length( gl_FragCoord.xy - (resolution*uMaskCenter) ) > uMaskRadius  ) {            discard;        }        vec3 worldPos = vPosition;    vec3 normal = vNormal;    vec3 outColor = vec3(0.);    float _alpha = alpha;    // #ifdef USE_ALPHA_MAP    //     _alpha = texture2D(tAlpha, vUv).r;    // #endif    vec3 _albedo     = vec3(1.);    float _roughness = 1.;    float _metalness = 0.;    float _ior       = 0.;    // #ifdef USE_ALBEDO_MAP        _albedo = texture2D(tAlbedo, vUv).rgb;        _albedo = pow(_albedo, vec3(2.2));    // #endif    // #ifdef USE_ROUGHNESS_MAP    //     _roughness = texture2D(tRoughness, vUv).r;    // #endif        // #ifdef USE_METALNESS_MAP    //     _metalness = texture2D(tMetalness, vUv).r;    // #endif    vec3 diffuseColor = _albedo;        PBRMaterial material;        material.diffuseColor      = diffuseColor.rgb * ( 1.0 - _metalness );        material.specularRoughness = clamp( _roughness, 0.04, 1.0 );        material.specularColor     = mix( vec3( 0.00 ), diffuseColor.rgb, _metalness );        vec3 N      = normal;        vec3 V      = normalize(cameraPosition - worldPos);        float NdotV = abs( dot (N , V )) + 0.001;        #ifdef NUM_LIGHTS            for (int i=0; i<NUM_LIGHTS; i++) {                IncidentLight directLight;                directLight.angleCos    = 0.9510565162951535;//lightAngleCos[i];                directLight.color       = vec3(3.);//lightColor[i];                directLight.direction   = vec3(0.,-1.,0.);//lightDirection[i];                directLight.distance    = 10000.;//lightDistance[i];                directLight.decay       = 0.;//lightDecay[i];                directLight.position    = lightPosition[i];                // directLight.penumbraCos = lightPenumbraCos[i];                // calculate per-light radiance                vec3 L = normalize(directLight.position - worldPos);                vec3 H = normalize(V + L);                float LdotH = saturate ( dot (L , H ));                float NdotH = saturate ( dot (N , H ));                float NdotL = saturate ( dot (N , L ));                vec3 radiance  = vec3(0.);                        float angleCos = dot(L, directLight.direction);                // if ( angleCos > directLight.angleCos ) {                //     float penumbra = smoothstep( directLight.angleCos, 0.0, angleCos );                //     directLight.color *= penumbra;                // }                // else{                //     directLight.color *= 0.;                // }                vec3 irradiance = NdotL * directLight.color;                irradiance *= PI;// punctual light                // BRDF_Specular_GGX                float a   = material.specularRoughness;// * material.specularRoughness;                vec3 F    = F_Schlick( material.specularColor, LdotH );                float Vis = V_SmithGGXCorrelated ( NdotV , NdotL , a );                float D   = D_GGX ( NdotH , a );                vec3 Fr   =  F * Vis * D;// / PI;                vec3 directSpecular = Fr * irradiance / PI;                        // Diffuse BRDF                   float Fd  = Fr_DisneyDiffuse( NdotV , NdotL , LdotH , material.specularRoughness ) / PI;                vec3 directDiffuse  = Fd * irradiance * material.diffuseColor  / PI;                float attenuation = calcLightAttenuation(length(directLight.position - worldPos), directLight.distance, directLight.decay);                attenuation = 1.;                vec3 F0      = mix(vec3(_ior), vec3(1.)/*diffuseColor*/, 0.);                vec3 fresnel = F0 + (1.0 - F0) * pow(1.0 - NdotV, 5.0);                                    outColor.rgb += (directDiffuse + directSpecular) * attenuation;                outColor.rgb += vec3(1.) * fresnel;                //irradiance  * material.diffuseColor;//(directDiffuse + directSpecular) * attenuation;            }        #endif        float gamma = 2.2;        outColor.rgb = pow(outColor.rgb, vec3(1.0 / gamma));        outColor.r = max(0.8666666667, 0.8666666667+(1.-0.866666666)*outColor.r   );        outColor.g = max(0.8823529412, 0.8823529412+(1.-0.8823529412)*outColor.g  );        outColor.b = max(0.917647058,  0.917647058 +(1.-0.917647058)*outColor.b   );                        gl_FragColor = vec4(outColor.rgb, 1.0 );}'
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;uniform mat4 uMMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; void main(void) {vNormal   = normalize( (uMMatrix * vec4(normal, 1.0)).rgb );vPosition = (uMMatrix * vec4(position, 1.0)).rgb;vUv       = uv;vec4 mvPosition = uMVMatrix * vec4( position, 1.0 ); vViewPosition = mvPosition.xyz;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e) {
+    t.exports = "precision highp float;uniform sampler2D tMask;uniform sampler2D tParticle;varying vec2 vUv;uniform vec2 resolution;uniform float uMaskRadius;uniform vec2 uMaskCenter;uniform vec3 color;uniform int useMask;uniform vec3 cameraPosition;varying vec3 vPosition;varying vec3 vNormal;uniform float alpha;float randomize(vec3 scale, float seed, vec3 coords) {    return fract(sin(dot(coords + seed, scale)) * 43758.5453 + seed);}//;//void main() {    // float _maskRadius = uMaskRadius;    // if ( length( gl_FragCoord.xy - (resolution*0.5) ) > uMaskRadius  ) {    //     discard;    // }    float maskColor = texture2D(tMask, vUv ).r ;    maskColor = maskColor > 0.5 ? 1.0 : maskColor;    vec3 worldPos = vPosition;vec3 N      = vNormal;vec3 V      = normalize(cameraPosition - worldPos);float NdotV = abs( dot (N , V )) + 0.001;    vec3 F0      = mix(vec3(1.4), vec3(1.)/*diffuseColor*/, 0.);    vec3 fresnel = F0 + (1.0 - F0) * pow(1.0 - NdotV, 5.0);        float numX = 1. / 1000.;    float numY = 1. / 1000.;    vec2 _localUvs = vec2( mod(vUv.x, numX) / numX, mod(vUv.y, numY) / numY );    float indexX =  floor(vUv.x / numX) / 600.;    float indexY =  floor(vUv.y / numY) / 600.;    float randRadius = randomize(vec3(12.9898, 78.233, 151.7182), 0.0, vec3(indexX, indexY, 0.));    vec3 outColor;    // float particleMask = texture2D(tParticle, vec2(mod(vUv.x * 2., 1.), mod(vUv.y * 2., 1.)) ).r;    // particleMask = particleMask > 0.4 ? 1. : particleMask;    float _a = alpha;    // if ( length( _localUvs - 0.5 ) < randRadius  ) {        outColor = vec3(color) ;        gl_FragColor = vec4( outColor,  /*particleMask * */(1.-NdotV) * maskColor * randRadius * 0.5 );        // }    // else {    //     discard;    // }    // vec3 outColor = vec3( mod(vUv.x, numX) / numX, mod(vUv.y, numY) / numY, 0. );}"
+}, function (t, e) {
+    t.exports = "precision highp float;attribute vec2 uv;attribute vec3 position;attribute vec3 normal;uniform mat4 uMVMatrix;uniform mat4 uPMatrix;varying vec2 vUv;varying vec3 vNormal;varying vec3 vPosition;varying vec3 vViewPosition; uniform vec3 cameraPosition;uniform float uPointSize;float randomize(vec3 scale, float seed, vec3 coords) {    return fract(sin(dot(coords + seed, scale)) * 43758.5453 + seed);}void main(void) {vUv       = uv;vec4 mvPosition = uMVMatrix * vec4( position, 1.0 ); vViewPosition = mvPosition.xyz;  float numX = 1. / 1000.;    float numY = 1. / 1000.;    float indexX =  floor(vUv.x / numX) / 1000.;    float indexY =  floor(vUv.y / numY) / 1000.;    float randRadius = 0.2 + 0.8 * randomize(vec3(12.9898, 78.233, 151.7182), 0.0, vec3(indexX, indexY, 0.));    gl_PointSize = uPointSize * randRadius;    gl_Position = uPMatrix * uMVMatrix * vec4(position, 1.0);}"
+}, function (t, e, i) {
     /**
      * Generates event when user makes new movement (like a swipe on a touchscreen).
      * @version 1.1.4
      * @link https://github.com/Promo/wheel-indicator
      * @license MIT
      */
-    var n = function(t, e) {
+    var n = function (t, e) {
         function i(t) {
             this._options = u(h, t), this._deltaArray = [0, 0, 0], this._isAcceleration = !1, this._isStopped = !0, this._direction = "", this._timer = "", this._isWorking = !0;
             var e = this;
-            this._wheelHandler = function(t) {
+            this._wheelHandler = function (t) {
                 e._isWorking && (r.call(e, t), e._options.preventMouse && o(t))
             }, a(this._options.elem, c, this._wheelHandler)
         }
@@ -12048,7 +12108,7 @@
                     a = e._deltaArray.length,
                     l = !1,
                     u = 0;
-                for (clearTimeout(e._timer), e._timer = setTimeout(function() {
+                for (clearTimeout(e._timer), e._timer = setTimeout(function () {
                         e._deltaArray = [0, 0, 0], e._isStopped = !0, e._direction = r
                     }, 150), o = 0; o < a; o++) 0 !== e._deltaArray[o] && (e._deltaArray[o] > 0 ? ++u : --u);
                 Math.abs(u) === a && (u > 0 ? "down" : "up") !== e._direction && (l = !0, e._direction = r), e._isStopped || (l ? (e._isAcceleration = !0, n.call(this, t)) : Math.abs(u) === a && s.call(this, t)), e._isStopped && (e._isStopped = !1, e._isAcceleration = !0, e._direction = r, n.call(this, t)), e._deltaArray.shift(), e._deltaArray.push(i)
@@ -12079,34 +12139,34 @@
         }
         var c = "onwheel" in e ? "wheel" : "mousewheel",
             h = {
-                callback: function() {},
+                callback: function () {},
                 elem: e,
                 preventMouse: !0
             };
         i.prototype = {
             constructor: i,
-            turnOn: function() {
+            turnOn: function () {
                 return this._isWorking = !0, this
             },
-            turnOff: function() {
+            turnOff: function () {
                 return this._isWorking = !1, this
             },
-            setOptions: function(t) {
+            setOptions: function (t) {
                 return this._options = u(this._options, t), this
             },
-            getOption: function(t) {
+            getOption: function (t) {
                 var e = this._options[t];
                 if (void 0 !== e) return e;
                 throw new Error("Unknown option")
             },
-            destroy: function() {
+            destroy: function () {
                 return l(this._options.elem, c, this._wheelHandler), this
             }
         };
-        var p = function(t) {
-            return (p = t.wheelDelta && !t.deltaY ? function(t) {
+        var p = function (t) {
+            return (p = t.wheelDelta && !t.deltaY ? function (t) {
                 return -1 * t.wheelDelta
-            } : function(t) {
+            } : function (t) {
                 return t.deltaY
             })(t)
         };
