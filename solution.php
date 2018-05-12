@@ -7,6 +7,7 @@ curl_setopt($ch, CURLOPT_HEADER, false);
 $config = curl_exec($ch);
 
 curl_close($ch);
+
 ?>
 
 <!DOCTYPE html>

@@ -198,7 +198,7 @@ INSERT INTO `tbl_solution` (`option_id`, `option_key`, `option_value`, `option_t
 (38, 'section_6_video', '/assets/init/global/clarity_brand_vision_video.mp4', 'video'),
 (39, 'benefits_hero_image', '/assets/init/global/benefits.jpg', 'image'),
 (40, 'benefits_main_title', 'Solution Benefits', 'text'),
-(41, 'benefit_options	', 'Trace pollutant sources|$$$|Identify pollution hotspots|$$$|Evaluate policy effectiveness|$$$|Allocate scarce resources|$$$|Quantify personal exposure|$$$|Forecast peak pollution events|$$$|Share air quality information', 'option-list'),
+(41, 'benefit_options', 'Trace pollutant sources|$$$|Identify pollution hotspots|$$$|Evaluate policy effectiveness|$$$|Allocate scarce resources|$$$|Quantify personal exposure|$$$|Forecast peak pollution events|$$$|Share air quality information', 'option-list'),
 (42, 'partner_logo_list', '/assets/images/init/solutions/partner-1.jpg|$$$|/assets/images/init/solutions/partner-2.jpg|$$$|/assets/images/init/solutions/partner-3.jpg|$$$|/assets/images/init/solutions/partner-4.jpg|$$$|/assets/images/init/solutions/partner-5.jpg|$$$|/assets/images/init/solutions/partner-6.jpg|$$$|/assets/images/init/solutions/partner-7.jpg|$$$|/assets/images/init/solutions/partner-8.jpg|$$$|/assets/images/init/solutions/partner-9.jpg|$$$|/assets/images/init/solutions/partner-10.jpg', 'image-list');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

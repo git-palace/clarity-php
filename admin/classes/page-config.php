@@ -53,7 +53,7 @@ class PageConfig {
 		$result = array();
 		foreach ( $p_result as $option ) {
 			if( !$option->disabled )
-				$result[$option->option_key] = $option->option_value;
+				$result[$option->option_key] = utf8_encode($option->option_value);
 		}
 
 		return $result;
@@ -107,7 +107,8 @@ class PageConfig {
 	
 	// get solution config
 	function getSolutionConfig() {
-		$solution = array();
+		$solution = $this->convert( $this->getQueriesFromTable( "solution" ) );
+		// $solution = array();
 		
 		return $solution;
 	}
@@ -141,13 +142,22 @@ class PageConfig {
 				"home"		=> array()
 			);
 			
-		return array(
+		$allConfig = array (
 			"global"	=> $this->getGlobalConfig(),
 			"home"		=> $this->getHomeConfig(),
 			"about"			=> 	$this->getAboutConfig(),
 			"contact"		=>	$this->getContactConfig(),
 			"privacy"		=>	$this->getPrivacyConfig(),
-			"solution"	=>	$this->getSolutionConfig()
+			"solution"		=>	$this->getSolutionConfig()
 		);
+		
+		return $allConfig;
+	}
+	
+	// print formatted
+	function printFormatted( $data ) {
+		echo "<pre>";
+		print_r( $data );
+		echo "</pre>";
 	}
 }
