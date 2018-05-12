@@ -1,3 +1,14 @@
+<?php
+$ch = curl_init( $_SERVER['SERVER_NAME']."/admin/apis/all-config" );
+
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HEADER, false);
+
+$config = curl_exec($ch);
+
+curl_close($ch);
+?>
+
 <!DOCTYPE html>
 
 <html class="no-js" lang="en">
@@ -5,20 +16,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<base href="/assets/images/">
+	<base href="/">
 
 	<title>Clarity Movement Co. - Leading the Clean Air Movement</title>
 	<meta name="description" content="Transform your city using hundreds to thousands of IoT devices collecting actionable air quality data to create healthy communities.">
 	<meta property="og:description" content="Transform your city using hundreds to thousands of IoT devices collecting actionable air quality data to create healthy communities.">
 	<meta property="og:title" content="Clarity Movement Co. - Leading the Clean Air Movement">
-	<meta property="og:image" content="/assets/images/share-1.jpg">
+	<meta property="og:image" content="/assets/init/global/share-1.jpg">
 	<meta property="og:site_name" content="Clarity Movement Co.">
 	<meta property="og:url" content="https://<?php echo $_SERVER['SERVER_NAME']; ?>/" >
 	<meta property="og:type" content="website">
 
 	<meta name="twitter:title" content="Clarity Movement Co. - Leading the Clean Air Movement">
 	<meta name="twitter:description" content="Transform your city using hundreds to thousands of IoT devices collecting actionable air quality data to create healthy communities.">
-	<meta name="twitter:image" content="/assets/images/share-1.jpg">
+	<meta name="twitter:image" content="/assets/init/global/share-1.jpg">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:creator" content="@JoinClarity">
 	<meta name="twitter:site" content="@JoinClarity">
@@ -53,11 +64,12 @@
 		//remove no-js class to make sure css animations are not bypassed
 		document.getElementsByTagName( 'html' )[0].classList.remove('no-js');
 		document.getElementsByTagName( 'html' )[0].classList.add('has-js');
+
+		var config = <?php echo $config; ?>
 	</script>
 </head>
 <body>
-	
-	<x-application ws-root="//clarity-io.herokuapp.com/api/data/" class="u-block"></x-application>
+	<x-application ws-root="/admin/apis/" class="u-block"></x-application>
 	
 	<script>
 			document.querySelector('x-application').innerHTML = '';
