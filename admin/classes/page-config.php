@@ -12,7 +12,7 @@ class PageConfig {
 	private $contact = array();
 	private $privacy = array();
 
-	function __construct( $servername = "localhost", $dbname = "db_clarity", $username = "root", $password = "") {
+	function __construct( $servername = "localhost", $dbname = "db_clarity", $username = "edeveloper", $password = "") {
 		try{
 			$this->db = new PDO( "mysql:host=$servername;dbname=$dbname", $username, $password );
 			$this->db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -65,8 +65,23 @@ class PageConfig {
 			return array();
 
 		$result = $this->db->query( "SELECT * FROM `tbl_global` ORDER BY `option_id`" )->fetchAll(PDO::FETCH_OBJ);
+		
+		$result = $this->convert( $result );
+		
+		$result["add_btn_container_class"] = "";
+		$result["add_btn_container_class_xs"] = "";
+		$result["one_more_button_tpl"] = "";
+		$result["one_more_button_xs_tpl"] = "";
+		
+		if ( $result["add_one_more_button"] == "yes" ) {
+			$result["one_more_button_tpl"] = '<a href="'.$result["more_button_link"].'" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-b-xs c-anim--slide-x c-anim--8 | u-marg-b-md@sm ">'.$result["more_button_text"].'</a>';
 
-		return $this->convert( $result );
+			$result["one_more_button_xs_tpl"] = '<a href="'.$result["more_button_link"].'" target="_blank" class="c-link u-inline-block u-valign-middle  c-button--login u-marg-r-sm">'.$result["more_button_text"].'</a>';
+
+			$result["add_btn_container_class_xs"] = " px-xs-5 d-xs-flex flex-column text-center ";
+		}
+		
+		return $result;
 	}
 
 	// get all config
