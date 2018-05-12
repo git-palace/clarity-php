@@ -104,6 +104,34 @@ class PageConfig {
 		
 		return $home;
 	}
+	
+	// get solution config
+	function getSolutionConfig() {
+		$solution = array();
+		
+		return $solution;
+	}
+	
+	// get privacy config
+	function getPrivacyConfig() {
+		$privacy = array();
+		
+		return $privacy;
+	}
+	
+	// get about config
+	function getAboutConfig() {
+		$about = array();
+		
+		return $about;
+	}
+	
+	// get contact config
+	function getContactConfig() {
+		$contact = array();
+		
+		return $contact;
+	}
 
 	// get all config
 	function getAllConfig() {
@@ -115,7 +143,11 @@ class PageConfig {
 			
 		return array(
 			"global"	=> $this->getGlobalConfig(),
-			"home"		=> $this->getHomeConfig()
+			"home"		=> $this->getHomeConfig(),
+			"about"			=> 	$this->getAboutConfig(),
+			"contact"		=>	$this->getContactConfig(),
+			"privacy"		=>	$this->getPrivacyConfig(),
+			"solution"	=>	$this->getSolutionConfig()
 		);
 	}
 }
