@@ -12,7 +12,7 @@ class PageConfig {
 	private $contact = array();
 	private $privacy = array();
 
-	function __construct( $servername = "localhost", $dbname = "db_clarity", $username = "edeveloper", $password = "") {
+	function __construct( $servername = "localhost", $dbname = "db_clarity", $username = "root", $password = "") {
 		try{
 			$this->db = new PDO( "mysql:host=$servername;dbname=$dbname", $username, $password );
 			$this->db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -52,8 +52,7 @@ class PageConfig {
 	function convert( $p_result ) {
 		$result = array();
 		foreach ( $p_result as $option ) {
-			if( !$option->disabled )
-				$result[$option->option_key] = utf8_encode($option->option_value);
+			$result[$option->option_key] = utf8_encode($option->option_value);
 		}
 
 		return $result;
@@ -108,40 +107,46 @@ class PageConfig {
 	// get solution config
 	function getSolutionConfig() {
 		$solution = $this->convert( $this->getQueriesFromTable( "solution" ) );
-		// $solution = array();
 		
 		return $solution;
 	}
 	
 	// get privacy config
 	function getPrivacyConfig() {
-		$privacy = array();
-		
+		$privacy = $this->convert( $this->getQueriesFromTable( "privacy" ) );
+
 		return $privacy;
 	}
 	
 	// get about config
 	function getAboutConfig() {
-		$about = array();
+		$about = $this->convert( $this->getQueriesFromTable( "about" ) );
+
+		$about["team_member_list"] = [];
+		for($idx = 1; $idx <= 10; $idx++){
+			array_push($about["team_member_list"], array(
+				"img" => $about["team_member_".$idx."_img"],
+				"name" => explode("|", $about["team_member_".$idx."_info"])[0],
+				"role" => explode("|", $about["team_member_".$idx."_info"])[1]
+			));
+		}
 		
 		return $about;
 	}
 	
 	// get contact config
 	function getContactConfig() {
-		$contact = array();
+		$contact = $this->convert( $this->getQueriesFromTable( "contact" ) );
+
+		$contact["interested_list_tpl"] = "";
+		for( $idx = 1; $idx <= 6; $idx++ )
+			$contact["interested_list_tpl"] .= "<light-ui-select-option value='".$contact["interested_item_".$idx]."'>".$contact["interested_item_".$idx]."</light-ui-select-option>";
 		
 		return $contact;
 	}
 
 	// get all config
-	function getAllConfig() {
-		if ( !$this->db )
-			return array(
-				"global"	=> array(),
-				"home"		=> array()
-			);
-			
+	function getAllConfig() {			
 		$allConfig = array (
 			"global"	=> $this->getGlobalConfig(),
 			"home"		=> $this->getHomeConfig(),
