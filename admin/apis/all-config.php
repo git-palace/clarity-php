@@ -2,6 +2,6 @@
 require_once( __DIR__ . "/../classes/page-config.php" );
 
 $pageConfig = PageConfig::getInstance();
-$temp =  $pageConfig->getAllConfig();
+$allConfig =  $pageConfig->getAllConfig();
 
-echo json_encode($temp);
+echo json_encode($allConfig);
