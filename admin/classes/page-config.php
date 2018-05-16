@@ -65,9 +65,12 @@ class PageConfig {
 	}
 
 	// get global config
-	function getGlobalConfig() {
+	function getGlobalConfig($formatted = true) {
+		if ( !$formatted )
+			return $this->getQueriesFromTable( "global" );
+
 		$global = $this->convert( $this->getQueriesFromTable( "global" ) );
-		
+
 		$global["add_btn_container_class"] = "";
 		$global["add_btn_container_class_xs"] = "";
 		$global["one_more_button_tpl"] = "";
@@ -85,7 +88,10 @@ class PageConfig {
 	}
 	
 	// get home config
-	function getHomeConfig() {
+	function getHomeConfig($formatted = true) {
+		if ( !$formatted )
+			return $this->getQueriesFromTable( "home" );
+
 		$home = $this->convert( $this->getQueriesFromTable( "home" ) );
 		
 		$home["add_btn_container_class"] = "";
@@ -105,21 +111,30 @@ class PageConfig {
 	}
 	
 	// get solution config
-	function getSolutionConfig() {
+	function getSolutionConfig( $formatted = true ) {
+		if ( !$formatted )
+			return $this->getQueriesFromTable( "solution" );
+
 		$solution = $this->convert( $this->getQueriesFromTable( "solution" ) );
 		
 		return $solution;
 	}
 	
 	// get privacy config
-	function getPrivacyConfig() {
+	function getPrivacyConfig( $formatted = true ) {
+		if ( !$formatted )
+			return $this->getQueriesFromTable( "privacy" );
+
 		$privacy = $this->convert( $this->getQueriesFromTable( "privacy" ) );
 
 		return $privacy;
 	}
 	
 	// get about config
-	function getAboutConfig() {
+	function getAboutConfig($formatted = true) {
+		if ( !$formatted )
+			return $this->getQueriesFromTable( "about" );
+
 		$about = $this->convert( $this->getQueriesFromTable( "about" ) );
 
 		$about["team_member_list"] = [];
@@ -135,7 +150,10 @@ class PageConfig {
 	}
 	
 	// get contact config
-	function getContactConfig() {
+	function getContactConfig($formatted = true) {
+		if ( !$formatted )
+			return $this->getQueriesFromTable( "contact" );
+
 		$contact = $this->convert( $this->getQueriesFromTable( "contact" ) );
 
 		$contact["interested_list_tpl"] = "";
@@ -164,5 +182,73 @@ class PageConfig {
 		echo "<pre>";
 		print_r( $data );
 		echo "</pre>";
+	}
+
+	// update file
+	function uploadFile( $id, $file ) {
+		$target_dir = "../../assets/uploads/";
+		$writable = is_writable( $target_dir );
+
+		$this->printFormatted( $file );
+
+		if ( !$writable ) {
+			return array(
+				"id"	=> $id,
+				"success"	=> false,
+				"reason"	=> "Not writable."
+			);
+		}
+
+		$target_file = $target_dir . basename( $file["name"] );
+		$uploadOk = 1;
+		$imageFileType = strtolower( pathinfo( $target_file, PATHINFO_EXTENSION ) );
+
+		// Check if file already exists
+		if ( file_exists( $target_file ) )
+			return array( 
+				"id"	=> $id,
+				"success"	=> false,
+				"reason"	=> "File is existing."
+			);
+
+		if ( 
+			$imageFileType != "jpg" && 
+			$imageFileType != "png" && 
+			$imageFileType != "jpeg"	&& 
+			$imageFileType != "gif"
+		) {
+			return array( 
+				"id"	=> $id,
+				"success"	=> false,
+				"reason"	=> "Only image file is acceptable."
+			);
+		}
+		
+		if ( 
+			getimagesize($file["tmp_name"]) !== false && 
+			move_uploaded_file( $file["tmp_name"], $target_file ) 
+		) {
+			return array( 
+				"id"	=> $id,
+				"success"	=> true,
+				"filename"	=> $target_file
+			);
+		}
+
+		return array( 
+			"id"	=> $id,
+			"success"	=> false,
+			"reason"	=> "Unkown Error."
+		);
+	}
+
+	// update config
+	function updateConfig( $pageID ) {
+		// $this->printFormatted( $_POST );
+		// $this->printFormatted( $_FILES );
+
+		foreach( $_FILES as $id => $file ) {
+			$this->printFormatted( $this->uploadFile( $id, $file ) );
+		}
 	}
 }

@@ -3,19 +3,56 @@ require_once( "templates/header.php" );
 
 if ( isLoggedIn() ) : ?>
 
-	<div class="row h-100">
+	<?php
+		$pageConfg = PageConfig::getInstance();
+		
+		if( !empty($_POST) || !empty( $_FILES ) ) {
+			foreach ( $_FILES as $key => $file ) {
+				if( $file["error"] !== 0 )
+					unset( $_FILES[$key] );
+			}
+
+			if ( isset( $_POST["page_id"] ) ){
+				$pageID = $_POST["page_id"];
+				unset( $_POST["page_id"] );
+				
+				$pageConfg->updateConfig( $pageID );
+			}
+		}
+	?>
+
+	<div class="row">
 		<?php require_once( "templates/sidebar.php" ); ?>
 
-		<div class="main col-10 p-5">
+		<div class="main col-6 p-5">
 			<form method="post" enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="global" />
 
 				<?php
-					$pageConfg = PageConfig::getInstance();
+					$conf = $pageConfg->getGlobalConfig( false );
+
+					foreach ($conf as $option) {
+						switch ($option->option_type) {
+							case 'text':
+								include("templates/text-field.php");
+								break;
+
+							case 'radio':
+								include("templates/radio-field.php");
+								break;
+
+							case 'boolean':
+								include("templates/boolean-field.php");
+								break;
+
+							case "image":
+								include("templates/image-field.php");
+								break;
+						}
+					}
 				?>
-				<div class="form-group">
-					<label for="logo">Logo : </label>
-					<input type="file" name="logo" />
-				</div>
+
+				<button type="submit" class="btn-primary btn">Submit</button>
 			</form>
 		</div>
 	</div>

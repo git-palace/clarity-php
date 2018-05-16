@@ -1,8 +1,14 @@
+html {
+	overflow-x: hidden;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .login-form-container {
@@ -11,6 +17,8 @@ body {
 
 .sidenav {
 	background-color: #111;
+	position: fixed;
+	height: 100vh;
 }
 
 .sidenav a {
@@ -26,4 +34,10 @@ body {
 
 .main {
 	font-size: 1.2rem;
+	margin-left: 35rem;
+}
+
+img {
+	max-width: 800px;
+	background-color: #efefef;
 }
