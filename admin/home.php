@@ -1,17 +1,48 @@
-<?php require_once( "templates/header.php" ); ?>
+<?php
+require_once( "templates/header.php" );
 
-<?php if ( isLoggedIn() ) :	?>
-<div class="row h-100">
-	<?php require_once( "templates/sidebar.php" ); ?>
+if ( isLoggedIn() ) : ?>
 
-	<div class="main col-10">
+	<div class="row">
+		<?php require_once( "templates/sidebar.php" ); ?>
+
+		<div class="main col-6 p-5">
+			<form method="post" enctype="multipart/form-data">
+				<input type="hidden" name="page_id" value="home" />
+
+				<?php
+					$pageConfg = PageConfig::getInstance();
+					$conf = $pageConfg->getHomeConfig( false );
+
+					foreach ($conf as $option) {
+						switch ($option->option_type) {
+							case 'text':
+								include("templates/text-field.php");
+								break;
+
+							case 'radio':
+								include("templates/radio-field.php");
+								break;
+
+							case 'boolean':
+								include("templates/boolean-field.php");
+								break;
+
+							case "image":
+								include("templates/image-field.php");
+								break;
+						}
+					}
+				?>
+
+				<button type="submit" class="btn-primary btn">Submit</button>
+			</form>
+		</div>
 	</div>
-</div>
+
+	<?php require_once( "templates/footer.php" ); ?>
 
 <?php 
 else :
 	require_once( "templates/login-form.php" );
 endif;
-?>
-
-<?php require_once( "templates/footer.php" ); ?>

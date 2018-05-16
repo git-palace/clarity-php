@@ -3,24 +3,6 @@ require_once( "templates/header.php" );
 
 if ( isLoggedIn() ) : ?>
 
-	<?php
-		$pageConfg = PageConfig::getInstance();
-		
-		if( !empty($_POST) || !empty( $_FILES ) ) {
-			foreach ( $_FILES as $key => $file ) {
-				if( $file["error"] !== 0 )
-					unset( $_FILES[$key] );
-			}
-
-			if ( isset( $_POST["page_id"] ) ){
-				$pageID = $_POST["page_id"];
-				unset( $_POST["page_id"] );
-				
-				$pageConfg->updateConfig( $pageID );
-			}
-		}
-	?>
-
 	<div class="row">
 		<?php require_once( "templates/sidebar.php" ); ?>
 
@@ -29,6 +11,7 @@ if ( isLoggedIn() ) : ?>
 				<input type="hidden" name="page_id" value="global" />
 
 				<?php
+					$pageConfg = PageConfig::getInstance();
 					$conf = $pageConfg->getGlobalConfig( false );
 
 					foreach ($conf as $option) {

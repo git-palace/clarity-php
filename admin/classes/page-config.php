@@ -244,7 +244,9 @@ class PageConfig {
 	}
 	
 	function updateValue( $key, $newValue, $pageID ) {
-		$query = "UPDATE `tbl_" . $pageID . "` SET `option_value`='" . $newValue . "' WHERE `option_key`='" . $key . "';";
+		$newValue = str_replace( '"', '\"', $newValue );
+		$query = 'UPDATE `tbl_' . $pageID . '` SET `option_value`="' . $newValue . '" WHERE `option_key`="' . $key . '";';
+		
 		$this->db->exec( $query );
 	}
 }

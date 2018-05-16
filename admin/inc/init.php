@@ -20,3 +20,19 @@ function isLoggedIn() {
 
 	return false;
 }
+
+if( isLoggedIn() && ( !empty($_POST) || !empty( $_FILES ) ) ) {
+	foreach ( $_FILES as $key => $file ) {
+		if( $file["error"] !== 0 )
+			unset( $_FILES[$key] );
+	}
+	
+	$pageConfg = PageConfig::getInstance();
+
+	if ( isset( $_POST["page_id"] ) ){
+		$pageID = $_POST["page_id"];
+		unset( $_POST["page_id"] );
+		
+		$pageConfg->updateConfig( $pageID );
+	}
+}

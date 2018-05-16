@@ -8,11 +8,11 @@ if ( isLoggedIn() ) : ?>
 
 		<div class="main col-6 p-5">
 			<form method="post" enctype="multipart/form-data">
-				<input type="hidden" name="page_id" value="contact" />
+				<input type="hidden" name="page_id" value="privacy" />
 
 				<?php
 					$pageConfg = PageConfig::getInstance();
-					$conf = $pageConfg->getContactConfig( false );
+					$conf = $pageConfg->getPrivacyConfig( false );
 
 					foreach ($conf as $option) {
 						switch ($option->option_type) {

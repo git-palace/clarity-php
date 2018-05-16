@@ -5,7 +5,8 @@
 			array("link" => "/admin/home", "text" => "Home Page"),
 			array("link" => "/admin/solution", "text" => "Solution Page"),
 			array("link" => "/admin/contact", "text" => "Contact Page"),
-			array("link" => "/admin/about", "text" => "About Page")
+			array("link" => "/admin/about", "text" => "About Page"),
+			array("link" => "/admin/privacy", "text" => "Privacy Page")
 		);
 
 		foreach ($menuItems as $item):
