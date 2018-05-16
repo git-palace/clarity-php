@@ -188,8 +188,6 @@ class PageConfig {
 	function uploadFile( $id, $file ) {
 		$target_dir = $_SERVER['DOCUMENT_ROOT']."/assets/uploads/";
 
-		$this->printFormatted( $file );
-
 		$target_file = $target_dir . basename( $file["name"] );
 		$uploadOk = 1;
 		$imageFileType = strtolower( pathinfo( $target_file, PATHINFO_EXTENSION ) );
@@ -218,7 +216,7 @@ class PageConfig {
 			return array( 
 				"id"	=> $id,
 				"success"	=> true,
-				"filename"	=> str_replace( $_SERVER['DOCUMENT_ROOT'], "", $target_file )
+				"url"	=> str_replace( $_SERVER['DOCUMENT_ROOT'], "", $target_file )
 			);
 		}
 
@@ -231,11 +229,22 @@ class PageConfig {
 
 	// update config
 	function updateConfig( $pageID ) {
-		// $this->printFormatted( $_POST );
-		// $this->printFormatted( $_FILES );
+		$updatedValues = $_POST;
 
 		foreach( $_FILES as $id => $file ) {
-			$this->printFormatted( $this->uploadFile( $id, $file ) );
+			$result = $this->uploadFile( $id, $file );
+			
+			if ( $result["success"] )
+				$updatedValues[$id] = $result["url"];
 		}
+		
+		foreach( $updatedValues as $key => $newValue ) {
+			$this->updateValue( $key, $newValue, $pageID );
+		}
+	}
+	
+	function updateValue( $key, $newValue, $pageID ) {
+		$query = "UPDATE `tbl_" . $pageID . "` SET `option_value`='" . $newValue . "' WHERE `option_key`='" . $key . "';";
+		$this->db->exec( $query );
 	}
 }

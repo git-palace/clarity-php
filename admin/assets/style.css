@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
-  overflow-y: auto;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	width: 100vw;
+	height: 100vh;
+	max-height: 100vh;
+	overflow-y: auto;
 }
 
 .login-form-container {
@@ -40,4 +40,14 @@ body {
 img {
 	max-width: 800px;
 	background-color: #efefef;
+}
+
+form label {
+	position: relative;
+}
+
+form .form-group>label::after {
+	/*position: absolute;*/
+	content: " : ";
+	right: 0;
 }
