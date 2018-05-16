@@ -269,16 +269,16 @@ INSERT INTO `tbl_solution` (`option_id`, `option_key`, `option_value`, `option_t
 (55, 'benefit_option_5', 'Quantify personal exposure', 'text'),
 (56, 'benefit_option_6', 'Forecast peak pollution events', 'text'),
 (57, 'benefit_option_7', 'Share air quality information', 'text'),
-(58, 'partner_logo_1', '/assets/images/init/solutions/partner-1.jpg', 'image'),
-(59, 'partner_logo_2', '/assets/images/init/solutions/partner-2.jpg', 'image'),
-(60, 'partner_logo_3', '/assets/images/init/solutions/partner-3.jpg', 'image'),
-(61, 'partner_logo_4', '/assets/images/init/solutions/partner-4.jpg', 'image'),
-(62, 'partner_logo_5', '/assets/images/init/solutions/partner-5.jpg', 'image'),
-(63, 'partner_logo_6', '/assets/images/init/solutions/partner-6.jpg', 'image'),
-(64, 'partner_logo_7', '/assets/images/init/solutions/partner-7.jpg', 'image'),
-(65, 'partner_logo_8', '/assets/images/init/solutions/partner-8.jpg', 'image'),
-(66, 'partner_logo_9', '/assets/images/init/solutions/partner-9.jpg', 'image'),
-(67, 'partner_logo_10', '/assets/images/init/solutions/partner-10.jpg', 'image');
+(58, 'partner_logo_1', '/assets/init/solutions/partner-1.jpg', 'image'),
+(59, 'partner_logo_2', '/assets/init/solutions/partner-2.jpg', 'image'),
+(60, 'partner_logo_3', '/assets/init/solutions/partner-3.jpg', 'image'),
+(61, 'partner_logo_4', '/assets/init/solutions/partner-4.jpg', 'image'),
+(62, 'partner_logo_5', '/assets/init/solutions/partner-5.jpg', 'image'),
+(63, 'partner_logo_6', '/assets/init/solutions/partner-6.jpg', 'image'),
+(64, 'partner_logo_7', '/assets/init/solutions/partner-7.jpg', 'image'),
+(65, 'partner_logo_8', '/assets/init/solutions/partner-8.jpg', 'image'),
+(66, 'partner_logo_9', '/assets/init/solutions/partner-9.jpg', 'image'),
+(67, 'partner_logo_10', '/assets/init/solutions/partner-10.jpg', 'image');
 
 --
 -- Indexes for dumped tables
