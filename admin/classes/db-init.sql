@@ -260,7 +260,7 @@ INSERT INTO `tbl_solution` (`option_id`, `option_key`, `option_value`, `option_t
 (46, 'section_5_video', '/assets/init/solutions/step-5.mp4', 'video'),
 (47, 'section_6_image_for_video', '/assets/init/solutions/poster.jpg', 'image'),
 (48, 'section_6_video', '/assets/init/global/clarity_brand_vision_video.mp4', 'video'),
-(49, 'benefits_hero_image', '/assets/init/global/benefits.jpg', 'image'),
+(49, 'benefits_hero_image', '/assets/init/solutions/benefits.jpg', 'image'),
 (50, 'benefits_main_title', 'Solution Benefits', 'text'),
 (51, 'benefit_option_1', 'Trace pollutant sources', 'text'),
 (52, 'benefit_option_2', 'Identify pollution hotspots', 'text'),
@@ -279,6 +279,20 @@ INSERT INTO `tbl_solution` (`option_id`, `option_key`, `option_value`, `option_t
 (65, 'partner_logo_8', '/assets/init/solutions/partner-8.jpg', 'image'),
 (66, 'partner_logo_9', '/assets/init/solutions/partner-9.jpg', 'image'),
 (67, 'partner_logo_10', '/assets/init/solutions/partner-10.jpg', 'image');
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_solution`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_contact_form` (
+  `id` int(11) NOT NULL,
+  `sender_email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `company_name` varchar(100) COLLATE utf8mb4_unicode_ci,
+  `interest` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` longtext COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Indexes for dumped tables
@@ -319,6 +333,13 @@ ALTER TABLE `tbl_privacy`
 --
 ALTER TABLE `tbl_solution`
   ADD PRIMARY KEY (`option_id`);
+COMMIT;
+
+--
+-- Indexes for table `tbl_contact_form`
+--
+ALTER TABLE `tbl_contact_form`
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

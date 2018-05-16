@@ -243,10 +243,30 @@ class PageConfig {
 		}
 	}
 	
+	// update values
 	function updateValue( $key, $newValue, $pageID ) {
 		$newValue = str_replace( '"', '\"', $newValue );
 		$query = 'UPDATE `tbl_' . $pageID . '` SET `option_value`="' . $newValue . '" WHERE `option_key`="' . $key . '";';
 		
 		$this->db->exec( $query );
+	}
+	
+	// add contact form
+	function addContactForm( $sender_email, $name, $company_name, $interest, $message ) {
+		
+		$sender_email = '"' . str_replace( '"', '\"', $sender_email ) . '", ';
+		$name = '"' . str_replace( '"', '\"', $name ) . '", ';
+		$company_name = '"' . str_replace( '"', '\"', $company_name ) . '", ';
+		$interest = '"' . str_replace( '"', '\"', $interest ) . '", ';
+		$message = '"' . str_replace( '"', '\"', $message ) . '"';
+		
+		$query = 'INSERT INTO `tbl_contact_form`(`sender_email`, `name`, `company_name`, `interest`, `message`) VALUES (' . $sender_email . $name . $company_name . $interest . $message .')';
+		
+		$this->db->exec( $query );
+	}
+	
+	function getContactForms() {
+		$result = $this->db->query( "SELECT * FROM `tbl_contact_form` ORDER BY `id`" )->fetchAll(PDO::FETCH_OBJ);
+		return $result;
 	}
 }
