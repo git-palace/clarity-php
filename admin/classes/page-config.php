@@ -186,18 +186,9 @@ class PageConfig {
 
 	// update file
 	function uploadFile( $id, $file ) {
-		$target_dir = "../../assets/uploads/";
-		$writable = is_writable( $target_dir );
+		$target_dir = $_SERVER['DOCUMENT_ROOT']."/assets/uploads/";
 
 		$this->printFormatted( $file );
-
-		if ( !$writable ) {
-			return array(
-				"id"	=> $id,
-				"success"	=> false,
-				"reason"	=> "Not writable."
-			);
-		}
 
 		$target_file = $target_dir . basename( $file["name"] );
 		$uploadOk = 1;
@@ -205,11 +196,7 @@ class PageConfig {
 
 		// Check if file already exists
 		if ( file_exists( $target_file ) )
-			return array( 
-				"id"	=> $id,
-				"success"	=> false,
-				"reason"	=> "File is existing."
-			);
+			$target_file = $target_dir . uniqid() . "-" . basename( $file["name"] );
 
 		if ( 
 			$imageFileType != "jpg" && 
@@ -231,7 +218,7 @@ class PageConfig {
 			return array( 
 				"id"	=> $id,
 				"success"	=> true,
-				"filename"	=> $target_file
+				"filename"	=> str_replace( $_SERVER['DOCUMENT_ROOT'], "", $target_file )
 			);
 		}
 
